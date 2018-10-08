@@ -11,5 +11,5 @@ Icon=zero-lliurex-salt
 Groups=*
 Category=Software
 ScriptPath=zero-lliurex-salt.zmd
-Using=pe
+Using=pkexec
 Service=True

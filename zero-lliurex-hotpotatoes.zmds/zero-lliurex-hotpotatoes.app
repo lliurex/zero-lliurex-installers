@@ -11,5 +11,5 @@ Icon=zero-lliurex-hotpotatoes
 Groups=admin;admins;teachers;adm
 Category=Software
 ScriptPath=zero-lliurex-hotpotatoes.zmd
-Using=pe 
+Using=pkexec
 Service=True

@@ -11,6 +11,6 @@ Icon=zero-lliurex-moodle
 Groups=admin;admins;teachers;adm
 Category=Services
 ScriptPath=zero-lliurex-moodle.zmd
-Using=pe 
+Using=pkexec
 Service=True
 Depends=zero-server-wizard

@@ -11,4 +11,4 @@ Icon=zero-lliurex-libreoffice-reset
 Category=Software
 ScriptPath=zero-lliurex-libreoffice-reset.zmd
 Groups=*
-Using=pe
+Using=pkexec

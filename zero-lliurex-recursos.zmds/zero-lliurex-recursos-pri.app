@@ -11,6 +11,6 @@ Icon=zero-lliurex-recursos-pri
 Groups=adm;admins;teachers
 Category=Resources
 ScriptPath=zero-lliurex-recursos-pri.zmd
-Using=pe
+Using=pkexec
 Service=True
 Modal=True

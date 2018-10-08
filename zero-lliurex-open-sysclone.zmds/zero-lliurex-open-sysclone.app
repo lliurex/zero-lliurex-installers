@@ -11,4 +11,4 @@ Icon=zero-lliurex-open-sysclone
 Groups=admin;admins;teachers;adm
 Category=Software
 ScriptPath=zero-lliurex-open-sysclone.zmd
-Using=pe
+Using=pkexec

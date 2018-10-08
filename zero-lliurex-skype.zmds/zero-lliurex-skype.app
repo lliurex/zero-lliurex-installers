@@ -11,6 +11,6 @@ Icon=zero-lliurex-skype
 Groups=admin;admins;teachers;adm
 Category=Internet
 ScriptPath=zero-lliurex-skype.zmd
-Using=pe
+Using=pkexec
 Service=True
 Modal=True

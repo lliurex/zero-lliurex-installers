@@ -11,6 +11,6 @@ Icon=zero-lliurex-chrome
 Groups=admin;admins;teachers;adm
 Category=Internet
 ScriptPath=zero-lliurex-chrome.zmd
-Using=pe
+Using=pkexec
 Service=True
 Modal=True

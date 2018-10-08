@@ -11,6 +11,6 @@ Icon=zero-lliurex-mixxx
 Groups=adm;admins;teachers
 Category=Software
 ScriptPath=zero-lliurex-mixxx.zmd
-Using=pe
+Using=pkexec
 Service=True
 Modal=True

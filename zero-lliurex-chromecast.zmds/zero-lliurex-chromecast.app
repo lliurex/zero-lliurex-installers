@@ -11,6 +11,6 @@ Icon=zero-lliurex-chromecast
 Groups=admin;admins;teachers;adm
 Category=Support
 ScriptPath=zero-lliurex-chromecast.zmd
-Using=pe
+Using=pkexec
 Service=True
 Modal=True

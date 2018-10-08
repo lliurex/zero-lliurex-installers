@@ -10,6 +10,6 @@ Icon=zero-lliurex-midicss
 Category=Support
 Groups=admin;admins;teachers;adm
 ScriptPath=zero-lliurex-midicss.zmd
-Using=pe
+Using=pkexec
 Service=True
 Locks=zero-lliurex-midicss
