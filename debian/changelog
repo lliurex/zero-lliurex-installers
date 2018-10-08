@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.169) bionic; urgency=medium
+
+  * Initial release for bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 08 Oct 2018 11:54:34 +0200
+
 zero-lliurex-installers (0.159) xenial; urgency=medium
 
   * Fixed url to download telegram
