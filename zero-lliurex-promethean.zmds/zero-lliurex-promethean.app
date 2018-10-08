@@ -11,6 +11,6 @@ Icon=zero-lliurex-promethean
 Groups=admin;admins;teachers;adm
 Category=Support
 ScriptPath=zero-lliurex-promethean.zmd
-Using=pe
+Using=pkexec
 Service=True
 Modal=True

@@ -9,6 +9,6 @@ Comment[ca_ES]=Desactivar la barra del Notebook
 Icon=preferences-desktop-font
 Category=Software
 ScriptPath=zero-lliurex-notebook-bar.zmd
-Using=pe
+Using=pkexec
 Service=True
 Locks=zero-lliurex-notebook-bar.bar

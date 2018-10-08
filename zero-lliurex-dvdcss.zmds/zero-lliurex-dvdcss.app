@@ -10,6 +10,6 @@ Icon=zero-lliurex-dvdcss
 Category=Support
 Groups=admin;admins;teachers;adm
 ScriptPath=zero-lliurex-dvdcss.zmd
-Using=pe
+Using=pkexec
 Service=True
 Locks=zero-lliurex-dvdcss

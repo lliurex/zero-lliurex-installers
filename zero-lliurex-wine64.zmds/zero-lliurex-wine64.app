@@ -11,5 +11,5 @@ Icon=zero-lliurex-wine64
 Groups=admin;admins;teachers;adm
 Category=Software
 ScriptPath=zero-lliurex-wine64.zmd
-Using=pe
+Using=pkexec
 Service=True

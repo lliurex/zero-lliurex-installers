@@ -11,5 +11,5 @@ Icon=wine-winecfg
 Groups=admin;admins;adm
 Category=Network
 ScriptPath=zero-lliurex-msad.zmd
-Using=pe 
+Using=pkexex
 Service=True

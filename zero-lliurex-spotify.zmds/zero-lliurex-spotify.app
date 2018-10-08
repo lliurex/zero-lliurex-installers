@@ -11,6 +11,6 @@ Icon=zero-lliurex-spotify
 Groups=admin;admins;teachers;adm
 Category=Internet
 ScriptPath=zero-lliurex-spotify.zmd
-Using=pe
+Using=pkexec
 Service=True
 Modal=True
