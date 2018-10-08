@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"caja-dropbox","key_store":"zero-lliurex-dropbox-installer"},{"name":"dropbox-launcher","key_store":"dropbox-launcher"}],
+	"script": {"name":"/usr/share/zero-lliurex-dropbox/dropbox-client_script","remove":true},
+	"required_x":true,
+	"zomando":"zero-lliurex-dropbox-installer"
+
+	}

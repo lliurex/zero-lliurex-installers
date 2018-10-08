@@ -1,0 +1,15 @@
+Name=zero-lliurex-msad
+Name[en]=Active Directory Integration
+Name[es]=Integración en Active Directory
+Name[qcv]=Integració en Active Directory
+Name[ca_ES]=Integració en Active Directory
+Comment=Active Directory Integration
+Comment[es]=Integración en Active Directory
+Comment[qcv]=Integració en Active Directory
+Comment[ca_ES]=Integració en Active Directory
+Icon=wine-winecfg
+Groups=admin;admins;adm
+Category=Network
+ScriptPath=zero-lliurex-msad.zmd
+Using=pe 
+Service=True

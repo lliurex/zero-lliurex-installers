@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-technology_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-technology</name>
+<name xml:lang="es">Aplicaciones tecnológicas</name>
+<name xml:lang="en">Technology Lab installation</name>
+<name xml:lang="qcv">Programari tecnològic</name>
+<name xml:lang="ca_ES">Programari tecnològic</name>
+<summary>Installation of Technology wizard</summary>
+<summary xml:lang="es">Asistente de instalacion de aplicaciones tecnológicas: s4a, appinventor, arduino</summary>
+<summary xml:lang="qcv">Auxiliar d'instal·lació de programari tecnològic: s4a, appinventor, arduino</summary>
+<summary xml:lang="ca_ES">Auxiliar d'instal·lació de programari tecnològic: s4a, appinventor, arduino</summary>
+<description>
+<p>Installation of Technology wizard</p>
+<p xml:lang="es">Asistente de instalacion de aplicaciones tecnológicas: s4a, appinventor, arduino</p>
+<p xml:lang="qcv">Auxiliar d'instal·lació de programari tecnològic: s4a, appinventor, arduino</p>
+<p xml:lang="ca_ES">Auxiliar d'instal·lació de programari tecnològic: s4a, appinventor, arduino</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">technology</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>technology</keyword>
+<keyword>zero-lliurex-technology</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Aplicaciones</keyword>
+<keyword>tecnológicas</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>Technology</keyword>
+<keyword>Lab</keyword>
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Programari</keyword>
+<keyword>tecnològic</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+<screenshots>
+<screenshot type="default">
+<caption>Main window.</caption>
+<image type="source" width="800" height="450">https://screenshots.debian.net/screenshots/000/014/429/large.png</image>
+</screenshot>
+</screenshots>
+</component>

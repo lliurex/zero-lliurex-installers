@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+ACTION="$1"
+PACKAGE="wine*"
+
+case $ACTION in
+
+	remove)
+		apt-get remove -y $PACKAGE
+		TEST=$( dpkg-query -s  wine 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi
+	;;
+esac
+exit 0	

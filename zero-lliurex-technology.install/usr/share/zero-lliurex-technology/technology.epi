@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"s4a","key_store":"zero-lliurex-technology"},{"name":"arduino-ide","key_store":"zero-lliurex-technology"},{"name":"appinventor2-setup","key_store":"zero-lliurex-technology"},{"name":"lliurex-robotics","key_store":"zero-lliurex-technology"}],
+	"script": {"name":"/usr/share/zero-lliurex-technology/technology_script","remove":true},
+	"force32":true,
+	"zomando":"zero-lliurex-technology"
+	
+	}

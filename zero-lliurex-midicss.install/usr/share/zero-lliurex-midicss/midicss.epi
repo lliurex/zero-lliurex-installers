@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"vlc-plugin-fluidsynth","key_store":"zero-lliurex-midicss"}], 
+	"script": {"name":"/usr/share/zero-lliurex-midicss/midicss_script","remove":true},
+	"zomando":"zero-lliurex-midicss"
+	
+	}

@@ -1,0 +1,15 @@
+Name=zero-lliurex-wine64
+Name[es]=Instalación del wine64
+Name[en]=Wine64 installation
+Name[qcv]=Instal·lació del wine64
+Name[ca_ES]=Instal·lació del wine64
+Comment=Installation of wine64 wizard
+Comment[es]=Asistente de instalación del wine64
+Comment[qcv]=Auxiliar d'instal·lació del wine64
+Comment[ca_ES]=Auxiliar d'instal·lació del wine64
+Icon=zero-lliurex-wine64
+Groups=admin;admins;teachers;adm
+Category=Software
+ScriptPath=zero-lliurex-wine64.zmd
+Using=pe
+Service=True

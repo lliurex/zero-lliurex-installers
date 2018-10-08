@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-ocrfeeder</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-ocrfeeder</name>
+<name xml:lang="es">Instalación del OCRFeeder</name>
+<name xml:lang="en">OCRFeeder installation</name>
+<name xml:lang="qcv">Instal·lació del OCRFeeder</name>
+<name xml:lang="ca_ES">Instal·lació del OCRFeeder</name>
+<summary>Installation of wine64 wizard</summary>
+<summary xml:lang="es">Asistente de instalación del OCRFeeder</summary>
+<summary xml:lang="ca">Auxiliar d'instal·lació del OCRFeeder</summary>
+<summary xml:lang="ca_ES@valencia">Auxiliar d'instal·lació del OCRFeeder</summary>
+<summary xml:lang="ca_ES.UTF-8@valencia">Auxiliar d'instal·lació del OCRFeeder</summary>
+<description>
+<p>Installation of OCRFeeder wizard</p>
+<p xml:lang="es">OCRFeeder es una suite de reconocimiento de caracteres ópticos para GNOME, que también es compatible con prácticamente cualquier motor de OCR de línea de comandos, como Tesseract (incluido en la instalación), CuneiForm, GOCR, Ocrad... . Convierte los documentos en papel en archivos de documentos digitales y puede servir para hacerlos accesibles a los usuarios con discapacidad visual.</p>
+<p xml:lang="ca_ES">OCRFeeder és un conjunt de reconeixement de caràcters òptics per a GNOME, que també és compatible amb pràcticament qualsevol motor d'OCR de línia de comandos, com Tesseract (inclòs en la instal·lació) , CuneiForm, GOCR, Ocrad... . Convertix els documents en paper en arxius de documents digitals i pot servir per a fer-los accessibles als usuaris amb discapacitat visual.</p>
+<p xml:lang="ca_ES@valencia">OCRFeeder és un conjunt de reconeixement de caràcters òptics per a GNOME, que també és compatible amb pràcticament qualsevol motor d'OCR de línia de comandos, com Tesseract (inclòs en la instal·lació) , CuneiForm, GOCR, Ocrad... . Convertix els documents en paper en arxius de documents digitals i pot servir per a fer-los accessibles als usuaris amb discapacitat visual.</p>
+<p xml:lang="ca_ES.UTF-8@valencia">OCRFeeder és un conjunt de reconeixement de caràcters òptics per a GNOME, que també és compatible amb pràcticament qualsevol motor d'OCR de línia de comandos, com Tesseract (inclòs en la instal·lació) , CuneiForm, GOCR, Ocrad... . Convertix els documents en paper en arxius de documents digitals i pot servir per a fer-los accessibles als usuaris amb discapacitat visual.</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">ocrfeeder</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>ocrfeeder</keyword>
+<keyword>zero-lliurex-ocrfeeder</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+<keyword>reconocimiento</keyword>
+<keyword>caracteres</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>OCR</keyword>
+<keyword>reconigtion</keyword>
+<keyword>character</keyword>
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES.UTF-8@valencia">
+<keyword>Instal·lació</keyword>
+<keyword>Zomando</keyword>
+<keyword>reconeixement</keyword>
+<keyword>caràcters</keyword>
+
+</keywords>
+</component>

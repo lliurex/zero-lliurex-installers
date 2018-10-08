@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-fonts_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-fonts</name>
+<name xml:lang="es">Instalador de tipografías extra</name>
+<name xml:lang="qcv">Instal·lador de tipus de lletra addicionals</name>
+<name xml:lang="ca_ES">Instal·lador de tipus de lletra addicionals</name>
+<summary>Downloads and installs lliurex-fonts-extra on current machine</summary>
+<summary xml:lang="es">Algunas tipografías escolares extra</summary>
+<summary xml:lang="qcv">Alguns tipus de lletra escolars addicionals</summary>
+<summary xml:lang="ca_ES">Alguns tipus de lletra escolars addicionals</summary>
+<description>
+<p>Downloads and installs lliurex-fonts-extra on current machine</p>
+<p xml:lang="es">Algunas tipografías escolares extra</p>
+<p xml:lang="qcv">Alguns tipus de lletra escolars addicionals</p>
+<p xml:lang="ca_ES">Alguns tipus de lletra escolars addicionals</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">fonts</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>fonts</keyword>
+<keyword>zero-lliurex-fonts</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalador</keyword>
+<keyword>tipografías</keyword>
+<keyword>extra</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lador</keyword>
+<keyword>tipus</keyword>
+<keyword>lletra</keyword>
+<keyword>addicionals</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+<screenshots>
+<screenshot type="default">
+<caption>Main window.</caption>
+<image type="source" width="800" height="450">https://screenshots.debian.net/screenshots/000/014/195/large.png</image>
+</screenshot>
+</screenshots>
+</component>

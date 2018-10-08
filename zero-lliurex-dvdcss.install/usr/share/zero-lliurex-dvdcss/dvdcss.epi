@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"libdvdcss2","key_store":"zero-lliurex-dvdcss"}], 
+	"repository": [{"url":"deb http://download.videolan.org/pub/debian/stable/ /"}], 
+	"script": {"name":"/usr/share/zero-lliurex-dvdcss/dvdcss_script","remove":true,"addRepoKeys":true},
+	"zomando":"zero-lliurex-dvdcss"
+	
+	}

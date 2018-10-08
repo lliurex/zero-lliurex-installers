@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"ocrfeeder","key_store":"zero-lliurex-ocrfeeder"},{"name":"tesseract-ocr-spa","key_store":"zero-lliurex-ocrfeeder"},{"name":"tesseract-ocr-cat","key_store":"zero-lliurex-ocrfeeder"}],
+	"script": {"name":"/usr/share/zero-lliurex-ocrfeeder/ocrfeeder_script","remove":true},
+	"zomando":"zero-lliurex-ocrfeeder"
+
+	}

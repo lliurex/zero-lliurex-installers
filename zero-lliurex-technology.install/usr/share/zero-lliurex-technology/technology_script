@@ -1,0 +1,84 @@
+#!/bin/bash
+
+
+ACTION="$1"
+PACKAGE_LIST="s4a arduino-ide appinventor2-setup lliurex-robotics"
+DEPENDS_S4A="libv4l-0:i386 libsm6:i386 libice6:i386 libpangocairo-1.0-0:i386 libcairo2:i386 libpulse0:i386 libasound2:i386 libglib2.0-dev:i386 libpulse-dev:i386 libx11-6:i386"
+TMP_LISTA="/tmp/lista_s4a.txt"
+
+case $ACTION in
+
+
+	preInstall)
+
+		#CREO LISTA DE PAQUETES NECESARIOS
+		touch $TMP_LISTA || chmod 777 $TMP_LISTA
+		: > $TMP_LISTA
+		for i in $DEPENDS_S4A
+			do
+				echo "$i" >> $TMP_LISTA 
+			done
+
+
+		CHKBITS=`uname -m`
+
+		if [ $CHKBITS = "x86_64" ]; then
+		    echo "Installing 32bit depends..."	
+		    echo "Installing required lib..."
+			dpkg --add-architecture i386
+			
+			for line in $(cat $TMP_LISTA);do
+				PACKAGE=$( echo "$line" | awk '1 { print  $1 }' )
+				apt-get install --yes  $PACKAGE
+			done	
+		
+			if [ $? -ne 0 ];then
+				exit 1
+			fi
+			
+			#Comprobacion de que los paquetes estan instalados sin problemas.
+	
+			for PACKET in $( cat /$TMP_LISTA | awk '{print$1}' )
+			do
+				PKG_OK=$(dpkg-query -W --showformat='${Status}\n'  $PACKET | grep "install ok installed")
+				if [ "" == "$PKG_OK" ]; then
+					exit 1
+				fi
+			done
+		fi	
+
+	;;
+	postInstall)
+	
+	
+		TEST=$( dpkg-query -s  s4a 2> /dev/null| grep Status | cut -d " " -f 4 )	
+		if [ "$TEST" == 'installed' ];then
+			echo "Checking depends..."
+
+			ldd /usr/lib/s4a/Plugins/* | grep "not found" >  /tmp/.s4a-epi.log || true
+			if  [[ $(rgrep "found" /tmp/.s4a-epi.log) ]]; then
+				zero-center set-failed zero-lliurex-s4a
+				exit 1
+			fi	
+			zero-center set-configured zero-lliurex-s4a
+		fi	
+	;;
+
+	remove)
+
+		for ix in $PACKAGE_LIST	
+		do
+
+			apt-get remove -y $ix
+			TEST=$( dpkg-query -s  $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+			if [ "$TEST" == 'installed' ];then
+				exit 1
+			fi
+			if [ $ix=="S4a" ];then
+				zero-center set-non-configured  zero-lliurex-s4a
+			fi
+				
+		done		
+	;;	
+esac
+exit 0

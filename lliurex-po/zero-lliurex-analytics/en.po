@@ -1,0 +1,84 @@
+# English translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# lliurex <m.angel.juan@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-30 12:04+0100\n"
+"PO-Revision-Date: 2017-01-30 12:08+0100\n"
+"Last-Translator: lliurex <m.angel.juan@gmail.com>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#:zero-lliurex-analytics.zmd:18
+msgid "Welcome to lliurex-statistics config tool\\n"
+msgstr "Welcome to lliurex-statistics config tool\\n"
+
+#:zero-lliurex-analytics.zmd:30
+msgid "This system isn't configurable\\n"
+msgstr "This system isn't configurable\\n"
+
+#:zero-lliurex-analytics.zmd:50
+msgid ""
+"The anonymous statistics reporting agent is %s in this system. Do you want "
+"change this state?\\n"
+msgstr ""
+"The anonymous statistics reporting agent is %s in this system. Do you want "
+"change this state?\\n"
+
+#:zero-lliurex-analytics.zmd:51
+msgid "What state must i use in this system?\\n"
+msgstr "Which state should I use in this system?\\n"
+
+#:zero-lliurex-analytics.zmd:55
+#:zero-lliurex-analytics.zmd:73
+msgid "enabled"
+msgstr "enabled"
+
+#:zero-lliurex-analytics.zmd:57
+#:zero-lliurex-analytics.zmd:77
+msgid "disabled"
+msgstr "disabled"
+
+#:zero-lliurex-analytics.zmd:63
+msgid ""
+"The anonymous statistics reporting agent for classroom clients have %s "
+"status. Do you want to change reporting agent status?\\n"
+msgstr ""
+"The anonymous statistics reporting agent for classroom clients have %s "
+"status. Do you want to change reporting agent status?\\n"
+
+#:zero-lliurex-analytics.zmd:64
+msgid "What state must i use for classroom clients?\\n"
+msgstr "What state must i use for classroom clients?\\n"
+
+#:zero-lliurex-analytics.zmd:80
+msgid "unknown"
+msgstr "unknown"
+
+#:zero-lliurex-analytics.zmd:89
+#:zero-lliurex-analytics.zmd:103
+msgid "Yes"
+msgstr "Yes"
+
+#:zero-lliurex-analytics.zmd:89
+#:zero-lliurex-analytics.zmd:103
+msgid "No"
+msgstr "No"
+
+#:zero-lliurex-analytics.zmd:91
+#:zero-lliurex-analytics.zmd:105
+msgid "Allow"
+msgstr "Allow"
+
+#:zero-lliurex-analytics.zmd:91
+#:zero-lliurex-analytics.zmd:105
+msgid "Disallow"
+msgstr "Disallow"

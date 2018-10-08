@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"pyromaths","key_store":"zero-lliurex-pyromaths"}],
+	"script": {"name":"/usr/share/zero-lliurex-pyromaths/pyromaths_script","remove":true},
+	"zomando":"zero-lliurex-pyromaths"
+
+	}

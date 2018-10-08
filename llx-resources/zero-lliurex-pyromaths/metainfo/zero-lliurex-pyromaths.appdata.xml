@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-pyromaths_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-pyromaths</name>
+<name xml:lang="es">Instalador de Pyromaths</name>
+<name xml:lang="qcv">Instal·lador del Pyromaths</name>
+<name xml:lang="ca_ES">Instal·lador del Pyromaths</name>
+<summary>Downloads and installs Pyromaths on current machine</summary>
+<summary xml:lang="es">Descarga e instala Pyromaths en la máquina local</summary>
+<summary xml:lang="qcv">Programari de generació d'exercicis matemàtics</summary>
+<summary xml:lang="ca_ES">Programari de generació d'exercicis matemàtics</summary>
+<description>
+<p>Downloads and installs Pyromaths on current machine</p>
+<p xml:lang="es">Descarga e instala Pyromaths en la máquina local</p>
+<p xml:lang="qcv">Programari de generació d'exercicis matemàtics</p>
+<p xml:lang="ca_ES">Programari de generació d'exercicis matemàtics</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">pyromaths</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>pyromaths</keyword>
+<keyword>zero-lliurex-pyromaths</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalador</keyword>
+<keyword>Pyromaths</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lador</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+<screenshots>
+<screenshot type="default">
+<caption>Main window.</caption>
+<image type="source" width="800" height="450">https://screenshots.debian.net/screenshots/000/008/799/large.png</image>
+</screenshot>
+</screenshots>
+</component>

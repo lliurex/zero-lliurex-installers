@@ -1,0 +1,14 @@
+Name=zero-lliurex-notebook-bar
+Name[es]=Desactivar la barra del Notebook
+Name[qcv]=Desactivar la barra del Notebook
+Name[ca_ES]=Desactivar la barra del Notebook
+Comment=Desactivar la barra del Notebook
+Comment[es]=Desactivar la barra del Notebook
+Comment[qcv]=Desactivar la barra del Notebook
+Comment[ca_ES]=Desactivar la barra del Notebook
+Icon=preferences-desktop-font
+Category=Software
+ScriptPath=zero-lliurex-notebook-bar.zmd
+Using=pe
+Service=True
+Locks=zero-lliurex-notebook-bar.bar

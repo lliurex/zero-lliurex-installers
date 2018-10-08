@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-wine64_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-wine64</name>
+<name xml:lang="es">Instalación del wine64</name>
+<name xml:lang="en">Wine64 installation</name>
+<name xml:lang="qcv">Instal·lació del wine64</name>
+<name xml:lang="ca_ES">Instal·lació del wine64</name>
+<summary>Installation of wine64 wizard</summary>
+<summary xml:lang="es">Asistente de instalación del wine64</summary>
+<summary xml:lang="qcv">Auxiliar d'instal·lació del wine64</summary>
+<summary xml:lang="ca_ES">Auxiliar d'instal·lació del wine64</summary>
+<description>
+<p>Installation of wine64 wizard</p>
+<p xml:lang="es">Asistente de instalación del wine64</p>
+<p xml:lang="qcv">Auxiliar d'instal·lació del wine64</p>
+<p xml:lang="ca_ES">Auxiliar d'instal·lació del wine64</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">wine64</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>wine64</keyword>
+<keyword>zero-lliurex-wine64</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>Wine64</keyword>
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

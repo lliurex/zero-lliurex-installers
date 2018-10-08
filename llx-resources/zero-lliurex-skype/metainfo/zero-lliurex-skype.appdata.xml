@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-skype_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-skype</name>
+<name xml:lang="es">Instalación del Skype</name>
+<name xml:lang="en">Skype installation</name>
+<name xml:lang="qcv">Instal·lació del Skype</name>
+<name xml:lang="ca_ES">Instal·lació del Skype</name>
+<summary>Installation of Skype wizard</summary>
+<summary xml:lang="es">Asistente de instalación del Skype</summary>
+<summary xml:lang="qcv">Auxiliar d'instal·lació del Skype</summary>
+<summary xml:lang="ca_ES">Auxiliar d'instal·lació del Skype</summary>
+<description>
+<p>Installation of Skype wizard</p>
+<p xml:lang="es">Asistente de instalación del Skype</p>
+<p xml:lang="qcv">Auxiliar d'instal·lació del Skype</p>
+<p xml:lang="ca_ES">Auxiliar d'instal·lació del Skype</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">skype</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>skype</keyword>
+<keyword>zero-lliurex-skype</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>Skype</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+case $ACTION in
+
+	addRepoKeys)
+		
+		wget -O - http://download.videolan.org/pub/debian/videolan-apt.asc | sudo apt-key --keyring /tmp/epi_keyring add - 	
+	;;
+	remove)
+		apt-get remove -y libdvdcss2
+		TEST=$( dpkg-query -s  libdvdcss2 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi
+	;;
+esac
+exit 0	

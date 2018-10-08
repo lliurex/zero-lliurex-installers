@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-obs-studio_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-obs-studio</name>
+<name xml:lang="es">Instalador de OBS Studio</name>
+<name xml:lang="en">OBS Studio installer</name>
+<name xml:lang="qcv">Instal·lador de OBS Studio</name>
+<name xml:lang="ca_ES">Instal·lador de OBS Studio</name>
+<summary>Open Broadcaster Software is an application for video recording and live streaming</summary>
+<summary xml:lang="es">Open Broadcaster Software es una aplicación para la grabación de video y transmisión en vivo</summary>
+<summary xml:lang="qcv">Open Broadcaster Software és una aplicació per a la gravació de video i transmissió en viu</summary>
+<summary xml:lang="ca_ES">Open Broadcaster Software és una aplicació per a la gravació de video i transmissió en viu</summary>
+<description>
+<p>Open Broadcaster Software is an application for video recording and live streaming</p>
+<p xml:lang="es">Open Broadcaster Software es una aplicación para la grabación de video y transmisión en vivo</p>
+<p xml:lang="qcv">Open Broadcaster Software és una aplicació per a la gravació de video i transmissió en viu</p>
+<p xml:lang="ca_ES">Open Broadcaster Software és una aplicació per a la gravació de video i transmissió en viu</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">spotify</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>spotify</keyword>
+<keyword>zero-lliurex-spotify</keyword>
+<keyword>Zomando</keyword>
+<keyword>Video</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>cliente</keyword>
+<keyword>Spotify</keyword>
+<keyword>Zomando</keyword>
+<keyword>Grabación</keyword>
+<keyword>Transmisión</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>Client</keyword>
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+<keyword>Recording</keyword>
+<keyword>Streaming</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>client</keyword>
+<keyword>Zomando</keyword>
+<keyword>Vídeo</keyword>
+<keyword>Gravació</keyword>
+<keyword>Transmissió</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

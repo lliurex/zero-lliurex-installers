@@ -1,0 +1,16 @@
+Name=zero-lliurex-mixxx
+Name[es]=Instalación de Mixxx
+Name[en]=Mixxx installation
+Name[qcv]=Instal·lació de Mixxx
+Name[ca_ES]=Instal·lació de Mixxx
+Comment=Mixxx is a DJ Automation and digital DJ performance application. Can be controlled with MIDI and HID controllers and timecode vinyl records in addition to computer keyboards and mice
+Comment[es]=Mixxx es una aplicación de DJ de automatización y rendimiento digital. Se puede controlar con controladores MIDI y HID y discos de vinilo con código de tiempo, además de teclados y ratones del ordenador
+Comment[qcv]=Mixxx és una aplicació de discjòquei d'automatització i rendiment digital. Es pot controlar amb controladors MIDI i HID i discos de vinil amb codi de temps, a més de teclats i ratolins de l'ordinador
+Comment[ca_ES]=Mixxx és una aplicació de discjòquei d'automatització i rendiment digital. Es pot controlar amb controladors MIDI i HID i discos de vinil amb codi de temps, a més de teclats i ratolins de l'ordinador
+Icon=zero-lliurex-mixxx
+Groups=adm;admins;teachers
+Category=Software
+ScriptPath=zero-lliurex-mixxx.zmd
+Using=pe
+Service=True
+Modal=True

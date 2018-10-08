@@ -1,0 +1,40 @@
+#!/bin/bash
+#Wrapper for telegram
+#Adds info in the user's telegram.desktop 
+####
+TELEGRAM=${HOME}"/.local/bin/telegram/Telegram/Telegram"
+TDESKTOPPATH=${HOME}"/.local/share/applications"
+TDESKTOP=${TDESKTOPPATH}"/zero-lliurex-telegram.desktop"
+OLD_TDESKTOP=${TDESKTOPPATH}"/telegramdesktop.desktop"
+RS=0
+if [ ! -x $TELEGRAM ]
+then
+	zenity --error --title "Telegram" --text "Telegram not found at $TELEGRAM"
+	RS=1
+else
+	LANG=es_ES.UTF-8 $TELEGRAM
+	#When finished regenerates the .desktop
+	[ -a $TDESKTOPPATH ] || mkdir $TDESKTOPPATH -p
+	echo "[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Telegram Desktop
+Comment=Official desktop version of Telegram messaging app
+Comment[es]=Versión oficial de Telegram Desktop
+Comment[ca]=Versió oficial del Telegram Desktop
+Comment[ca_ES@valencia]=Versió oficial del Telegram Desktop
+Exec=telegram
+Icon=telegram
+Terminal=false
+StartupWMClass=Telegram
+Type=Application
+Categories=Network;
+MimeType=x-scheme-handler/tg;
+X-Desktop-File-Install-Version=0.22
+">$TDESKTOP
+	if [ -e $OLD_TDESKTOP ]
+	then
+		rm $OLD_TDESKTOP 
+	fi
+fi
+exit $RS

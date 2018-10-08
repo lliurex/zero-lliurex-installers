@@ -1,0 +1,66 @@
+# Catalan translations for PACKAGE package
+# Traduccions al català del paquet «PACKAGE».
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# lliurex <m.angel.juan@gmail.com>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-30 12:04+0100\n"
+"PO-Revision-Date: 2017-05-04 10:44+0100\n"
+"Last-Translator: \n"
+"Language-Team: Catalan\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Welcome to lliurex-statistics config tool\\n"
+msgstr "Us donem la benvinguda al configurador del lliurex-statistics\\n"
+
+msgid "This system isn't configurable\\n"
+msgstr "Aquest sistema no és configurable.\\n"
+
+msgid ""
+"The anonymous statistics reporting agent is %s in this system. Do you want "
+"change this state?\\n"
+msgstr ""
+"L'agent d'enviament d'estadístiques anònimes està %s en aquest sistema. "
+"Voleu canviar aquest estat?\\n"
+
+msgid "What state must i use in this system?\\n"
+msgstr "Quin estat he d'utilitzar en aquest sistema?\\n "
+
+msgid "enabled"
+msgstr "activat"
+
+msgid "disabled"
+msgstr "desactivat"
+
+msgid ""
+"The anonymous statistics reporting agent for classroom clients have %s "
+"status. Do you want to change reporting agent status?\\n"
+msgstr ""
+"L'agent d'enviament d'estadístiques anònimes per als clients d'aula està %s. "
+"Voleu canviar aquest estat?\\n"
+
+msgid "What state must i use for classroom clients?\\n"
+msgstr "Quin estat he d'utilitzar per als clients d'aula?\\n"
+
+msgid "unknown"
+msgstr "desconegut"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "No"
+msgstr "No"
+
+msgid "Allow"
+msgstr "Permet-ho"
+
+msgid "Disallow"
+msgstr "No no permetes"

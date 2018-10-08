@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-telegram_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>lliurex-zero-installer-telegram</name>
+<name xml:lang="es">Instalación de Telegram</name>
+<name xml:lang="qcv">Instal·lació del Telegram</name>
+<name xml:lang="ca_ES">Instal·lació del Telegram</name>
+<summary>Telegram installer for Lliurex</summary>
+<summary xml:lang="es">Instalador de Telegram para Lliurex</summary>
+<summary xml:lang="qcv">Instal·lació del Telegram per a Lliurex</summary>
+<summary xml:lang="ca_ES">Instal·lació del Telegram per a Lliurex</summary>
+<description>
+<p>Telegram installer for Lliurex</p>
+<p xml:lang="es">Instalador de Telegram para Lliurex</p>
+<p xml:lang="qcv">Instal·lació del Telegram per a Lliurex</p>
+<p xml:lang="ca_ES">Instal·lació del Telegram per a Lliurex</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">telegram</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>telegram</keyword>
+<keyword>lliurex-zero-installer-telegram</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>Telegram</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+<screenshots>
+<screenshot type="default">
+<caption>Main window.</caption>
+<image type="source" width="800" height="450">https://screenshots.debian.net/screenshots/000/015/459/large.png</image>
+</screenshot>
+</screenshots>
+</component>

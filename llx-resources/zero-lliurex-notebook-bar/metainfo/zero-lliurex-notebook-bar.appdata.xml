@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-notebook-bar_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-notebook-bar</name>
+<name xml:lang="es">Desactivar la barra del Notebook</name>
+<name xml:lang="qcv">Desactivar la barra del Notebook</name>
+<name xml:lang="ca_ES">Desactivar la barra del Notebook</name>
+<summary>Desactivar la barra del Notebook</summary>
+<summary xml:lang="es">Desactivar la barra del Notebook</summary>
+<summary xml:lang="qcv">Desactivar la barra del Notebook</summary>
+<summary xml:lang="ca_ES">Desactivar la barra del Notebook</summary>
+<description>
+<p>Desactivar la barra del Notebook</p>
+<p xml:lang="es">Desactivar la barra del Notebook</p>
+<p xml:lang="qcv">Desactivar la barra del Notebook</p>
+<p xml:lang="ca_ES">Desactivar la barra del Notebook</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">notebook-bar</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>notebook</keyword>
+<keyword>bar</keyword>
+<keyword>zero-lliurex-notebook-bar</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Desactivar</keyword>
+<keyword>barra</keyword>
+<keyword>del</keyword>
+<keyword>Notebook</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

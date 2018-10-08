@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-dvdcss_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-dvdcss</name>
+<name xml:lang="es">Instalador de soporte para DVD</name>
+<name xml:lang="qcv">Instal·lador de còdecs per a DVD</name>
+<name xml:lang="ca_ES">Instal·lador de còdecs per a DVD</name>
+<summary>Downloads and installs Codecs for DVD</summary>
+<summary xml:lang="es">Descarga e instala los Codecs para DVD</summary>
+<summary xml:lang="qcv">Baixa i instal·la els còdecs per a DVD</summary>
+<summary xml:lang="ca_ES">Baixa i instal·la els còdecs per a DVD</summary>
+<description>
+<p>Downloads and installs Codecs for DVD</p>
+<p xml:lang="es">Descarga e instala los Codecs para DVD</p>
+<p xml:lang="qcv">Baixa i instal·la els còdecs per a DVD</p>
+<p xml:lang="ca_ES">Baixa i instal·la els còdecs per a DVD</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">dvdcss</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>dvdcss</keyword>
+<keyword>zero-lliurex-dvdcss</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalador</keyword>
+<keyword>soporte</keyword>
+<keyword>para</keyword>
+<keyword>DVD</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lador</keyword>
+<keyword>còdecs</keyword>
+<keyword>per</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

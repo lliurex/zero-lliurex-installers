@@ -1,0 +1,9 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"wine","key_store":"zero-lliurex-wine64"}], 
+	"script": {"name":"/usr/share/zero-lliurex-wine64/wine64_script","remove":true},
+	"required_root":true,
+	"force32":true,
+	"zomando":"zero-lliurex-wine64"
+	
+	}

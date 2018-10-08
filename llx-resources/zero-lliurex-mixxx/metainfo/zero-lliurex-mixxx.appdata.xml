@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-mixxx</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-mixxx</name>
+<name xml:lang="es">Instalación de Mixxx</name>
+<name xml:lang="en">Mixxx installation</name>
+<name xml:lang="qcv">Instal·lació del Mixxx</name>
+<name xml:lang="ca_ES">Instal·lació del Mixxx</name>>
+<summary>Installation of Mixxx wizard</summary>
+<summary xml:lang="es">Asistente de instalación del Mixxx</summary>
+<summary xml:lang="ca">Auxiliar d'instal·lació del Mixxx</summary>
+<summary xml:lang="ca_ES@valencia">Auxiliar d'instal·lació del Mixxx</summary>
+<summary xml:lang="ca_ES.UTF-8@valencia">Auxiliar d'instal·lació del Mixxx</summary>
+<description>
+<p>Installation of Mixxx wizard</p>
+<p xml:lang="es">Mixxx es una aplicación de DJ de automatización y rendimiento digital. Se puede controlar con controladores MIDI y HID y discos de vinilo con código de tiempo, además de teclados y ratones del ordenador</p>
+<p xml:lang="ca_ES">Mixxx és una aplicació de discjòquei d'automatització i rendiment digital. Es pot controlar amb controladors MIDI i HID i discos de vinil amb codi de temps, a més de teclats i ratolins de l'ordinador.</p>
+<p xml:lang="ca_ES@valencia">MiMixxx és una aplicació de discjòquei d'automatització i rendiment digital. Es pot controlar amb controladors MIDI i HID i discos de vinil amb codi de temps, a més de teclats i ratolins de l'ordinador.</p>
+<p xml:lang="ca_ES.UTF-8@valencia">Mixxx és una aplicació de discjòquei d'automatització i rendiment digital. Es pot controlar amb controladors MIDI i HID i discos de vinil amb codi de temps, a més de teclats i ratolins de l'ordinador.</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">mixxx</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>mixx</keyword>
+<keyword>zero-lliurex-mixxx</keyword>
+<keyword>Zomando</keyword>
+<keyword>música</keyword>
+
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+<keyword>mezcla</keyword>
+<keyword>sonido</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>dj</keyword>
+<keyword>mix</keyword>
+<keyword>music</keyword>
+<keyword>sound</keyword>
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES.UTF-8@valencia">
+<keyword>discjòquei</keyword>
+<keyword>Instal·lació</keyword>
+<keyword>Zomando</keyword>
+<keyword>mescla</keyword>
+<keyword>so</keyword>
+</keywords>
+</component>

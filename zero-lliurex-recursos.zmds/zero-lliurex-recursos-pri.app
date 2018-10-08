@@ -1,0 +1,16 @@
+Name=zero-lliurex-recursos-pri
+Name[en]=HighSchool educational resources
+Name[es]=Recursos educativos para educación primaria
+Name[qcv]=Recursos educatius per a educació primària
+Name[ca_ES]=Recursos educatius per a educació primària
+Comment=LliureX's Primary educational resources instalation
+Comment[es]=Instalación de los recursos educativos para Primaria de LliureX
+Comment[qcv]=Instal·lació dels recursos educatius per a Primària de LliureX
+Comment[ca_ES]=Instal·lació dels recursos educatius per a Primària de LliureX
+Icon=zero-lliurex-recursos-pri
+Groups=adm;admins;teachers
+Category=Resources
+ScriptPath=zero-lliurex-recursos-pri.zmd
+Using=pe
+Service=True
+Modal=True

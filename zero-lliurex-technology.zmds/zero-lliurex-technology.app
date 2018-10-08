@@ -1,0 +1,16 @@
+Name=zero-lliurex-technology
+Name[es]=Aplicaciones tecnológicas
+Name[en]=Technology Lab installation
+Name[qcv]=Programari tecnològic
+Name[ca_ES]=Programari tecnològic
+Comment=Installation of Technology wizard
+Comment[es]=Asistente de instalacion de aplicaciones tecnológicas: s4a, appinventor, arduino
+Comment[qcv]=Auxiliar d'instal·lació de programari tecnològic: s4a, appinventor, arduino
+Comment[ca_ES]=Auxiliar d'instal·lació de programari tecnològic: s4a, appinventor, arduino
+Icon=zero-lliurex-technology
+Groups=admin;admins;adm;teachers
+Category=Software
+ScriptPath=zero-lliurex-technology.zmd
+Using=pe
+Service=True
+Modal=True

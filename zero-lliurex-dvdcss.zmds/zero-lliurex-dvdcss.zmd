@@ -1,0 +1,3 @@
+#!/bin/sh
+
+epi-gtk /usr/share/zero-lliurex-dvdcss/dvdcss.epi

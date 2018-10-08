@@ -1,0 +1,6 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"krita","key_store":"zero-lliurex-krita"}], 
+	"script": {"name":"/usr/share/zero-lliurex-krita/krita_script","remove":true},
+	"zomando":"zero-lliurex-krita"
+	}

@@ -1,0 +1,129 @@
+#!/bin/bash
+
+SUDOERS_TEMPFILE="$(mktemp /tmp/debconftemp.XXXXXXX)"
+chmod 700 $SUDOERS_TEMPFILE 
+
+config_lightdm(){
+
+	/usr/lib/lightdm/lightdm-set-defaults --show-manual-login true
+	/usr/lib/lightdm/lightdm-set-defaults --hide-users true
+	/usr/lib/lightdm/lightdm-set-defaults --allow-guest false
+}
+
+diversion_networkmanager_config(){
+
+	PACKAGE_NAME="zero-lliurex-msad"
+	DNSMASQ_CONF_FILE="/etc/NetworkManager/NetworkManager.conf"
+
+	if [ -f ${DNSMASQ_CONF_FILE}.real ]; 
+	then
+		rm -f ${DNSMASQ_CONF_FILE} || true
+		cp -f ${DNSMASQ_CONF_FILE}.real ${DNSMASQ_CONF_FILE}
+	else
+		cp -f ${DNSMASQ_CONF_FILE} ${DNSMASQ_CONF_FILE}.real
+	fi
+	
+	
+	sed 's/^dns=dnsmasq/\#dns=dnsmasq/g' ${DNSMASQ_CONF_FILE} > ${DNSMASQ_CONF_FILE}.diverted
+	rm -f ${DNSMASQ_CONF_FILE} || true
+	ln -fs ${DNSMASQ_CONF_FILE}.diverted ${DNSMASQ_CONF_FILE}
+	dpkg-divert --package ${PACKAGE_NAME} --rename --quiet --add --divert ${DNSMASQ_CONF_FILE}.real ${DNSMASQ_CONF_FILE}
+
+	chmod 644 ${DNSMASQ_CONF_FILE}.diverted
+
+	service network-manager restart
+}
+
+config_pbisopen(){
+
+	# Change default shell for domain users to bash 
+	/opt/pbis/bin/config LoginShellTemplate /bin/bash
+	# Set the domain as default (not require <domain>\ to precede username for domain logins) 
+	/opt/pbis/bin/config AssumeDefaultDomain true
+	# Set default user home dir 
+	/opt/pbis/bin/config HomeDirTemplate %H/%D/%U
+	# Set default home dir umask
+	/opt/pbis/bin/config HomeDirUmask 077
+}
+
+add_domainadmins_to_sudoers(){
+	# Sets sudoers config writing lliurex-gva in /etc/sudoers.d
+	# By default, enable Domain administrators and adm_atec
+	# groups as privileged groups in a local machine
+
+	cat >> $SUDOERS_TEMPFILE << EOF
+# Members of these groups may gain root privileges
+%domain^administrators ALL=(ALL) ALL
+%adm_atec ALL=(ALL) ALL
+EOF
+	
+	cp $SUDOERS_TEMPFILE /etc/sudoers.d/lliurex-gva
+	chmod 440 /etc/sudoers.d/lliurex-gva
+}
+
+config_ntpdate(){
+	# Launch time configuration
+
+	SCRIPT_NTPDATE="/etc/cron.daily/lliurex-gva"
+	if [[ -x "$SCRIPT_NTPDATE" ]];
+	then
+	    $SCRIPT_NTPDATE
+	fi
+}
+
+diversion_pam_windbind(){
+	
+	PACKAGE_NAME="zero-lliurex-msad"
+	WINBIND_CONF_FILE="/usr/share/pam-config/winbind"
+	mkdir /usr/share/llx-pam-configs/diverted/ -p 
+	dpkg-divert --package ${PACKAGE_NAME} --rename --quiet --add --divert /usr/share/llx-pam-configs/diverted/winbind.diverted ${WINBIND_CONF_FILE}
+
+}
+
+
+# Reconfigure DNS name resolution. Disable dnsmasq
+##################################################
+diversion_networkmanager_config
+# Divert winbind pam file. Pbis pam module has conflict with winbind
+####################################################################
+diversion_pam_windbind
+# Install PowerBroker Identity Services for Active Directory Bridging packages
+##############################################################################
+synaptic --hide-main-window --non-interactive  --set-selections-file /usr/share/zero-lliurex-installers/zero-lliurex-msad
+sleep 2
+
+# Configure ntpdate
+###################
+config_ntpdate
+
+# Set Domain Admins to sudoers
+##############################
+add_domainadmins_to_sudoers
+
+# Lightdm Configuration
+#######################
+config_lightdm
+
+# PBIS Open Configuration
+#########################
+config_pbisopen
+
+# Disable zero-lliurex-msad
+###########################
+
+rm -f ${SUDOERS_TEMPFILE}
+#zero-sqlmanager -s zero-lliurex-msad 1
+
+# CREATE THE TOKEN #
+####################
+
+mkdir -p /usr/share/lliurex-gva/
+touch /usr/share/lliurex-gva/joined
+date > /usr/share/lliurex-gva/joined
+
+# Join LliureX PC to domain
+###########################
+/opt/pbis/bin/domainjoin-gui configure --enable pam
+
+
+exit 0

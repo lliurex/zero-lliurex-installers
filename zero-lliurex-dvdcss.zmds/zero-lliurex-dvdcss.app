@@ -1,0 +1,15 @@
+Name=zero-lliurex-dvdcss
+Name[es]=Instalador de soporte para DVD
+Name[qcv]=Instal·lador de còdecs per a DVD
+Name[ca_ES]=Instal·lador de còdecs per a DVD
+Comment=Downloads and installs Codecs for DVD
+Comment[es]=Descarga e instala los Codecs para DVD
+Comment[qcv]=Baixa i instal·la els còdecs per a DVD
+Comment[ca_ES]=Baixa i instal·la els còdecs per a DVD
+Icon=zero-lliurex-dvdcss
+Category=Support
+Groups=admin;admins;teachers;adm
+ScriptPath=zero-lliurex-dvdcss.zmd
+Using=pe
+Service=True
+Locks=zero-lliurex-dvdcss

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-midicss_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-midicss</name>
+<name xml:lang="es">Instalador de soporte para MIDI</name>
+<name xml:lang="qcv">Instal·lador de còdecs per a MIDI</name>
+<name xml:lang="ca_ES">Instal·lador de còdecs per a MIDI</name>
+<summary>Downloads and installs Codecs for MIDI</summary>
+<summary xml:lang="es">Descarga e instala los codecs para MIDI</summary>
+<summary xml:lang="qcv">Baixa i instal·la els còdecs per a MIDI</summary>
+<summary xml:lang="ca_ES">Baixa i instal·la els còdecs per a MIDI</summary>
+<description>
+<p>Downloads and installs Codecs for MIDI</p>
+<p xml:lang="es">Descarga e instala los codecs para MIDI</p>
+<p xml:lang="qcv">Baixa i instal·la els còdecs per a MIDI</p>
+<p xml:lang="ca_ES">Baixa i instal·la els còdecs per a MIDI</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">midicss</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>midicss</keyword>
+<keyword>zero-lliurex-midicss</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalador</keyword>
+<keyword>soporte</keyword>
+<keyword>para</keyword>
+<keyword>MIDI</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lador</keyword>
+<keyword>còdecs</keyword>
+<keyword>per</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

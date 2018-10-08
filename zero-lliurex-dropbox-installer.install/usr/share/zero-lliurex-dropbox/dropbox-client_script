@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+case $ACTION in
+	remove)
+		
+		caja-dropbox stop
+		if [ $? -eq 0 ];then
+			apt-get remove -y caja-dropbox
+			TEST=$( dpkg-query -s caja-dropbox 2> /dev/null| grep Status | cut -d " " -f 4 )
+			if [ "$TEST" == 'installed' ];then
+				exit 1
+			fi	
+		else
+			exit 1
+		fi	
+	;;	
+esac
+exit 0
+	
+

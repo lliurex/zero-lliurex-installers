@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+case $ACTION in
+
+	remove)
+		apt-get remove -y vlc-plugin-fluidsynth
+		TEST=$( dpkg-query -s  vlc-plugin-fluidsynth 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi
+	;;
+esac
+exit 0	

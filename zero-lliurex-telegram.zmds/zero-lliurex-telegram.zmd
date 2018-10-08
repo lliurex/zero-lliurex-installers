@@ -1,0 +1,3 @@
+#!/bin/bash
+#set -x
+epi-gtk /usr/share/zero-lliurex-telegram/telegram.epi

@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"hotpotatoes","key_store":"zero-lliurex-hotpotatoes"}],
+	"script": {"name":"/usr/share/zero-lliurex-hotpotatoes/hotpotatoes_script","remove":true},
+	"zomando":"zero-lliurex-hotpotatoes"
+
+	}

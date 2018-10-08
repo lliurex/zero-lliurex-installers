@@ -1,0 +1,15 @@
+Name=zero-lliurex-hotpotatoes
+Name[en]=Instalación del Hotpotatoes
+Name[es]=Instalación del Hotpotatoes
+Name[qcv]=Instal·lació del Hotpotatoes
+Name[ca_ES]=Instal·lació del Hotpotatoes
+Comment=LliureX's Hotpotatoes instalation
+Comment[es]=Instalación del Hotpotatoes en LliureX
+Comment[qcv]=Activitats educatives interactives
+Comment[ca_ES]=Activitats educatives interactives
+Icon=zero-lliurex-hotpotatoes
+Groups=admin;admins;teachers;adm
+Category=Software
+ScriptPath=zero-lliurex-hotpotatoes.zmd
+Using=pe 
+Service=True

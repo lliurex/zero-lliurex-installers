@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+case $ACTION in
+	remove)
+
+		apt-get remove -y pyromaths
+		TEST=$( dpkg-query -s  pyromaths 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi
+				
+	;;	
+esac
+exit 0

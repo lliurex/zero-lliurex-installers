@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-recursos_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-recursos</name>
+<name xml:lang="en">Educational resources</name>
+<name xml:lang="es">Recursos educativos</name>
+<name xml:lang="qcv">Recursos educatius</name>
+<name xml:lang="ca_ES">Recursos educatius</name>
+<summary>LliureX's educational resources instalation</summary>
+<summary xml:lang="es">Instalación de los recursos educativos de LliureX</summary>
+<summary xml:lang="qcv">Instal·lació dels recursos educatius de LliureX</summary>
+<summary xml:lang="ca_ES">Instal·lació dels recursos educatius de LliureX</summary>
+<description>
+<p>LliureX's educational resources instalation</p>
+<p xml:lang="es">Instalación de los recursos educativos de LliureX</p>
+<p xml:lang="qcv">Instal·lació dels recursos educatius de LliureX</p>
+<p xml:lang="ca_ES">Instal·lació dels recursos educatius de LliureX</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">recursos</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>recursos</keyword>
+<keyword>zero-lliurex-recursos</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>Educational</keyword>
+<keyword>resources</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Recursos</keyword>
+<keyword>educativos</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>educatius</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

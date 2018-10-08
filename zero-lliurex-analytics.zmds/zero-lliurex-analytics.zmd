@@ -1,0 +1,117 @@
+#!/bin/bash
+# Examples:
+# xgettext -o - -L Shell --keyword --keyword=GETTEXT lliurex-zero-installer-analytics.zmd
+# xgettext -o file.pot -L Shell --keyword --keyword=GETTEXT lliurex-zero-installer-analytics.zmd
+# LANG=es_ES.UTF-8 gettext -d lliurex-zero-installer-analytics -s "Enabled"
+# msginit -i file.pot -l es_ES.UTF-8
+# msgfmt -v es_ES.po -o es_ES.mo
+# cp es_ES.mo /usr/share/locale/es_ES/LC_MESSAGES/lliurex-zero-installer-analytics.mo
+#
+#
+# LANGUAGE SECTION
+#set -x
+
+zero-center add-pulsating-color zero-lliurex-analytics
+
+export TEXTDOMAIN="zero-lliurex-analytics"
+
+zenity --info --title="Lliurex-statistics" --text="$(gettext "Welcome to lliurex-statistics config tool\n")"
+
+# DETECTION SECTION
+
+ASK_QUESTION1="yes"
+ASK_QUESTION2="yes"
+
+#Subset detection from confirmator
+RUN_ON_LTSP="$(echo $LTSP_FATCLIENT)"
+if [ -n "${RUN_ON_LTSP}" ]; then
+    ASK_QUESTION1="no"
+    ASK_QUESTION2="no"
+    zenity --info --title="Lliurex-statistics" --text="$(gettext "This system isn't configurable\n")"
+    exit 0
+fi
+
+#RUN_AS_CLIENT=$(${LLIUREX_VERSION} |${GREP} -i -o client|uniq)
+RUN_AS_SERVER="$(lliurex-version |egrep -i -o server|uniq)"
+#RUN_AS_DESKTOP=""
+#if [ -z "${RUN_AS_CLIENT}" -a -z "${RUN_AS_SERVER}" ];then
+#    RUN_AS_DESKTOP="yes"
+#fi
+
+if [ -n "${RUN_AS_SERVER}" ];then
+    ASK_QUESTION1="yes"
+    ASK_QUESTION2="yes"
+else 
+#CLIENTS OR DESKTOPS
+    ASK_QUESTION1="yes"
+    ASK_QUESTION2="no"
+fi
+
+Q1_A="$(gettext "The anonymous statistics reporting agent is %s in this system. Do you want change this state?\n")"
+QUESTION1_B="$(gettext "What state must i use in this system?\n")"
+#echo Q1 $Q1
+VALUE_ME="$(cat /etc/lliurex-analytics/status|grep -i -o yes|uniq)"
+if [ -n "$VALUE_ME" ];then
+    STATUS_ME="$(gettext "enabled")"
+else
+    STATUS_ME="$(gettext "disabled")"
+fi
+
+QUESTION1_A="$(printf "$Q1_A" "$STATUS_ME")"
+#echo QUESTION1 $QUESTION1
+if [ "$ASK_QUESTION2" = "yes" ];then
+    Q2_A="$(gettext "The anonymous statistics reporting agent for classroom clients have %s status. Do you want to change reporting agent status?\n")"
+    QUESTION2_B="$(gettext "What state must i use for classroom clients?\n")"
+#    echo Q2 $Q2
+
+    # Example: n4d-client [ -u <usr> -p lliurex <pass> | -r ] -c NetinstallManager -m [ get_force_classroom_stats | set_force_classroom_stats -a [ 1 | 0 ] ]
+    CURRENT_VALUE="$(n4d-client -r -c NetinstallManager -m get_force_classroom_stats )"
+
+    STATUS_CLASS=""
+    if [ "x${CURRENT_VALUE}" = "x1" ]; then
+    #Enabled
+        STATUS_CLASS="$(gettext "enabled")"
+    else
+        if [ "x${CURRENT_VALUE}" = "x0" ]; then
+        #Disabled
+            STATUS_CLASS="$(gettext "disabled")"
+        else
+        #Unknown
+            STATUS_CLASS="$(gettext "unknown")"
+        fi
+    fi
+    QUESTION2_A="$(printf "$Q2_A" "$STATUS_CLASS")"
+#    echo QUESTION2 $QUESTION2
+fi
+
+
+# RUN QUESTIONS SECCTION
+zenity --question --text="$QUESTION1_A"  --ok-label="$(gettext "Yes")" --cancel-label="$(gettext "No")" > /dev/null 2>&1
+if [ $? -eq 0 ]; then
+    zenity --question --text="$QUESTION1_B"  --ok-label="$(gettext "Allow")" --cancel-label="$(gettext "Disallow")" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        #Enable local stats
+        echo yes > /etc/lliurex-analytics/status
+    else
+        #Disable local stats
+        echo no > /etc/lliurex-analytics/status
+    fi
+fi
+
+
+if [ "$ASK_QUESTION2" = "yes" ]; then
+    zenity --question --text="$QUESTION2_A"  --ok-label="$(gettext "Yes")" --cancel-label="$(gettext "No")" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        zenity --question --text="$QUESTION2_B"  --ok-label="$(gettext "Allow")" --cancel-label="$(gettext "Disallow")" > /dev/null 2>&1
+        if [ $? -eq 0 ]; then
+            #Enable classroom stats
+            RES="$(n4d-client -r -c NetinstallManager -m set_force_classroom_stats -a 1)"
+        else
+            #Disable classroom stats
+            RES="$(n4d-client -r -c NetinstallManager -m set_force_classroom_stats -a 0)"
+        fi
+    fi
+fi
+zero-center set-configured zero-lliurex-analytics
+zero-center remove-pulsating-color zero-lliurex-analytics
+exit 0

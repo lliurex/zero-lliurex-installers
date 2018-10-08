@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"spotify-client","key_store":"zero-lliurex-spotify"}], 
+	"repository": [{"url":"deb http://repository.spotify.com stable non-free","key_cmd":"apt-key --keyring /tmp/epi_keyring adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 0DF731E45CE24F27EEEB1450EFDC8610341D9410"}], 
+	"script": {"name":"/usr/share/zero-lliurex-spotify/spotify-client_script", "remove":true},
+	"zomando":"zero-lliurex-spotify"
+	
+	}

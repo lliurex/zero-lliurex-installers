@@ -1,0 +1,89 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+case $ACTION in
+	preInstall)
+
+		if [ ! -d "/etc/dbconfig-common" ]; then
+    		 mkdir -p /etc/dbconfig-common   
+		fi 
+		
+	;;	
+
+	postInstall)
+		
+		echo "Creating folder..."
+		if [ ! -d "/var/lib/moodle" ]; then
+			mkdir -p /var/lib/moodle
+			chown www-data:www-data /var/lib/moodle || true
+		fi
+		sleep 2
+
+		echo "Testing mysql..."
+		sudo mysql_root_passwd -i
+
+		if [ $? -ne 0 ] ; then
+			echo "Mysql is not working..."
+			exit 1
+
+		fi
+
+		echo "Checking if moodle db exists..."
+		lliurex-sgbd --db_is_present lliurex-moodle
+		if [ ! -f /tmp/db_is_present ]; then
+			echo "Creating moodle db..."
+			lliurex-sgbd --install lliurex-moodle
+		else
+		#zenity --info --text="$MSG_MOODLE_AVISO" &
+			echo "Updating moodle db..."
+			lliurex-sgbd --upgrade lliurex-moodle
+		fi
+
+		echo "Copying lang files..."
+		if [ -d "/var/lib/moodle" ]; then
+			if [ -d "/usr/share/lliurex-moodle/lang" ]; then
+				cp -r /usr/share/lliurex-moodle/lang /var/lib/moodle/
+				chown -R www-data:www-data /var/lib/moodle/lang || true
+			fi
+		fi
+
+		echo "Configuring Apache..."
+		a2ensite moodle
+
+		echo "Creating hostname..."
+		MAGIC_KEY=$(cat /etc/n4d/key)
+		n4d-client -h localhost -k $MAGIC_KEY -m set_internal_dns_entry -c Dnsmasq -a moodle
+
+		echo "Creating Ldadp users..."
+
+		if [ -n $INTERNA ]; then
+			/usr/bin/python /usr/share/lliurex-moodle/update_moodle_sql.py
+			/usr/bin/python /usr/share/lliurex-moodle/sync_ldap_users.py
+		fi
+
+		echo "Restarting services..."
+		a2ensite moodle || true
+		service apache2 restart || true
+		service dnsmasq restart || true		
+
+		echo "Changing permissions in ..."
+
+		if [ -d "/var/lib/moodle" ]; then
+			chown -R www-data:www-data /var/lib/moodle || true
+
+		fi
+	;;	
+
+	remove)
+	
+		apt-get remove -y lliurex-moodle
+		TEST=$( dpkg-query -s  lliurex-moodle 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi
+	;;	
+
+esac
+exit 0

@@ -1,0 +1,14 @@
+Name=zero-lliurex-open-sysclone
+Name[en]=Open-SysClone Install
+Name[es]=Instalación de Open-SysClone
+Name[qcv]=Instal·lació de Open-SysClone
+Name[ca_ES]=Instal·lació de Open-SysClone
+Comment=LliureX's Open-SysClone
+Comment[es]=Instalación de Open-SysClone en LliureX
+Comment[qcv]=Instal·lació de Open-SysClone a LliureX
+Comment[ca_ES]=Instal·lació de Open-SysClone a LliureX
+Icon=zero-lliurex-open-sysclone
+Groups=admin;admins;teachers;adm
+Category=Software
+ScriptPath=zero-lliurex-open-sysclone.zmd
+Using=pe

@@ -1,0 +1,80 @@
+#!/bin/bash
+
+#VARIABLES GLOBALES
+PACKAGE_NAME="salt"
+PACKAGE_LIST="/usr/share/zero-lliurex-installers/zero-lliurex-salt-files"
+SALT_LOG="/tmp/zero-lliurex-salt.log"
+ZERO_LOG="/tmp/zero-installer.log"
+MSG_NO_INTERNET=$(gettext "No Internet Connection has been detected. Please, check it")
+
+
+####FUNCIONES
+
+	#FUNCION QUE TESTEA SI UN PAQUETE ESTA INSTALADO, BORRANDOLO EN CASO AFIRMATIVO
+	function test_install {
+		#Testeamos si el paquete esta instalado, no haciendo nada en el caso afirmativo o instalandolo en el caso negativo.
+		TEST=$( dpkg-query -s $1 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" = 'installed' ]; then
+			echo " " >> $SALT_LOG
+			echo "Package $1 already installed, we have to uninstall it" >> $SALT_LOG
+			echo "Package $1 already installed, we have to uninstall it"
+			su -c "notify-send -t 2000 -u critical -i /usr/share/icons/lliurex-neu/scalable/apps/zero-center.svg 'Zero-Installer' '$1 is already installed in your system, now we are goig to remove it and install it again.'" $USER
+			zero-installer remove $1
+			cat $ZERO_LOG >> $SALT_LOG
+		fi
+
+	}
+
+
+####MAIN
+zero-center add-pulsating-color zero-lliurex-salt
+#PRIMERAMENTE COMPROBAMOS QUE HAY CONEXION DE RED
+rc=0
+#host www.google.es|| rc=1
+zero-testnet || rc=1
+if [ $rc -eq 0 ]
+	then
+		#Log para el zero-center
+		if [ -f $SALT_LOG ]; then
+			rm  $SALT_LOG
+		fi
+
+		#CREAMOS UNA LISTA CON LOS PROGRAMAS NECESARIOS Y LOS TESTEAMOS SI ESTAN INSTALADOS
+		LISTA=( $( cat $PACKAGE_LIST | awk '{print $1}' ) )
+		echo "The package list is....."
+		echo ${LISTA[@]}
+			for i in "${LISTA[@]}"; do
+				echo "Now test_install $i"
+				test_install $i
+			done
+
+		#YA SABEMOS QUE LOS PROGRAMAS ESTAN DESINSTALADOS, VAMOS A INSTALARLOS
+
+			for i in "${LISTA[@]}"; do
+				echo " " >> $SALT_LOG
+				echo "If it's necessary zero-installer install or not the package $i" >> $SALT_LOG
+				echo "If it's necessary zero-installer install or not the package $i"
+				zero-installer install $i
+				#Me guardo el fichero de los logs por si algo fallase o para revisarlo
+				cat $ZERO_LOG >> $SALT_LOG
+			done
+		
+		#Comprobamos que se esta instalado porque sino abortamos la instalacion
+			for i in "${LISTA[@]}"; do
+				TEST=$( dpkg-query -s $i 2> /dev/null| grep Status | cut -d " " -f 4 )
+				if [ "$TEST" != 'installed' ]; then
+					zenity --info --title="Zero-installer" --text="Your package $i has a problem to be installed in your system, please retry again or contact with Lliurex Team at http://mestreacasa.gva.es/web/lliurex/forums" > /dev/null 2>&1 &
+					zero-center remove-pulsating-color zero-lliurex-salt
+					zero-center set-non-configured zero-lliurex-salt
+					exit 1
+				fi
+			done
+			zenity --info --title="Zero-installer" --text="Your package $PACKAGE_NAME has been installed in your system, and you can see the resume in $SALT_LOG" &
+			zero-center remove-pulsating-color zero-lliurex-salt
+			zero-center set-configured zero-lliruex-salt
+			exit 0
+	else
+		zenity --error --text="$MSG_NO_INTERNET"
+		zero-center remove-pulsating-color zero-lliurex-salt
+		exit 1
+fi

@@ -1,0 +1,14 @@
+Name=zero-lliurex-libreoffice-reset
+Name[es]=Limpieza de la configuración LibreOffice
+Name[en]=Clean LibreOffice
+Name[qcv]=Neteja la configuració de LibreOffice
+Name[ca_ES]=Neteja la configuració de LibreOffice
+Comment=Cleaning all files under personal folder
+Comment[es]=Limpia toda la configuracion del LibreOffice del usuario
+Comment[qcv]=Neteja totes les configuracions de LibreOffice de l'usuari
+Comment[ca_ES]=Neteja totes les configuracions de LibreOffice de l'usuari
+Icon=zero-lliurex-libreoffice-reset
+Category=Software
+ScriptPath=zero-lliurex-libreoffice-reset.zmd
+Groups=*
+Using=pe

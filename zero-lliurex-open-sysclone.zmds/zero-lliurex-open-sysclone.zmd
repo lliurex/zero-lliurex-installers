@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+rc=0
+which open-sysclone-gui || rc=1
+
+if [ $rc -eq 1 ] ; then
+	synaptic --hide-main-window --non-interactive  --set-selections-file /usr/share/zero-lliurex-installers/zero-lliurex-open-sysclone
+fi
+
+if [ $rc -eq 0 ] ; then
+	nrc=0
+	zenity --question --text="Desea lanzarlo o reinstalarlo?" --ok-label="Lanzar OpenSysclone" --cancel-label="Reinstalarlo"|| nrc=1
+	if [ $nrc -eq 0 ] ; then
+		open-sysclone-gui
+	else
+		fin=$(cat /usr/share/zero-lliurex-installers/zero-lliurex-open-sysclone | wc -l )
+		i=0
+		while [ $i -lt $fin ]
+		do
+			i=$[$i+1]
+			aux=$(head -$i /usr/share/zero-lliurex-installers/zero-lliurex-open-sysclone | tail -1 | cut -f1)
+			dpkg -r $aux
+			
+		done
+		synaptic --hide-main-window --non-interactive --set-selections-file /usr/share/zero-lliurex-installers/zero-lliurex-open-sysclone
+	fi
+fi
+
+
+exit 0

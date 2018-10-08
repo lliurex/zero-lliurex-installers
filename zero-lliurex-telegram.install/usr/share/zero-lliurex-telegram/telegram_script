@@ -1,0 +1,106 @@
+#!/bin/bash
+
+
+ACTION="$1"
+PKG="$2"
+
+USERHOME=$(getent passwd $USER | cut -f6 -d ':')
+BINDIR=$USERHOME"/.local/bin"
+DESTDIR=$BINDIR"/telegram"
+DESTDOWNLOAD="/var/cache/epi-downloads"
+DESTDESKTOP=$USERHOME"/.local/share/applications/zero-lliurex-telegram.desktop"
+
+
+TCH_URL="https://desktop.telegram.org/changelog"
+TVERSION=$(wget -qO- $TCH_URL | sed -e 's/<[^>]*>//g;/^\s*$/d' | grep -o 'v [0-9.]*' -m1 | cut -d ' ' -f2)
+
+if [[ $(arch) == "x86_64" ]]
+then
+	TSETUP="tsetup.${TVERSION}.tar.xz"
+	TURL="https://telegram.org/dl/desktop/linux/"
+else
+	TSETUP="tsetup32.${TVERSION}.tar.xz"
+	TURL="https://telegram.org/dl/desktop/linux32/"
+fi
+
+
+case $ACTION in
+
+	getStatus)
+		case $PKG in
+			telegram)
+				if [ -d ${DESTDIR} ]; then
+					echo 0
+				else
+					echo 1
+				fi
+			;;
+		esac						
+	;;
+
+	download)
+		
+		cd ${DESTDOWNLOAD}
+
+		if [ -s ${DESTDOWNLOAD}"/"${TSETUP} ]
+		then
+			rm -f ${DESTDOWNLOAD}"/"${TSETUP}
+		fi
+
+		wget ${TURL}${TSETUP}
+		
+		if ! [ -s ${DESTDOWNLOAD}"/"${TSETUP} ]
+		then	
+			exit 1
+		fi	
+	;;	
+	
+	installPackage)
+
+		if ! [ -d $BINDIR ]
+		then
+			mkdir $BINDIR
+		fi
+			 
+		if ! [ -d $DESTDIR ]
+		then
+			echo $DESTDIR
+			mkdir $DESTDIR
+		fi	
+
+		echo "Unzipping file..."
+		
+		FIRSTPWD=$PWD
+		cd $DESTDOWNLOAD
+		tar -Jxf $TSETUP -C $DESTDIR
+ 		USER_GR=$(id -g -n ${USER})
+		chown -R ${USER}:${USER_GR} $BINDIR
+		
+		if [ $? -eq 0 ]
+		then	
+			cd $FIRSTPWD
+			echo "Launching telegram..."
+			su $USER -c /usr/bin/telegram &
+		else
+			rm -r $DESTDIR
+			exit 1
+		fi
+		
+	;;
+
+	remove)
+		
+		echo "Removing files..."
+		if [ -d $DESTDIR ]
+		then
+			rm -rf $DESTDIR
+		fi	
+
+		if [ -f $DESTDESKTOP ]
+		then
+			rm -f $DESTDESKTOP
+		fi	 
+	;;		
+		
+esac
+exit 0

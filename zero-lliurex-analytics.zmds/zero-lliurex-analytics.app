@@ -1,0 +1,15 @@
+Name=zero-lliurex-analytics
+Name[es]=Activador para el agente de estadísticas LLiurex
+Name[qcv]=Activador de l'agent d'estadístiques LLiurex
+Name[ca_ES]=Activador de l'agent d'estadístiques LLiurex 
+Comment=Statistics agent enabler/disabler
+Comment[es]=Activador para la recolección de estadísticas
+Comment[qcv]=Activador per a la recol·lecció d'estadístiques
+Comment[ca_ES]=Activador per a la recol·lecció estadístiques
+Icon=zero-lliurex-analytics
+Category=Software
+ScriptPath=zero-lliurex-analytics.zmd
+Using=pe
+Service=True
+Locks=zero-lliurex-analytics
+Groups=adm;admin;admins;teachers

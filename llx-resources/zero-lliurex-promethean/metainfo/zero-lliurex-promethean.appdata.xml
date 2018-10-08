@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-promethean_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-promethean</name>
+<name xml:lang="es">Instalación de drivers para Promethean</name>
+<name xml:lang="en">Promethean drivers installation</name>
+<name xml:lang="ca_ES@valencia.UTF-8">Instal·lació dels drivers per a Promethean</name>
+<name xml:lang="ca_ES@valencia">Instal·lació dels drivers per a Promethean</name>
+<name xml:lang="ca_ES">Instal·lació dels drivers per a Promethean</name>
+<summary>Installation of drivers for the promethean boards</summary>
+<summary xml:lang="es">Asistente de instalación de drivers para las pizarras promethean</summary>
+<summary xml:lang="ca_ES@valencia">Auxiliar d'instal·lació dels drivers per a promethean</summary>
+<description>
+<p>Installation of drivers for the promethean boards</p>
+<p xml:lang="es">Asistente de instalación de drivers para las pizarras promethean</p>
+<p xml:lang="ca_ES@valencia">Auxiliar d'instal·lació dels drivers per a promethean</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">promethean</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>promethean</keyword>
+<keyword>zero-lliurex-promethean</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>drivers</keyword>
+<keyword>para</keyword>
+<keyword>Promethean</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES@valencia.UTF-8">
+<keyword>Instal·lació</keyword>
+<keyword>dels</keyword>
+<keyword>per</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES@valencia">
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

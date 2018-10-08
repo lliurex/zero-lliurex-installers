@@ -1,0 +1,72 @@
+#!/bin/bash
+
+## Temp files
+#############
+DCTIMES_TEMPFILE="$(mktemp /tmp/debconftemp.XXXXXXX)"
+
+## Global Variables
+###################
+DOMAIN="" # AD Domain Name
+DCLIST="" # Ordered DC list for AD by time access
+DOMAINJOIN_CLI="/opt/pbis/bin/domainjoin-cli"
+GET_DCLIST="/opt/pbis/bin/get-dc-list"
+
+order_ping_to_dccontrollers(){
+	if [ -x $GET_DCLIST ];
+	then
+		RESULT=$($GET_DCLIST $DOMAIN | grep ^DC | cut -d\' -f4)
+		for x in $RESULT;
+		do
+			PINGRESULT=$(ping -c2 $x -i0.25 -q | grep ^rtt | cut -d/ -f6)
+			if [ -n $PINGRESULT ];
+			then
+				echo $PINGRESULT\t$x >> $DCTIMES_TEMPFILE 
+			fi
+		done
+		RESULT=$(sort -n -t\t $DCTIMES_TEMPFILE | cut -d\t -f2)
+		for x in $RESULT;
+		do
+			DCLIST=$DCLIST' '$x
+		done
+	fi
+
+}
+
+test_domain_status(){
+	# Domain member?
+        if [ -x $DOMAINJOIN_CLI ];
+	then
+		RESULT=$($DOMAINJOIN_CLI query | grep ^Domain | cut -d= -f 2)
+		if [ -n $RESULT ];
+		then
+			# Computer domain member
+			DOMAIN=$RESULT
+			order_ping_to_dccontrollers
+		fi
+	fi
+			
+}
+
+test_domain_status
+if [ -n $DOMAIN ];
+then
+        # CREATE THE TOKEN #
+        ####################
+
+        mkdir -p /usr/share/lliurex-gva/
+        touch /usr/share/lliurex-gva/joined
+        date > /usr/share/lliurex-gva/joined
+
+	if [ -n "$DCLIST" ];
+	then
+		ntpdate $DCLIST
+	fi
+else
+
+    [ ! -f /usr/share/lliurex-gva/joined ] || rm -f /usr/share/lliurex-gva/joined
+
+fi
+
+rm -f $DCTIMES_TEMPFILE
+
+exit 0

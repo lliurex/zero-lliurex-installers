@@ -1,0 +1,16 @@
+Name=zero-lliurex-promethean
+Name[es]=Instalación de drivers para Promethean
+Name[en]=Promethean drivers installation
+Name[ca_ES@valencia.UTF-8]=Instal·lació dels drivers per a Promethean
+Name[ca_ES@valencia]=Instal·lació dels drivers per a Promethean
+Name[ca_ES]=Instal·lació del Skype
+Comment=Installation of dirvers for the promethean boards
+Comment[es]=Asistente de instalación de dirvers para las pizarras promethean
+Comment[ca_ES@valencia]=Auxiliar d'instal·lació dels drivers per a promethean
+Icon=zero-lliurex-promethean
+Groups=admin;admins;teachers;adm
+Category=Support
+ScriptPath=zero-lliurex-promethean.zmd
+Using=pe
+Service=True
+Modal=True

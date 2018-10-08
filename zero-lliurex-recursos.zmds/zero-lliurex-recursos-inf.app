@@ -1,0 +1,16 @@
+Name=zero-lliurex-recursos-inf
+Name[en]=Childhood educational resources
+Name[es]=Recursos educativos para educación infantil
+Name[qcv]=Recursos educatius per a educació infantil
+Name[ca_ES]=Recursos educatius per a educació infantil 
+Comment=LliureX's Childhood educational resources instalation
+Comment[es]=Instalación de los recursos educativos para Infantil de LliureX
+Comment[qcv]=Instal·lació dels recursos educatius per a Infantil de LliureX
+Comment[ca_ES]=Instal·lació dels recursos educatius per a Infantil de LliureX
+Icon=zero-lliurex-recursos-inf
+Groups=adm;admins;teachers
+Category=Resources
+ScriptPath=zero-lliurex-recursos-inf.zmd
+Using=pe
+Service=True
+Modal=True

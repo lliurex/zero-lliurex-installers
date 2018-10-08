@@ -1,0 +1,3 @@
+#!/bin/bash
+
+epi-gtk /usr/share/zero-lliurex-dropbox/dropbox-client.epi

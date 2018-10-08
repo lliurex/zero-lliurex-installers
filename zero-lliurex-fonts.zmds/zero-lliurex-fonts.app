@@ -1,0 +1,15 @@
+Name=zero-lliurex-fonts
+Name[es]=Instalador de tipografías extra
+Name[qcv]=Instal·lador de tipus de lletra addicionals
+Name[ca_ES]=Instal·lador de tipus de lletra addicionals
+Comment=Downloads and installs lliurex-fonts-extra on current machine
+Comment[es]=Algunas tipografías escolares extra
+Comment[qcv]=Alguns tipus de lletra escolars addicionals
+Comment[ca_ES]=Alguns tipus de lletra escolars addicionals
+Icon=zero-lliurex-fonts
+Category=Support
+ScriptPath=zero-lliurex-fonts.zmd
+Using=pe
+Service=True
+Locks=zero-lliurex-fonts
+Groups=adm;admins;teachers

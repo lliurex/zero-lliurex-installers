@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+case $ACTION in
+	remove)
+		errpkg=''
+		for pkg in promethean-fixboot activinspire activrelay activtools activdriver activaid xdotool libxdo3 fam 
+		do
+			apt-get remove -y $pkg
+			TEST=$( dpkg-query -s $pkg 2> /dev/null| grep Status | cut -d " " -f 4 )
+			if [ "$TEST" == 'installed' ];then
+				errpkg="$errpkg $pkg"
+			fi	
+		done
+		if [ ${#errpkg} -gt 0 ]
+		then
+			exit 1
+		fi
+	;;	
+esac
+exit 0
+

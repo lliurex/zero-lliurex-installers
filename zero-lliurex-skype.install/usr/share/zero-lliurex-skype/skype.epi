@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"skypeforlinux","key_store":"zero-lliurex-skype"}], 
+	"repository": [{"url":"deb https://repo.skype.com/deb stable main"}], 
+	"script": {"name":"/usr/share/zero-lliurex-skype/skype_script", "remove":true},
+	"zomando":"zero-lliurex-skype"
+	
+	}

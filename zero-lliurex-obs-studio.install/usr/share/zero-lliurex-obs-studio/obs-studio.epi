@@ -1,0 +1,6 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"obs-studio","key_store":"zero-lliurex-obs-studio"}], 
+	"script": {"name":"/usr/share/zero-lliurex-obs-studio/obs-studio_script","remove":true},
+	"zomando":"zero-lliurex-obs-studio"
+	}

@@ -1,0 +1,16 @@
+Name=zero-lliurex-chrome
+Name[es]=Instalación del navegador Google Chrome
+Name[en]=Installing the Google Chrome browser
+Name[qcv]=Instal·lació del navegador Google Chrome
+Name[ca_ES]=Instal·lació del navegador Google Chrome
+Comment=Google Chrome browser installation wizard
+Comment[es]=Asistente de instalación del navegador Google Chrome
+Comment[qcv]=Auxiliar d'instal·lació del navegadro Google Chrome
+Comment[ca_ES]=Auxiliar d'instal·lació del navegador Google Chrome
+Icon=zero-lliurex-chrome
+Groups=admin;admins;teachers;adm
+Category=Internet
+ScriptPath=zero-lliurex-chrome.zmd
+Using=pe
+Service=True
+Modal=True

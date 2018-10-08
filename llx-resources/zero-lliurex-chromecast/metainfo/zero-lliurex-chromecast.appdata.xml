@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-chromecast</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-chromecast</name>
+<name xml:lang="es">Instalación del Mkchromecast</name>
+<name xml:lang="en">Mkchromecast installation</name>
+<name xml:lang="qcv">Instal·lació del Mkchromecast</name>
+<name xml:lang="ca_ES">Instal·lació del Mkchromecast</name>>
+<summary>Installation of Mkchromecast wizard</summary>
+<summary xml:lang="es">Asistente de instalación del Mkchromecast</summary>
+<summary xml:lang="ca">Auxiliar d'instal·lació del Mkchromecast</summary>
+<summary xml:lang="ca_ES@valencia">Auxiliar d'instal·lació del Mkchromecast</summary>
+<summary xml:lang="ca_ES.UTF-8@valencia">Auxiliar d'instal·lació del Mkchromecast</summary>
+<description>
+<p>Installation of Mkchromecast wizard</p>
+<p xml:lang="es">Mkchromecast es un programa para trasmitir audio y video desde un escritorio Linux dispositivos Google Cast o altavoces Sonos.Es capaz de usar formatos de audio con pérdida y sin pérdidas, como ffmpeg, avconv o parec, siempre que estén instalados. También es compatible con la reproducción de grupos de varias salas y con una resolución de audio de 24 bits / 96 kHz. Además se puede configurar ALSA para capturar audio</p>
+<p xml:lang="ca_ES">Mkchromecast és un programa per a transmetre àudio i vídeo des d'un escriptori Linux a dispositius Google Cast o altaveus Sonos.Es capaç d'usar formats d'àudio amb pèrdua i sense pèrdues, com ffmpeg, avconv o parec, sempre que estiguen instal·lats. També és compatible amb la reproducció de grups d'unes quantes sales i amb una resolució d'àudio de 24 bits / 96 kHz. A més es pot configurar ALSA per a capturar àudio.</p>
+<p xml:lang="ca_ES@valencia">Mkchromecast és un programa per a transmetre àudio i vídeo des d'un escriptori Linux a dispositius Google Cast o altaveus Sonos.Es capaç d'usar formats d'àudio amb pèrdua i sense pèrdues, com ffmpeg, avconv o parec, sempre que estiguen instal·lats. També és compatible amb la reproducció de grups d'unes quantes sales i amb una resolució d'àudio de 24 bits / 96 kHz. A més es pot configurar ALSA per a capturar àudio.</p>
+<p xml:lang="ca_ES.UTF-8@valencia">Mchromecast és un programa per a transmetre àudio i vídeo des d'un escriptori Linux a dispositius Google Cast o altaveus Sonos.Es capaç d'usar formats d'àudio amb pèrdua i sense pèrdues, com ffmpeg, avconv o parec, sempre que estiguen instal·lats. També és compatible amb la reproducció de grups d'unes quantes sales i amb una resolució d'àudio de 24 bits / 96 kHz. A més es pot configurar ALSA per a capturar àudio.</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">chromecast</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>chromecast</keyword>
+<keyword>zero-lliurex-chromecast</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>audio</keyword>
+<keyword>video</keyword>
+<keyword>cast</keyword>
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES.UTF-8@valencia">
+<keyword>àudio</keyword>
+<keyword>Instal·lació</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+</component>

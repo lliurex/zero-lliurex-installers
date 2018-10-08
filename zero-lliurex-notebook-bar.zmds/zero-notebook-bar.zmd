@@ -1,0 +1,7 @@
+#!/bin/bash
+
+FILES_TO_DELETE="/etc/xdg/autostart/smart_1-_Tools.desktop"
+
+[ ! -f ${FILES_TO_DELETE} ] || rm -f ${FILES_TO_DELETE}
+
+exit 0
