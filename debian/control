@@ -2,13 +2,13 @@ Source: zero-lliurex-installers
 Section: x11
 Priority: optional
 Maintainer: Equipo LliureX <lliurex@gva.es>
-Build-Depends: cdbs, debhelper (>= 7), llxcfg-dev, zero-dev, llxsrchelper,inkscape (>= 0.47)
-Standards-Version: 3.8.4
+Build-Depends: cdbs, debhelper (>= 10), zero-dev, llxsrchelper,inkscape (>= 0.47),python3-poinstaller
+Standards-Version: 4.1.2
 
 Package: zero-lliurex-analytics
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, n4d
+Depends: zero-center,n4d
 Conflicts: lliurex-zero-installer-analytics
 Replaces: lliurex-zero-installer-analytics (<=0.126.5)
 Breaks: lliurex-zero-installer-analytics (<=0.126.5)
@@ -19,28 +19,28 @@ Description: Controller for Lliurex Analytics reporting agent
 Package: zero-lliurex-chrome
 Architecture: amd64
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Google Chrome browser installer
  Zero-center helper, It installs Google Chrome browser on Lliurex
 
 Package: zero-lliurex-chromecast
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Mkchromecast installer
  Zero-center helper, It installs Mkchromecast client on Lliurex
  
 Package: zero-lliurex-dropbox-installer
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Automate dropbox client installation
  Automate dropbox client installation
  
 Package: zero-lliurex-dvdcss
 Architecture: all
 Section: x11
-Depends: zero-center, gdebi, wget, llxcfg-runtime, epi-gtk
+Depends: zero-center, gdebi,epi-gtk
 Conflicts: lliurex-zero-installer-dvdcss
 Replaces: lliurex-zero-installer-dvdcss (<=0.126.5)
 Breaks: lliurex-zero-installer-dvdcss (<=0.126.5)
@@ -51,7 +51,7 @@ Description: Extra codecs installer
 Package: zero-lliurex-fonts
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Conflicts: zero-installer-fonts
 Replaces: zero-installer-fonts (<=0.126.5)
 Breaks: zero-installer-fonts (<=0.126.5)
@@ -62,7 +62,7 @@ Description: Extra fonts installer
 Package: zero-lliurex-hotpotatoes
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Conflicts: lliurex-zero-installer-hotpotatoes
 Replaces: lliurex-zero-installer-hotpotatoes (<=0.126.5)
 Breaks: lliurex-zero-installer-hotpotatoes (<=0.126.5)
@@ -73,7 +73,7 @@ Description: Hotpotatoes installer
 Package: zero-lliurex-kiosko
 Architecture: all
 Section: x11
-Depends: zero-center, chromium-browser, llxcfg-runtime
+Depends: zero-center, chromium-browser
 Conflicts: lliurex-zero-installer-kiosko
 Replaces: lliurex-zero-installer-kiosko (<=0.126.5)
 Breaks: llliurex-zero-installer-kiosko (<=0.126.5)
@@ -84,14 +84,14 @@ Description: Lliurex Technology lab
 Package: zero-lliurex-krita
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Krita installer
   Zero-center helper, It downloads and installs krita package
 
 Package: zero-lliurex-libreoffice-reset
 Architecture: i386
 Section: x11
-Depends: zero-center, llxcfg-runtime
+Depends: zero-center
 Conflicts: lliurex-zero-libreoffice-reset
 Replaces: lliurex-zero-libreoffice-reset (<=0.126.5)
 Breaks: lliurex-zero-libreoffice-reset (<=0.126.5)
@@ -102,7 +102,7 @@ Description: LibreOffice Home Cleaner
 Package: zero-lliurex-midicss
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Conflicts: lliurex-zero-installer-midicss
 Replaces: lliurex-zero-installer-midicss (<=0.126.5)
 Breaks: lliurex-zero-installer-midicss (<=0.126.5)
@@ -113,21 +113,21 @@ Description: MIDI codecs installer
 Package: zero-lliurex-mixxx
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Mixxx installer
  Zero-center helper, It installs mixxx on Lliurex
  
 Package: zero-lliurex-moodle
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: zero-center installer for Moodle
  Advanced packages for distribution
  
 Package: zero-lliurex-msad
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime
+Depends: zero-center
 Conflicts: llxcfg-msad-installer, zero-msad-installer
 Replaces: zero-msad-installer (<=0.126.5)
 Breaks: zero-msad-installer (<=0.126.5)
@@ -139,7 +139,7 @@ Description: Active directory integration
 Package: zero-lliurex-notebook-bar
 Architecture: i386
 Section: x11
-Depends: zero-center, llxcfg-runtime
+Depends: zero-center
 Conflicts: zero-notebook-bar
 Replaces: zero-notebook-bar (<=0.126.5)
 Breaks: zero-notebook-bar (<=0.126.5)
@@ -150,21 +150,21 @@ Description: zero-center installer for notebook
 Package: zero-lliurex-obs-studio
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: OBS Studio installer
  Is an software for video recording and live streaming
  
 Package: zero-lliurex-ocrfeeder
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: OCRFeeder installer
  Is an optical character recognition suite
 
 Package: zero-lliurex-open-sysclone
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime
+Depends: zero-center
 Conflicts: zero-open-sysclone
 Replaces: zero-open-sysclone (<=0.126.5)
 Breaks: zero-open-sysclone (<=0.126.5)
@@ -175,14 +175,14 @@ Description: Lliurex Open-SysClone
 Package: zero-lliurex-promethean
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, linux-headers-generic, epi-gtk
+Depends: zero-center,linux-headers-generic, epi-gtk
 Description: Drivers fro promethean installer
  Zero-center helper, It installs the drivers for the prometean boards 
  
 Package: zero-lliurex-pyromaths
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Conflicts: lliurex-zero-installer-pyromaths
 Replaces: lliurex-zero-installer-pyromaths (<=0.126.5)
 Breaks: lliurex-zero-installer-pyromaths (<=0.126.5)
@@ -193,7 +193,7 @@ Description: Pyromaths installer
 Package: zero-lliurex-recursos
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk, resources-launcher
+Depends: zero-center,epi-gtk, resources-launcher
 Conflicts: lliurex-zero-installer-recursos
 Replaces: lliurex-zero-installer-recursos (<=0.126.5)
 Breaks: lliurex-zero-installer-recursos (<=0.126.5)
@@ -204,7 +204,7 @@ Description: Recursos installer
 Package: zero-lliurex-salt
 Architecture: i386
 Section: x11
-Depends: zero-center, llxcfg-runtime
+Depends: zero-center
 Conflicts: lliurex-zero-salt
 Replaces: lliurex-zero-salt (<=0.126.5)
 Breaks: lliurex-zero-salt (<=0.126.5)
@@ -215,35 +215,35 @@ Description: SALT installer
 Package: zero-lliurex-skype
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Skype installer
  Zero-center helper, It installs skype on Lliurex
  
 Package: zero-lliurex-spotify
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Spotify client installer
  Zero-center helper, It installs Spotify client on Lliurex
  
 Package: zero-lliurex-technology
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Lliurex Technology lab
  Install packages for a Techonolgy laboratory
  
 Package: zero-lliurex-telegram
 Architecture: all
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Description: Telegram installer
  Zero-center helper, It installs telegram on Lliurex
  
 Package: zero-lliurex-wine64
 Architecture: amd64
 Section: x11
-Depends: zero-center, llxcfg-runtime, epi-gtk
+Depends: zero-center,epi-gtk
 Conflicts: lliurex-zero-installer-wine64
 Replaces: lliurex-zero-installer-wine64 (<=0.126.5)
 Breaks: lliurex-zero-installer-wine64 (<=0.126.5)

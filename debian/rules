@@ -10,14 +10,5 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with llxsrc,llxdev
+	dh $@ --with llxsrc,zero,i18n
 
-override_dh_auto_build:
-
-	make -C rsrc
-	dh_auto_build
-
-override_dh_clean:
-	
-	make -C rsrc clean
-	dh_clean
