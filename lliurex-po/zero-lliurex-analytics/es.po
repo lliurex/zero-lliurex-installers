@@ -17,15 +17,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
 
-#:zero-lliurex-analytics.zmd:18
+#: zero-lliurex-analytics.zmd:18
 msgid "Welcome to lliurex-statistics config tool\\n"
 msgstr "Bienvenido al configurador de lliurex-statistics\\n"
 
-#:zero-lliurex-analytics.zmd:30
+#: zero-lliurex-analytics.zmd:30
 msgid "This system isn't configurable\\n"
 msgstr "Este sistema no es configurable\\n"
 
-#:zero-lliurex-analytics.zmd:50
+#: zero-lliurex-analytics.zmd:50
 msgid ""
 "The anonymous statistics reporting agent is %s in this system. Do you want "
 "change this state?\\n"
@@ -33,21 +33,21 @@ msgstr ""
 "El agente de envio anónimo de estadísticas está %s en este sistema. Deseas "
 "cambiar el estado?\\n"
 
-#:zero-lliurex-analytics.zmd:51
+#: zero-lliurex-analytics.zmd:51
 msgid "What state must i use in this system?\\n"
 msgstr "¿Que estado debo aplicar para este sistema?\\n"
 
-#:zero-lliurex-analytics.zmd:55
-#:zero-lliurex-analytics.zmd:73
+#: zero-lliurex-analytics.zmd:55
+#: zero-lliurex-analytics.zmd:73
 msgid "enabled"
 msgstr "activado"
 
-#:zero-lliurex-analytics.zmd:57
-#:zero-lliurex-analytics.zmd:77
+#: zero-lliurex-analytics.zmd:57
+#: zero-lliurex-analytics.zmd:77
 msgid "disabled"
 msgstr "desactivado"
 
-#:zero-lliurex-analytics.zmd:63
+#: zero-lliurex-analytics.zmd:63
 msgid ""
 "The anonymous statistics reporting agent for classroom clients have %s "
 "status. Do you want to change reporting agent status?\\n"
@@ -55,30 +55,30 @@ msgstr ""
 "El agente de envio anónimo de estadísticas para los clientes del aula tienen "
 "el estado %s. Deseas cambiar el estado?\\n"
 
-#:zero-lliurex-analytics.zmd:64
+#: zero-lliurex-analytics.zmd:64
 msgid "What state must i use for classroom clients?\\n"
 msgstr "¿Que estado debo aplicar para los clientes del aula?\\n"
 
-#:zero-lliurex-analytics.zmd:80
+#: zero-lliurex-analytics.zmd:80
 msgid "unknown"
 msgstr "desconocido"
 
-#:zero-lliurex-analytics.zmd:89
-#:zero-lliurex-analytics.zmd:103
+#: zero-lliurex-analytics.zmd:89
+#: zero-lliurex-analytics.zmd:103
 msgid "Yes"
 msgstr "Si"
 
-#:zero-lliurex-analytics.zmd:89
-#:zero-lliurex-analytics.zmd:103
+#: zero-lliurex-analytics.zmd:89
+#: zero-lliurex-analytics.zmd:103
 msgid "No"
 msgstr "No"
 
-#:zero-lliurex-analytics.zmd:91
-#:zero-lliurex-analytics.zmd:105
+#: zero-lliurex-analytics.zmd:91
+#: zero-lliurex-analytics.zmd:105
 msgid "Allow"
 msgstr "Permitir"
 
-#:zero-lliurex-analytics.zmd:91
-#:zero-lliurex-analytics.zmd:105
+#: zero-lliurex-analytics.zmd:91
+#: zero-lliurex-analytics.zmd:105
 msgid "Disallow"
 msgstr "No permitir"
