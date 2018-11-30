@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+case $ACTION in
+	remove)
+		apt-get remove -y autofirma
+		TEST=$( dpkg-query -s autofirma 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi	
+	;;	
+esac	
+

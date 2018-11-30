@@ -1,0 +1,6 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"freecad","key_store":"zero-lliurex-freecad"}], 
+	"script": {"name":"/usr/share/zero-lliurex-freecad/freecad_script","remove":true},
+	"zomando":"zero-lliurex-freecad"
+	}
