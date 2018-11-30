@@ -1,0 +1,15 @@
+Name=zero-lliurex-autofirma
+Name[es]=Instalador de Autofirma
+Name[qcv]=Instal·lador de Autofirma
+Name[ca_ES]=Instal·lador de Autofirma
+Comment= Application of an electronic signature developed by the Ministry of Finance and Public Administrations. It allows the signature in Electronic Administration pages when the signature in an administrative procedure is required
+Comment[es]=Aplicación de firma electrónica desarrollada por el Ministerio de Hacienda y Administraciones Públicas. Permite la firma en páginas de Administración Electrónica cuando se requiere la firma en un procedimiento administrativo
+Comment[qcv]=Aplicació de signatura electrònica desenvolupada pel Ministeri d'Hisenda i Administracions Públiques. Permet la signatura en pàgines d'Administració Electrònica quan es requereix la signatura en un procediment administratiu
+Comment[ca_ES]=Aplicació de signatura electrònica desenvolupada pel Ministeri d'Hisenda i Administracions Públiques. Permet la signatura en pàgines d'Administració Electrònica quan es requereix la signatura en un procediment administratiu
+Icon=zero-lliurex-autofirma
+Category=Software
+ScriptPath=zero-lliurex-autofirma.zmd
+Using=pkexec
+Service=True
+Locks=zero-lliurex-autofirma
+Groups=adm;admins;teachers
