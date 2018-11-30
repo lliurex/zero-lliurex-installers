@@ -15,6 +15,13 @@ Breaks: lliurex-zero-installer-analytics (<=0.126.5)
 Provides: lliurex-zero-installer-analytics
 Description: Controller for Lliurex Analytics reporting agent
  Zero-center Controller for stat reporting agent
+
+Package: zero-lliurex-autofirma
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Autofirma installer
+  Zero-center helper, It downloads and installs Autofirma package
  
 Package: zero-lliurex-chrome
 Architecture: amd64
@@ -59,6 +66,13 @@ Provides: zero-installer-fonts
 Description: Extra fonts installer
  Zero-center helper, It downloads and installs extra-fonts package
  
+Package: zero-lliurex-freecad
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: FreeCad installer
+  Zero-center helper, It downloads and installs FreeCad package
+
 Package: zero-lliurex-hotpotatoes
 Architecture: all
 Section: x11
