@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.171) bionic; urgency=medium
+
+  * Added autofirma
+  * Added freecad
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 05 Dec 2018 14:06:38 +0100
+
 zero-lliurex-installers (0.170) bionic; urgency=medium
 
   * Added force32 key in promethean.epi
