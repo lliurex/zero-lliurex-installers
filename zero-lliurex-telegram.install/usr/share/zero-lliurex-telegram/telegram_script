@@ -4,7 +4,8 @@
 ACTION="$1"
 PKG="$2"
 
-USERHOME=$(getent passwd $USER | cut -f6 -d ':')
+USER=$(getent passwd | grep x:$PKEXEC_UID: | cut -d ":" -f 1)
+USERHOME=/home/$USER
 BINDIR=$USERHOME"/.local/bin"
 DESTDIR=$BINDIR"/telegram"
 DESTDOWNLOAD="/var/cache/epi-downloads"
@@ -80,7 +81,7 @@ case $ACTION in
 		then	
 			cd $FIRSTPWD
 			echo "Launching telegram..."
-			su $USER -c /usr/bin/telegram &
+			su -c /usr/bin/telegram $USER &
 		else
 			rm -r $DESTDIR
 			exit 1
