@@ -1,15 +1,16 @@
 #!/bin/bash
 
-
 ACTION="$1"
+PKG="$2"
 
 case $ACTION in
 	remove)
-		
-		caja-dropbox stop
+		echo "Stopping dropbox..."
+		dropbox stop dropboxd
+		sleep 10
 		if [ $? -eq 0 ];then
-			apt-get remove -y caja-dropbox
-			TEST=$( dpkg-query -s caja-dropbox 2> /dev/null| grep Status | cut -d " " -f 4 )
+			apt-get remove -y dropbox
+			TEST=$( dpkg-query -s dropbox 2> /dev/null| grep Status | cut -d " " -f 4 )
 			if [ "$TEST" == 'installed' ];then
 				exit 1
 			fi	
@@ -19,5 +20,3 @@ case $ACTION in
 	;;	
 esac
 exit 0
-	
-
