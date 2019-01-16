@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.172) bionic; urgency=medium
+
+  * Chandeg dropbox epi to use apt
+  * Fixed telegram epi to use pkexec
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 16 Jan 2019 10:01:43 +0100
+
 zero-lliurex-installers (0.171) bionic; urgency=medium
 
   * Added autofirma
