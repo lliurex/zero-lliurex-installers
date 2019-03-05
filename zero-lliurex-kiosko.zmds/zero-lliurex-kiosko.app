@@ -12,4 +12,4 @@ ScriptPath=zero-lliurex-kiosko.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-kiosko
-Groups=adm;admins;teachers
+Groups=sudo;admins;teachers

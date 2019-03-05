@@ -12,4 +12,4 @@ ScriptPath=zero-lliurex-freecad.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-freecad
-Groups=adm;admins;teachers
+Groups=sudo;admins;teachers

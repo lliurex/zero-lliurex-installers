@@ -11,5 +11,5 @@ Category=Internet
 ScriptPath=zero-lliurex-telegram.zmd
 Using=pkexec
 Locks=zero-lliurex-telegram
-Groups=adm;admin;admins;teachers
+Groups=sudo;admin;admins;teachers
 Service=False

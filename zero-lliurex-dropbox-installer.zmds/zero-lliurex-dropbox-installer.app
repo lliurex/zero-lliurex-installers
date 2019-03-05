@@ -11,5 +11,5 @@ Category=Internet
 ScriptPath=zero-lliurex-dropbox-installer.zmd
 Using=pkexec
 Locks=zero-lliurex-dropbox-installer
-Groups=adm;admin;admins;teachers
+Groups=sudo;admin;admins;teachers
 Service=True
