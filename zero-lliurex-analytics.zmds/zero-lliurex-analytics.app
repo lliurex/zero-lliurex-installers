@@ -12,4 +12,4 @@ ScriptPath=zero-lliurex-analytics.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-analytics
-Groups=adm;admin;admins;teachers
+Groups=sudo;admin;admins;teachers

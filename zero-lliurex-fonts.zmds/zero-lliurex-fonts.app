@@ -12,4 +12,4 @@ ScriptPath=zero-lliurex-fonts.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-fonts
-Groups=adm;admins;teachers
+Groups=sudo;admins;teachers

@@ -12,4 +12,4 @@ ScriptPath=zero-lliurex-ocrfeeder.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-ocrfeeder
-Groups=adm;admins;teachers
+Groups=sudo;admins;teachers
