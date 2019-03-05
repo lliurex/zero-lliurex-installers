@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.173) bionic; urgency=medium
+
+  * Changed adm group by sudo
+
+ -- Juan Ramon Pelegrina <juapeai@hotmail.com>  Tue, 05 Mar 2019 17:21:21 +0100
+
 zero-lliurex-installers (0.172.1) bionic; urgency=medium
 
   * Changed pyromaths installer
