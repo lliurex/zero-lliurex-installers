@@ -137,18 +137,6 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: zero-center installer for Moodle
  Advanced packages for distribution
- 
-Package: zero-lliurex-msad
-Architecture: all
-Section: x11
-Depends: zero-center
-Conflicts: llxcfg-msad-installer, zero-msad-installer
-Replaces: zero-msad-installer (<=0.126.5)
-Breaks: zero-msad-installer (<=0.126.5)
-Provides: zero-msad-installer
-Description: Active directory integration
- zero-msad-installer installer, it downloads and installs packages for AD 
- integration
 
 Package: zero-lliurex-notebook-bar
 Architecture: i386
