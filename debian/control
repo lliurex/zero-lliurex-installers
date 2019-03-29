@@ -137,11 +137,7 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: zero-center installer for Moodle
  Advanced packages for distribution
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 2dc510a164f9bfbd7aca64237439a6186df01c02
 Package: zero-lliurex-notebook-bar
 Architecture: i386
 Section: x11
