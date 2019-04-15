@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+ACTION="$1"
+canonical_ppa="deb http://archive.canonical.com/ubuntu bionic partner"
+source_file="/etc/apt/sources.list.d/canonical.list"
+
+case $ACTION in
+
+	preInstall)
+		
+		if [ ! -f $source_file ];then
+			echo "Adding canonical sources list"
+			echo $canonical_ppa >> $source_file
+			apt-get update
+		fi	 
+
+	;;
+	remove)
+		apt-get remove -y adobe-flashplugin
+		TEST=$( dpkg-query -s adobe-flashplugin 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi	
+		rm -f $source_file
+	;;	
+esac	
+
