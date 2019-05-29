@@ -173,6 +173,14 @@ Breaks: zero-open-sysclone (<=0.126.5)
 Provides: zero-open-sysclone
 Description: Lliurex Open-SysClone
  Clone Pc's to rescue.
+
+Package: zero-lliurex-openmeetings
+Architecture: all
+Section: x11
+Depends: zero-center
+Provides: zero-lliurex-openmeetings
+Description: Lliurex Openmeetings
+ This package allows user to install and configure openmeetings 
  
 Package: zero-lliurex-promethean
 Architecture: all

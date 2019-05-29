@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.175) bionic; urgency=medium
+
+  * Add zero-lliurex-openmeetings
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 29 May 2019 13:49:14 +0200
+
 zero-lliurex-installers (0.174) bionic; urgency=medium
 
   * Update metainfo
