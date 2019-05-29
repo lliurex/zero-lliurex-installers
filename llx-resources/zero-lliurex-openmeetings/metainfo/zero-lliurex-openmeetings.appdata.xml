@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="desktop-application">
+<id>zero-lliurex-openmeetings_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-openmeetings</name>
+<name xml:lang="en">LliurexLab Installer</name>
+<name xml:lang="es">Instalador de LliurexLab</name>
+<name xml:lang="ca">Instal·lador de LliurexLab</name>
+<name xml:lang="ca_ES@valencia">Instal·lador de LliurexLab</name>
+<name xml:lang="ca_ES.UTF-8@valencia">Instal·lador de LliurexLab</name>
+<summary>Lliurex languages lab</summary>
+<summary xml:lang="es">Laboratorio de idiomas de Lliurex</summary>
+<summary xml:lang="ca_ES.UTF-8@valencia">Laboratori d'idiomes del LliureX</summary>
+<summary xml:lang="ca_ES@valencia">Laboratori d'idiomes del Lliurex</summary>
+<summary xml:lang="ca">Laboratori d'idiomes del Lliurex</summary>
+<description>
+<p>LliureLab is based on Apache openmeetings. Openmeetings provides video conferencing, instant messaging, white board, collaborative document editing and other groupware tools using API functions of the Red5 Streaming Server for Remoting and Streaming, making of LliurexLab a powerful tool for language learning.</p>
+<p xml:lang="es">LliureLab se basa en Apache OpenMeetings. OpenMeetings proporciona videoconferencia, mensajería instantánea, pizarra blanca, edición colaborativa de documentos y otras herramientas de trabajo en grupo utilizando funciones de la API del servidor de streaming Red5 para la comunicación remota y la retransmisión haciendo de LliurexLab una potente herramienta para el aprendizaje de idiomas.</p>
+<p xml:lang="ca">LliureLab es basa en Apache OpenMeetings. OpenMeetings proporciona videoconferència, missatgeria instantània, pissarra blanca, edició col·laborativa de documents i altres eines de treball en grup utilitzant funcions de l'API del servidor de streaming Red5 per a la comunicació remota i la retransmissió fent de LliurexLab una potent ferramenta per al aprenentatge d'idiomes.</p>
+<p xml:lang="ca_ES.UTF-8@valencia">El LliureLab es basa en Apache OpenMeetings. L'OpenMeetings proporciona videoconferència, missatgeria instantània, pissarra blanca, edició col·laborativa de documents i altres eines de treball en grup, utilitzant funcions de l'API del servidor de streaming Red5 per a la comunicació remota i la retransmissió, cosa que fa del LliurexLab una eina molt potent per a l'aprenentatge d'idiomes.</p>
+<p xml:lang="ca_ES@valencia">El LliureLab es basa en Apache OpenMeetings. L'OpenMeetings proporciona videoconferència, missatgeria instantània, pissarra blanca, edició col·laborativa de documents i altres eines de treball en grup, utilitzant funcions de l'API del servidor de streaming Red5 per a la comunicació remota i la retransmissió, cosa que fa del LliurexLab una eina molt potent per a l'aprenentatge d'idiomes.</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">lliurex-lab</icon>
+
+<keywords>
+<keyword>lliurex</keyword>
+<keyword>openmeetings</keyword>
+<keyword>lliurex-openmeetings</keyword>
+<keyword>openmeetings</keyword>
+<keyword>Zomando</keyword>
+<keyword>videoconferencia</keyword>
+<keyword>skype</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>LliurexLab</keyword>
+<keyword>Installer</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalador</keyword>
+<keyword>Zomando</keyword>
+<keyword>idiomas</keyword>
+</keywords>
+<keywords xml:lang="ca_ES.UTF-8@valencia">
+<keyword>Instal·lador</keyword>
+<keyword>Zomando</keyword>
+<keyword>idiomes</keyword>
+</keywords>
+<keywords xml:lang="ca_ES@valencia">
+<keyword>Zomando</keyword>
+<keyword>idiomes</keyword>
+
+</keywords>
+</component>

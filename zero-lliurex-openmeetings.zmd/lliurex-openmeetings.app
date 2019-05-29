@@ -1,0 +1,19 @@
+Name=lliurex-openmeetings
+Name[en]=LliurexLab Installer
+Name[es]=Instalador de LliurexLab
+Name[qcv]=Instal·lador de LliurexLab
+Name[ca_ES]=Instal·lador de LliurexLab
+Comment=LliureLab installer
+Comment[en]=LliurexLab installer
+Comment[es]=Instalador de LliurexLab
+Comment[qcv]=Instal·lador de LliurexLab
+Comment[ca_ES]=Instal·lador de LliurexLab
+Icon=lliurex-lab-setup
+Category=Services
+ScriptPath=lliurex-openmeetings.zmd
+Groups=sudo;admins
+Using=pkexec
+Service=True
+Modal=True
+Locks=zero-lliurexlab-installer
+

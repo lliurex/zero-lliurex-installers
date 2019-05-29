@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#!/bin/bash
+
+epi-gtk /usr/share/zero-lliurex-openmeetings/openmeetings.epi
+
+
+exit 0
