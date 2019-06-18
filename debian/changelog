@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.176) bionic; urgency=medium
+
+  * Dummy upgrade
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 18 Jun 2019 12:31:21 +0200
+
 zero-lliurex-installers (0.175) bionic; urgency=medium
 
   * Add zero-lliurex-openmeetings
