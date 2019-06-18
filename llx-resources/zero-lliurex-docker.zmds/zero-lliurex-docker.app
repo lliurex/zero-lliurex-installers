@@ -1,0 +1,15 @@
+Name=zero-installer-docker
+Name[es]=Instalación de Docker
+Name[qcv]=Instal·lació del Docker
+Name[ca_ES]=Instal·lació del Docker
+Comment=Docker installer for Lliurex
+Comment[es]=Instalador de Docker para Lliurex
+Comment[qcv]=Instal·lació del Docker per a Lliurex
+Comment[ca_ES]=Instal·lació del Docker per a Lliurex
+Icon=zero-lliurex-docker
+Category=Software
+ScriptPath=zero-lliurex-docker.zmd
+Using=pkexec
+Locks=zero-lliurex-docker
+Groups=sudo;admin;admins;
+Service=True
