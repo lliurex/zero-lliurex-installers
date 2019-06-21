@@ -2,7 +2,7 @@
 
 
 ACTION="$1"
-PACKAGE_LIST="fonts-ecolier-court fonts-ecolier-lignes-court lliurex-artwork-fonts"
+PACKAGE_LIST="fonts-ecolier-court fonts-ecolier-lignes-court"
 
 case $ACTION in
 	remove)

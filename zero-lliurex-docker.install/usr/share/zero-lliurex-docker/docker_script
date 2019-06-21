@@ -1,0 +1,31 @@
+#!/bin/bash
+
+ACTION="$1"
+PKG="$2"
+
+case $ACTION in
+
+	addRepoKeys)		
+
+		echo "[EPI]:Adding repository key..."
+		apt-get install --yes apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+		
+		curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key --keyring /tmp/epi_keyring add -
+
+	
+	;;
+
+	preInstall)
+	
+		echo "[EPI]:Preparing installation..."
+		if dpkg-query -l $PKG>/dev/null 2>&1;then
+
+			echo "Nothing to do"
+		else
+			apt-get remove --yes docker docker-engine docker.io containerd runc
+		fi	
+
+	;;
+
+esac
+exit 0
