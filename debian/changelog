@@ -1,3 +1,11 @@
+zero-lliurex-installers (0.177) bionic; urgency=medium
+
+  * Fixed zero-lliurex-fonts
+  * Fixed zero-lliurex-skype keyring
+  * Fixed zero-lliure-spotify keyring
+ 
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 21 Jun 2019 14:10:49 +0200
+
 zero-lliurex-installers (0.176) bionic; urgency=medium
 
   * Dummy upgrade
