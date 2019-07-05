@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.178) bionic; urgency=medium
+
+  * Added zero-lliurex-docker
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 05 Jul 2019 12:33:33 +0200
+
 zero-lliurex-installers (0.177) bionic; urgency=medium
 
   * Fixed zero-lliurex-fonts
