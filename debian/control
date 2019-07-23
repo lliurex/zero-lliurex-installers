@@ -192,9 +192,9 @@ Description: Lliurex Openmeetings
 Package: zero-lliurex-promethean
 Architecture: all
 Section: x11
-Depends: zero-center,linux-headers-generic, epi-gtk
+Depends: zero-center,linux-headers-generic, epi-gtk, libelf-dev
 Description: Drivers fro promethean installer
- Zero-center helper, It installs the drivers for the prometean boards 
+ Zero-center helper, It installs the drivers for the promethean boards 
  
 Package: zero-lliurex-pyromaths
 Architecture: all
