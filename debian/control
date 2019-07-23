@@ -37,6 +37,13 @@ Depends: zero-center,epi-gtk
 Description: Mkchromecast installer
  Zero-center helper, It installs Mkchromecast client on Lliurex
  
+Package: zero-lliurex-docker
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Docker installer
+ Zero-center helper, It installs Docker on Lliurex
+ 
 Package: zero-lliurex-dropbox-installer
 Architecture: all
 Section: x11
