@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.180) bionic; urgency=medium
+
+  * Fix promethean installer
+
+ -- lliurex <juanma1980@gmail.com>  Thu, 03 Oct 2019 13:57:59 +0200
+
 zero-lliurex-installers (0.179.1) bionic; urgency=medium
 
   * Promethean drivers for Bionic
