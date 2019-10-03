@@ -6,7 +6,7 @@ ACTION="$1"
 case $ACTION in
 
 	preInstall)
-		apt install activinspire-32bitdependsfor64bit-lliurex
+		apt-get install -y activinspire-32bitdependsfor64bit-lliurex
 		if [ $? -ne 0 ]
 		then
 			exit 1
