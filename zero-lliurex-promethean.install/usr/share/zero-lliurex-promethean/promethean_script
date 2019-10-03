@@ -4,6 +4,14 @@
 ACTION="$1"
 
 case $ACTION in
+
+	preinstall)
+		apt install activinspire-32bitdependsfor64bit-lliurex
+		if [ $? -ne 0 ]
+		then
+			exit 1
+		fi
+
 	remove)
 		errpkg=''
 		for pkg in promethean-fixboot activinspire activrelay activtools activdriver activaid xdotool libxdo3 fam 

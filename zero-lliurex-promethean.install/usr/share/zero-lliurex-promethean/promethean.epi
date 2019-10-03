@@ -1,8 +1,7 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"fam","key_store":"zero-lliurex-promethean"},{"name":"libxdo3","key_store":"zero-lliurex-promethean"},{"name":"xdotool","key_store":"zero-lliurex-promethean"},{"name":"activ-meta-es","key_store":"zero-lliurex-promethean"},{"name":"activaid","key_store":"zero-lliurex-promethean"},{"name":"activdriver","key_store":"zero-lliurex-promethean"},{"name":"activinspire","key_store":"zero-lliurex-promethean"},{"name":"activinspire-help-es","key_store":"zero-lliurex-promethean"},{"name":"activresources-core-es","key_store":"zero-lliurex-promethean"},{"name":"activtools","key_store":"zero-lliurex-promethean"},{"name":"dkms","key_store":"zero-lliurex-promethean"},{"name":"libelf-dev","key_store":"zero-lliurex-promethean"},{"name":"promethean-fixboot","key_store":"zero-lliurex-promethean"}], 
+	"pkg_list": [{"name":"fam","key_store":"zero-lliurex-promethean"},{"name":"libxdo3","key_store":"zero-lliurex-promethean"},{"name":"xdotool","key_store":"zero-lliurex-promethean"},{"name":"activ-meta-es","key_store":"zero-lliurex-promethean"},{"name":"activdriver","key_store":"zero-lliurex-promethean"},{"name":"activ-meta-es","key_store":"zero-lliurex-promethean"},{"name":"activtools","key_store":"zero-lliurex-promethean"},{"name":"dkms","key_store":"zero-lliurex-promethean"},{"name":"libelf-dev","key_store":"zero-lliurex-promethean"},{"name":"promethean-fixboot","key_store":"zero-lliurex-promethean"}], 
 	"repository": [{"url":"deb http://activsoftware.co.uk/linux/repos/driver/ubuntu bionic oss non-oss","key_cmd":"wget http://activsoftware.co.uk/linux/repos/driver/PrometheanLtd.asc -O /tmp/prom_driv.asc && apt-key --keyring /tmp/epi_keyring add /tmp/prom_driv.asc"},{"url":"deb http://activsoftware.co.uk/linux/repos/ubuntu bionic non-oss","key_cmd":"wget -O /tmp/prom_soft.asc http://activsoftware.co.uk/linux/repos/driver/PrometheanLtd.asc && apt-key --keyring /tmp/epi_keyring add /tmp/prom_soft.asc"}], 
 	"script": {"name":"/usr/share/zero-lliurex-promethean/promethean_script", "remove":true},
-	"zomando":"zero-lliurex-promethean",
-	"force32":true
+	"zomando":"zero-lliurex-promethean"
 }	
