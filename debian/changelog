@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.181) bionic; urgency=medium
+
+  * Add lliurex-artwork-fonts and lliurex-artwork-fonts-classroom to fonts-installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Oct 2019 11:48:42 +0200
+
 zero-lliurex-installers (0.180) bionic; urgency=medium
 
   * Fix promethean installer
