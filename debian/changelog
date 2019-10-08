@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.182.1) bionic; urgency=medium
+
+  * Merged both fonts packages
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Oct 2019 13:04:16 +0200
+
 zero-lliurex-installers (0.181) bionic; urgency=medium
 
   * Add lliurex-artwork-fonts and lliurex-artwork-fonts-classroom to fonts-installer
