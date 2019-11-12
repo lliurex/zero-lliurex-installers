@@ -9,8 +9,7 @@ OLD_TDESKTOP=${TDESKTOPPATH}"/telegramdesktop.desktop"
 RS=0
 if [ ! -x $TELEGRAM ]
 then
-	zenity --error --title "Telegram" --text "Telegram not found at $TELEGRAM"
-	RS=1
+	pkexec /usr/share/zero-center/zmds/zero-lliurex-telegram.zmd
 else
 	LANG=es_ES.UTF-8 $TELEGRAM
 	#When finished regenerates the .desktop
