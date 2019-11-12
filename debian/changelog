@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.182.2) bionic; urgency=medium
+
+  * /usr/bin/telegram: executing telegram zmd if telegram is not installed
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 12 Nov 2019 12:00:59 +0100
+
 zero-lliurex-installers (0.182.1) bionic; urgency=medium
 
   * Merged both fonts packages
