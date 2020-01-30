@@ -59,8 +59,8 @@ case $ACTION in
 		echo "Creating Ldadp users..."
 		INTERNA=$(n4d-vars getvalues INTERNAL_DOMAIN | cut -d"'" -f2)
 		if [ -n $INTERNA ]; then
-			/usr/bin/python /usr/share/lliurex-moodle/update_moodle_sql.py
-			/usr/bin/python /usr/share/lliurex-moodle/sync_ldap_users.py
+			/usr/bin/python3 /usr/share/lliurex-moodle/update_moodle_sql.py
+			/usr/bin/python3 /usr/share/lliurex-moodle/sync_ldap_users.py
 		fi
 
 		echo "Restarting services..."
