@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.182.3) bionic; urgency=medium
+
+  * Changed lliurex-moodle script to use python3
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 30 Jan 2020 13:04:43 +0100
+
 zero-lliurex-installers (0.182.2) bionic; urgency=medium
 
   * /usr/bin/telegram: executing telegram zmd if telegram is not installed
