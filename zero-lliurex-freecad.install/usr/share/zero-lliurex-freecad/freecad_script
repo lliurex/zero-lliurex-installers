@@ -5,8 +5,9 @@ ACTION="$1"
 
 DESTDOWNLOAD=$HOME"/Applications/"
 APPIMAGE="FreeCAD_0.18-16146-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage"
-URL="https://lliurex.net/recursos-edu/misc"
-DESKTOP="/usr/share/zero-lliurex-freecad/freecad-appimage.desktop"
+URL="https://lliurex.net/recursos-edu/misc/"
+DESKTOP_ORIG="/usr/share/zero-lliurex-freecad/freecad-appimage.desktop"
+DESKTOP_DEST=$HOME"/.local/share/applications"
 LINK=$HOME"/.local/bin/freecad-appimage"
 
 case $ACTION in
@@ -47,7 +48,10 @@ case $ACTION in
 			ln -s $HOME/Applications/${APPIMAGE} $LINK
 		fi	
 		
-		cp $DESKTOP $HOME/Applications
+		cp $DESKTOP_ORIG $DESKTOP_DEST
+
+		update-mime-database $HOME/.local/share/mime >/dev/null 2>/dev/null || true
+		update-desktop-database $DESKTOP_DEST >/dev/null 2>/dev/null || true
 		
 		echo ${APPIMAGE}" is now available at appimage-manager"
 	;;
