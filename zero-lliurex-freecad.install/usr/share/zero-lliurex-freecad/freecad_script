@@ -3,13 +3,78 @@
 
 ACTION="$1"
 
+DESTDOWNLOAD=$HOME"/Applications/"
+APPIMAGE="FreeCAD_0.18-16146-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage"
+URL="https://lliurex.net/recursos-edu/misc"
+DESKTOP="/usr/share/zero-lliurex-freecad/freecad-appimage.desktop"
+LINK=$HOME"/.local/bin/freecad-appimage"
+
 case $ACTION in
-	remove)
-		apt-get remove -y freecad
-		TEST=$( dpkg-query -s freecad 2> /dev/null| grep Status | cut -d " " -f 4 )
-		if [ "$TEST" == 'installed' ];then
+
+	getStatus)
+		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		then	
+			echo 0
+		else
+			echo 1	
+		fi				
+	;;
+
+	download)
+
+		cd ${DESTDOWNLOAD}
+
+		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		then
+			rm -f ${DESTDOWNLOAD}"/"${APPIMAGE}
+		fi
+
+		wget ${URL}${APPIMAGE}
+		
+		if ! [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		then	
 			exit 1
 		fi	
 	;;	
-esac	
+	
+	installPackage)
 
+		echo "Preparing FreeCAD Appimage..."
+		chmod +x $HOME/Applications/${APPIMAGE}
+		
+		if ! [ -e $LINK ]
+		then
+			ln -s $HOME/Applications/${APPIMAGE} $LINK
+		fi	
+		
+		cp $DESKTOP $HOME/Applications
+		
+		echo ${APPIMAGE}" is now available at appimage-manager"
+	;;
+
+	remove)
+		
+		echo "Removing files..."
+
+		if [ -e ${LINK} ]
+		then
+			rm -f $LINK
+		fi
+
+		
+		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		then
+			rm -f ${DESTDOWNLOAD}"/"${APPIMAGE}
+		fi
+
+		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		then	
+			exit 1
+		fi
+	
+
+
+	;;		
+		
+esac
+exit 0
