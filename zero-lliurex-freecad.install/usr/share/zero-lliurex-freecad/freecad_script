@@ -3,17 +3,20 @@
 
 ACTION="$1"
 
-DESTDOWNLOAD=$HOME"/Applications/"
+DEST_DOWNLOAD=$HOME"/Applications/"
+DEST_FILE="freecad-appimage"
 APPIMAGE="FreeCAD_0.18-16146-Linux-Conda_Py3Qt5_glibc2.12-x86_64.AppImage"
-URL="https://lliurex.net/recursos-edu/misc/"
+URL="https://github.com/FreeCAD/FreeCAD/releases/download/0.18.4/"
 DESKTOP_ORIG="/usr/share/zero-lliurex-freecad/freecad-appimage.desktop"
-DESKTOP_DEST=$HOME"/.local/share/applications"
-LINK=$HOME"/.local/bin/freecad-appimage"
+DESKTOP_DEST=$HOME"/.local/share/applications/"
+MIME_DEST=$HOME"/.local/share/mime/"
+LINK_PATH=$HOME"/.local/bin/"
+
 
 case $ACTION in
 
 	getStatus)
-		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		if [ -s ${DEST_DOWNLOAD}"/"${DEST_FILE} ]
 		then	
 			echo 0
 		else
@@ -23,16 +26,21 @@ case $ACTION in
 
 	download)
 
-		cd ${DESTDOWNLOAD}
-
-		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		if ! [ -d ${DEST_DOWNLOAD} ]
 		then
-			rm -f ${DESTDOWNLOAD}"/"${APPIMAGE}
+			mkdir ${DEST_DOWNLOAD}
 		fi
 
-		wget ${URL}${APPIMAGE}
+		cd ${DEST_DOWNLOAD}
+
+		if [ -s ${DEST_DOWNLOAD}"/"${APPIMAGE} ]
+		then
+			rm -f ${DEST_DOWNLOAD}"/"${APPIMAGE}
+		fi
+
+		wget ${URL}${APPIMAGE} -O ${DEST_DOWNLOAD}${DEST_FILE}
 		
-		if ! [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		if ! [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
 		then	
 			exit 1
 		fi	
@@ -41,37 +49,68 @@ case $ACTION in
 	installPackage)
 
 		echo "Preparing FreeCAD Appimage..."
-		chmod +x $HOME/Applications/${APPIMAGE}
+		chmod +x ${DEST_DOWNLOAD}${DEST_FILE}
 		
-		if ! [ -e $LINK ]
+			
+		if ! [ -d ${LINK_PATH} ]
 		then
-			ln -s $HOME/Applications/${APPIMAGE} $LINK
+			mkdir ${LINK_PATH}
+		fi		
+
+		if ! [ -e ${LINK_PATH}${DEST_FILE} ]
+		then
+			ln -s ${DEST_DOWNLOAD}${DEST_FILE} ${LINK_PATH}${DEST_FILE}
 		fi	
+
+		if ! [ -d ${DESKTOP_DEST} ]
+		then
+			mkdir ${DESKTOP_DEST}
+		fi
+		
+		if ! [ -d ${DESKTOP_DEST}"packages" ]
+		then
+			mkdir ${DESKTOP_DEST}"packages"
+		fi
+		
+		if ! [ -d ${MIME_DEST} ]
+		then
+			mkdir ${MIME_DEST}
+		fi
+		
+		if ! [ -d ${MIME_DEST}"packages" ]
+		then
+			mkdir ${MIME_DEST}"packages"
+		fi
+			
 		
 		cp $DESKTOP_ORIG $DESKTOP_DEST
+		
+		sleep 15
 
-		update-mime-database $HOME/.local/share/mime >/dev/null 2>/dev/null || true
+		update-mime-database $MIME_DEST >/dev/null 2>/dev/null || true
 		update-desktop-database $DESKTOP_DEST >/dev/null 2>/dev/null || true
 		
-		echo ${APPIMAGE}" is now available at appimage-manager"
+		. "$HOME/.config/user-dirs.dirs"
+		cp $DESKTOP_ORIG $XDG_DESKTOP_DIR
+		
+		sed -i "s#%%HOME%%#$HOME#" ${XDG_DESKTOP_DIR}"/freecad-appimage.desktop"  
+		chmod +x ${XDG_DESKTOP_DIR}"/freecad-appimage.desktop"
+		
+		echo ${DEST_FILE}" is now available at appimage-manager"
 	;;
 
 	remove)
 		
 		echo "Removing files..."
 
-		if [ -e ${LINK} ]
-		then
-			rm -f $LINK
-		fi
-
+	
 		
-		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		if [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
 		then
-			rm -f ${DESTDOWNLOAD}"/"${APPIMAGE}
+			rm -f ${DEST_DOWNLOAD}${DEST_FILE}
 		fi
 
-		if [ -s ${DESTDOWNLOAD}"/"${APPIMAGE} ]
+		if [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
 		then	
 			exit 1
 		fi
