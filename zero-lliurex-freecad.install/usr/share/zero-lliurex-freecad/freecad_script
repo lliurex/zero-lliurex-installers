@@ -90,11 +90,9 @@ case $ACTION in
 		update-mime-database $MIME_DEST >/dev/null 2>/dev/null || true
 		update-desktop-database $DESKTOP_DEST >/dev/null 2>/dev/null || true
 		
-		. "$HOME/.config/user-dirs.dirs"
-		cp $DESKTOP_ORIG $XDG_DESKTOP_DIR
 		
-		sed -i "s#%%HOME%%#$HOME#" ${XDG_DESKTOP_DIR}"/freecad-appimage.desktop"  
-		chmod +x ${XDG_DESKTOP_DIR}"/freecad-appimage.desktop"
+		sed -i "s#%%HOME%%#$HOME#" ${DESKTOP_DEST}"/freecad-appimage.desktop"  
+		chmod +x ${DESKTOP_DEST}"/freecad-appimage.desktop"
 		
 		echo ${DEST_FILE}" is now available at appimage-manager"
 	;;
