@@ -9,7 +9,6 @@ Comment[ca_ES]=FreeCAD és un modelador 3D paramètric de codi obert. El modelat
 Icon=zero-lliurex-freecad
 Category=Software
 ScriptPath=zero-lliurex-freecad.zmd
-Using=pkexec
 Service=False
 Locks=zero-lliurex-freecad
 Groups=sudo;admins;teachers;students
