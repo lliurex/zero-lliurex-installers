@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.183.2) bionic; urgency=medium
+
+  * Changed url to download freecad.appimage
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 01 Jun 2020 10:56:47 +0200
+
 zero-lliurex-installers (0.183.1) bionic; urgency=medium
 
   * Fixed freecad_script to epi
