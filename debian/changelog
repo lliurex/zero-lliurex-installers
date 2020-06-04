@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.184) bionic; urgency=medium
+
+  * Added fritzing zmd
+  * Added stellarium zmd 
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 04 Jun 2020 17:43:52 +0200
+
 zero-lliurex-installers (0.183.2) bionic; urgency=medium
 
   * Changed url to download freecad.appimage

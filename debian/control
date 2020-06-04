@@ -80,6 +80,14 @@ Depends: zero-center,epi-gtk
 Description: FreeCad installer
   Zero-center helper, It downloads and installs FreeCad package
 
+ 
+Package: zero-lliurex-fritzing
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Fritzing installer
+  Zero-center helper, It downloads and installs Friting package  
+
 Package: zero-lliurex-hotpotatoes
 Architecture: all
 Section: x11
@@ -242,6 +250,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Spotify client installer
  Zero-center helper, It installs Spotify client on Lliurex
+
+Package: zero-lliurex-stellarium
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Stellarium installer
+ Zero-center helper, It installs Stellarium on Lliurex
  
 Package: zero-lliurex-technology
 Architecture: all
