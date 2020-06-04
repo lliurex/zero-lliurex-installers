@@ -1,0 +1,16 @@
+Name=zero-lliurex-fritzing
+Name[es]=Instalación del Fritzing
+Name[en]=Fritzing installation
+Name[ca@valencia]=Instal·lació del Fritzing
+Name[ca_ES]=Instal·lació del Fritzing
+Comment=Fritzing installation wizard, an electronic circuit editor
+Comment[es]=Asistente de instalación del Fritzing, un editor de circuitos electrónicos
+Comment[ca@valencia]=Auxiliar d'instal·lació del Fritzing, un editor de circuits electrònics
+Comment[ca_ES]=Auxiliar d'instal·lació del Fritzing, un editor de circuits electrònics
+Icon=zero-lliurex-fritzing
+Groups=admin;admins;teachers;sudo
+Category=Software
+ScriptPath=zero-lliurex-fritzing.zmd
+Using=pkexec
+Service=True
+Modal=True

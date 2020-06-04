@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-fritzing_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>lliurex-zero-installer-fritzing</name>
+<name xml:lang="es">Instalación de Fritzing</name>
+<name xml:lang="qcv">Instal·lació del Fritzing</name>
+<name xml:lang="ca_ES">Instal·lació del Friting</name>
+<summary>=Fritzing installation wizard, an electronic circuit editor</summary>
+<summary xml:lang="es">Asistente de instalación del Fritzing, un editor de circuitos electrónicos</summary>
+<summary xml:lang="qcv">=Auxiliar d'instal·lació del Fritzing, un editor de circuits electrònics</summary>
+<summary xml:lang="ca_ES">=Auxiliar d'instal·lació del Fritzing, un editor de circuits electrònics</summary>
+<description>
+<p>Fritzing installation</p>
+<p xml:lang="es">Instalación de Fritzing</p>
+<p xml:lang="qcv">Instal·lació del Fritzing</p>
+<p xml:lang="ca_ES">Instal·lació del Fritzing</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">fritzing</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>fritzing</keyword>
+<keyword>lliurex-zero-installer-fritzing</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>Fritzing</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+<screenshots>
+<screenshot type="default">
+<caption>Main window.</caption>
+<image type="source" width="800" height="450">https://screenshots.debian.net/screenshots/000/015/459/large.png</image>
+</screenshot>
+</screenshots>
+</component>
