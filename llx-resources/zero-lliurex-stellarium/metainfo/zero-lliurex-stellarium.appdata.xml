@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-stellarium_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>lliurex-zero-installer-stellarium</name>
+<name xml:lang="es">Instalación de Stellarium</name>
+<name xml:lang="qcv">Instal·lació del Stellarium</name>
+<name xml:lang="ca_ES">Instal·lació del Stellarium</name>
+<summary>=Stellarium installation wizard, an desktop planetarium</summary>
+<summary xml:lang="es">Asistente de instalación del Stellarium, un planetario de escritorio</summary>
+<summary xml:lang="qcv">=Auxiliar d'instal·lació del Stellarium,un planetari d'escriptori</summary>
+<summary xml:lang="ca_ES">=Auxiliar d'instal·lació del Stellarium,un planetari d'escriptori</summary>
+<description>
+<p>=Stellarium installation wizard, an desktop planetarium</p>
+<p xml:lang="es">Asistente de instalación del Stellarium, un planetario de escritorio</p>
+<p xml:lang="qcv">=Auxiliar d'instal·lació del Stellarium,un planetari d'escriptori</p>
+<p xml:lang="ca_ES">=Auxiliar d'instal·lació del Stellarium,un planetari d'escriptori</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">stellarium</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>stellarium</keyword>
+<keyword>lliurex-zero-installer-stellarium</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>Stellarium</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>del</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+<screenshots>
+<screenshot type="default">
+<caption>Main window.</caption>
+<image type="source" width="800" height="450">https://screenshots.debian.net/screenshots/000/015/459/large.png</image>
+</screenshot>
+</screenshots>
+</component>

@@ -1,0 +1,16 @@
+Name=zero-lliurex-stellarium
+Name[es]=Instalación del Stellarium
+Name[en]=Stellarium installation
+Name[ca@valencia]=Instal·lació del Stellarium
+Name[ca_ES]=Instal·lació del Stellarium
+Comment=Stellarium installation wizard, an desktop planetarium
+Comment[es]=Asistente de instalación del Stellarium, un planetario de escritorio
+Comment[ca@valencia]=Auxiliar d'instal·lació del Stellarium,un planetari d'escriptori
+Comment[ca_ES]=Auxiliar d'instal·lació del Stellarium, un planetari d'escriptori
+Icon=zero-lliurex-stellarium
+Groups=admin;admins;teachers;sudo
+Category=Software
+ScriptPath=zero-lliurex-stellarium.zmd
+Using=pkexec
+Service=True
+Modal=True
