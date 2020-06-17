@@ -26,6 +26,23 @@ case $ACTION in
 		fi	
 
 	;;
+	postInstall)
+		if [ -f "/usr/bin/docker-compose" ]; then
+		    echo "Skipping docker-compose installation..."
+		else
+		    echo "[EPI]:Installing docker-compose from github..."
+		    TAG="$(curl -s "https://github.com/docker/compose/releases/latest" | sed -nr 's@.*releases/tag/([1-9]+(\.[0-9]+)*)".*@\1@p')"
+		    if [ -n "${TAG}" ]; then
+			echo "[EPI]:Downloading docker-compose version ${TAG}"
+			curl -sL "https://github.com/docker/compose/releases/download/${TAG}/docker-compose-$(uname -s)-$(uname -m)" -o /tmp/docker-compose
+		    fi
+		    if [ -f "/tmp/docker-compose" -a -n "$(file /tmp/docker-compose|grep -o 'ELF 64-bit')" ]; then
+			mv /tmp/docker-compose /usr/bin/docker-compose
+			chmod +x /usr/bin/docker-compose
+			echo "[EPI]:docker-compose installed!"
+		    fi
+		fi
+	;;
 
 esac
 exit 0
