@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+
+ACTION="$1"
+
+case $ACTION in
+
+	remove)
+		apt-get remove -y llixhoot
+		TEST=$( dpkg-query -s llixhoot 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == 'installed' ];then
+			exit 1
+		fi	
+	;;	
+esac
+exit 0
+

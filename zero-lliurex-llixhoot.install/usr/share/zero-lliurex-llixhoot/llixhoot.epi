@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"llixhoot","key_store":"zero-lliurex-llixhoot"}], 
+	"script": {"name":"/usr/share/zero-lliurex-llixhoot/llixhoot_script", "remove":true},
+	"zomando":"zero-lliurex-llixhoot",
+	"required_x":true	
+	
+	}
