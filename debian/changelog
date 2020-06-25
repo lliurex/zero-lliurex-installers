@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.186) bionic; urgency=medium
+
+  * Add zero-lliurex-llixhoot
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 25 Jun 2020 14:43:51 +0200
+
 zero-lliurex-installers (0.185) bionic; urgency=medium
 
   * Install docker-compose into postInstall from zero-lliurex-docker 

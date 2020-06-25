@@ -283,3 +283,9 @@ Provides: lliurex-zero-installer-wine64
 Description: Wine64 installer
  Zero-center helper, It installs wine on amd64
 
+Package: zero-lliurex-llixhoot
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Llixhoot installer
+ Zero-center helper, It installs llixhoot on Lliurex
