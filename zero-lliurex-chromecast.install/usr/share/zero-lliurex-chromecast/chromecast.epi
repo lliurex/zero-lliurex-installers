@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"mkchromecast","key_store":"zero-lliurex-chromecast"}], 
+	"pkg_list": [{"name":"mkchromecast","key_store":"zero-lliurex-chromecast","custom_icon":"mkchromecast_mkchromecast.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-chromecast/chromecast_script","remove":true},
 	"zomando":"zero-lliurex-chromecast"
 	}

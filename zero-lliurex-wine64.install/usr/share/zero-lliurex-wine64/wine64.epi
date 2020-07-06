@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"wine-stable","key_store":"zero-lliurex-wine64"}], 
+	"pkg_list": [{"name":"wine-stable","key_store":"zero-lliurex-wine64","custom_icon":"wine-stable_wine-stable.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-wine64/wine64_script","remove":true},
 	"required_root":true,
 	"force32":true,
