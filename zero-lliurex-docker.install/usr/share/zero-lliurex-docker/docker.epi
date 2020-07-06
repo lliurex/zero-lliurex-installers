@@ -1,8 +1,9 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"docker-ce","key_store":"zero-lliurex-docker"},{"name":"docker-ce-cli","key_store":"zero-lliurex-docker"},{"name":"containerd.io","key_store":"zero-lliurex-docker"}],
+	"pkg_list": [{"name":"docker-ce","key_store":"zero-lliurex-docker","custom_icon":"docker.png"},{"name":"docker-ce-cli","key_store":"zero-lliurex-docker","custom_icon":"docker.png"},{"name":"containerd.io","key_store":"zero-lliurex-docker","custom_icon":"docker.png"}],
 	"repository": [{"url":"deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"}], 
 	"script": {"name":"/usr/share/zero-lliurex-docker/docker_script","addRepoKeys":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-docker/",
 	"required_root":true,
 	"zomando":"zero-lliurex-docker"
 	
