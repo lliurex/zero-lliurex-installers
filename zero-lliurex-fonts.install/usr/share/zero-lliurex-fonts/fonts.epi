@@ -1,7 +1,8 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"fonts-ecolier-court","key_store":"zero-lliurex-fonts"},{"name":"fonts-ecolier-lignes-court","key_store":"zero-lliurex-fonts"},{"name":"lliurex-artwork-fonts","key_store":"zero-lliurex-fonts"}],
+	"pkg_list": [{"name":"fonts-ecolier-court","key_store":"zero-lliurex-fonts","custom_icon":"fonts.svg"},{"name":"fonts-ecolier-lignes-court","key_store":"zero-lliurex-fonts","custom_icon":"fonts.svg"},{"name":"lliurex-artwork-fonts","key_store":"zero-lliurex-fonts","custom_icon":"fonts.svg"}],
 	"script": {"name":"/usr/share/zero-lliurex-fonts/fonts_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-fonts/",
 	"zomando":"zero-lliurex-fonts"
 
 	}

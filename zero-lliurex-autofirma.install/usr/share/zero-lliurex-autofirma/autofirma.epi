@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"autofirma","key_store":"zero-lliurex-autofirma","custom_icon":"autofirma.png"}], 
+	"pkg_list": [{"name":"autofirma","key_store":"zero-lliurex-autofirma","custom_icon":"autofirma.svg"}], 
 	"script": {"name":"/usr/share/zero-lliurex-autofirma/autofirma_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-autofirma/",
 	"zomando":"zero-lliurex-autofirma"

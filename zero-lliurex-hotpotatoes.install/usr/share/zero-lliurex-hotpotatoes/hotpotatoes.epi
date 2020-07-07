@@ -1,8 +1,8 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"hotpotatoes","key_store":"zero-lliurex-hotpotatoes","custom_icon":"hotpotatoes.png"}],
+	"pkg_list": [{"name":"hotpotatoes","key_store":"zero-lliurex-hotpotatoes","custom_icon":"hotpotatoes.svg"}],
 	"script": {"name":"/usr/share/zero-lliurex-hotpotatoes/hotpotatoes_script","remove":true},
-	"custom_icon_path":"/usr/share/zero-lliurex-hotpotatoes/",
+	"custom_icon_path":"/usr/share/icons/lliurex/apps/48/",
 	"zomando":"zero-lliurex-hotpotatoes"
 
 	}

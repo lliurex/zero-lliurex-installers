@@ -1,7 +1,8 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"s4a","key_store":"zero-lliurex-technology"},{"name":"arduino-ide","key_store":"zero-lliurex-technology"},{"name":"appinventor2-setup","key_store":"zero-lliurex-technology"},{"name":"lliurex-robotics","key_store":"zero-lliurex-technology"}],
+	"pkg_list": [{"name":"s4a","key_store":"zero-lliurex-technology","custom_icon":"s4a.svg"},{"name":"arduino-ide","key_store":"zero-lliurex-technology","custom_icon":"arduino.svg"},{"name":"appinventor2-setup","key_store":"zero-lliurex-technology","custom_icon":"app-inventor.svg"},{"name":"lliurex-robotics","key_store":"zero-lliurex-technology"}],
 	"script": {"name":"/usr/share/zero-lliurex-technology/technology_script","remove":true},
+	"custom_icon_path":"/usr/share/icons/lliurex/apps/48/",
 	"force32":true,
 	"zomando":"zero-lliurex-technology"
 	

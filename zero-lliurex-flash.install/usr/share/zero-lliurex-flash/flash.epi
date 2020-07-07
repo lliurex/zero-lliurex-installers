@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"adobe-flashplugin","key_store":"zero-lliurex-flash","custom_icon":"flash.png"}], 
+	"pkg_list": [{"name":"adobe-flashplugin","key_store":"zero-lliurex-flash","custom_icon":"flash.svg"}], 
 	"script": {"name":"/usr/share/zero-lliurex-flash/flash_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-flash/",
 	"zomando":"zero-lliurex-flash"
