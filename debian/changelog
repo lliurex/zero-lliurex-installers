@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.186.2) bionic; urgency=medium
+
+  * Added custom icon to show in epi
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 07 Jul 2020 12:47:38 +0200
+
 zero-lliurex-installers (0.186.1) bionic; urgency=medium
 
   * Fixed valencian locale in fritzing and stellarium app file
