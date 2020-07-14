@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.186.3) bionic; urgency=medium
+
+  * Updated moodle epi script to copy files from moodle site in server home page
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 14 Jul 2020 17:04:34 +0200
+
 zero-lliurex-installers (0.186.2) bionic; urgency=medium
 
   * Added custom icon to show in epi
