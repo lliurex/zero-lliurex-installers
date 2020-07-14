@@ -3,6 +3,13 @@
 
 ACTION="$1"
 
+EASY_SITE_FILES="/usr/share/lliurex-moodle/easy-site/"
+EASY_SITE=$EASY_SITE_FILES"moodle.json"
+EASY_SITE_ICON=$EASY_SITE_FILES"moodle.svg"
+
+EASY_SITES_DIR="/var/lib/lliurex-www/links/"
+EASY_SITES_DIR_ICON="/usr/share/lliurex-www/srv/icons/"
+
 case $ACTION in
 	preInstall)
 
@@ -74,6 +81,10 @@ case $ACTION in
 			chown -R www-data:www-data /var/lib/moodle || true
 
 		fi
+
+		echo "Creating easy-site..."
+		cp $EASY_SITE $EASY_SITES_DIR
+		cp $EASY_SITE_ICON $EASY_SITES_DIR_ICON
 	;;	
 
 	remove)
@@ -83,6 +94,10 @@ case $ACTION in
 		if [ "$TEST" == 'installed' ];then
 			exit 1
 		fi
+
+		echo "Removing easy-site..."
+		rm -f $EASY_SITES_DIR"moodle.json"
+		rm -f $EASY_SITES_DIR_ICON"moodle.svg"
 	;;	
 
 esac
