@@ -84,6 +84,7 @@ case $ACTION in
 
 		echo "Creating easy-site..."
 		cp $EASY_SITE $EASY_SITES_DIR
+		chown www-data:www-data $EASY_SITES_DIR"moodle.json" || true
 		cp $EASY_SITE_ICON $EASY_SITES_DIR_ICON
 	;;	
 
