@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.186.4) bionic; urgency=medium
+
+  * Changed the permissions of link json file of moodle to www-data
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 15 Jul 2020 11:53:43 +0200
+
 zero-lliurex-installers (0.186.3) bionic; urgency=medium
 
   * Updated moodle epi script to copy files from moodle site in server home page
