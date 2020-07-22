@@ -1,7 +1,8 @@
 {
 	"type":"apt",
-	"pkg_list":[{"name":"lliurex-openmeetings","key_store":"lliurex-openmeetings"},{"name":"lliurex-openmeetings-remote","key_store":"lliurex-openmeetings"}],
-	"script":{"name":"/usr/share/lliurex-openmeetings/EPI-files/openmeetings_script","remove":true},
+	"pkg_list":[{"name":"kurento-media-server","key_store":"lliurex-openmeetings"},{"name":"lliurex-openmeetings","key_store":"lliurex-openmeetings"},{"name":"lliurex-openmeetings-remote","key_store":"lliurex-openmeetings"}],
+	"repository": [{"url":"deb [arch=amd64] http://ubuntu.openvidu.io/6.10.0 bionic kms6","key_cmd":"apt-key --keyring /tmp/epi_keyring adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 5AFA7A83"}], 
+	"script":{"name":"/usr/share/zero-lliurex-openmeetings/openmeetings_script","remove":true},
 	"required_root":true,
 	"zomando": "lliurex-openmeetings"
 	
