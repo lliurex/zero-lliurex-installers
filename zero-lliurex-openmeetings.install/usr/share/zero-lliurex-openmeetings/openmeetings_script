@@ -11,7 +11,7 @@ case $ACTION in
 	postInstall)
 		
 		echo "Launching Openmeetings configurator"
-		"lliurex-openmeetings-setup"
+		"lliurex-openmeetings-setup-qt"
 
 	;;
 	remove)
