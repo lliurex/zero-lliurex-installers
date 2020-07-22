@@ -3,7 +3,7 @@
 
 ACTION="$1"
 
-PACKAGE_LIST="lliurex-openmeetings-data lliurex-openmeetings-remote"
+PACKAGE_LIST="lliurex-openmeetings-data lliurex-openmeetings-remote kurento-media-server"
 
 
 case $ACTION in
@@ -22,6 +22,7 @@ case $ACTION in
 			apt-get remove -y $ix
 			TEST=$( dpkg-query -s  $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 			if [ "$TEST" == 'installed' ];then
+				echo "$ix still installed"
 				exit 1
 			fi
 		done		
