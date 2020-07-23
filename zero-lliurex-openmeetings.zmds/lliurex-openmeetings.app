@@ -1,4 +1,4 @@
-Name=LliurexMeet
+Name=lliurex-openmeetings
 Name[en]=LliurexMeet Installer
 Name[es]=Instalador de LliurexMeet
 Name[qcv]=Instal·lador de LliurexMeet
@@ -15,5 +15,5 @@ Groups=sudo;admins
 Using=pkexec
 Service=True
 Modal=True
-Locks=zero-lliurexlab-installer
+Locks=lliurex-openmeetings
 
