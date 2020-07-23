@@ -1,7 +1,7 @@
 {
 	"type":"apt",
 	"pkg_list":[{"name":"kurento-media-server","key_store":"lliurex-openmeetings"},{"name":"lliurex-openmeetings","key_store":"lliurex-openmeetings"},{"name":"lliurex-openmeetings-remote","key_store":"lliurex-openmeetings"}],
-	"repository": [{"url":"deb [arch=amd64] http://ubuntu.openvidu.io/6.10.0 bionic kms6","key_cmd":"apt-key --keyring /tmp/epi_keyring adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 5AFA7A83"}], 
+	"repository": [{"url":"deb [arch=amd64] http://ubuntu.openvidu.io/6.10.0 bionic kms6","key_cmd":"apt-key --keyring /tmp/epi_keyring adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 5AFA7A83"},{"url":"deb http://archive.ubuntu.com/ubuntu/ bionic main multiverse restricted universe"}], 
 	"script":{"name":"/usr/share/zero-lliurex-openmeetings/openmeetings_script","remove":true},
 	"required_root":true,
 	"zomando": "lliurex-openmeetings"
