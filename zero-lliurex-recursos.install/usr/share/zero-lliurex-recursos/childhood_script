@@ -2,11 +2,13 @@
 
 
 ACTION="$1"
-PACKAGE_LIST="rsc-bits rsc-fantasmin rsc-jclics rsc-ser-pensar-conviure-fer"
-
+#PACKAGE_LIST="rsc-bits rsc-fantasmin rsc-jclics rsc-ser-pensar-conviure-fer"
+shift
+PACKAGE_LIST=$@
 
 case $ACTION in
 	remove)
+		
 		for ix in $PACKAGE_LIST	
 		do
 
@@ -15,10 +17,7 @@ case $ACTION in
 			if [ "$TEST" == 'installed' ];then
 				exit 1
 			fi
-			if [ $ix=="S4a" ];then
-				zero-center set-non-configured  zero-lliurex-recursos-inf
-			fi
-				
+							
 		done		
 	;;	
 esac

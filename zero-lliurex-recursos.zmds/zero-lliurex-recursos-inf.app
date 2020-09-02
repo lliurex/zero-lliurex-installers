@@ -12,5 +12,5 @@ Groups=sudo;admins;teachers
 Category=Resources
 ScriptPath=zero-lliurex-recursos-inf.zmd
 Using=pkexec
-Service=True
+Service=False
 Modal=True
