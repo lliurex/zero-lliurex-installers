@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.187.4) bionic; urgency=medium
+
+  * Convert recursos-inf and recursos-pri to epi list
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 02 Sep 2020 10:41:10 +0200
+
 zero-lliurex-installers (0.187.3) bionic; urgency=medium
 
   * Upgrade lliurexlab->lliurexmeet
