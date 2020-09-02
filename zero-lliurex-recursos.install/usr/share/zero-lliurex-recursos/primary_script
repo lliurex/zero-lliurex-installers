@@ -2,8 +2,9 @@
 
 
 ACTION="$1"
-PACKAGE_LIST="rsc-alquimia rsc-animals-vertebrats rsc-caixademusica rsc-cifras rsc-ingles rsc-jclics rsc-matematicas rsc-primartis rsc-ser-pensar-conviure-fer rsc-simon"
-
+#PACKAGE_LIST="rsc-alquimia rsc-animals-vertebrats rsc-caixademusica rsc-cifras rsc-ingles rsc-jclics rsc-matematicas rsc-primartis rsc-ser-pensar-conviure-fer rsc-simon"
+shift
+PACKAGE_LIST=$@
 
 case $ACTION in
 	remove)
@@ -15,10 +16,7 @@ case $ACTION in
 			if [ "$TEST" == 'installed' ];then
 				exit 1
 			fi
-			if [ $ix=="S4a" ];then
-				zero-center set-non-configured  zero-lliurex-recursos-pri
-			fi
-				
+							
 		done		
 	;;	
 esac
