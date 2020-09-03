@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"dolphin-nextcloud","key_store":"dolphin-nextcloud","custom_name": "Nextcloud Desktop", "custom_icon":"lliurex-nextcloud-setup.png"}], 
+	"script": {"name":"/usr/share/zero-lliurex-nextcloud-client/nextcloud-client_script", "remove":true},
+	"custom_icon_path":"/usr/share/icons/hicolor/64x64/apps/",
+	"zomando":"zero-lliurex-nextcloud-client"
+	
+	}
