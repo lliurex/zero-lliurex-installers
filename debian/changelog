@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.188) bionic; urgency=medium
+
+  * Added zomando to install Nextcloud desktop
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 04 Sep 2020 11:49:27 +0200
+
 zero-lliurex-installers (0.187.4) bionic; urgency=medium
 
   * Convert recursos-inf and recursos-pri to epi list
