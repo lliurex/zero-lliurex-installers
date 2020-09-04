@@ -128,6 +128,13 @@ Provides: lliurex-zero-libreoffice-reset
 Description: LibreOffice Home Cleaner
  Limpiador del LibreOffice
 
+Package: zero-lliurex-nextcloud-client
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Nextcloud client installer
+ Zero-center helper, It installs Nextcloud client packages
+ 
 Package: zero-lliurex-midicss
 Architecture: all
 Section: x11
