@@ -1,0 +1,15 @@
+Name=zero-lliurex-anydesk
+Name[es]=Instalador de AnyDesk
+Name[qcv]=Instal·lador de AnyDesk
+Name[ca_ES]=Instal·lador de AnyDesk
+Comment= Remote desktop application that allows two-way remote access between computers
+Comment[es]=Aplicación de escritorio remoto que permite el acceso remoto bidireccional entre ordenadores
+Comment[qcv]=Aplicació d'escriptori remot que permet l'accés remot bidireccional entre ordinadors
+Comment[ca_ES]=Aplicació d'escriptori remot que permet l'accés remot bidireccional entre ordinadors
+Icon=zero-lliurex-anydesk
+Category=Software
+ScriptPath=zero-lliurex-anydesk.zmd
+Using=pkexec
+Service=True
+Locks=zero-lliurex-anydesk
+Groups=sudo;admins
