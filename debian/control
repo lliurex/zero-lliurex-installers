@@ -16,6 +16,13 @@ Provides: lliurex-zero-installer-analytics
 Description: Controller for Lliurex Analytics reporting agent
  Zero-center Controller for stat reporting agent
 
+Package: zero-lliurex-anydesk
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Anydesk installer
+  Zero-center helper, It downloads and installs Anydesk package
+
 Package: zero-lliurex-autofirma
 Architecture: all
 Section: x11
