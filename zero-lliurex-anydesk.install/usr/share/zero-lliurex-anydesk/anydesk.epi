@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"anydesksai","key_store":"zero-lliurex-anydesk","custom_name":"AnyDesk: remote desktop application", "custom_icon":"anydesk.svg"}], 
+	"script": {"name":"/usr/share/zero-lliurex-anydesk/anydesk_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-anydesk/",
+	"zomando":"zero-lliurex-anydesk"
+	}
