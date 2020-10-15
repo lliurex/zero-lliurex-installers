@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.189) bionic; urgency=medium
+
+  * Added zomando to install AnyDesk
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 15 Oct 2020 09:45:07 +0200
+
 zero-lliurex-installers (0.188) bionic; urgency=medium
 
   * Added zomando to install Nextcloud desktop
