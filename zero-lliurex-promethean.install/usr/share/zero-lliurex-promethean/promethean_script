@@ -6,6 +6,21 @@ ACTION="$1"
 case $ACTION in
 
 	preInstall)
+		WRKDIR=$(mktemp -d)
+		chmod 777 $WRKDIR
+		cd $WRKDIR
+		apt-get download activinspire
+		if [ $? -ne 0 ]
+		then
+			exit 1
+		fi
+		#Rebuild the package without libcurl3 depend
+		mkdir wrk
+		dpkg-deb -R activinspire*.deb wrk
+		sed -i 's/libcurl3,//g' wrk/DEBIAN/control 
+		dpkg-deb -b wrk activinspire-lliurex.deb
+		dpkg -i $PWD/activinspire-lliurex.deb
+		apt-get install -y -f
 		apt-get install -y activinspire-32bitdependsfor64bit-lliurex
 		if [ $? -ne 0 ]
 		then
