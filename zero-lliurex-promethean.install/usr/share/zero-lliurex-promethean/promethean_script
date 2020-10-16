@@ -6,6 +6,7 @@ ACTION="$1"
 case $ACTION in
 
 	preInstall)
+		apt-get update
 		WRKDIR=$(mktemp -d)
 		chmod 777 $WRKDIR
 		cd $WRKDIR
