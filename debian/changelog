@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.190) bionic; urgency=medium
+
+  * Fix promethean installation removing libcurl3 from dependencies
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Fri, 16 Oct 2020 09:56:25 +0200
+
 zero-lliurex-installers (0.189) bionic; urgency=medium
 
   * Added zomando to install AnyDesk
