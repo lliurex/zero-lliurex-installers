@@ -1,4 +1,4 @@
-zero-lliurex-installers (0.190) bionic; urgency=medium
+zero-lliurex-installers (0.190.1) bionic; urgency=medium
 
   * Fix promethean installation removing libcurl3 from dependencies
 
