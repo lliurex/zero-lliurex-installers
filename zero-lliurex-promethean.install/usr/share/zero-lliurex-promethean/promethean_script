@@ -7,6 +7,9 @@ case $ACTION in
 
 	preInstall)
 		apt-get update
+		#Get the linux-headers of current kernel
+		VERSION=$(uname -r)
+		apt-get install -y linux-headers-$VERSION
 		WRKDIR=$(mktemp -d)
 		chmod 777 $WRKDIR
 		cd $WRKDIR
