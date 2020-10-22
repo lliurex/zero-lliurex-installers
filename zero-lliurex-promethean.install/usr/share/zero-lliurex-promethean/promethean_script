@@ -1,5 +1,18 @@
 #!/bin/bash
 
+VERSION=$(uname -r)
+
+function compile_for_5x
+{
+	cd /usr/src/promethean/kernel
+	sed -i 's/SUBDIRS/M/g' /usr/src/promethean/kernel/Makefile
+	make -C /lib/modules/${VERSION}/build M=$PWD clean
+	cp /usr/src/linux-headers-${VERSION}/Module.symvers /usr/src/promethean/kernel
+	make -C /lib/modules/${VERSION}/build M=$PWD
+	./b
+	cd $OLDPWD	
+}
+
 
 ACTION="$1"
 
@@ -8,7 +21,6 @@ case $ACTION in
 	preInstall)
 		apt-get update
 		#Get the linux-headers of current kernel
-		VERSION=$(uname -r)
 		apt-get install -y linux-headers-$VERSION
 		WRKDIR=$(mktemp -d)
 		chmod 777 $WRKDIR
@@ -31,6 +43,9 @@ case $ACTION in
 			exit 1
 		fi
 		;;
+	postInstall)
+		dpkg --compare-versions 5.0 lt $VERSION && compile_for_5x
+		;;	
 	remove)
 		errpkg=''
 		for pkg in promethean-fixboot activinspire activrelay activtools activdriver activaid
