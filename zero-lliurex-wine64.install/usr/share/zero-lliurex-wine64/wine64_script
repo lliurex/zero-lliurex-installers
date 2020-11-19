@@ -2,16 +2,20 @@
 
 
 ACTION="$1"
-PACKAGE="wine*"
+shift
+PACKAGE_LIST=$@
 
 case $ACTION in
 
 	remove)
-		apt-get remove -y $PACKAGE
-		TEST=$( dpkg-query -s  wine 2> /dev/null| grep Status | cut -d " " -f 4 )
-		if [ "$TEST" == 'installed' ];then
-			exit 1
-		fi
+		for ix in $PACKAGE_LIST	
+		do
+			apt-get remove -y $ix
+			TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+			if [ "$TEST" == 'installed' ];then
+				exit 1
+			fi	
+		done	
 	;;
 esac
 exit 0	
