@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.190.4) bionic; urgency=medium
+
+  * Updated zomando to install wine to add winetricks and q4wine
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 19 Nov 2020 14:05:22 +0100
+
 zero-lliurex-installers (0.190.3) bionic; urgency=medium
 
   * Fix promethean installation removing libcurl3 from dependencies
