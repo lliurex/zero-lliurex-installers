@@ -1,0 +1,15 @@
+Name=zero-lliurex-palemoon
+Name[es]=Instalador de Pale Moon
+Name[qcv]=Instal·lador de Pale Moon
+Name[ca_ES]=Instal·lador de Pale Moon
+Comment=Open Source, Goanna-based web browser 
+Comment[es]=Navegador web Open Source basado en Goanna
+Comment[qcv]=Open Source, Goanna-based web browser
+Comment[ca_ES]=Open Source, Goanna-based web browser
+Icon=zero-lliurex-palemoon
+Category=Software
+ScriptPath=zero-lliurex-palemoon.zmd
+Using=pkexec
+Service=True
+Locks=zero-lliurex-anydesk
+Groups=sudo;admins;teachers
