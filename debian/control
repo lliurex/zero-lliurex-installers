@@ -303,3 +303,10 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Llixhoot installer
  Zero-center helper, It installs llixhoot on Lliurex
+
+Package: zero-lliurex-palemoon
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Pale Moon installer
+  Zero-center helper, It downloads and installs Pale Moon package
