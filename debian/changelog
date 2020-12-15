@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.191) bionic; urgency=medium
+
+  * Created palemoon zommand
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 15 Dec 2020 20:28:02 +0100
+
 zero-lliurex-installers (0.190.4) bionic; urgency=medium
 
   * Updated zomando to install wine to add winetricks and q4wine
