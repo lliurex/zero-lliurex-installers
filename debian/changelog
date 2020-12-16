@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.192.3) bionic; urgency=medium
+
+  * changed palemoon category
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 13:38:30 +0100
+
 zero-lliurex-installers (0.192.2) bionic; urgency=high
 
   * added missing zero-lliurex-flash.zero file
