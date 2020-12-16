@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.192.2) bionic; urgency=high
+
+  * added missing zero-lliurex-flash.zero file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 10:06:43 +0100
+
 zero-lliurex-installers (0.192.1) bionic; urgency=high
 
   * wrong palemoon epi path
