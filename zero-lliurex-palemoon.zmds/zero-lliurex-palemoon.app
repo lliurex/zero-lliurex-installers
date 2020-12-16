@@ -11,5 +11,5 @@ Category=Software
 ScriptPath=zero-lliurex-palemoon.zmd
 Using=pkexec
 Service=True
-Locks=zero-lliurex-anydesk
+Locks=zero-lliurex-palemoon
 Groups=sudo;admins;teachers
