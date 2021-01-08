@@ -1,6 +1,6 @@
 {
-	"type":"apt",
-	"pkg_list": [{"name":"adobe-flashplugin","key_store":"zero-lliurex-flash","custom_icon":"flash.svg"}], 
+	"type":"deb",
+	"pkg_list": [{"name":"adobe-flashplugin","version":{"all":"adobe-flashplugin_20201208.1-0ubuntu0.18.04.1_amd64.deb"},"url_download":"http://archive.canonical.com/ubuntu/pool/partner/a/adobe-flashplugin/","key_store":"zero-lliurex-flash","custom_icon":"flash.svg"},{"name":"adobe-flash-properties-gtk","version":{"all":"adobe-flash-properties-gtk_20201208.1-0ubuntu0.18.04.1_amd64.deb"},"url_download":"http://archive.canonical.com/ubuntu/pool/partner/a/adobe-flashplugin/","key_store":"zero-lliurex-flash","custom_icon":"flash.svg"}], 
 	"script": {"name":"/usr/share/zero-lliurex-flash/flash_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-flash/",
 	"zomando":"zero-lliurex-flash"
