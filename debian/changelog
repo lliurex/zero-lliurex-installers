@@ -1,4 +1,4 @@
-zero-lliurex-installers (0.193.1) bionic; urgency=medium
+zero-lliurex-installers (0.193.2) bionic; urgency=medium
 
   * zero-lliurex-flash now installs from deb files for as long as they are
     available in canonical repositories
