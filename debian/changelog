@@ -1,3 +1,11 @@
+zero-lliurex-installers (0.193) bionic; urgency=medium
+
+  * zero-lliurex-flash now installs from deb files for as long as they are
+    available in canonical repositories
+  * zero-lliurex-flash removes canonical sources.list
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 08 Jan 2021 11:29:57 +0100
+
 zero-lliurex-installers (0.192.3) bionic; urgency=medium
 
   * changed palemoon category
