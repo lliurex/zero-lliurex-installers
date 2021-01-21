@@ -1,5 +1,0 @@
-#!/bin/bash
-
-epi-gtk /usr/share/zero-lliurex-flash/flash.epi
-
-exit 0
