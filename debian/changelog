@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.194) bionic; urgency=medium
+
+  * Removing zero-lliurex-flash
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 21 Jan 2021 12:54:17 +0100
+
 zero-lliurex-installers (0.193.2) bionic; urgency=medium
 
   * zero-lliurex-flash now installs from deb files for as long as they are
