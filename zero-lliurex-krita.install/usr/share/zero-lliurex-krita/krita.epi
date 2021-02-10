@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"krita","key_store":"krita","custom_icon":"krita_calligrakrita.png"}], 
+	"pkg_list": [{"name":"krita","key_store":"krita","custom_name":"Krita: digital painting program","custom_icon":"krita_calligrakrita.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-krita/krita_script","remove":true},
 	"custom_icon_path":"/var/lib/app-info/icons/ubuntu-bionic-universe/64x64/",
 	"zomando":"zero-lliurex-krita"

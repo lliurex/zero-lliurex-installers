@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"ocrfeeder","key_store":"zero-lliurex-ocrfeeder","custom_icon":"ocrfeeder.svg"},{"name":"tesseract-ocr-spa","key_store":"zero-lliurex-ocrfeeder","custom_icon":"ocrfeeder.svg"},{"name":"tesseract-ocr-cat","key_store":"zero-lliurex-ocrfeeder","custom_icon":"ocrfeeder.svg"}],
+	"pkg_list": [{"name":"ocrfeeder","key_store":"zero-lliurex-ocrfeeder","custom_name":"OCRFeeder: an optical character recognition tool","custom_icon":"ocrfeeder.svg"},{"name":"tesseract-ocr-spa","key_store":"zero-lliurex-ocrfeeder","custom_name":"Tesseract-SPA:optical character recognition engine in spanish","custom_icon":"ocrfeeder.svg"},{"name":"tesseract-ocr-cat","key_store":"zero-lliurex-ocrfeeder","custom_name":"Tesseract-CAT:optical character recognition engine in catalán","custom_icon":"ocrfeeder.svg"}],
 	"script": {"name":"/usr/share/zero-lliurex-ocrfeeder/ocrfeeder_script","remove":true},
 	"custom_icon_path":"/usr/share/icons/lliurex/apps/48/",
 	"zomando":"zero-lliurex-ocrfeeder"
