@@ -1,0 +1,319 @@
+Source: zero-lliurex-installers
+Section: x11
+Priority: optional
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Build-Depends: cdbs, debhelper (>= 10), zero-dev, llxsrchelper,inkscape (>= 0.47),python3-poinstaller
+Standards-Version: 4.1.2
+
+Package: zero-lliurex-analytics
+Architecture: all
+Section: x11
+Depends: zero-center,n4d
+Conflicts: lliurex-zero-installer-analytics
+Replaces: lliurex-zero-installer-analytics (<=0.126.5)
+Breaks: lliurex-zero-installer-analytics (<=0.126.5)
+Provides: lliurex-zero-installer-analytics
+Description: Controller for Lliurex Analytics reporting agent
+ Zero-center Controller for stat reporting agent
+
+Package: zero-lliurex-anydesk
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Anydesk installer
+  Zero-center helper, It downloads and installs Anydesk package
+
+Package: zero-lliurex-autofirma
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Autofirma installer
+  Zero-center helper, It downloads and installs Autofirma package
+ 
+Package: zero-lliurex-chrome
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Google Chrome browser installer
+ Zero-center helper, It installs Google Chrome browser on Lliurex
+
+Package: zero-lliurex-chromecast
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Mkchromecast installer
+ Zero-center helper, It installs Mkchromecast client on Lliurex
+ 
+Package: zero-lliurex-docker
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Docker installer
+ Zero-center helper, It installs Docker on Lliurex
+ 
+Package: zero-lliurex-dropbox-installer
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Automate dropbox client installation
+ Automate dropbox client installation
+ 
+Package: zero-lliurex-dvdcss
+Architecture: all
+Section: x11
+Depends: zero-center, gdebi,epi-gtk
+Conflicts: lliurex-zero-installer-dvdcss
+Replaces: lliurex-zero-installer-dvdcss (<=0.126.5)
+Breaks: lliurex-zero-installer-dvdcss (<=0.126.5)
+Provides: lliurex-zero-installer-dvdcss
+Description: Extra codecs installer
+ Zero-center helper, It downloads and installs codecs for DVD package
+ 
+Package: zero-lliurex-fonts
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Conflicts: zero-installer-fonts
+Replaces: zero-installer-fonts (<=0.126.5)
+Breaks: zero-installer-fonts (<=0.126.5)
+Provides: zero-installer-fonts
+Description: Extra fonts installer
+ Zero-center helper, It downloads and installs extra-fonts package
+ 
+Package: zero-lliurex-freecad
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: FreeCad installer
+  Zero-center helper, It downloads and installs FreeCad package
+
+ 
+Package: zero-lliurex-fritzing
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Fritzing installer
+  Zero-center helper, It downloads and installs Friting package  
+
+Package: zero-lliurex-hotpotatoes
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Conflicts: lliurex-zero-installer-hotpotatoes
+Replaces: lliurex-zero-installer-hotpotatoes (<=0.126.5)
+Breaks: lliurex-zero-installer-hotpotatoes (<=0.126.5)
+Provides: lliurex-zero-installer-hotpotatoes
+Description: Hotpotatoes installer
+ Hotpotatoes installer for resources
+ 
+Package: zero-lliurex-kiosko
+Architecture: all
+Section: x11
+Depends: zero-center, chromium-browser
+Conflicts: lliurex-zero-installer-kiosko
+Replaces: lliurex-zero-installer-kiosko (<=0.126.5)
+Breaks: llliurex-zero-installer-kiosko (<=0.126.5)
+Provides: lliurex-zero-installer-kiosko
+Description: Lliurex Technology lab
+ Zero-center installer to run kiosk mode
+ 
+Package: zero-lliurex-krita
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Krita installer
+  Zero-center helper, It downloads and installs krita package
+
+Package: zero-lliurex-libreoffice-reset
+Architecture: i386
+Section: x11
+Depends: zero-center
+Conflicts: lliurex-zero-libreoffice-reset
+Replaces: lliurex-zero-libreoffice-reset (<=0.126.5)
+Breaks: lliurex-zero-libreoffice-reset (<=0.126.5)
+Provides: lliurex-zero-libreoffice-reset
+Description: LibreOffice Home Cleaner
+ Limpiador del LibreOffice
+
+Package: zero-lliurex-nextcloud-client
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Nextcloud client installer
+ Zero-center helper, It installs Nextcloud client packages
+ 
+Package: zero-lliurex-midicss
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Conflicts: lliurex-zero-installer-midicss
+Replaces: lliurex-zero-installer-midicss (<=0.126.5)
+Breaks: lliurex-zero-installer-midicss (<=0.126.5)
+Provides: lliurex-zero-installer-midicss
+Description: MIDI codecs installer
+ Zero-center helper, It installs codecs for MIDI package
+   
+Package: zero-lliurex-mixxx
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Mixxx installer
+ Zero-center helper, It installs mixxx on Lliurex
+ 
+Package: zero-lliurex-moodle
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: zero-center installer for Moodle
+ Advanced packages for distribution
+
+Package: zero-lliurex-notebook-bar
+Architecture: i386
+Section: x11
+Depends: zero-center
+Conflicts: zero-notebook-bar
+Replaces: zero-notebook-bar (<=0.126.5)
+Breaks: zero-notebook-bar (<=0.126.5)
+Provides: zero-notebook-bar
+Description: zero-center installer for notebook
+ Remove notebook bar
+ 
+Package: zero-lliurex-obs-studio
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: OBS Studio installer
+ Is an software for video recording and live streaming
+ 
+Package: zero-lliurex-ocrfeeder
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: OCRFeeder installer
+ Is an optical character recognition suite
+
+Package: zero-lliurex-open-sysclone
+Architecture: all
+Section: x11
+Depends: zero-center
+Conflicts: zero-open-sysclone
+Replaces: zero-open-sysclone (<=0.126.5)
+Breaks: zero-open-sysclone (<=0.126.5)
+Provides: zero-open-sysclone
+Description: Lliurex Open-SysClone
+ Clone Pc's to rescue.
+
+Package: zero-lliurex-openmeetings
+Architecture: all
+Section: x11
+Depends: zero-center
+Provides: zero-lliurex-openmeetings
+Description: Lliurex Openmeetings
+ This package allows user to install and configure openmeetings 
+ 
+Package: zero-lliurex-promethean
+Architecture: all
+Section: x11
+Depends: zero-center, epi-gtk, libelf-dev
+Description: Drivers fro promethean installer
+ Zero-center helper, It installs the drivers for the promethean boards 
+ 
+Package: zero-lliurex-pyromaths
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Conflicts: lliurex-zero-installer-pyromaths
+Replaces: lliurex-zero-installer-pyromaths (<=0.126.5)
+Breaks: lliurex-zero-installer-pyromaths (<=0.126.5)
+Provides: lliurex-zero-installer-pyromaths
+Description: Pyromaths installer
+ Zero-center helper, It downloads and installs python-pyromaths package 
+ 
+Package: zero-lliurex-recursos
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk, resources-launcher
+Conflicts: lliurex-zero-installer-recursos
+Replaces: lliurex-zero-installer-recursos (<=0.126.5)
+Breaks: lliurex-zero-installer-recursos (<=0.126.5)
+Provides: lliurex-zero-installer-recursos
+Description: Recursos installer
+ Recursos installer, it downloads and installs packages for recursos
+
+Package: zero-lliurex-salt
+Architecture: i386
+Section: x11
+Depends: zero-center
+Conflicts: lliurex-zero-salt
+Replaces: lliurex-zero-salt (<=0.126.5)
+Breaks: lliurex-zero-salt (<=0.126.5)
+Provides: lliurex-zero-salt
+Description: SALT installer
+ SALT installer for zero-center.
+
+Package: zero-lliurex-skype
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Skype installer
+ Zero-center helper, It installs skype on Lliurex
+ 
+Package: zero-lliurex-spotify
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Spotify client installer
+ Zero-center helper, It installs Spotify client on Lliurex
+
+Package: zero-lliurex-stellarium
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Stellarium installer
+ Zero-center helper, It installs Stellarium on Lliurex
+ 
+Package: zero-lliurex-technology
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Lliurex Technology lab
+ Install packages for a Techonolgy laboratory
+ 
+Package: zero-lliurex-telegram
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Telegram installer
+ Zero-center helper, It installs telegram on Lliurex
+ 
+Package: zero-lliurex-wine64
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Conflicts: lliurex-zero-installer-wine64
+Replaces: lliurex-zero-installer-wine64 (<=0.126.5)
+Breaks: lliurex-zero-installer-wine64 (<=0.126.5)
+Provides: lliurex-zero-installer-wine64
+Description: Wine64 installer
+ Zero-center helper, It installs wine on amd64
+
+Package: zero-lliurex-llixhoot
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Llixhoot installer
+ Zero-center helper, It installs llixhoot on Lliurex
+
+Package: zero-lliurex-flash
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Adobe Flash installer
+  Zero-center helper, It downloads and installs Adobe Flash Plugin package
+
+Package: zero-lliurex-palemoon
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Pale Moon installer
+  Zero-center helper, It downloads and installs Pale Moon package

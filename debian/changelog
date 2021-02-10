@@ -1,0 +1,1593 @@
+zero-lliurex-installers (0.194) bionic; urgency=medium
+
+  * Removing zero-lliurex-flash
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 21 Jan 2021 12:54:17 +0100
+
+zero-lliurex-installers (0.193.2) bionic; urgency=medium
+
+  * zero-lliurex-flash now installs from deb files for as long as they are
+    available in canonical repositories
+  * zero-lliurex-flash removes canonical sources.list
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 08 Jan 2021 11:29:57 +0100
+
+zero-lliurex-installers (0.192.3) bionic; urgency=medium
+
+  * changed palemoon category
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 13:38:30 +0100
+
+zero-lliurex-installers (0.192.2) bionic; urgency=high
+
+  * added missing zero-lliurex-flash.zero file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 10:06:43 +0100
+
+zero-lliurex-installers (0.192.1) bionic; urgency=high
+
+  * wrong palemoon epi path
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 09:38:14 +0100
+
+zero-lliurex-installers (0.192) bionic; urgency=medium
+
+  * Lost zero-lliurex-flash package
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 08:45:59 +0100
+
+zero-lliurex-installers (0.191.2) bionic; urgency=medium
+
+  * Added lliurex-adobe-settings
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 08:38:15 +0100
+
+zero-lliurex-installers (0.191.1) bionic; urgency=medium
+
+  * Fixed palemoon epi file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 16 Dec 2020 08:26:12 +0100
+
+zero-lliurex-installers (0.191) bionic; urgency=medium
+
+  * Created palemoon zommand
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 15 Dec 2020 20:28:02 +0100
+
+zero-lliurex-installers (0.190.4) bionic; urgency=medium
+
+  * Updated zomando to install wine to add winetricks and q4wine
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 19 Nov 2020 14:05:22 +0100
+
+zero-lliurex-installers (0.190.3) bionic; urgency=medium
+
+  * Fix promethean installation removing libcurl3 from dependencies
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Fri, 16 Oct 2020 09:56:25 +0200
+
+zero-lliurex-installers (0.189) bionic; urgency=medium
+
+  * Added zomando to install AnyDesk
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 15 Oct 2020 09:45:07 +0200
+
+zero-lliurex-installers (0.188) bionic; urgency=medium
+
+  * Added zomando to install Nextcloud desktop
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 04 Sep 2020 11:49:27 +0200
+
+zero-lliurex-installers (0.187.4) bionic; urgency=medium
+
+  * Convert recursos-inf and recursos-pri to epi list
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 02 Sep 2020 10:41:10 +0200
+
+zero-lliurex-installers (0.187.3) bionic; urgency=medium
+
+  * Upgrade lliurexlab->lliurexmeet
+
+ -- Juanma1980 <juanma1980@gmail.com>  Wed, 22 Jul 2020 11:21:26 +0200
+
+zero-lliurex-installers (0.186.4) bionic; urgency=medium
+
+  * Changed the permissions of link json file of moodle to www-data
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 15 Jul 2020 11:53:43 +0200
+
+zero-lliurex-installers (0.186.3) bionic; urgency=medium
+
+  * Updated moodle epi script to copy files from moodle site in server home page
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 14 Jul 2020 17:04:34 +0200
+
+zero-lliurex-installers (0.186.2) bionic; urgency=medium
+
+  * Added custom icon to show in epi
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 07 Jul 2020 12:47:38 +0200
+
+zero-lliurex-installers (0.186.1) bionic; urgency=medium
+
+  * Fixed valencian locale in fritzing and stellarium app file
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 26 Jun 2020 14:14:33 +0200
+
+zero-lliurex-installers (0.186) bionic; urgency=medium
+
+  * Add zero-lliurex-llixhoot
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 25 Jun 2020 14:43:51 +0200
+
+zero-lliurex-installers (0.185) bionic; urgency=medium
+
+  * Install docker-compose into postInstall from zero-lliurex-docker 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 17 Jun 2020 13:27:34 +0200
+
+zero-lliurex-installers (0.184.1) bionic; urgency=medium
+
+  * Fixed stellarium banner
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 05 Jun 2020 08:10:36 +0200
+
+zero-lliurex-installers (0.184) bionic; urgency=medium
+
+  * Added fritzing zmd
+  * Added stellarium zmd 
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 04 Jun 2020 17:43:52 +0200
+
+zero-lliurex-installers (0.183.2) bionic; urgency=medium
+
+  * Changed url to download freecad.appimage
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 01 Jun 2020 10:56:47 +0200
+
+zero-lliurex-installers (0.183.1) bionic; urgency=medium
+
+  * Fixed freecad_script to epi
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 23 Apr 2020 13:40:03 +0200
+
+zero-lliurex-installers (0.183) bionic; urgency=medium
+
+  * Updated freecad zmd to install AppImage
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 09 Apr 2020 10:29:17 +0200
+
+zero-lliurex-installers (0.182.3) bionic; urgency=medium
+
+  * Changed lliurex-moodle script to use python3
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 30 Jan 2020 13:04:43 +0100
+
+zero-lliurex-installers (0.182.2) bionic; urgency=medium
+
+  * /usr/bin/telegram: executing telegram zmd if telegram is not installed
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 12 Nov 2019 12:00:59 +0100
+
+zero-lliurex-installers (0.182.1) bionic; urgency=medium
+
+  * Merged both fonts packages
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Oct 2019 13:04:16 +0200
+
+zero-lliurex-installers (0.181) bionic; urgency=medium
+
+  * Add lliurex-artwork-fonts and lliurex-artwork-fonts-classroom to fonts-installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Oct 2019 11:48:42 +0200
+
+zero-lliurex-installers (0.180) bionic; urgency=medium
+
+  * Fix promethean installer
+
+ -- lliurex <juanma1980@gmail.com>  Thu, 03 Oct 2019 13:57:59 +0200
+
+zero-lliurex-installers (0.179.1) bionic; urgency=medium
+
+  * Promethean drivers for Bionic
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 23 Jul 2019 14:51:37 +0200
+
+zero-lliurex-installers (0.178) bionic; urgency=medium
+
+  * Added zero-lliurex-docker
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 05 Jul 2019 12:33:33 +0200
+
+zero-lliurex-installers (0.177.1) bionic; urgency=medium
+
+  * Fixed openmeetings installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 26 Jun 2019 13:41:56 +0200
+
+zero-lliurex-installers (0.177) bionic; urgency=medium
+
+  * Fixed zero-lliurex-fonts
+  * Fixed zero-lliurex-skype keyring
+  * Fixed zero-lliure-spotify keyring
+ 
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 21 Jun 2019 14:10:49 +0200
+
+zero-lliurex-installers (0.176) bionic; urgency=medium
+
+  * Dummy upgrade
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 18 Jun 2019 12:31:21 +0200
+
+zero-lliurex-installers (0.175) bionic; urgency=medium
+
+  * Add zero-lliurex-openmeetings
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 29 May 2019 13:49:14 +0200
+
+zero-lliurex-installers (0.174) bionic; urgency=medium
+
+  * Update metainfo
+  * Removed zero-lliurex-msad
+  * Add banner to notebook-bar
+  * fix zero-lliruex-recursos metainfo
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Fri, 29 Mar 2019 10:34:40 +0100
+
+zero-lliurex-installers (0.173) bionic; urgency=medium
+
+  * Changed adm group by sudo
+
+ -- Juan Ramon Pelegrina <juapeai@hotmail.com>  Tue, 05 Mar 2019 17:21:21 +0100
+
+zero-lliurex-installers (0.172.1) bionic; urgency=medium
+
+  * Changed pyromaths installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Fri, 08 Feb 2019 12:15:41 +0100
+
+zero-lliurex-installers (0.172) bionic; urgency=medium
+
+  * Chandeg dropbox epi to use apt
+  * Fixed telegram epi to use pkexec
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 16 Jan 2019 10:01:43 +0100
+
+zero-lliurex-installers (0.171) bionic; urgency=medium
+
+  * Added autofirma
+  * Added freecad
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 05 Dec 2018 14:06:38 +0100
+
+zero-lliurex-installers (0.170) bionic; urgency=medium
+
+  * Added force32 key in promethean.epi
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 22 Oct 2018 14:21:40 +0200
+
+zero-lliurex-installers (0.169) bionic; urgency=medium
+
+  * Initial release for bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 08 Oct 2018 11:54:34 +0200
+
+zero-lliurex-installers (0.159) xenial; urgency=medium
+
+  * Fixed url to download telegram
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 08 Oct 2018 08:27:49 +0200
+
+zero-lliurex-installers (0.158) xenial; urgency=medium
+
+  * Updated chrome.epi to include EULA
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 07 Sep 2018 12:46:11 +0200
+
+zero-lliurex-installers (0.157) xenial; urgency=high
+
+  * Updated moodle banner
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 10 Aug 2018 13:13:39 +0200
+
+zero-lliurex-installers (0.156) xenial; urgency=high
+
+  * Fixed font to path in ocrfeeder banner
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 07 Aug 2018 11:39:42 +0200
+
+zero-lliurex-installers (0.155.1) xenial; urgency=high
+
+  * Dummy upgrade. to be built against inkscape 0.92.3
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 07 Aug 2018 10:06:00 +0200
+
+zero-lliurex-installers (0.155) xenial; urgency=high
+
+  [ Juan Ramon Pelegrina ] 
+  * Added zero-lliurex-chrome and zero-lliurex-krita
+
+  [ Hector Garcia Huerta ]
+  * Updated banner art
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 02 Aug 2018 09:06:15 +0200
+
+zero-lliurex-installers (0.153) xenial; urgency=medium
+
+  * Update zero-lliurex-promethean banner
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 23 Jul 2018 10:00:44 +0200
+
+zero-lliurex-installers (0.152) xenial; urgency=medium
+
+  * Added obs-studio installer
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 18 Jul 2018 08:35:38 +0200
+
+zero-lliurex-installers (0.151) xenial; urgency=medium
+
+  * Removed zero-lliurex-recursos old files
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 27 Jun 2018 12:32:50 +0200
+
+zero-lliurex-installers (0.150) xenial; urgency=medium
+
+  * Updated authorized groups: mkchromecast,promethean,skype,spotify,wine
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 22 Jun 2018 13:29:29 +0200
+
+zero-lliurex-installers (0.149) xenial; urgency=medium
+
+  * Updated epi skype script to remove sources list
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 21 Jun 2018 13:52:39 +0200
+
+zero-lliurex-installers (0.148.9) xenial; urgency=medium
+
+  * Fixed zero-lliurex-skype install file
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 31 May 2018 13:52:23 +0200
+
+zero-lliurex-installers (0.148.8) xenial; urgency=medium
+
+  * Fixed zero-lliurex-resources app files
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 30 May 2018 16:50:07 +0200
+
+zero-lliurex-installers (0.148.7) xenial; urgency=medium
+
+  * Fixed metainfo of Mixxx
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 22 May 2018 13:59:54 +0200
+
+zero-lliurex-installers (0.148.6) xenial; urgency=medium
+
+  * Added Mixxx installer with EPI
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 22 May 2018 12:53:02 +0200
+
+zero-lliurex-installers (0.148.5) xenial; urgency=medium
+
+  * Fixed control file: added resources-launches as a dependency of zero-lliurex-recursos
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 18 May 2018 10:26:26 +0200
+
+zero-lliurex-installers (0.148.4) xenial; urgency=medium
+
+  * Fixed sources.list for zero-lliurex-recursos
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 17 May 2018 14:02:29 +0200
+
+zero-lliurex-installers (0.148.3) xenial; urgency=medium
+
+  * Migrated zero-lliurex-recursos to EPI
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 16 May 2018 09:47:43 +0200
+
+zero-lliurex-installers (0.148.2) xenial; urgency=medium
+
+  * Fixed zero-lliurex-resources translations
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 14 May 2018 12:33:20 +0200
+
+zero-lliurex-installers (0.148.1) xenial; urgency=medium
+
+  * Fixed control
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 27 Apr 2018 11:24:54 +0200
+
+zero-lliurex-installers (0.148) xenial; urgency=medium
+
+  * Implemented changes to use EPI
+  * Updated categorization
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 27 Apr 2018 09:44:06 +0200
+
+zero-lliurex-installers (0.146-2) xenial; urgency=medium
+
+  * Updated metainfo
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 07 Mar 2018 12:29:28 +0100
+
+zero-lliurex-installers (0.146) xenial; urgency=medium
+
+  * Add activinspire install to promethean
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 18 Jan 2018 12:41:59 +0100
+
+zero-lliurex-installers (0.145-1) xenial; urgency=medium
+
+  * Fix log name in promethean installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Fri, 12 Jan 2018 09:49:02 +0100
+
+zero-lliurex-installers (0.145-lliurex2) xenial; urgency=high
+
+  * Updated list in Technology with appinventor2-setup 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Tue, 21 Nov 2017 14:19:50 +0100
+
+zero-lliurex-installers (0.145-lliurex1) xenial; urgency=medium
+
+  * Force telegram to es_ES in order of avoid problems with @valencia locale
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 09 Nov 2017 16:51:27 +0100
+
+zero-lliurex-installers (0.145) xenial; urgency=high
+
+  * Added linux-headers-generic dependency to promethean package
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 03 Nov 2017 13:23:23 +0100
+
+zero-lliurex-installers (0.144-lliurex1) xenial; urgency=medium
+
+  * Fix bug in zero-lliurex-telegram (user's group mismatch when chowning)
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 18 Oct 2017 12:34:48 +0200
+
+zero-lliurex-installers (0.144) xenial; urgency=high
+
+  * Removed zero-lliurex-locker
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 02 Oct 2017 13:28:46 +0200
+
+zero-lliurex-installers (0.143-lliurex5) xenial; urgency=medium
+
+  * Fix banner of zero-lliurex-promethean
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 27 Sep 2017 11:15:48 +0200
+
+zero-lliurex-installers (0.143-lliurex4) xenial; urgency=medium
+
+  * Fix zero-lliurex-recursos desktop to store
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 26 Sep 2017 14:05:47 +0200
+
+zero-lliurex-installers (0.143-lliurex3) xenial; urgency=medium
+
+  * Redesign gui. Change to stock buttons
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 22 Sep 2017 12:56:04 +0200
+
+zero-lliurex-installers (0.143-lliurex2) xenial; urgency=medium
+
+  * fixed localization for promethean
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 13 Sep 2017 14:25:01 +0200
+
+zero-lliurex-installers (0.143-lliurex1) xenial; urgency=medium
+
+  * Added zomando for promethean
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 12 Sep 2017 14:28:29 +0200
+
+zero-lliurex-installers (0.142) xenial; urgency=high
+
+  * Removing caja-dropbox dependency. caja-dropbox will be available via supported meta pkg
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 07 Sep 2017 14:14:40 +0200
+
+zero-lliurex-installers (0.141) xenial; urgency=medium
+
+  * Change path for telegram launcher
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Thu, 07 Sep 2017 08:58:42 +0200
+
+zero-lliurex-installers (0.140) xenial; urgency=medium
+
+  * Add Spotify client installer
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 06 Sep 2017 08:58:10 +0200
+
+zero-lliurex-installers (0.139) xenial; urgency=medium
+
+  * New gui to zero-lliurex-recursos
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 09 Aug 2017 12:30:35 +0200
+
+zero-lliurex-installers (0.138-lliurex5) xenial; urgency=medium
+
+  * Added translations for telegram installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 09 Aug 2017 09:42:07 +0200
+
+zero-lliurex-installers (0.138-lliurex4) xenial; urgency=medium
+
+  * Renamed telegramdesktop to zero-lliurex-telegram
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Aug 2017 14:08:33 +0200
+
+zero-lliurex-installers (0.138-lliurex3) xenial; urgency=medium
+
+  * Fix ppa build
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Aug 2017 12:37:51 +0200
+
+zero-lliurex-installers (0.138) xenial; urgency=medium
+
+  * Removed zero-lliurex-lite-extended
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Aug 2017 11:51:48 +0200
+
+zero-lliurex-installers (0.137-lliurex2) xenial; urgency=medium
+
+  * Telegram installer downloads the latest version available
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 08 Aug 2017 08:28:44 +0200
+
+zero-lliurex-installers (0.137-lliurex1) xenial; urgency=medium
+
+  * Resized skype banner
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 31 Jul 2017 13:20:28 +0200
+
+zero-lliurex-installers (0.137) xenial; urgency=medium
+
+  * Add zero-lliurex-dropbox-installer
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 31 Jul 2017 12:14:26 +0200
+
+zero-lliurex-installers (0.136-lliurex1) xenial; urgency=medium
+
+  * Added the new skype installer to control file... 
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 31 Jul 2017 12:09:44 +0200
+
+zero-lliurex-installers (0.136) xenial; urgency=medium
+
+  * Added skype installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 31 Jul 2017 12:00:41 +0200
+
+zero-lliurex-installers (0.135-lliurex1) xenial; urgency=medium
+
+  * Added lliurex category to metadata
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 27 Jul 2017 14:25:33 +0200
+
+zero-lliurex-installers (0.135) xenial; urgency=medium
+
+  * Added zero-lliurex-locker
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 27 Jul 2017 12:04:29 +0200
+
+zero-lliurex-installers (0.134-lliurex1) xenial; urgency=medium
+
+  * Fixed typo on notify message
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 29 Jun 2017 12:43:02 +0200
+
+zero-lliurex-installers (0.134) xenial; urgency=medium
+
+  * Added some missing translations
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 28 Jun 2017 12:52:29 +0200
+
+zero-lliurex-installers (0.133-lliurex3) xenial; urgency=medium
+
+  * Remove debug code
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 26 Jun 2017 18:13:41 +0200
+
+zero-lliurex-installers (0.133-lliurex2) xenial; urgency=medium
+
+  * Updated zero-lliurex-recursos package lists
+  * Fixed install tests in zero-lliurex-recursos
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 26 Jun 2017 14:33:28 +0200
+
+zero-lliurex-installers (0.133-lliurex1) xenial; urgency=medium
+
+  * Changed folder lliurex-zero-installers to zero-lliurex-installers in zero-lliurex-recursos.zmd 
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 26 Jun 2017 13:59:26 +0200
+
+zero-lliurex-installers (0.133) xenial; urgency=medium
+
+  * Changed resources repo from trusty to xenial in zero-lliurex-recursos.zmd
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 26 Jun 2017 09:38:36 +0200
+
+zero-lliurex-installers (0.132-lliurex1) xenial; urgency=medium
+
+  * Removed deprecated locale
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 22 Jun 2017 09:21:38 +0200
+
+zero-lliurex-installers (0.131) xenial; urgency=medium
+
+  * Fixed bug in zero-lliurex-moodle
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 31 May 2017 14:40:00 +0200
+
+zero-lliurex-installers (0.130) xenial; urgency=medium
+
+  * Fix bug in zero-lliurex-dvdcss zmd
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 26 May 2017 12:08:02 +0200
+
+zero-lliurex-installers (0.129) xenial; urgency=medium
+
+  * Updated metainfo
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 25 May 2017 13:56:48 +0200
+
+zero-lliurex-installers (0.128-lliurex3) xenial; urgency=medium
+
+  * Added metainfo
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 24 May 2017 14:53:28 +0200
+
+zero-lliurex-installers (0.128-lliurex2) xenial; urgency=medium
+
+  * Fixed bug in lliurex-telegram.sh
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 24 May 2017 14:48:58 +0200
+
+zero-lliurex-installers (0.128-lliurex1) xenial; urgency=medium
+
+  * Fix ppa build
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 02 Mar 2017 11:49:37 +0100
+
+zero-lliurex-installers (0.128) xenial; urgency=medium
+
+  * Added Telegram installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 01 Mar 2017 17:18:25 +0100
+
+zero-lliurex-installers (0.127) xenial; urgency=medium
+
+  * Rename packages to zero-lliurex-<package_name>
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 15 Feb 2017 11:59:24 +0100
+
+lliurex-zero-installers (0.126.5) xenial; urgency=medium
+
+  * Fixed dialog strings cutted out
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 31 Jan 2017 13:09:15 +0100
+
+lliurex-zero-installers (0.126.4) xenial; urgency=medium
+
+  * Added new dialogs to lliurex-zero-installer-analytics & update translations 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 30 Jan 2017 12:29:28 +0100
+
+lliurex-zero-installers (0.126.3) xenial; urgency=medium
+
+  * Fix n4d calls & animate/mark-configured zero-center banner
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 27 Jan 2017 10:13:52 +0100
+
+lliurex-zero-installers (0.126.2) xenial; urgency=medium
+
+  * Fix n4d calls
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 26 Jan 2017 16:07:14 +0100
+
+lliurex-zero-installers (0.126.1) xenial; urgency=medium
+
+  * Change lliurex-statistics controller n4d methods used
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 26 Jan 2017 14:41:47 +0100
+
+lliurex-zero-installers (0.126) xenial; urgency=medium
+
+  * New lliurex-statistics controller for classroom
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 25 Jan 2017 12:54:44 +0100
+
+lliurex-zero-installers (0.125-3+lliurex11) xenial; urgency=medium
+
+  * Changed package name wine64 to wine
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 15 Dec 2016 17:03:32 +0100
+
+lliurex-zero-installers (0.125-3+lliurex10) xenial; urgency=medium
+
+  * Fixed wine64 zero installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 15 Dec 2016 16:42:27 +0100
+
+lliurex-zero-installers (0.125-3+lliurex9) xenial; urgency=medium
+
+  * Removed zero-installer-analytics
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 30 Nov 2016 11:56:06 +0100
+
+lliurex-zero-installers (0.125-3+lliurex8) xenial; urgency=medium
+
+  * Fix control build-depends
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 06 Sep 2016 10:18:51 +0200
+
+lliurex-zero-installers (0.125-3+lliurex7) xenial; urgency=medium
+
+  * Fix rules
+
+ -- Juan Ramon Pelegrina  <juapesai@hotmail.com>  Tue, 06 Sep 2016 09:58:58 +0200
+
+lliurex-zero-installers (0.125-3+lliurex6) xenial; urgency=medium
+
+  * Another dummy upgrade
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 06 Sep 2016 09:32:05 +0200
+
+lliurex-zero-installers (0.125-3+lliurex5) xenial; urgency=medium
+
+  * Dummy upgrade
+
+ -- Juan Ramon Pelegrina<juapesai@hotmail.com>  Tue, 06 Sep 2016 08:41:27 +0200
+
+lliurex-zero-installers (0.125-3+lliurex4) xenial; urgency=medium
+
+  * Fix translation in lliurex-zero-installers-dvdcss
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 05 Sep 2016 14:10:17 +0200
+
+lliurex-zero-installers (0.125-3+lliurex3) xenial; urgency=medium
+
+  * Fixed architecture to amd64 only package
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 18 Jul 2016 11:40:56 +0200
+
+lliurex-zero-installers (0.125-3+lliurex2) xenial; urgency=medium
+
+  * Added Wine64 installer (now really)
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 18 Jul 2016 11:19:37 +0200
+
+lliurex-zero-installers (0.125-3+lliurex1) xenial; urgency=medium
+
+  * Added Wine64 installer
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Mon, 18 Jul 2016 10:23:21 +0200
+
+lliurex-zero-installers (0.125-3) xenial; urgency=medium
+
+  * Added exit status for installations 
+  * Reviewed notifications timeouts
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Fri, 08 Jul 2016 10:06:03 +0200
+
+lliurex-zero-installers (0.125-2) xenial; urgency=medium
+
+  * Fix confirmator logic
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 13 May 2016 22:19:35 +0200
+
+lliurex-zero-installers (0.125) xenial; urgency=medium
+
+  * Fix cname of moodle for master and independent servers (install_moodle.zmd)
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 17 May 2016 12:31:13 +0200
+
+lliurex-zero-installers (0.124) xenial; urgency=medium
+
+  * Remove lliurex-preseed-moodle install in moodle zomando
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 05 May 2016 10:37:30 +0200
+
+lliurex-zero-installers (0.123) xenial; urgency=medium
+
+  * Fix zero-lliurex-moodle.zmd		
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 03 May 2016 09:09:17 +0200
+
+lliurex-zero-installers (0.122) xenial; urgency=medium
+
+  * Fix zero-lliurex-moodle to sync groups and users of ldap
+  * Fix translations of zero-lliurex-moodle
+  * Fix zero-lliurex-moodle to install lang folders (spanish and valencia)
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 02 May 2016 15:30:06 +0200
+
+lliurex-zero-installers (0.121) xenial; urgency=medium
+
+  * Fix confim message from analytics
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 11 Apr 2016 17:07:18 +0200
+
+lliurex-zero-installers (0.120.1) xenial; urgency=medium
+
+  * Updated analytics startup script
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 23 Mar 2016 09:13:24 +0100
+
+lliurex-zero-installers (0.120) xenial; urgency=medium
+
+  * Analytics: Add stats processing by release and flavour, updated blacklist
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 01 Mar 2016 09:48:08 +0100
+
+lliurex-zero-installers (0.119) xenial; urgency=medium
+
+  * Merged translations
+  * Changed default analytics server
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 22 Feb 2016 12:13:24 +0100
+
+lliurex-zero-installers (0.118-lliurex4) xenial; urgency=high
+
+  * Added new package to list in Salt 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Wed, 10 Feb 2016 09:30:37 +0100
+
+lliurex-zero-installers (0.118-lliurex3) xenial; urgency=medium
+
+  * Changed invocation to enable moodle site into moodle installer
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 08 Feb 2016 11:58:35 +0100
+
+lliurex-zero-installers (0.118-lliurex2) xenial; urgency=medium
+
+  * Fixed lliurex analytics installation into xenial
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 05 Feb 2016 12:19:57 +0100
+
+lliurex-zero-installers (0.118-lliurex1) xenial; urgency=medium
+
+  * Add "pe" dependency 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 04 Feb 2016 09:59:34 +0100
+
+lliurex-zero-installers (0.118) xenial; urgency=medium
+
+  * Ported code to xenial
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 01 Feb 2016 16:20:47 +0100
+
+lliurex-zero-installers (0.115) trusty; urgency=medium
+
+  * Added midi zomando
+
+ -- Miguel Angel <m.angel.juan@gmail.com>  Thu, 07 Jan 2016 10:15:17 +0100
+
+lliurex-zero-installers (0.114) trusty; urgency=high
+
+  * Moodle: Fix inverse logic from lliurex-sgbd when install moodle
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Wed, 25 Nov 2015 13:44:39 +0100
+
+lliurex-zero-installers (0.113) trusty; urgency=medium
+
+  * Analytics: Added dialog to grant send permission
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 24 Nov 2015 12:23:48 +0100
+
+lliurex-zero-installers (0.112) trusty; urgency=medium
+
+  * Kiosko: Check for default lightdm.conf with autologin user
+  * Kiosko: Add chromium-browser dependency 
+  * Kiosko: Verbose messages when errors detected
+
+ -- Miguel Angel <m.angel.juan@gmail.com>  Mon, 26 Oct 2015 16:05:04 +0100
+
+lliurex-zero-installers (0.111) trusty; urgency=low
+
+  * Added lliurex-analytics daemon installer
+
+ -- Miguel Angel <m.angel.juan@gmail.com>  Wed, 23 Sep 2015 09:04:00 +0200
+
+lliurex-zero-installers (0.110) trusty; urgency=high
+
+  * Updated with i386 architecture for notebook 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 22 Sep 2015 11:58:53 +0200
+
+lliurex-zero-installers (0.109) trusty; urgency=high
+
+  * Add Zenity progress bar to install moodle 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 21 Sep 2015 17:21:23 +0200
+
+lliurex-zero-installers (0.108) trusty; urgency=high
+
+  * Updated zero isntall 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 21 Sep 2015 13:44:02 +0200
+
+lliurex-zero-installers (0.106) trusty; urgency=high
+
+  * Updated again 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 21 Sep 2015 12:07:40 +0200
+
+lliurex-zero-installers (0.105) trusty; urgency=high
+
+  * Updated 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 21 Sep 2015 10:25:00 +0200
+
+lliurex-zero-installers (0.104) trusty; urgency=high
+
+  * Updated lliurex-moodle
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 21 Sep 2015 10:17:52 +0200
+
+lliurex-zero-installers (0.103) trusty; urgency=high
+
+  * Updated rsc-installer 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 09 Sep 2015 08:26:13 +0200
+
+lliurex-zero-installers (0.102.1) trusty; urgency=high
+
+  * fix location tmp files
+
+ -- Miguel Angel <m.angel.juan@gmail.com>  Tue, 04 Aug 2015 13:46:23 +0200
+
+lliurex-zero-installers (0.102) trusty; urgency=medium
+
+  * Fix chromium-extension to allow profile copy to another machine
+
+ -- Miguel Angel <m.angel.juan@gmail.com>  Tue, 04 Aug 2015 13:17:20 +0200
+
+lliurex-zero-installers (0.101) trusty; urgency=high
+
+  * Added installer to switch kiosk mode
+
+ -- Miguel Angel <m.angel.juan@gmail.com>  Wed, 29 Jul 2015 12:09:45 +0200
+
+lliurex-zero-installers (0.100) trusty; urgency=high
+
+  * Updated with "ha"
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 28 Jul 2015 09:50:47 +0200
+
+lliurex-zero-installers (0.99) trusty; urgency=medium
+
+  * removing lliurex-gva as a zero-msad dependency
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 01 Jul 2015 13:16:10 +0200
+
+lliurex-zero-installers (0.98) trusty; urgency=high
+
+  * Updated translations on some apps
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 25 May 2015 12:53:55 +0200
+
+lliurex-zero-installers (0.97) trusty; urgency=high
+
+  * Updated version 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 22 May 2015 12:03:20 +0200
+
+lliurex-zero-installers (0.96) trusty; urgency=high
+
+  * Removed libpam-gva 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 21 May 2015 10:34:53 +0200
+
+lliurex-zero-installers (0.95) trusty; urgency=high
+
+  * fixed bug in hotpotatoes
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Wed, 22 Apr 2015 09:21:33 +0200
+
+lliurex-zero-installers (0.94) trusty; urgency=high
+
+  * fixed bug in set-configure salt in installation 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Tue, 21 Apr 2015 12:24:06 +0200
+
+lliurex-zero-installers (0.93) trusty; urgency=high
+
+  * Updated zmds for net down
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 20 Apr 2015 09:08:05 +0200
+
+lliurex-zero-installers (0.92) trusty; urgency=high
+
+  * Updated scripts for fonts, recursos, technology 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Wed, 25 Mar 2015 17:00:06 +0100
+
+lliurex-zero-installers (0.91) trusty; urgency=high
+
+  * Updated script zmd for DVD codecs  
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 23 Mar 2015 17:16:30 +0100
+
+lliurex-zero-installers (0.90) trusty; urgency=high
+
+  * Updated fonts-installer & technology with new commands in zero-center reisntall 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 23 Mar 2015 15:40:29 +0100
+
+lliurex-zero-installers (0.89) trusty; urgency=high
+
+  * Zero-lliuirex-technology add banner configured in zero center and new package lliurex-robotics
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 23 Mar 2015 12:13:35 +0100
+
+lliurex-zero-installers (0.88) trusty; urgency=high
+
+  * Bug fixed in defined parameters from hotpotatoes 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Tue, 17 Mar 2015 14:47:23 +0100
+
+lliurex-zero-installers (0.87) trusty; urgency=high
+
+  * Added build depend correct (zero-dev)
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 17 Mar 2015 09:24:14 +0100
+
+lliurex-zero-installers (0.86) trusty; urgency=high
+
+  * Updated version 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 13 Mar 2015 11:11:33 +0100
+
+lliurex-zero-installers (0.85) trusty; urgency=high
+
+  * Updated zero-installers 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 13 Mar 2015 11:04:22 +0100
+
+lliurex-zero-installers (0.84) trusty; urgency=high
+
+  * Added new script for Zero-salt & list files 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Tue, 03 Mar 2015 14:19:29 +0100
+
+lliurex-zero-installers (0.83) trusty; urgency=high
+
+  * Added pyromaths 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 23 Feb 2015 16:50:23 +0100
+
+lliurex-zero-installers (0.82) trusty; urgency=high
+
+  * Added pyromaths 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 23 Feb 2015 16:46:12 +0100
+
+lliurex-zero-installers (0.81) trusty; urgency=high
+
+  * Adding Open-SysClone Banner 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Wed, 18 Feb 2015 14:27:56 +0100
+
+lliurex-zero-installers (0.80) trusty; urgency=high
+
+  * Updated moodle 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 30 Jan 2015 13:26:29 +0100
+
+lliurex-zero-installers (0.79) trusty; urgency=high
+
+  * Updated recursos
+  * Updated moodle
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 30 Jan 2015 12:15:29 +0100
+
+lliurex-zero-installers (0.78) trusty; urgency=high
+
+  * Updated path 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 29 Jan 2015 17:13:24 +0100
+
+lliurex-zero-installers (0.76) trusty; urgency=high
+
+  * Updated dvdcss
+  * Updated fonts 
+  * Cleaning packages
+  * Updated moodle
+  * Updated hotpotatoes
+  * Removed iesforlinux
+  * Removed amic
+  * Removed mmc 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 29 Jan 2015 16:31:31 +0100
+
+lliurex-zero-installers (0.75) trusty; urgency=high
+
+  * Removing binaries
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 10 Dec 2014 14:41:01 +0100
+
+lliurex-zero-installers (0.74) trusty; urgency=high
+
+  * Updated salt with architecture 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 10 Dec 2014 14:36:56 +0100
+
+lliurex-zero-installers (0.72) trusty; urgency=medium
+
+  * Deleted deprecated package mobile media converter (mmc) 
+
+ -- Alfons Lloret Sananton <turix13@gmail.com>  Fri, 26 Sep 2014 12:38:59 +0200
+
+lliurex-zero-installers (0.71) trusty; urgency=high
+
+  *  New release for trusty
+
+ -- Alfons Lloret Sananton <turix13@gmail.com>  Thu, 26 Sep 2014 09:32:43 +0200
+
+lliurex-zero-installers (0.70) precise; urgency=high
+
+  * fixed extra-fonts zc state
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 24 Sep 2014 11:20:37 +0200
+
+lliurex-zero-installers (0.69) precise; urgency=high
+
+  * fixed extra-fonts package list
+  * fixed resources zcenter state
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 20 Jun 2014 09:05:17 +0200
+
+lliurex-zero-installers (0.68.2) precise; urgency=high
+
+  * Fixed zero-installer-fonts app
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 20 Jun 2014 09:00:20 +0200
+
+lliurex-zero-installers (0.68.1) precise; urgency=high
+
+  * Fixed app group perms 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 20 Jun 2014 08:58:37 +0200
+
+lliurex-zero-installers (0.68) precise; urgency=low
+
+  * From now on, png are no longer versioned, instead are rendered at build time
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Tue, 27 May 2014 11:34:13 +0200
+
+lliurex-zero-installers (0.67) precise; urgency=high
+
+  * Updated pngs
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 23 May 2014 11:29:35 +0200
+
+lliurex-zero-installers (0.66) precise; urgency=high
+
+  * Updated apps
+  * Updated paths (all to install)
+  * Added makefile to create png from svg 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 23 May 2014 10:19:29 +0200
+
+lliurex-zero-installers (0.65) precise; urgency=high
+
+  * Updated SALT zmd
+  
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 19 May 2014 10:01:00 +0200
+
+lliurex-zero-installers (0.63) precise; urgency=high
+
+  * Updated dvdcss 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 16 May 2014 14:32:40 +0200
+
+lliurex-zero-installers (0.62) precise; urgency=high
+
+  * Updated salt banner
+  * Updated salt text 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 08 May 2014 11:12:02 +0200
+
+lliurex-zero-installers (0.61) precise; urgency=high
+
+  * Update urgency
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Thu, 03 Apr 2014 11:22:24 +0200
+
+lliurex-zero-installers (0.60) precise; urgency=high
+
+  * Updated NetworkManager restart
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Thu, 03 Apr 2014 11:19:00 +0200
+
+lliurex-zero-installers (0.59) precise; urgency=high
+
+  * Updated with token creation for lliurex-gva editor 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 27 Mar 2014 12:53:28 +0100
+
+lliurex-zero-installers (0.57) precise; urgency=high
+
+  * Added divert to winbind pam module
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 25 Mar 2014 10:57:50 +0100
+
+lliurex-zero-installers (0.56) precise; urgency=high
+
+  * Moved script in cron.daily, remove config file in sudoers.d on purge
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Mon, 24 Mar 2014 10:38:58 +0100
+
+lliurex-zero-installers (0.55) precise; urgency=high
+
+  * Bug correction in cron.daily script
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Mon, 24 Mar 2014 09:57:39 +0100
+
+lliurex-zero-installers (0.54) precise; urgency=high
+
+  * Added conflicts with the old package 
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Mon, 24 Mar 2014 08:49:37 +0100
+
+lliurex-zero-installers (0.53) precise; urgency=low
+
+  * Bug correction
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Mon, 24 Mar 2014 07:56:15 +0100
+
+lliurex-zero-installers (0.52ubuntu2) precise; urgency=low
+
+  * Bug correction
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Fri, 21 Mar 2014 15:02:44 +0100
+
+lliurex-zero-installers (0.52ubuntu1) precise; urgency=low
+
+  * Bug correction
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Fri, 21 Mar 2014 15:02:25 +0100
+
+lliurex-zero-installers (0.52) precise; urgency=low
+
+  * Bug correction
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Fri, 21 Mar 2014 15:02:03 +0100
+
+lliurex-zero-installers (0.52) precise; urgency=low
+
+  * Bug correction
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Fri, 21 Mar 2014 15:01:21 +0100
+
+lliurex-zero-installers (0.51) precise; urgency=high
+
+  * Improved scripts for AD integration
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Fri, 21 Mar 2014 12:53:03 +0100
+
+lliurex-zero-installers (0.50) precise; urgency=high
+
+  * Fixed bug on Install Moodle. If you install moodle and you never launch 
+    firefox , this create profile files with wrong owners
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 11 Mar 2014 13:55:37 +0100
+
+lliurex-zero-installers (0.49) precise; urgency=high
+
+  * Updated for the MSAD domain
+
+ -- Francisco Javier Estellés Dasí <xaviestelles@gmail.com>  Tue, 11 Mar 2014 13:55:37 +0100
+
+lliurex-zero-installers (0.48) precise; urgency=high
+
+  * Updated salt zmd to install for current user.
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 03 Mar 2014 12:01:31 +0100
+
+lliurex-zero-installers (0.47) precise; urgency=high
+
+  * Updated salt installation permissions
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 03 Mar 2014 09:19:50 +0100
+
+lliurex-zero-installers (0.46) precise; urgency=medium
+
+  * Removed to be more clean (root permissions over libreoffice).
+  * Fixed priority
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Sat, 01 Mar 2014 12:26:18 +0100
+
+lliurex-zero-installers (0.45) precise; urgency=high
+
+  * Updated salt installer with --shared option 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 28 Feb 2014 09:26:59 +0100
+
+lliurex-zero-installers (0.44) precise; urgency=high
+
+  * Added a firefox execution to manage the moodle site
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 17 Dec 2013 13:13:08 +0100
+
+lliurex-zero-installers (0.43) precise; urgency=high
+
+  * Added lliurex-moodle 
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 17 Dec 2013 12:26:03 +0100
+
+lliurex-zero-installers (0.42) precise; urgency=low
+
+  * Fixed dvdcss script
+
+ -- Vicente Balaguer Domenech <vbalaguer.gva@gmail.com>  Thu, 07 Nov 2013 13:02:41 +0100
+
+lliurex-zero-installers (0.41) precise; urgency=high
+
+  * Added zero-notebook-utils
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Fri, 18 Oct 2013 10:35:37 +0200
+
+lliurex-zero-installers (0.40) precise; urgency=low
+
+  * Added zero-accv-vs-firefox 
+
+ -- Jaime Munyoz Fayos <munyoz_jaifay@gva.es>  Thu, 10 Oct 2013 09:19:55 +0200
+
+lliurex-zero-installers (0.39) precise; urgency=high
+
+  * Updated dvdcss installer
+    - Fixed precise distribution
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Tue, 24 Sep 2013 16:00:56 +0200
+
+lliurex-zero-installers (0.38) precise; urgency=low
+
+  * Modified zmd to avoid prompt in synaptic install
+
+ -- Jose A. Múrcia <joamuran@gmail.com>  Tue, 10 Sep 2013 09:46:29 +0200
+
+lliurex-zero-installers (0.37) precise; urgency=low
+
+  * Updated logic to be more mind compatible
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 09 Sep 2013 18:09:01 +0200
+
+lliurex-zero-installers (0.36) precise; urgency=low
+
+  * Install synaptic before install extras in zero-lite-extended.
+
+ -- Jose A. Múrcia <joamuran@gmail.com>  Thu, 05 Sep 2013 13:43:32 +0200
+
+lliurex-zero-installers (0.35) precise; urgency=high
+
+  * Added zero-lite-extended
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Wed, 31 Jul 2013 09:10:04 +0200
+
+lliurex-zero-installers (0.34) precise; urgency=high
+
+  * Updated version
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Sat, 01 Jun 2013 17:53:21 +0200
+
+lliurex-zero-installers (0.32) precise; urgency=low
+
+  * Updated messages
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Sat, 01 Jun 2013 17:01:49 +0200
+
+lliurex-zero-installers (0.30) unstable; urgency=low
+
+  * Fixed rsc-packages
+
+ -- Jaime Munyoz Fayos <munyoz_jaifay@gva.es>  Wed, 08 Feb 2012 10:00:12 +0100
+
+lliurex-zero-installers (0.29) unstable; urgency=low
+
+
+  * Added resource rsc-sensoftware 
+
+ -- Jaime Munyoz Fayos <munyoz_jaifay@gva.es>  Wed, 08 Feb 2012 09:32:29 +0100
+
+lliurex-zero-installers (0.28) unstable; urgency=low
+
+  * Now msad installer continues with or without 
+    pamconfig for mount points.
+
+ -- Francisco Antonino Daviu <antonino_fra@gva.es>  Mon, 06 Feb 2012 13:57:37 +0100
+
+lliurex-zero-installers (0.27) unstable; urgency=low
+
+  [ Francisco Antonino Daviu ]
+  * Modification in zmd 
+
+ -- Francisco Antonino Daviu <antonino_fra@gva.es>  Mon, 06 Feb 2012 13:56:15 +0100
+
+lliurex-zero-installers (0.26) unstable; urgency=low
+
+  * Launched for Nemo
+
+ -- Jaime Munyoz Fayos <munyoz_jaifay@gva.es>  Mon, 06 Feb 2012 13:06:07 +0100
+
+lliurex-zero-installers (0.25) unstable; urgency=low
+
+  * Classifying resources into categories 
+
+ -- Jaime Munyoz Fayos <munyoz_jaifay@gva.es>  Mon, 06 Feb 2012 12:31:28 +0100
+
+lliurex-zero-installers (0.24) lucid; urgency=low
+
+  * Fixed for nemo 
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Fri, 27 Jan 2012 09:09:56 +0100
+
+lliurex-zero-installers (0.23) lucid; urgency=low
+
+  * Fixed msad installer 
+
+ -- Raul Rodrigo Segura <lliurex_devel3@edu.gva.es>  Tue, 24 Jan 2012 11:28:56 +0100
+
+lliurex-zero-installers (0.21) unstable; urgency=low
+
+  * New pixmaps for LliureX AMIC
+
+ -- Alfons Lloret Sananton <lliurex_devel5@edu.gva.es>  Thu, 24 Nov 2011 12:08:12 +0100
+
+lliurex-zero-installers (0.20) unstable; urgency=low
+
+  * Added LliureX AMIC instaler
+
+ -- Alfons Lloret Sananton <lliurex_devel5@edu.gva.es>  Tue, 22 Nov 2011 13:42:34 +0100
+
+lliurex-zero-installers (0.19) unstable; urgency=low
+
+  * Fixed path again
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 15 Nov 2011 09:16:44 +0100
+
+lliurex-zero-installers (0.18) unstable; urgency=low
+
+  * Fixed path
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 15 Nov 2011 08:58:37 +0100
+
+lliurex-zero-installers (0.17) unstable; urgency=low
+
+  * Fixed salt installer  
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 15 Nov 2011 08:57:53 +0100
+
+lliurex-zero-installers (0.16) unstable; urgency=low
+
+  * Added SALT installer  
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 15 Nov 2011 08:29:03 +0100
+
+lliurex-zero-installers (0.15) unstable; urgency=low
+
+  * Fixed instaler MMC
+
+ -- Alfons Lloret Sananton <lliurex_devel5@edu.gva.es>  Mon, 12 Sep 2011 13:49:45 +0200
+
+lliurex-zero-installers (0.14) unstable; urgency=low
+
+  * Added new instaler Mobile Media Converter
+
+ -- Alfons Lloret Sananton <lliurex_devel5@edu.gva.es>  Mon, 12 Sep 2011 13:18:21 +0200
+
+lliurex-zero-installers (0.13) unstable; urgency=low
+
+  * Fixed resources installer
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 22 Feb 2011 18:00:12 +0100
+
+lliurex-zero-installers (0.12) unstable; urgency=low
+
+  * Added zero-fonts-installer
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 22 Feb 2011 17:59:38 +0100
+
+lliurex-zero-installers (0.11) unstable; urgency=low
+
+  * Dummy upgrade
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 21 Feb 2011 08:17:57 +0100
+
+lliurex-zero-installers (0.10) unstable; urgency=low
+
+  * recursos is now a service
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 08 Feb 2011 07:51:13 +0100
+
+lliurex-zero-installers (0.9) unstable; urgency=low
+
+  * Added builddeepends missing package: zero-dev
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Fri, 04 Feb 2011 11:26:54 +0100
+
+lliurex-zero-installers (0.8) unstable; urgency=low
+
+  * Fixed Installer
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Fri, 04 Feb 2011 09:08:48 +0100
+
+lliurex-zero-installers (0.7) unstable; urgency=low
+
+  * Added llxcfg-msad installer 
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Fri, 04 Feb 2011 08:55:29 +0100
+
+lliurex-zero-installers (0.6) unstable; urgency=low
+
+  * Fixed gdebi -n error
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 11 Jan 2011 15:51:37 +0100
+
+lliurex-zero-installers (0.5) unstable; urgency=low
+
+  * Fixed python-pyromaths...installer now installs something.
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Wed, 22 Dec 2010 10:22:32 +0100
+
+lliurex-zero-installers (0.4) unstable; urgency=low
+
+  * Added resources installers
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 09 Nov 2010 13:15:31 +0100
+
+lliurex-zero-installers (0.3) unstable; urgency=low
+
+  * Fixed installers
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 09 Nov 2010 12:30:48 +0100
+
+lliurex-zero-installers (0.2.6) unstable; urgency=low
+
+  * Fixed installers 
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 09 Nov 2010 10:06:42 +0100
+
+lliurex-zero-installers (0.2.5) unstable; urgency=low
+
+  * Fixed dependences with gdebi and wget on dvdcss installer
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 08 Nov 2010 13:04:27 +0100
+
+lliurex-zero-installers (0.2.4) unstable; urgency=low
+
+  * Fixed installers
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Mon, 08 Nov 2010 13:02:57 +0100
+
+lliurex-zero-installers (0.2.3) unstable; urgency=low
+
+  * Fixed installers
+
+ -- Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>  Tue, 26 Oct 2010 14:01:22 +0200
+
+lliurex-zero-installers (0.2.2) unstable; urgency=low
+
+  * Added libdvdcss script
+
+ -- Enrique Medina <lliurex_devel4@edu.gva.es>  Thu, 21 Oct 2010 12:28:32 +0200
+
+lliurex-zero-installers (0.2.1) unstable; urgency=low
+
+  *  Translation fixes
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 21 Oct 2010 12:22:56 +0200
+
+lliurex-zero-installers (0.2) unstable; urgency=low
+
+  * Created language pack zero-app
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 21 Oct 2010 11:39:57 +0200
+
+lliurex-zero-installers (0.1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Thu, 21 Oct 2010 09:56:20 +0200
