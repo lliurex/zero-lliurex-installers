@@ -232,7 +232,7 @@ Description: Pyromaths installer
 Package: zero-lliurex-recursos
 Architecture: all
 Section: x11
-Depends: zero-center,epi-gtk, resources-launcher
+Depends: zero-center,epi-gtk
 Conflicts: lliurex-zero-installer-recursos
 Replaces: lliurex-zero-installer-recursos (<=0.126.5)
 Breaks: lliurex-zero-installer-recursos (<=0.126.5)
