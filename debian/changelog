@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.294.2) focal; urgency=medium
+
+  * Fixed control
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 11 Feb 2021 09:08:36 +0100
+
 zero-lliurex-installers (0.294.1) focal; urgency=medium
 
   * Fixed control
