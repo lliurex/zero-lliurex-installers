@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.195) bionic; urgency=medium
+
+  * Better download check for docker-compose
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 15 Feb 2021 09:47:33 +0100
+
 zero-lliurex-installers (0.194) bionic; urgency=medium
 
   * Removing zero-lliurex-flash
