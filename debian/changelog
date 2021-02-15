@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.295) focal; urgency=medium
+
+  * Better docker-compose download test
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 15 Feb 2021 09:57:53 +0100
+
 zero-lliurex-installers (0.294.2) focal; urgency=medium
 
   * Fixed control
