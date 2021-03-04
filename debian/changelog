@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.295+nmu1) focal; urgency=medium
+
+  * Removed zero-llirex-recursos
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 04 Mar 2021 18:10:46 +0100
+
 zero-lliurex-installers (0.295) focal; urgency=medium
 
   * Better docker-compose download test
