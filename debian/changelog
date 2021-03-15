@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.297) focal; urgency=medium
+
+  * zero-install-docker install from focal repo
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Mon, 15 Mar 2021 13:55:10 +0100
+
 zero-lliurex-installers (0.296) focal; urgency=medium
 
   * Removed zero-llirex-recursos
