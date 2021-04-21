@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.299) focal; urgency=medium
+
+  * Fixed custom_name in moodle.epi
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 21 Apr 2021 17:38:47 +0200
+
 zero-lliurex-installers (0.298) focal; urgency=medium
 
   * Updated command to create moodle cname in zero-lliurex-moodle script
