@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.298) focal; urgency=medium
+
+  * Updated command to create moodle cname in zero-lliurex-moodle script
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 21 Apr 2021 14:12:26 +0200
+
 zero-lliurex-installers (0.297) focal; urgency=medium
 
   * zero-install-docker install from focal repo
