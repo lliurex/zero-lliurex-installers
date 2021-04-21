@@ -61,7 +61,7 @@ case $ACTION in
 
 		echo "Creating hostname..."
 		MAGIC_KEY=$(cat /etc/n4d/key)
-		n4d-client -h localhost -k $MAGIC_KEY -m set_internal_dns_entry -c Dnsmasq -a moodle
+		n4d-client -a https://localhost:9779 -k $MAGIC_KEY call DnsmasqManager.set_internal_dns_entry "['moodle']" || true
 
 		echo "Creating Ldadp users..."
 		INTERNA=$(n4d-vars getvalues INTERNAL_DOMAIN | cut -d"'" -f2)
