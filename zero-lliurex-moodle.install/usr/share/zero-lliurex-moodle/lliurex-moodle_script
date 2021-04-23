@@ -3,6 +3,8 @@
 
 ACTION="$1"
 
+DNSMASQ_CONFDIR="/var/lib/dnsmasq/config"
+APACHE_CONFDIR="/etc/apache2/sites-available"
 EASY_SITE_FILES="/usr/share/lliurex-moodle/easy-site/"
 EASY_SITE=$EASY_SITE_FILES"moodle.json"
 EASY_SITE_ICON=$EASY_SITE_FILES"moodle.svg"
@@ -48,6 +50,9 @@ case $ACTION in
 			lliurex-sgbd --upgrade lliurex-moodle
 		fi
 
+		echo "Creating link to config file..."
+		ln -s /etc/moodle/config.php /usr/share/moodle || true
+
 		echo "Copying lang files..."
 		if [ -d "/var/lib/moodle" ]; then
 			if [ -d "/usr/share/lliurex-moodle/lang" ]; then
@@ -90,15 +95,28 @@ case $ACTION in
 
 	remove)
 	
+		if [ -f "$DNSMASQ_CONFDIR/moodle" ];then
+			echo "Removing dns..."
+			rm -f $DNSMASQ_CONFDIR/moodle
+			systemctl restart dnsmasq || true
+		fi	
+
+		if [ -f "$APACHE_CONFDIR/moodle.conf" ];then
+			echo "Dissabling  http server configuration..."
+			a2dissite moodle
+			systemctl restart apache2 || true
+        fi
+
+		echo "Removing easy-site..."
+		rm -f $EASY_SITES_DIR"moodle.json"
+		rm -f $EASY_SITES_DIR_ICON"moodle.svg"
+
+
 		apt-get remove -y lliurex-moodle
 		TEST=$( dpkg-query -s  lliurex-moodle 2> /dev/null| grep Status | cut -d " " -f 4 )
 		if [ "$TEST" == 'installed' ];then
 			exit 1
 		fi
-
-		echo "Removing easy-site..."
-		rm -f $EASY_SITES_DIR"moodle.json"
-		rm -f $EASY_SITES_DIR_ICON"moodle.svg"
 	;;	
 
 esac
