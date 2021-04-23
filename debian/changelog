@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.300) focal; urgency=medium
+
+  * Fixed and improved moodle epi script
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 23 Apr 2021 08:12:26 +0200
+
 zero-lliurex-installers (0.299) focal; urgency=medium
 
   * Fixed custom_name in moodle.epi
