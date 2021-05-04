@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.301) focal; urgency=medium
+
+  * Updated resources (childhood,primary and special) epi files
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 04 May 2021 14:49:00 +0200
+
 zero-lliurex-installers (0.300) focal; urgency=medium
 
   * Fixed and improved moodle epi script
