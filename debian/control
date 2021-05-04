@@ -228,6 +228,13 @@ Breaks: lliurex-zero-installer-pyromaths (<=0.126.5)
 Provides: lliurex-zero-installer-pyromaths
 Description: Pyromaths installer
  Zero-center helper, It downloads and installs python-pyromaths package 
+
+Package: zero-lliurex-recursos
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Recursos installer
+ Recursos installer, it downloads and installs packages for recursos
  
 Package: zero-lliurex-salt
 Architecture: i386
