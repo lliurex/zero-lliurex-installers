@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.302) focal; urgency=medium
+
+  * Fixed zero app files
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 25 May 2021 17:01:07 +0200
+
 zero-lliurex-installers (0.301) focal; urgency=medium
 
   * Updated resources (childhood,primary and special) epi files
