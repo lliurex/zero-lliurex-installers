@@ -1,11 +1,11 @@
 Name=zero-lliurex-skype
 Name[es]=Instalación del Skype
 Name[en]=Skype installation
-Name[qcv]=Instal·lació del Skype
+Name[ca@valencia]=Instal·lació del Skype
 Name[ca_ES]=Instal·lació del Skype
 Comment=Installation of Skype wizard
 Comment[es]=Asistente de instalación del Skype
-Comment[qcv]=Auxiliar d'instal·lació del Skype
+Comment[ca@valencia]=Auxiliar d'instal·lació del Skype
 Comment[ca_ES]=Auxiliar d'instal·lació del Skype
 Icon=zero-lliurex-skype
 Groups=admin;admins;teachers;sudo
