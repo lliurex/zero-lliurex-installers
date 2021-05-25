@@ -1,10 +1,10 @@
 Name=zero-lliurex-krita
 Name[es]=Instalador de Krita
-Name[qcv]=Instal·lador de Krita
+Name[ca@valencia]=Instal·lador de Krita
 Name[ca_ES]=Instal·lador de Krita
 Comment= Krita is a FREE and open source painting tool designed for concept artists, illustrators, matte and texture artists, and the VFX industry
 Comment[es]=Krita es una herramienta de pintura gratuita y de código abierto diseñada para artistas conceptuales, ilustradores, artistas de mate y texturas, y la industria de efectos visuales
-Comment[qcv]=Krita és una eina de pintura gratuïta i de codi obert dissenyada per a artistes conceptuals, il·lustradors, artistes de mat i textures, i la indústria d'efectes visuals
+Comment[ca@valencia]=Krita és una eina de pintura gratuïta i de codi obert dissenyada per a artistes conceptuals, il·lustradors, artistes de mat i textures, i la indústria d'efectes visuals
 Comment[ca_ES]=Krita és una eina de pintura gratuïta i de codi obert dissenyada per a artistes conceptuals, il·lustradors, artistes de mat i textures, i la indústria d'efectes visuals
 Icon=zero-lliurex-krita
 Category=Software

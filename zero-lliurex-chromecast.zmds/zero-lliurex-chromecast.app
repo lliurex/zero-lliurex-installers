@@ -1,11 +1,11 @@
 Name=zero-lliurex-chromecast
 Name[es]=Instalación de mkchromecast
 Name[en]=Mkchomecast installation
-Name[qcv]=Instal·lació de mkchromecast
+Name[ca@valencia]=Instal·lació de mkchromecast
 Name[ca_ES]=Instal·lació de mkchromecast
 Comment=Program to cast audio and video from your Linux desktop to your Google Cast devices or Sonos speakers
 Comment[es]=Programa para transmitir audio y video desde su escritorio Linux a sus dispositivos Google Cast o altavoces Sonos
-Comment[qcv]=Programa per a transmetre àudio i vídeo des del seu escriptori Linux als seus dispositius Google Cast o altaveus Sonos
+Comment[ca@valencia]=Programa per a transmetre àudio i vídeo des del seu escriptori Linux als seus dispositius Google Cast o altaveus Sonos
 Comment[ca_ES]=Programa per a transmetre àudio i vídeo des del seu escriptori Linux als seus dispositius Google Cast o altaveus Sonos
 Icon=zero-lliurex-chromecast
 Groups=admin;admins;teachers;sudo
