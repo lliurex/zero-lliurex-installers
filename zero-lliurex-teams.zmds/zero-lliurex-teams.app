@@ -1,0 +1,16 @@
+Name=zero-lliurex-teams
+Name[es]=Instalación de Ms Teams
+Name[en]=Ms Teams installation
+Name[ca@valencia]=Instal·lació del Ms Teams
+Name[ca_ES]=Instal·lació del Ms Teams
+Comment=Installation of Microsoft Teams client wizard
+Comment[es]=Asistente de instalación del cliente de Microsoft Teams
+Comment[ca@valencia]=Auxiliar d'instal·lació del client de Microsoft Teams
+Comment[ca_ES]=Auxiliar d'instal·lació del client de Microsoft Teams
+Icon=zero-lliurex-teams
+Groups=admin;admins;teachers;sudo
+Category=Internet
+ScriptPath=zero-lliurex-teams.zmd
+Using=pkexec
+Service=True
+Modal=True

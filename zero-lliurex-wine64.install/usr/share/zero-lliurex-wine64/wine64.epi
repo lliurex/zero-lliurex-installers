@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"wine-stable","key_store":"zero-lliurex-wine64","custom_name":"Wine, allows install Windows applications","custom_icon":"wine-stable_wine-stable.png","default_pkg":true},{"name":"winetricks","key_store":"zero-lliurex-wine64","custom_name":"Winetricks, manager for Wine to install software easily","custom_icon":"wine-stable_wine-stable.png","default_pkg":true},{"name":"q4wine","key_store":"zero-lliurex-wine64","custom_name":"Q4Wine, help you manage wine installed applications","custom_icon":"wine-stable_wine-stable.png"}], 
+	"pkg_list": [{"name":"wine","key_store":"zero-lliurex-wine64","custom_name":"Wine, allows install Windows applications","custom_icon":"wine-stable_wine-stable.png","default_pkg":true},{"name":"winetricks","key_store":"zero-lliurex-wine64","custom_name":"Winetricks, manager for Wine to install software easily","custom_icon":"wine-stable_wine-stable.png","default_pkg":true},{"name":"q4wine","key_store":"zero-lliurex-wine64","custom_name":"Q4Wine, help you manage wine installed applications","custom_icon":"wine-stable_wine-stable.png"}], 
 	"repository": [{"url":"deb http://ppa.launchpad.net/llxdev/bionic-external-ppa/ubuntu bionic main"}],
 	"script": {"name":"/usr/share/zero-lliurex-wine64/wine64_script","remove":true},
 	"required_root":true,

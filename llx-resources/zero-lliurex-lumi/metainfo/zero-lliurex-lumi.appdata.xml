@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-lumi_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-lumi</name>
+<name xml:lang="es">Instalador de Lumi</name>
+<name xml:lang="en">Lumi installer</name>
+<name xml:lang="qcv">Instal·lador de Lumi</name>
+<name xml:lang="ca_ES">Instal·lador de Lumi</name>
+<summary>Installation of Lumi wizard</summary>
+<summary xml:lang="es">Asistente de instalación Lumi</summary>
+<summary xml:lang="qcv">Auxiliar d'instal·lació del Lumi</summary>
+<summary xml:lang="ca_ES">Auxiliar d'instal·lació del Lumi</summary>
+<description>
+<p>Lumi is a desktop app that allows you to create, edit, view and share interactive content in H5P format </p>
+<p xml:lang="es">Lumi es una aplicación de escritorio que le permite crear, editar, ver y compartir contenido interactivo en formato H5P</p>
+<p xml:lang="qcv">=Lumi és una aplicació d'escriptori que li permet crear, editar, veure i compartir contingut interactiu en format H5P</p>
+<p xml:lang="ca_ES">=Lumi és una aplicació d'escriptori que li permet crear, editar, veure i compartir contingut interactiu en format H5P</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Software</category>
+</categories>
+<icon type="cached">lumi</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>lumi</keyword>
+<keyword>zero-lliurex-lumi</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>Lumi</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>
