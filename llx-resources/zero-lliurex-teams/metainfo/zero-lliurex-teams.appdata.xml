@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-teams_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-teams</name>
+<name xml:lang="es">Instalación de Ms Teams</name>
+<name xml:lang="en">Ms Teams installation</name>
+<name xml:lang="qcv">Instal·lació del Ms Teams</name>
+<name xml:lang="ca_ES">Instal·lació del Ms Teams</name>
+<summary>Installation of Microsoft Teams client wizard</summary>
+<summary xml:lang="es">Asistente de instalación del cliente de Microsoft Teams</summary>
+<summary xml:lang="qcv">Auxiliar d'instal·lació del client de Microsoft Teams</summary>
+<summary xml:lang="ca_ES">Auxiliar d'instal·lació del client de Microsoft Teams</summary>
+<description>
+<p>Installation of Microsoft Team client wizard</p>
+<p xml:lang="es">Asistente de instalación del cliente de Microsoft Teams</p>
+<p xml:lang="qcv">Auxiliar d'instal·lació del client de Microsoft Teams</p>
+<p xml:lang="ca_ES">Auxiliar d'instal·lació del client de Microsoft Teams</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Internet</category>
+</categories>
+<icon type="cached">teams</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>teams</keyword>
+<keyword>zero-lliurex-teams</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>Teams</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>
