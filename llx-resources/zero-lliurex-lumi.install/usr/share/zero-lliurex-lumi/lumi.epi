@@ -1,7 +1,0 @@
-{
-	"type":"file",
-	"pkg_list": [{"name":"lumi","key_store":"zero-lliurex-lumi","custom_name":"Lumi: H5P files management tool","custom_icon":"lumi.svg"}], 
-	"script": {"name":"/usr/share/zero-lliurex-lumi/lumi_script","remove":true,"getStatus":true,"download":true},
-	"custom_icon_path":"/usr/share/icons/lliurex/apps/48/",
-	"zomando":"zero-lliurex-lumi"
-	}
