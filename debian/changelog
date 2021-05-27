@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.303) focal; urgency=medium
+
+  * Added zero-lliurex-teams
+  * Added zero-lliurex-lumi
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 27 May 2021 13:09:53 +0200
+
 zero-lliurex-installers (0.302) focal; urgency=medium
 
   * Fixed zero app files
