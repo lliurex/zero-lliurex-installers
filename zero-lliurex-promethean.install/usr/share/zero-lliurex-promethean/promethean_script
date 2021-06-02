@@ -20,6 +20,8 @@ case $ACTION in
 
 	preInstall)
 		apt-get update
+		#Install needed packages
+		apt-get install -y activinspire-32bitdependsfor64bit-lliurex
 		#Get the linux-headers of current kernel
 		apt-get install -y linux-headers-$VERSION
 		WRKDIR=$(mktemp -d)
@@ -37,7 +39,6 @@ case $ACTION in
 		dpkg-deb -b wrk activinspire-lliurex.deb
 		dpkg -i $PWD/activinspire-lliurex.deb
 		apt-get install -y -f
-		apt-get install -y activinspire-32bitdependsfor64bit-lliurex
 		if [ $? -ne 0 ]
 		then
 			exit 1
