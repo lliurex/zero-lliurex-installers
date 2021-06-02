@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.303.1) focal; urgency=medium
+
+  * Updated promethean_script
+
+ -- Juanma1980 <juanma1980@gmail.com>  Wed, 02 Jun 2021 09:55:57 +0200
+
 zero-lliurex-installers (0.303) focal; urgency=medium
 
   * Added zero-lliurex-teams
