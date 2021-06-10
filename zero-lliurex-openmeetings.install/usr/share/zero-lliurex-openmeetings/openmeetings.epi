@@ -1,9 +1,8 @@
 {
 	"type":"apt",
-	"pkg_list":[{"name":"kurento-media-server","key_store":"lliurex-openmeetings","custom_name":"Kurento: a WebRTC media server"},{"name":"lliurex-openmeetings","key_store":"lliurex-openmeetings","custom_name":"Openmeetings: installation wizard for LliureX"},{"name":"lliurex-openmeetings-remote","key_store":"lliurex-openmeetings","custom_name":"Openmeetings-Remote: tool to enable / disable Openmeetings"}],
-	"repository": [{"url":"deb [arch=amd64] http://ubuntu.openvidu.io/6.10.0 bionic kms6","key_cmd":"apt-key --keyring /tmp/epi_keyring adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 5AFA7A83"},{"url":"deb http://archive.ubuntu.com/ubuntu/ bionic main multiverse restricted universe"}], 
+	"pkg_list":[{"name":"lliurex-openmeetings","key_store":"lliurex-openmeetings","custom_name":"Openmeetings: installation wizard for LliureX"},{"name":"lliurex-openmeetings-remote","key_store":"lliurex-openmeetings","custom_name":"Openmeetings-Remote: tool to enable / disable Openmeetings"}],
 	"script":{"name":"/usr/share/zero-lliurex-openmeetings/openmeetings_script","remove":true},
+	"depends":"/usr/share/zero-lliurex-docker/docker.epi",
 	"required_root":true,
 	"zomando": "lliurex-openmeetings"
-	
-	}
+}
