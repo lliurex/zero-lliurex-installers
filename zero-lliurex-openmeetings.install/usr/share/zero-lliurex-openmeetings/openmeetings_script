@@ -11,6 +11,7 @@ case $ACTION in
 		echo "Building kurento docker"
 		docker pull kurento/kurento-media-server:latest
 		docker run -d --name kms --network host kurento/kurento-media-server:latest
+	;;
 
 	postInstall)
 		
