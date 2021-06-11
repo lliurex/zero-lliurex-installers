@@ -1,5 +1,6 @@
-zero-lliurex-installers (0.303.3) focal; urgency=medium
+zero-lliurex-installers (0.303.4) focal; urgency=medium
 
+  * Added kurento as docker
   * Removed kurento from openmeetings script
 
  -- Juanma1980 <juanma1980@gmail.com>  Thu, 10 Jun 2021 09:40:08 +0200
