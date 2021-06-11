@@ -3,10 +3,14 @@
 
 ACTION="$1"
 
-PACKAGE_LIST="lliurex-openmeetings-data lliurex-openmeetings-remote kurento-media-server"
+PACKAGE_LIST="lliurex-openmeetings-data lliurex-openmeetings-remote"
 
 
 case $ACTION in
+	preInstall)
+		echo "Building kurento docker"
+		docker pull kurento/kurento-media-server:latest
+		docker run -d --name kms --network host kurento/kurento-media-server:latest
 
 	postInstall)
 		
