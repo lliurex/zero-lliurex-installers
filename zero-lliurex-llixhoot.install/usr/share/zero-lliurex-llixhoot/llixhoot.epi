@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"llixhoot","key_store":"zero-lliurex-llixhoot","custom_icon":"llxhoot.svg"}], 
+	"pkg_list": [{"name":"llixhoot","key_store":"zero-lliurex-llixhoot","custom_name":"Llixhoot: a game-based learning tool","custom_icon":"llxhoot.svg"}], 
 	"script": {"name":"/usr/share/zero-lliurex-llixhoot/llixhoot_script", "remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-llixhoot/",
 	"zomando":"zero-lliurex-llixhoot",

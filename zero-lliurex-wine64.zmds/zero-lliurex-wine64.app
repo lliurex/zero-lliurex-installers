@@ -1,10 +1,12 @@
 Name=zero-lliurex-wine64
 Name[es]=Instalación del wine64
 Name[en]=Wine64 installation
+Name[ca@valencia]=Instal·lació del wine64
 Name[qcv]=Instal·lació del wine64
 Name[ca_ES]=Instal·lació del wine64
 Comment=Installation of wine64 wizard. Install wine, winetrics and optionally q4wine.
 Comment[es]=Asistente de instalación del wine64. Instala wine, winetrics y opcionalmente q4wine. 
+Comment[ca@valencia]=Auxiliar d'instal·lació del wine64. Instal·la wine, winetrics i opcionalment q4wine.
 Comment[qcv]=Auxiliar d'instal·lació del wine64. Instal·la wine, winetrics i opcionalment q4wine.
 Comment[ca_ES]=Auxiliar d'instal·lació del wine64. Instal·la wine, winetrics i opcionalment q4wine.
 Icon=zero-lliurex-wine64

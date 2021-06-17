@@ -1,0 +1,9 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"teams","key_store":"zero-lliurex-teams","custom_name":"Teams: a client for Microsoft Teams","custom_icon":"teams.png"}], 
+	"repository": [{"url":"deb https://packages.microsoft.com/repos/ms-teams stable main","key_cmd":"curl https://packages.microsoft.com/keys/microsoft.asc | apt-key --keyring /tmp/epi_keyring add -"} ], 
+	"script": {"name":"/usr/share/zero-lliurex-teams/teams_script", "remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-teams/",
+	"zomando":"zero-lliurex-teams"
+	
+	}
