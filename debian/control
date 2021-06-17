@@ -135,6 +135,13 @@ Provides: lliurex-zero-libreoffice-reset
 Description: LibreOffice Home Cleaner
  Limpiador del LibreOffice
 
+Package: zero-lliurex-lumi
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Lumi installer
+  Zero-center helper, It downloads and installs Lumi appimage
+
 Package: zero-lliurex-nextcloud-client
 Architecture: all
 Section: x11
@@ -272,6 +279,13 @@ Depends: zero-center,epi-gtk
 Description: Stellarium installer
  Zero-center helper, It installs Stellarium on Lliurex
  
+Package: zero-lliurex-teams
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Ms Teams installer
+  Zero-center helper, It downloads and installs Microsoft Teams Client
+
 Package: zero-lliurex-technology
 Architecture: all
 Section: x11
