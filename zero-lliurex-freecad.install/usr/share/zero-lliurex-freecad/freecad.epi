@@ -1,6 +1,6 @@
 {
 	"type":"file",
-	"pkg_list": [{"name":"freecad-appimage","key_store":"zero-lliurex-freecad","custom_icon":"freecad-appimage.svg"}], 
+	"pkg_list": [{"name":"freecad-appimage","key_store":"zero-lliurex-freecad","custom_name":"Freecad: 3D computer-aided design tool","custom_icon":"freecad-appimage.svg"}], 
 	"script": {"name":"/usr/share/zero-lliurex-freecad/freecad_script","remove":true,"getStatus":true,"download":true},
 	"custom_icon_path":"/usr/share/icons/lliurex/apps/48/",
 	"zomando":"zero-lliurex-freecad"

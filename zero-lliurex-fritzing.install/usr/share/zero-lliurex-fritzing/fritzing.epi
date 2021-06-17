@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"fritzing","key_store":"fritzing", "custom_icon":"fritzing_fritzing_icon.png"},{"name":"fritzing-parts", "key-store":"fritzing-parts","custom_icon":"fritzing_fritzing_icon.png"}], 
+	"pkg_list": [{"name":"fritzing","key_store":"fritzing","custom_name":"Fritzing: electronic design automation program","custom_icon":"fritzing_fritzing_icon.png"},{"name":"fritzing-parts", "key-store":"fritzing-parts","custom_name":"Fritzing Parts: additional library","custom_icon":"fritzing_fritzing_icon.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-fritzing/fritzing_script", "remove":true},
 	"zomando":"zero-lliurex-fritzing"
 	

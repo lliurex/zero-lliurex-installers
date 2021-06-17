@@ -1,10 +1,12 @@
 Name=zero-lliurex-hotpotatoes
 Name[en]=Instalación del Hotpotatoes
 Name[es]=Instalación del Hotpotatoes
+Name[ca@valencia]=Instal·lació del Hotpotatoes
 Name[qcv]=Instal·lació del Hotpotatoes
 Name[ca_ES]=Instal·lació del Hotpotatoes
 Comment=LliureX's Hotpotatoes instalation
 Comment[es]=Instalación del Hotpotatoes en LliureX
+Comment[ca@valencia]=Activitats educatives interactives
 Comment[qcv]=Activitats educatives interactives
 Comment[ca_ES]=Activitats educatives interactives
 Icon=zero-lliurex-hotpotatoes

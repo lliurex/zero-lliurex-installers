@@ -1,11 +1,13 @@
 Name=lliurex-openmeetings
 Name[en]=LliurexMeet Installer
 Name[es]=Instalador de LliurexMeet
+Name[ca@valencia]=Instal·lador de LliurexMeet
 Name[qcv]=Instal·lador de LliurexMeet
 Name[ca_ES]=Instal·lador de LliurexMeet
 Comment=LliureMeet is Apache Openmeetings customized for LliureX
 Comment[en]=LliurexMeet is Apache Openmeetings customized for LliureX
 Comment[es]=LliurexMeet es la personalización de LliureX para Apache Openmeetings
+Comment[ca@valencia]=LliurexMeet es la personalització de LliureX per al Apache Openmeetings
 Comment[qcv]=LliurexMeet es la personalització de LliureX per al Apache Openmeetings
 Comment[ca_ES]=LliurexMeet es la personalització de LliureX per al Apache Openmeetings
 Icon=lliurexmeet-setup

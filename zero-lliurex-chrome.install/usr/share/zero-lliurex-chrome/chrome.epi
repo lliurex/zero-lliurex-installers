@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"google-chrome-stable","key_store":"zero-lliurex-chrome","eula":"https://www.google.com/chrome/privacy/eula_text.html","custom_icon":"chrome.svg"}], 
+	"pkg_list": [{"name":"google-chrome-stable","key_store":"zero-lliurex-chrome","eula":"https://www.google.com/chrome/privacy/eula_text.html","custom_name":"Google Chrome","custom_icon":"chrome.svg"}], 
 	"repository": [{"url":"deb http://dl.google.com/linux/chrome/deb/ stable main","key_cmd":"wget -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key --keyring /tmp/epi_keyring add -"}], 
 	"script": {"name":"/usr/share/zero-lliurex-chrome/chrome_script", "remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-chrome/",

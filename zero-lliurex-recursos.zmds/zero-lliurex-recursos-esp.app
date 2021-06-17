@@ -1,10 +1,12 @@
 Name=zero-lliurex-recursos-esp
 Name[en]=Special educational resources
 Name[es]=Recursos educativos para educación especial
+Name[ca@valencia]=Recursos educatius per a educació especial
 Name[qcv]=Recursos educatius per a educació especial
 Name[ca_ES]=Recursos educatius per a educació especial 
 Comment=LliureX's Special educational resources instalation
 Comment[es]=Instalación de los recursos educativos para Especial de LliureX
+Comment[ca@valencia]=Instal·lació dels recursos educatius per a Especial de LliureX
 Comment[qcv]=Instal·lació dels recursos educatius per a Especial de LliureX
 Comment[ca_ES]=Instal·lació dels recursos educatius per a Especial de LliureX
 Icon=zero-lliurex-recursos-esp

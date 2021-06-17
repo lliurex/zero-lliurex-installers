@@ -1,10 +1,12 @@
 Name=zero-lliurex-moodle
 Name[en]=Instalación del Moodle
 Name[es]=Instalación del Moodle
+Name[ca@valencia]=Instal·lació del Moodle
 Name[qcv]=Instal·lació del Moodle
 Name[ca_ES]=Instal·lació del Moodle
 Comment=LliureX's Moodle
 Comment[es]=Instalación del Moodle en LliureX
+Comment[ca@valencia]=Instal·lació del Moodle a LliureX
 Comment[qcv]=Instal·lació del Moodle a LliureX
 Comment[ca_ES]=Instal·lació del Moodle a LliureX
 Icon=zero-lliurex-moodle

@@ -1,9 +1,11 @@
 Name=zero-lliurex-midicss
 Name[es]=Instalador de soporte para MIDI
+Name[ca@valencia]=Instal·lador de còdecs per a MIDI
 Name[qcv]=Instal·lador de còdecs per a MIDI
 Name[ca_ES]=Instal·lador de còdecs per a MIDI
 Comment=Downloads and installs Codecs for MIDI
 Comment[es]=Descarga e instala los codecs para MIDI
+Comment[ca@valencia]=Baixa i instal·la els còdecs per a MIDI
 Comment[qcv]=Baixa i instal·la els còdecs per a MIDI
 Comment[ca_ES]=Baixa i instal·la els còdecs per a MIDI
 Icon=zero-lliurex-midicss

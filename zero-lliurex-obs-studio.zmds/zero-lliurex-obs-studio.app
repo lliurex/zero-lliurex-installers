@@ -1,9 +1,11 @@
 Name=zero-lliurex-obs-studio
 Name[es]=Instalador de OBS Studio
+Name[ca@valencia]=Instal·lador de OBS Studio
 Name[qcv]=Instal·lador de OBS Studio
 Name[ca_ES]=Instal·lador de OBS Studio
 Comment=Open Broadcaster Software is an application for video recording and live streaming
 Comment[es]=Open Broadcaster Software es una aplicación para la grabación de video y transmisión en vivo
+Comment[ca@valencia]=Open Broadcaster Software és una aplicació per a la gravació de video i transmissió en viu
 Comment[qcv]=Open Broadcaster Software és una aplicació per a la gravació de video i transmissió en viu
 Comment[ca_ES]=Open Broadcaster Software és una aplicació per a la gravació de video i transmissió en viu
 Icon=zero-lliurex-obs-studio
