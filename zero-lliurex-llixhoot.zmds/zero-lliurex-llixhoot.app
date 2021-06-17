@@ -1,10 +1,12 @@
 Name=LlixHoot, free Kahoot clone
 Name[es]=LlixHoot, clon libre de Kahoot
 Name[ca@valencia]=LlixHootm, clon lliure del Kahoot
+Name[qcv]=LlixHootm, clon lliure del Kahoot
 Name[ca_ES]=LlixHootm, clon lliure del Kahoot
 Comment=Free kahoot clone for lliurex. Access it directly from browser's main page
 Comment[es]=Clon libre de Kahoot. Accede directamente desde la página de inicio del navegador
 Comment[ca@valencia]=Clon lliure del Kahoot. Accedeix directament desde la pàgina de inici del navegador
+Comment[qcv]=Clon lliure del Kahoot. Accedeix directament desde la pàgina de inici del navegador
 Comment[ca_ES]=Clon lliure del Kahoot. Accedeix directament desde la pàgina de inici del navegador
 Icon=zero-lliurex-llixhoot
 Groups=admin;admins;teachers;sudo

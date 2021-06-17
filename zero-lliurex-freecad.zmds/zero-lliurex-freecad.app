@@ -1,10 +1,12 @@
 Name=zero-lliurex-freecad
 Name[es]=Instalador de FreeCad (AppImage)
 Name[ca@valencia]=Instal·lador de FreeCad (AppImage)
+Name[qcv]=Instal·lador de FreeCad (AppImage)
 Name[ca_ES]=Instal·lador de FreeCad (AppImage)
 Comment= FreeCAD is an open-source parametric 3D modeler. Parametric modeling allows you to easily modify your design by going back into your model history and changing its parameters
 Comment[es]=FreeCAD es un modelador 3D paramétrico de código abierto. El modelado paramétrico le permite modificar fácilmente su diseño volviendo al historial de su modelo y cambiando sus parámetros
 Comment[ca@valencia]=FreeCAD és un modelador 3D paramètric de codi obert. El modelatge paramètric li permet modificar fàcilment el seu disseny tornant a l'historial del seu model i canviant els seus paràmetres
+Comment[qcv]=FreeCAD és un modelador 3D paramètric de codi obert. El modelatge paramètric li permet modificar fàcilment el seu disseny tornant a l'historial del seu model i canviant els seus paràmetres
 Comment[ca_ES]=FreeCAD és un modelador 3D paramètric de codi obert. El modelatge paramètric li permet modificar fàcilment el seu disseny tornant a l'historial del seu model i canviant els seus paràmetres
 Icon=zero-lliurex-freecad
 Category=Software

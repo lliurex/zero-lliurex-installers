@@ -1,10 +1,12 @@
 Name=lliurex-zero-installer-telegram
 Name[es]=Instalación de Telegram
 Name[ca@valencia]=Instal·lació del Telegram
+Name[qcv]=Instal·lació del Telegram
 Name[ca_ES]=Instal·lació del Telegram
 Comment=Telegram installer for Lliurex
 Comment[es]=Instalador de Telegram para Lliurex
 Comment[ca@valencia]=Instal·lació del Telegram per a Lliurex
+Comment[qcv]=Instal·lació del Telegram per a Lliurex
 Comment[ca_ES]=Instal·lació del Telegram per a Lliurex
 Icon=zero-lliurex-telegram
 Category=Internet

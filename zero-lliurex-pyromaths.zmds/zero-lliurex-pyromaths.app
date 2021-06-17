@@ -1,10 +1,12 @@
 Name=zero-lliurex-pyromaths
 Name[es]=Instalador de Pyromaths
 Name[ca@valencia]=Instal·lador del Pyromaths
+Name[qcv]=Instal·lador del Pyromaths
 Name[ca_ES]=Instal·lador del Pyromaths
 Comment=Downloads and installs Pyromaths on current machine
 Comment[es]=Descarga e instala Pyromaths en la máquina local
 Comment[ca@valencia]=Programari de generació d'exercicis matemàtics
+Comment[qcv]=Programari de generació d'exercicis matemàtics
 Comment[ca_ES]=Programari de generació d'exercicis matemàtics
 Icon=zero-lliurex-pyromaths
 Category=Software

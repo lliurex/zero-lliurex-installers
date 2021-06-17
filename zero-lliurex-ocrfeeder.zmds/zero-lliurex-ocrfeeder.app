@@ -1,10 +1,12 @@
 Name=zero-lliurex-ocrfeeder
 Name[es]=Instalador de OCRFeeder
 Name[ca@valencia]=Instal·lador de OCRFeeder
+Name[qcv]=Instal·lador de OCRFeeder
 Name[ca_ES]=Instal·lador de OCRFeeder
 Comment=OCRFeeder is an optical character recognition suite
 Comment[es]=OCRFeeder es una suite de reconocimiento óptico de caracteres
 Comment[ca@valencia]=OCRFeeder és una suite per al reconeixement òptic de caràcters
+Comment[qcv]=OCRFeeder és una suite per al reconeixement òptic de caràcters
 Comment[ca_ES]=OCRFeeder és una suite per al reconeixement òptic de caràcters
 Icon=zero-lliurex-ocrfeeder
 Category=Software
