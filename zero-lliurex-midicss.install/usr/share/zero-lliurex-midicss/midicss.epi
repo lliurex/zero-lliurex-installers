@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"vlc-plugin-fluidsynth","key_store":"zero-lliurex-midicss","custom_icon":"midicss.svg"}], 
+	"pkg_list": [{"name":"vlc-plugin-fluidsynth","key_store":"zero-lliurex-midicss","custom_icon":"midicss.svg","custom_name":"Codecs for MIDI"}], 
 	"script": {"name":"/usr/share/zero-lliurex-midicss/midicss_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-midicss/",
 	"zomando":"zero-lliurex-midicss"
