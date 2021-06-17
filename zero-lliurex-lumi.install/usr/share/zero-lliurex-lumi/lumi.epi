@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"lumi","key_store":"zero-lliurex-lumi","custom_name":"Lumi: create, edit, view content in H5P format","custom_icon":"lumi.png"}], 
+	"script": {"name":"/usr/share/zero-lliurex-lumi/lumi_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-lumi",
+	"zomando":"zero-lliurex-lumi"
+	}

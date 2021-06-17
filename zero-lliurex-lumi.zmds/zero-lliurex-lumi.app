@@ -1,0 +1,17 @@
+Name=zero-lliurex-lumi
+Name[es]=Instalador de Lumi
+Name[ca@valencia]=Instal·lador de Lumi
+Name[qcv]=Instal·lador de Lumi
+Name[ca_ES]=Instal·lador de Lumi
+Comment= Lumi is a desktop app that allows you to create, edit, view and share interactive content in H5P format 
+Comment[es]=Lumi es una aplicación de escritorio que le permite crear, editar, ver y compartir contenido interactivo en formato H5P 
+Comment[ca@valencia]=Lumi és una aplicació d'escriptori que li permet crear, editar, veure i compartir contingut interactiu en format H5P.
+Comment[qcv]=Lumi és una aplicació d'escriptori que li permet crear, editar, veure i compartir contingut interactiu en format H5P.
+Comment[ca_ES]=Lumi és una aplicació d'escriptori que li permet crear, editar, veure i compartir contingut interactiu en format H5P
+Icon=zero-lliurex-lumi
+Category=Software
+ScriptPath=zero-lliurex-lumi.zmd
+Service=True
+Using=pkexec
+Locks=zero-lliurex-lumi
+Groups=sudo;admins;teachers
