@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.303.6) focal; urgency=medium
+
+  * Added new key in telegram epi file
+  * Added obs-studio custom icon
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 21 Jun 2021 15:38:09 +0200
+
 zero-lliurex-installers (0.303.5) focal; urgency=medium
 
   * Added some custom name in epi files
