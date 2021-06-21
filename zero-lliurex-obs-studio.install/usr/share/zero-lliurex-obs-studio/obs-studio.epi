@@ -1,6 +1,7 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"obs-studio","key_store":"zero-lliurex-obs-studio","custom_name":"OBS Studio: software for video recording and live streaming"}], 
+	"pkg_list": [{"name":"obs-studio","key_store":"zero-lliurex-obs-studio","custom_name":"OBS Studio: software for video recording and live streaming","custom_icon":"obs-studio.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-obs-studio/obs-studio_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-obs-studio/",
 	"zomando":"zero-lliurex-obs-studio"
 	}
