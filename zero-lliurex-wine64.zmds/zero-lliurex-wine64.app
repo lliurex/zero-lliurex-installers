@@ -14,4 +14,4 @@ Groups=admin;admins;teachers;sudo
 Category=Software
 ScriptPath=zero-lliurex-wine64.zmd
 Using=pkexec
-Service=True
+Service=False

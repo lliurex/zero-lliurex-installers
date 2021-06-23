@@ -14,5 +14,5 @@ Groups=admin;admins;sudo;teachers
 Category=Software
 ScriptPath=zero-lliurex-technology.zmd
 Using=pkexec
-Service=True
+Service=False
 Modal=True
