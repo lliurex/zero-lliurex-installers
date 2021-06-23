@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.196.2) bionic-updates; urgency=medium
+
+  * Fixed some zomandos
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 23 Jun 2021 12:02:48 +0200
+
 zero-lliurex-installers (0.196.1) bionic-updates; urgency=medium
 
   * Added new key in telegram epi file
