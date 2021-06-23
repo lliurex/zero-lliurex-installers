@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.303.7) focal; urgency=medium
+
+  * Fixed some zomandos
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 23 Jun 2021 11:39:02 +0200
+
 zero-lliurex-installers (0.303.6) focal; urgency=medium
 
   * Added new key in telegram epi file
