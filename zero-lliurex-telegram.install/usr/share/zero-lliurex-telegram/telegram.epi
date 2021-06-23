@@ -4,7 +4,6 @@
 	"script": {"name":"/usr/share/zero-lliurex-telegram/telegram_script","remove":true,"getStatus":true,"download":true},
 	"required_x":true,
 	"required_root":true,
-	"zomando":"zero-lliurex-telegram",
-	"check_zomando_state":false
+	"zomando":"zero-lliurex-telegram"
 	
 	}
