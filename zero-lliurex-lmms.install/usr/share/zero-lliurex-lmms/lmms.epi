@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"lmms","key_store":"zero-lliurex-teams","custom_name":"Linux MultiMedia Studio","custom_icon":"lmms.png"}], 
+	"script": {"name":"/usr/share/zero-lliurex-lmms/lmms_script", "remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-lmms/",
+	"zomando":"zero-lliurex-lmms"
+	
+	}
