@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.1) focal; urgency=medium
+
+  * Fized zero-lliurex-lmms banner
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 06 Jul 2021 17:21:36 +0200
+
 zero-lliurex-installers (0.304) focal; urgency=medium
 
   * Added zero-lliurex-lmms
