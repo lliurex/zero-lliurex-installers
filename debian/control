@@ -135,6 +135,13 @@ Provides: lliurex-zero-libreoffice-reset
 Description: LibreOffice Home Cleaner
  Limpiador del LibreOffice
 
+Package: zero-lliurex-lmms
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: LMMS installer
+  Zero-center helper, It downloads and installs Linux MultiMedia Studio
+
 Package: zero-lliurex-lumi
 Architecture: all
 Section: x11
