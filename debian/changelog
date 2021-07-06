@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304) focal; urgency=medium
+
+  * Added zero-lliurex-lmms
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 06 Jul 2021 11:51:46 +0200
+
 zero-lliurex-installers (0.303.7) focal; urgency=medium
 
   * Fixed some zomandos
