@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="224.14272"
-   height="108.5358"
-   viewBox="0 0 59.304428 28.716764"
+   width="235"
+   height="110"
+   viewBox="0 0 62.177085 29.104168"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
@@ -62,8 +62,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="54.504141"
-     inkscape:cy="-0.53197831"
+     inkscape:cx="206.34025"
+     inkscape:cy="0.20018096"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -89,17 +89,17 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-1.4363231,-268.08957)">
+     transform="translate(4.9248338e-6,-267.89588)">
     <rect
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#0000e8;stroke-width:0.20787732;stroke-opacity:1"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#0000e8;stroke-width:0.21427643;stroke-opacity:1"
        id="rect1489"
-       width="59.09655"
-       height="28.508886"
-       x="1.5402617"
-       y="268.19351" />
+       width="61.962807"
+       height="28.889891"
+       x="0.10713329"
+       y="268.00302" />
     <g
        id="banner-dark-icon"
-       transform="matrix(0.04409504,0,0,0.04409503,4.6787454,270.33718)">
+       transform="matrix(0.0462337,0,0,0.04468433,3.3978373,270.17533)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#linearGradient3945)"
@@ -112,7 +112,7 @@
          id="outer-shape" />
     </g>
     <g
-       transform="matrix(0.03902074,0,0,0.02886653,-2.9902015,275.3484)"
+       transform="matrix(0.04091329,0,0,0.02925231,-4.6430631,275.25352)"
        style="isolation:isolate"
        id="jellyfin-light-outlines">
       <path
@@ -152,7 +152,7 @@
          d="m 1452.53,218.88 q 12.92,16.2 12.92,42.92 v 87.32 a 8.4,8.4 0 0 1 -2.67,6.38 8.8,8.8 0 0 1 -6.24,2.53 8.64,8.64 0 0 1 -8.91,-8.91 v -86.43 q 0,-19.31 -9.65,-31.33 -9.65,-12.02 -29.85,-12 a 53.28,53.28 0 0 0 -42.77,21.83 36.24,36.24 0 0 0 -7.13,21.53 v 86.43 a 8.91,8.91 0 1 1 -17.82,0 V 216.06 a 8.91,8.91 0 1 1 17.82,0 v 16.34 q 8,-12.77 23,-21.24 A 61.84,61.84 0 0 1 1412,202.7 q 27.61,0 40.53,16.18 z" />
     </g>
     <g
-       transform="matrix(0.03836108,0,0,0.02829776,-2.1657346,275.43225)"
+       transform="matrix(0.04022164,0,0,0.02867594,-3.7786085,275.33849)"
        style="isolation:isolate;fill:#8787de"
        id="jellyfin-light-outlines-3">
       <path
