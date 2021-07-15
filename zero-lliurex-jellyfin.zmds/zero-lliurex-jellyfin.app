@@ -1,0 +1,16 @@
+Name=zero-lliurex-jellyfin
+Name[es]=Instalación de Jellyfin
+Name[en]=Jellyfin installation
+Name[ca@valencia]=Instal·lació del Jellyfin
+Name[ca]=Instal·lació del Jellyfin
+Comment=Installation of Jellyfin, a media server for linux
+Comment[es]=Asistente de instalación del Jellyfin, un servidor multimedia para linux
+Comment[ca@valencia]=Auxiliar d'instal·lació del Jellyfin. Un servidor multimèdia per a linux
+Comment[ca]=Auxiliar d'instal·lació del Jellyfin. Un servidor multimèdia per a linux
+Icon=zero-lliurex-jellyfin
+Groups=admin;admins;teachers;sudo
+Category=Software
+ScriptPath=zero-lliurex-jellyfin.zmd
+Using=pkexec
+Service=True
+Modal=True

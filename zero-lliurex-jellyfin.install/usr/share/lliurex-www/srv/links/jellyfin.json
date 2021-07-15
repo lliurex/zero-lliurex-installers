@@ -1,0 +1,16 @@
+{
+    "linkid":"jellyfin",
+    "link":"http://server:8096",
+    "icon":"jellyfin.svg",
+    "fonticon":"icon-headphones",
+    "name": {
+        "default":"Jellyfin: Media server for linux",
+        "valencia":"Jellyfin: Servidor multimèdia per a linux",
+        "es":"Jellyfin: Servidor multimedia para linux"
+    },
+    "description": {
+        "default":"Jellyfin is a Free Software Media System. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps",
+        "valencia":"Jellyfin es un servidor multimédia amb llicència lliure. Es una alternativa a Emby o Plex per a transmetre contingut desde un servidor als dispositius de la xarxa",
+        "es":"Jellyfin es un servidor multimedia con licencia libre. Es una alternativa a Emby o Plex para transmitir contenido desde un servidor a los dispositivos de la red"
+    }
+}
