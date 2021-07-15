@@ -24,7 +24,7 @@ case $ACTION in
 		systemctl start jellyfin
 		if [ -n "$DISPLAY" ]
 		then
-			kdialog --msgbox $MSG 
+			kdialog --msgbox "$MSG" 
 		else
 			echo "$MSG"
 		fi
