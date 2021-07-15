@@ -10,7 +10,6 @@ elif [ ${LANG:0:2} == "es" ]
 then
 	MSG="Se ha instalado Jellyfin. Se ha añadido un enlace a la página de inicio del navegador.\nEjecute firefox para terminar la configuración."
 else
-then
 	MSG="Jellyfin is now installed. A link has been added to browser's homepage.\nOpen firefox and finish the configuration from there."
 fi
 
