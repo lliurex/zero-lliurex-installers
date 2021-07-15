@@ -327,3 +327,10 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Ms Teams installer
   Zero-center helper, It downloads and installs Microsoft Teams Client
+
+Package: zero-lliurex-jellyfin
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: jellyfin installer
+  Zero-center helper, It downloads and installs jellyfin media server
