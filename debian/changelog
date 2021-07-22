@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.3) focal; urgency=medium
+
+  * Changed zero-lliurex-wine to allows install wine64 or wine32
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 22 Jul 2021 12:53:55 +0200
+
 zero-lliurex-installers (0.304.2) focal; urgency=medium
 
   * Added zero-lliurex-jellyfin
