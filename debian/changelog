@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.304.4) focal; urgency=medium
+
+  * Fixed zero-lliurex-docker script
+  * Fixed custom icon in zero-lliurex-krita, zero-lliurex-mixxx,zero-lliurex-wine64
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 27 Aug 2021 12:59:09 +0200
+
 zero-lliurex-installers (0.304.3) focal; urgency=medium
 
   * Changed zero-lliurex-wine to allows install wine64 or wine32
