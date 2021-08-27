@@ -22,7 +22,14 @@ case $ACTION in
 
 			echo "Nothing to do"
 		else
-			apt-get remove --yes docker docker-engine docker.io containerd runc
+			OLD_PACKAGES="docker docker-engine docker.io containerd runc"
+			for ix in $OLD_PACKAGES
+			do
+				if dpkg-query -l $ix>/dev/null 2>&1;then
+					apt-get remove --yes $ix
+				fi
+			done
+
 		fi	
 
 	;;
