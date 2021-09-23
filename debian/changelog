@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.5) focal; urgency=medium
+
+  * Use stable repository for jellyfin
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 23 Sep 2021 10:15:49 +0200
+
 zero-lliurex-installers (0.304.4) focal; urgency=medium
 
   * Fixed zero-lliurex-docker script
