@@ -18,7 +18,6 @@ shift
 PACKAGE_LIST=$@
 
 case $ACTION in
-
 	postInstall)
 		systemctl enable jellyfin
 		systemctl start jellyfin
