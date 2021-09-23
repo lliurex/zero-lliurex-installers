@@ -1,7 +1,7 @@
 {
 	"type":"apt",
 	"pkg_list": [{"name":"jellyfin","key_store":"zero-lliurex-teams","custom_name":"Jellyfin media server","custom_icon":"jellyfin.png"}], 
-	"repository": [{"url":"deb https://repo.jellyfin.org/ubuntu focal main unstable","key_cmd":"wget wget -O - https://repo.jellyfin.org/jellyfin_team.gpg.key | sudo apt-key add -"}], 
+	"repository": [{"url":"deb [arch=amd64] https://repo.jellyfin.org/ubuntu focal main stable","key_cmd":"wget wget -O - https://repo.jellyfin.org/jellyfin_team.gpg.key | sudo apt-key add -"}], 
 	"script": {"name":"/usr/share/zero-lliurex-jellyfin/jellyfin_script", "remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-jellyfin/",
 	"zomando":"zero-lliurex-jellyfin"
