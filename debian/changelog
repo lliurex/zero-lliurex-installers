@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.198) bionic; urgency=medium
+
+  * Fixed url in docker epi file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 13 Oct 2021 15:06:31 +0200
+
 zero-lliurex-installers (0.197) bionic-updates; urgency=medium
 
   * Added zero-lliurex-lmms
