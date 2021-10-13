@@ -38,7 +38,7 @@ case $ACTION in
 		    echo "Skipping docker-compose installation..."
 		else
 		    echo "[EPI]:Installing docker-compose from github..."
-		    TAG="$(curl -sSL "https://github.com/docker/compose/releases/latest" | sed -nr 's@.*releases/tag/([1-9]+(\.[0-9]+)*)".*@\1@p' | tr ' ' '\n'|sort -n|uniq|tail -1)"
+		    TAG="$(curl -sSL "https://github.com/docker/compose/releases/latest" | sed -nr 's@.*releases/tag/v([1-9]+(\.[0-9]+)*)".*@\1@p' | tr ' ' '\n'|sort -n|uniq|tail -1)"
 		    nTAG="$(echo ${TAG}|wc -w)"
 		    if [ -z "${nTAG}" -o "x${nTAG}" != "x1" ];then
 		        echo "[EPI]:fail installing docker-compose! from tag"
@@ -46,7 +46,7 @@ case $ACTION in
 		    fi
 		    if [ -n "${TAG}" ]; then
 			echo "[EPI]:Downloading docker-compose version ${TAG}"
-			curl -sSL "https://github.com/docker/compose/releases/download/${TAG}/docker-compose-$(uname -s)-$(uname -m)" -o /tmp/docker-compose
+			curl -sSL "https://github.com/docker/compose/releases/download/v${TAG}/docker-compose-$(uname -s)-$(uname -m)" -o /tmp/docker-compose
 		    fi
 		    if [ -f "/tmp/docker-compose" -a -n "$(file /tmp/docker-compose|grep -o 'ELF 64-bit')" ]; then
 			mv /tmp/docker-compose /usr/bin/docker-compose
