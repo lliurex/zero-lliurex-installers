@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.6) focal; urgency=medium
+
+  * Fixed docker url
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 13 Oct 2021 15:04:16 +0200
+
 zero-lliurex-installers (0.304.5) focal; urgency=medium
 
   * Use stable repository for jellyfin
