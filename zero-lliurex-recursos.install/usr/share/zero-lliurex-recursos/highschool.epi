@@ -1,8 +1,0 @@
-{
-	"type":"apt",
-	"pkg_list": [{"name":"rsc-ingles"}], 
-	"repository": [{"url":"deb http://ppa.launchpad.net/llxdev/recursos/ubuntu xenial main"}], 
-	"script": {"name":"/usr/share/zero-lliurex-recursos/highschool_script", "remove":true},
-	"zomando":"zero-lliurex-recursos-sec"
-	
-	}

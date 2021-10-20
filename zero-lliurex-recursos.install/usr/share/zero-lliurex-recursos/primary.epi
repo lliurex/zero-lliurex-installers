@@ -1,7 +1,7 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"rsc-alquimia"},{"name":"rsc-animals-vertebrats"},{"name":"rsc-caixademusica"},{"name":"rsc-cifras"},{"name":"rsc-ingles"},{"name":"rsc-jclics"},{"name":"rsc-matematicas3"},{"name":"rsc-primartis"},{"name":"rsc-ser-pensar-conviure-fer"},{"name":"rsc-simon"}], 
-	"repository": [{"url":"deb http://ppa.launchpad.net/llxdev/recursos/ubuntu xenial main"}], 
+	"pkg_list": [{"name":"rsc-animals-vertebrats","custom_name":"Primary Education: animals vertebrats"},{"name":"rsc-jclics","custom_name":"Primary Education: Jclic resources"},{"name":"rsc-matematicas3","custom_name":"Primary Education: matematicas3"},{"name":"rsc-ser-pensar-conviure-fer","custom_name":"Primary Education: ser-pensar-conviure-fer"}], 
+	"repository": [{"url":"deb http://lliurex.net/focal focal preschool"}], 
 	"script": {"name":"/usr/share/zero-lliurex-recursos/primary_script", "remove":true},
 	"selection_enabled":{"active":true,"all_selected":true},
 	"zomando":"zero-lliurex-recursos-pri"

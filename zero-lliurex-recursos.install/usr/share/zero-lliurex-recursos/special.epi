@@ -1,7 +1,7 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"rsc-educacionespecial"}], 
-	"repository": [{"url":"deb http://ppa.launchpad.net/llxdev/recursos/ubuntu xenial main"}], 
+	"pkg_list": [{"name":"rsc-educacionespecial","custom_name":"Resources for Special education"}], 
+	"repository": [{"url":"deb http://lliurex.net/focal focal preschool"}], 
 	"script": {"name":"/usr/share/zero-lliurex-recursos/special_script", "remove":true},
 	"zomando":"zero-lliurex-recursos-esp"
 	
