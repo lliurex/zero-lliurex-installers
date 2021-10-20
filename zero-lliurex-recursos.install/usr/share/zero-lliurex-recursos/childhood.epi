@@ -1,7 +1,7 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"rsc-bits"},{"name":"rsc-fantasmin"},{"name":"rsc-jclics"},{"name":"rsc-ser-pensar-conviure-fer"}], 
-	"repository": [{"url":"deb http://ppa.launchpad.net/llxdev/recursos/ubuntu xenial main"}], 
+	"pkg_list": [{"name":"rsc-jclics","custom_name":"Childhood education: Jclic resources"},{"name":"rsc-ser-pensar-conviure-fer","custom_name":"Childhoo education: ser-pensar-conviure-fer"}], 
+	"repository": [{"url":"deb http://lliurex.net/bionic bionic preschool"}], 
 	"script": {"name":"/usr/share/zero-lliurex-recursos/childhood_script", "remove":true},
 	"selection_enabled":{"active":true,"all_selected":true},
 	"zomando":"zero-lliurex-recursos-inf"
