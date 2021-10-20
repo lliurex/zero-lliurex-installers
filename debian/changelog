@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.199) bionic-updates; urgency=medium
+
+  * Updated resources zmd to remove depends with Flash
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 20 Oct 2021 16:24:11 +0200
+
 zero-lliurex-installers (0.198) bionic; urgency=medium
 
   * Fixed url in docker epi file
