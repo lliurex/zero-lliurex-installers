@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.7) focal; urgency=medium
+
+  * Updated zero-lliurex-teams to install snap version instead deb
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 25 Oct 2021 16:17:15 +0200
+
 zero-lliurex-installers (0.304.6) focal; urgency=medium
 
   * Fixed docker url
