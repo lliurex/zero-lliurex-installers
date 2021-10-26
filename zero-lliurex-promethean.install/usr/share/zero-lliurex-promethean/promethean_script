@@ -26,11 +26,6 @@ function fix_activinspire_pkg
 	sed -i 's/libcurl3,//g' wrk/DEBIAN/control 
 	dpkg-deb -b wrk activinspire-lliurex.deb
 	dpkg -i $PWD/activinspire-lliurex.deb
-####apt-get install -y -f
-####if [ $? -ne 0 ]
-####then
-####	exit 1
-####fi
 }
 
 function fix_activtools_pkg
@@ -51,11 +46,6 @@ function fix_activtools_pkg
 	dpkg -i $PWD/activtools-lliurex.deb
 	mv $PWD/activtools-lliurex.deb /tmp
 	mv $PWD/wrk /tmp
-	####apt-get install -y -f
-	####if [ $? -ne 0 ]
-	####then
-	####	exit 1
-	####fi
 }
 ACTION="$1"
 
@@ -74,6 +64,11 @@ case $ACTION in
 		fix_activtools_pkg
 		rm -fr $WRKDIR/*
 		fix_activinspire_pkg
+		apt-get install -y -f
+		if [ $? -ne 0 ]
+		then
+			exit 1
+		fi
 		;;
 	postInstall)
 		dpkg --compare-versions 5.0 lt $VERSION && compile_for_5x
