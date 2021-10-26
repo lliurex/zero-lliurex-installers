@@ -13,12 +13,56 @@ function compile_for_5x
 	cd $OLDPWD	
 }
 
+function fix_activinspire_pkg
+{
+	apt-get download activinspire
+	if [ $? -ne 0 ]
+	then
+		exit 1
+	fi
+	#Rebuild the package without libcurl3 depend
+	mkdir wrk
+	dpkg-deb -R activinspire*.deb wrk
+	sed -i 's/libcurl3,//g' wrk/DEBIAN/control 
+	dpkg-deb -b wrk activinspire-lliurex.deb
+	dpkg -i $PWD/activinspire-lliurex.deb
+####apt-get install -y -f
+####if [ $? -ne 0 ]
+####then
+####	exit 1
+####fi
+}
 
+function fix_activtools_pkg
+{
+	#this pkg needs activaid so install it first
+	apt-get install -y activdriver
+	apt-get install -y activaid
+	apt-get download activtools
+	if [ $? -ne 0 ]
+	then
+		exit 1
+	fi
+	#Rebuild the package without libssl1.0.0 depend
+	mkdir wrk
+	dpkg-deb -R activtools*.deb wrk
+	sed -i 's/libssl1.0.0,/libssl1.1,/g' wrk/DEBIAN/control 
+	dpkg-deb -b wrk activtools-lliurex.deb
+	dpkg -i $PWD/activtools-lliurex.deb
+	mv $PWD/activtools-lliurex.deb /tmp
+	mv $PWD/wrk /tmp
+	####apt-get install -y -f
+	####if [ $? -ne 0 ]
+	####then
+	####	exit 1
+	####fi
+}
 ACTION="$1"
 
 case $ACTION in
 
 	preInstall)
+		dpkg --add-architecture i386
 		apt-get update
 		#Install needed packages
 		apt-get install -y activinspire-32bitdependsfor64bit-lliurex
@@ -27,29 +71,16 @@ case $ACTION in
 		WRKDIR=$(mktemp -d)
 		chmod 777 $WRKDIR
 		cd $WRKDIR
-		apt-get download activinspire
-		if [ $? -ne 0 ]
-		then
-			exit 1
-		fi
-		#Rebuild the package without libcurl3 depend
-		mkdir wrk
-		dpkg-deb -R activinspire*.deb wrk
-		sed -i 's/libcurl3,//g' wrk/DEBIAN/control 
-		dpkg-deb -b wrk activinspire-lliurex.deb
-		dpkg -i $PWD/activinspire-lliurex.deb
-		apt-get install -y -f
-		if [ $? -ne 0 ]
-		then
-			exit 1
-		fi
+		fix_activtools_pkg
+		rm -fr $WRKDIR/*
+		fix_activinspire_pkg
 		;;
 	postInstall)
 		dpkg --compare-versions 5.0 lt $VERSION && compile_for_5x
 		;;	
 	remove)
 		errpkg=''
-		for pkg in promethean-fixboot activinspire activrelay activtools activdriver activaid
+		for pkg in promethean-fixboot activinspire activrelay activtools activdriver activaid activinspire-32bitdependsfor64bit-lliurex
 		do
 			apt-get remove -y $pkg
 			TEST=$( dpkg-query -s $pkg 2> /dev/null| grep Status | cut -d " " -f 4 )
@@ -64,4 +95,3 @@ case $ACTION in
 	;;	
 esac
 exit 0
-
