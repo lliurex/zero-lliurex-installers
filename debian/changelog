@@ -1,6 +1,7 @@
 zero-lliurex-installers (0.304.9) focal; urgency=medium
 
   * Fixed zero-lliurex-jellyfin depends
+  * Fix promethean installer (on the fly changes to activtool)
   
  -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 27 Oct 2021 17:27:38 +0200
 
