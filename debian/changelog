@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.9) focal; urgency=medium
+
+  * Fixed zero-lliurex-jellyfin depends
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 27 Oct 2021 17:27:38 +0200
+
 zero-lliurex-installers (0.304.8) focal; urgency=medium
 
   * Fix promethean installer
