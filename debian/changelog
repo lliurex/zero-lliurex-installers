@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.10) focal; urgency=medium
+
+  * Fixed zero-lliurex-jellyfin depends again
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 29 Oct 2021 12:45:59 +0200
+
 zero-lliurex-installers (0.304.9) focal; urgency=medium
 
   * Fixed zero-lliurex-jellyfin depends
