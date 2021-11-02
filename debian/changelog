@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.200) bionic-updates; urgency=medium
+
+  * Added visualino and arduinoblocks connector at zero-lliurex-technology
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 02 Nov 2021 15:56:59 +0100
+
 zero-lliurex-installers (0.199) bionic-updates; urgency=medium
 
   * Updated resources zmd to remove depends with Flash
