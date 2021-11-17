@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.201) bionic-updates; urgency=medium
+
+  * Fixed telegram zmd with CDC users
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 17 Nov 2021 15:18:47 +0100
+
 zero-lliurex-installers (0.200) bionic-updates; urgency=medium
 
   * Added visualino and arduinoblocks connector at zero-lliurex-technology
