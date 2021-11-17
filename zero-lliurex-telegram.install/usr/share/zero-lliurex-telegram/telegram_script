@@ -4,8 +4,8 @@
 ACTION="$1"
 PKG="$2"
 
-USER=$(getent passwd | grep x:$PKEXEC_UID: | cut -d ":" -f 1)
-USERHOME=/home/$USER
+USER=$(id -un $PKEXEC_UID)
+USERHOME=$(sudo -u $USER sh -c 'echo $HOME')
 BINDIR=$USERHOME"/.local/bin"
 DESTDIR=$BINDIR"/telegram"
 DESTDOWNLOAD="/var/cache/epi-downloads"
@@ -75,7 +75,7 @@ case $ACTION in
 		cd $DESTDOWNLOAD
 		tar -Jxf $TSETUP -C $DESTDIR
  		USER_GR=$(id -g -n ${USER})
-		chown -R ${USER}:${USER_GR} $BINDIR
+		chown -R ${USER}:"${USER_GR}" $BINDIR
 		
 		if [ $? -eq 0 ]
 		then	
