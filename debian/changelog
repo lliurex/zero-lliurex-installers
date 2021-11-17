@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.12) focal; urgency=medium
+
+  * Fixed telegram zmd to use in CDC
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 17 Nov 2021 15:34:41 +0100
+
 zero-lliurex-installers (0.304.11) focal; urgency=medium
 
   * Added visualino at zero-lliurex-technology
