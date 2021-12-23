@@ -11,7 +11,6 @@ Comment[ca_ES]=Instal·lació del Telegram per a Lliurex
 Icon=zero-lliurex-telegram
 Category=Internet
 ScriptPath=zero-lliurex-telegram.zmd
-Using=pkexec
 Locks=zero-lliurex-telegram
 Groups=sudo;admin;admins;teachers
 Service=False
