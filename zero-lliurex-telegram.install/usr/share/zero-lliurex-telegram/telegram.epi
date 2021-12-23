@@ -3,6 +3,6 @@
 	"pkg_list": [{"name":"telegram","key_store":"zero-lliurex-telegram","custom_name":"Telegram Desktop","custom_icon":"telegram-desktop_telegram.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-telegram/telegram_script","remove":true,"getStatus":true,"download":true},
 	"required_x":true,
-	"required_root":true,
-	"zomando":"zero-lliurex-telegram"
+	"zomando":"zero-lliurex-telegram",
+	"check_zomando_state":false
 	}

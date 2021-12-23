@@ -8,7 +8,7 @@ USER=$(id -un $PKEXEC_UID)
 USERHOME=$(sudo -u $USER sh -c 'echo $HOME')
 BINDIR=$USERHOME"/.local/bin"
 DESTDIR=$BINDIR"/telegram"
-DESTDOWNLOAD="/var/cache/epi-downloads"
+DESTDOWNLOAD=$USERHOME"/.cache/epi-downloads"
 DESTDESKTOP=$USERHOME"/.local/share/applications/zero-lliurex-telegram.desktop"
 
 
