@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.202) bionic-updates; urgency=medium
+
+  * Fixed zero-lliurex-telegram
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 23 Dec 2021 09:55:54 +0100
+
 zero-lliurex-installers (0.201) bionic-updates; urgency=medium
 
   * Fixed telegram zmd with CDC users
