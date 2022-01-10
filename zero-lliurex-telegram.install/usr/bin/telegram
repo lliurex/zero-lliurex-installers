@@ -7,14 +7,20 @@ TDESKTOPPATH=${HOME}"/.local/share/applications"
 TDESKTOP=${TDESKTOPPATH}"/zero-lliurex-telegram.desktop"
 OLD_TDESKTOP=${TDESKTOPPATH}"/telegramdesktop.desktop"
 RS=0
-if [ ! -x $TELEGRAM ]
+
+USER=$(id -un $PKEXEC_UID)
+CHECK_GROUP=$(id -nG $USER | grep "students")
+
+if [ -z $CHECK_GROUP ]
 then
-	/usr/share/zero-center/zmds/zero-lliurex-telegram.zmd
-else
-	LANG=es_ES.UTF-8 $TELEGRAM
-	#When finished regenerates the .desktop
-	[ -a $TDESKTOPPATH ] || mkdir $TDESKTOPPATH -p
-	echo "[Desktop Entry]
+	if [ ! -x $TELEGRAM ]
+	then
+		pkexec /usr/share/zero-center/zmds/zero-lliurex-telegram.zmd
+	else
+		LANG=es_ES.UTF-8 $TELEGRAM
+		#When finished regenerates the .desktop
+		[ -a $TDESKTOPPATH ] || mkdir $TDESKTOPPATH -p
+		echo "[Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Name=Telegram Desktop
@@ -31,9 +37,10 @@ Categories=Network;
 MimeType=x-scheme-handler/tg;
 X-Desktop-File-Install-Version=0.22
 ">$TDESKTOP
-	if [ -e $OLD_TDESKTOP ]
-	then
-		rm $OLD_TDESKTOP 
+		if [ -e $OLD_TDESKTOP ]
+		then
+			rm $OLD_TDESKTOP 
+		fi
 	fi
 fi
 exit $RS
