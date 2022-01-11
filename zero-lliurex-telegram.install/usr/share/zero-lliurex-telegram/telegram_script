@@ -5,11 +5,30 @@ ACTION="$1"
 PKG="$2"
 
 USER=$(id -un $PKEXEC_UID)
-USERHOME=$(sudo -u $USER sh -c 'echo $HOME')
+USERHOME=$HOME
 BINDIR=$USERHOME"/.local/bin"
 DESTDIR=$BINDIR"/telegram"
 DESTDOWNLOAD=$USERHOME"/.cache/epi-downloads"
 DESTDESKTOP=$USERHOME"/.local/share/applications/zero-lliurex-telegram.desktop"
+
+CHECK_GROUP=$(id -nG $USER )
+AUTH_GROUP=0
+AUTH_GROUP_LIST=("students" "alu")
+
+eval "CHECK_GROUP_LIST=($CHECK_GROUP)"
+
+for item in "${CHECK_GROUP_LIST[@]}";do
+	gr=$(echo "$item" |awk '{print tolower($0)}')
+	for i in "${AUTH_GROUP_LIST[@]}";do
+		if [[ "$gr" == *"$i"* ]]; then
+			AUTH_GROUP=1
+			break
+		fi
+	done
+	if [ $AUTH_GROUP -eq 1 ];then
+		break
+	fi
+done
 
 
 TCH_URL="https://desktop.telegram.org/changelog"
@@ -40,50 +59,57 @@ case $ACTION in
 	;;
 
 	download)
-		
-		cd ${DESTDOWNLOAD}
+		if [ $AUTH_GROUP -eq 0 ];then
+			cd ${DESTDOWNLOAD}
 
-		if [ -s ${DESTDOWNLOAD}"/"${TSETUP} ]
-		then
-			rm -f ${DESTDOWNLOAD}"/"${TSETUP}
-		fi
+			if [ -s ${DESTDOWNLOAD}"/"${TSETUP} ]
+			then
+				rm -f ${DESTDOWNLOAD}"/"${TSETUP}
+			fi
 
-		wget ${TURL}${TSETUP}
-		
-		if ! [ -s ${DESTDOWNLOAD}"/"${TSETUP} ]
-		then	
+			wget ${TURL}${TSETUP}
+			
+			if ! [ -s ${DESTDOWNLOAD}"/"${TSETUP} ]
+			then	
+				exit 1
+			fi	
+		else
 			exit 1
-		fi	
+		fi
 	;;	
 	
 	installPackage)
+		if [ $AUTH_GROUP -eq 0 ];then
 
-		if ! [ -d $BINDIR ]
-		then
-			mkdir $BINDIR
-		fi
-			 
-		if ! [ -d $DESTDIR ]
-		then
-			echo $DESTDIR
-			mkdir $DESTDIR
-		fi	
+			if ! [ -d $BINDIR ]
+			then
+				mkdir $BINDIR
+			fi
+				 
+			if ! [ -d $DESTDIR ]
+			then
+				echo $DESTDIR
+				mkdir $DESTDIR
+			fi	
 
-		echo "Unzipping file..."
-		
-		FIRSTPWD=$PWD
-		cd $DESTDOWNLOAD
-		tar -Jxf $TSETUP -C $DESTDIR
- 		USER_GR=$(id -g -n ${USER})
-		chown -R ${USER}:"${USER_GR}" $BINDIR
-		
-		if [ $? -eq 0 ]
-		then	
-			cd $FIRSTPWD
-			echo "Launching telegram..."
-			su -c /usr/bin/telegram $USER &
+			echo "Unzipping file..."
+			
+			FIRSTPWD=$PWD
+			cd $DESTDOWNLOAD
+			tar -Jxf $TSETUP -C $DESTDIR
+	 		USER_GR=$(id -g -n ${USER})
+			chown -R ${USER}:"${USER_GR}" $BINDIR
+			
+			if [ $? -eq 0 ]
+			then	
+				cd $FIRSTPWD
+				echo "Launching telegram..."
+				su -c /usr/bin/telegram $USER &
+			else
+				rm -r $DESTDIR
+				exit 1
+			fi
 		else
-			rm -r $DESTDIR
 			exit 1
 		fi
 		
