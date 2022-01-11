@@ -9,10 +9,26 @@ OLD_TDESKTOP=${TDESKTOPPATH}"/telegramdesktop.desktop"
 RS=0
 
 USER=$(id -un $PKEXEC_UID)
-CHECK_GROUP=$(id -nG $USER | grep "students")
+CHECK_GROUP=$(id -nG $USER )
+AUTH_GROUP=0
+AUTH_GROUP_LIST=("students" "alu")
 
-if [ -z $CHECK_GROUP ]
-then
+eval "CHECK_GROUP_LIST=($CHECK_GROUP)"
+
+for item in "${CHECK_GROUP_LIST[@]}";do
+	gr=$(echo "$item" |awk '{print tolower($0)}')
+	for i in "${AUTH_GROUP_LIST[@]}";do
+		if [[ "$gr" == *"$i"* ]]; then
+			AUTH_GROUP=1
+			break
+		fi
+	done
+	if [ $AUTH_GROUP -eq 1 ];then
+		break
+	fi
+done
+
+if [ $AUTH_GROUP -eq 0 ];then
 	if [ ! -x $TELEGRAM ]
 	then
 		pkexec /usr/share/zero-center/zmds/zero-lliurex-telegram.zmd
