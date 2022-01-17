@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"dropbox","key_store":"zero-lliurex-dropbox-installer","custom_name":"Dropbox","custom_icon":"caja-dropbox_caja-dropbox.png"},{"name":"dolphin-plugins","custom_name":"Dropbox plugin to dolphin","custom_icon":"caja-dropbox_caja-dropbox.png"}],
+	"repository": [{"url":"deb http://linux.dropbox.com/ubuntu bionic main","key_cmd":"apt-key --keyring /tmp/epi_keyring adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E"}],
+	"script": {"name":"/usr/share/zero-lliurex-dropbox/dropbox-client_script","remove":true},
+	"zomando":"zero-lliurex-dropbox-installer"
+	}
