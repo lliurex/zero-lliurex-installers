@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.13) focal-updates; urgency=medium
+
+  * Added zero-lliurex-webex
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 27 Jan 2022 12:58:43 +0100
+
 zero-lliurex-installers (0.304.12.1) focal; urgency=medium
 
   * Removed dropbox from zero-center
