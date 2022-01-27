@@ -1,0 +1,22 @@
+#!/bin/bash
+
+ACTION="$1"
+
+shift
+PACKAGE_LIST=$@
+
+case $ACTION in
+
+	remove)
+		for ix in $PACKAGE_LIST
+		do
+			apt-get remove -y $ix
+			TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+			if [ "$TEST" == 'installed' ];then
+				exit 1
+			fi
+		done
+	;;
+esac
+exit 0	
+
