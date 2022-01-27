@@ -295,6 +295,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Telegram installer
  Zero-center helper, It installs telegram on Lliurex
+
+Package: zero-lliurex-webex
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Webex installer
+ Zero-center helper, It installs Webex on Lliurex
  
 Package: zero-lliurex-wine64
 Architecture: amd64
