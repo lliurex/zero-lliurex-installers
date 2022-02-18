@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.304.14) focal; urgency=medium
+
+  * Fixed zero-lliurex-webex to install predepends
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 18 Feb 2022 08:04:35 +0100
+
 zero-lliurex-installers (0.304.13) focal-updates; urgency=medium
 
   * Added zero-lliurex-webex
