@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.205.1) bionic; urgency=medium
+
+  * Fixed zero-lliurex-webex to install depends
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 18 Feb 2022 08:40:26 +0100
+
 zero-lliurex-installers (0.205) bionic-updates; urgency=medium
 
   * Added zero-lliurex-webex.
