@@ -14,4 +14,4 @@ ScriptPath=zero-lliurex-autofirma.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-autofirma
-Groups=sudo;admins;teachers
+Groups=*;
