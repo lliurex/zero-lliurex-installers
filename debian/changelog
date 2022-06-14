@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.305) lliurex22; urgency=medium
+
+  * Allow all users
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Tue, 14 Jun 2022 14:30:15 +0200
+
 zero-lliurex-installers (0.304.16) focal-updates; urgency=medium
 
   * Changed obs-studio,krita,lmms and mixxx category to Multimedia
