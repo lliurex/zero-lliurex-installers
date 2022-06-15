@@ -1,0 +1,70 @@
+#!/bin/bash
+
+ACTION="$1"
+VM_ADITIONAL_PKGS="virtualbox-ext-pack"
+QEMU_ADITIONAL_PKGS="qemu-kvm virt-manager libvirt-clients libvirt-daemon-system bridge-utils qemu-system-arm"
+
+shift
+PACKAGE_LIST=$@
+
+case $ACTION in
+
+	postInstall)
+		for ix in $PACKAGE_LIST
+		do
+			if [[ " $ix " == *" virtualbox "* ]];then 
+				for jx in $VM_ADITIONAL_PKGS
+					do
+						lANG=C LANGUAGE=en DEBIAN_FRONTEND=kde apt-get install -y $jx
+					done 
+			elif [[ " $ix " == *" qemu " ]];then
+				for jx in $QEMU_ADITIONAL_PKGS
+				do
+					apt-get install -y $jx
+					TEST=$( dpkg-query -s $jx 2> /dev/null| grep Status | cut -d " " -f 4 )
+					if [ "$TEST" != 'installed' ];then
+						exit 1
+					fi
+				done
+				echo "****A restart is needed****"
+			fi
+		done
+	;;
+
+	remove)
+		count=0
+		for ix in $PACKAGE_LIST
+		do
+			
+			if [[ " $ix " == *" virtualbox "* ]];then 
+				apt-get remove -y $ix
+				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+				if [ "$TEST" == 'installed' ];then
+					count+=1
+				else
+					for jx in $VM_ADITIONAL_PKGS
+					do
+						apt-get remove -y $jx
+					done
+				fi
+			elif [[ " $ix " == *" qemu "* ]];then 
+				apt-get remove -y $ix
+				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+				if [ "$TEST" == 'installed' ];then
+					count+=1
+				else
+					for jx in $QEMU_ADITIONAL_PKGS
+					do
+						apt-get remove -y $jx
+					done
+				fi
+			fi
+		done
+
+		if [ "$count" -gt 0 ];then
+			exit 1
+		fi
+	;;
+esac
+exit 0	
+
