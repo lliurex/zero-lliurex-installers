@@ -341,3 +341,10 @@ Section: x11
 Depends: zero-center,epi-gtk,gnupg2,curl,ca-certificates(>=20210119~20.04.2)
 Description: jellyfin installer
   Zero-center helper, It downloads and installs jellyfin media server
+
+Package: zero-lliurex-virtualizer
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Virtualizer tools installer
+  Zero-center helper, It downloads and installs tools to work with vitual machines
