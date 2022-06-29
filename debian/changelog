@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.307) lliurex22; urgency=medium
+
+  * Removing zero-lliurex-recursos content
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 29 Jun 2022 08:40:10 +0200
+
 zero-lliurex-installers (0.306.1) lliurex22; urgency=medium
 
   * Fixed zero-lliurex-virtualizer banner name
