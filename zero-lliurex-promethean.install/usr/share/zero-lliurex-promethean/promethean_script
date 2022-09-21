@@ -9,7 +9,17 @@ function compile_for_5x
 	make -C /lib/modules/${VERSION}/build M=$PWD clean
 	cp /usr/src/linux-headers-${VERSION}/Module.symvers /usr/src/promethean/kernel
 	make -C /lib/modules/${VERSION}/build M=$PWD
+	#Control build return
+	sed -i 's/\(Error building driver.*\)/\0\n\t\texit 1/g' b
 	./b
+	if [ $? -eq 1 ] 
+	then
+	#Something went wrong. Last chance: Reinstall headers
+		apt-get remove --purge -y linux-headers-$VERSION
+		[ -d /usr/src/linux-headers-$VERSION/ ] && rm -fr /usr/src/linux-headers-$VERSION 
+		apt-get install -y linux-headers-$VERSION
+		./b
+	fi
 	cd $OLDPWD	
 }
 
