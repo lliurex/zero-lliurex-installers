@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.205.2) bionic-updates; urgency=medium
+
+  * Allow all groups in some zomandos
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 09 Nov 2022 15:36:37 +0100
+
 zero-lliurex-installers (0.205.1) bionic; urgency=medium
 
   * Fixed zero-lliurex-webex to install depends
