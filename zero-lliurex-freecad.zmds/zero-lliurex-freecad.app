@@ -13,4 +13,4 @@ Category=Software
 ScriptPath=zero-lliurex-freecad.zmd
 Service=False
 Locks=zero-lliurex-freecad
-Groups=sudo;admins;teachers;students
+Groups=*;
