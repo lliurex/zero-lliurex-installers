@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.205.3) bionic-updates; urgency=medium
+
+  * Dummy upgrade
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 09 Nov 2022 16:09:03 +0100
+
 zero-lliurex-installers (0.205.2) bionic-updates; urgency=medium
 
   * Allow all groups in some zomandos
