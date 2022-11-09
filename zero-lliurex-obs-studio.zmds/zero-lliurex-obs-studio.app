@@ -14,4 +14,4 @@ ScriptPath=zero-lliurex-obs-studio.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-obs-studio
-Groups=sudo;admins;teachers
+Groups=*;
