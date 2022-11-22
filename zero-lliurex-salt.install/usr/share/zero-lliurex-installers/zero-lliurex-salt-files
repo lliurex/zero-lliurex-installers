@@ -1,6 +1,0 @@
-salt	install
-salt-server	install
-salt-libreoffice-addons	install
-salt-help	install
-salt-commonv	install
-salt-data	install

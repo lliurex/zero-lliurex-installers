@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=kiosk
-Comment=This session logs you into Kiosk
-Exec=/opt/kiosk.sh
-Icon=
-Type=Application
