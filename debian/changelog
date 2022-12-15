@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.311) focal; urgency=medium
+
+  * Fixed qemu installer to skip installation in server
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 15 Dec 2022 13:29:45 +0100
+
 zero-lliurex-installers (0.310) lliurex22; urgency=medium
 
   * Fix promethean installer
