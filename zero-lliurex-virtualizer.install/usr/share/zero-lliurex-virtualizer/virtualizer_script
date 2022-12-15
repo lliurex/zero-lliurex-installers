@@ -71,7 +71,7 @@ case $ACTION in
 		do
 			
 			if [[ " $ix " == *" virtualbox "* ]];then 
-				apt-get remove -y $ix
+				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
 					count+=1
@@ -82,7 +82,7 @@ case $ACTION in
 					done
 				fi
 			elif [[ " $ix " == *" qemu "* ]];then 
-				apt-get remove -y $ix
+				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
 					count+=1
