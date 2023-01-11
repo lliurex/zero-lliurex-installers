@@ -1,0 +1,9 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"rsc-jclics","custom_name":"Childhood education: Jclic resources"},{"name":"rsc-ser-pensar-conviure-fer","custom_name":"Childhoo education: ser-pensar-conviure-fer"}], 
+	"repository": [{"url":"deb http://lliurex.net/focal focal preschool"}], 
+	"script": {"name":"/usr/share/zero-lliurex-recursos/childhood_script", "remove":true},
+	"selection_enabled":{"active":true,"all_selected":true},
+	"zomando":"zero-lliurex-recursos-inf"
+	
+	}

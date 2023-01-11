@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-dropbox-installer_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-dropbox-installer</name>
+<name xml:lang="es">Instalación del cliente Dropbox</name>
+<name xml:lang="qcv">Instal·lació del client Dropbox</name>
+<name xml:lang="ca_ES">Instal·lació del client Dropbox</name>
+<summary>Dropbox client installer for Lliurex</summary>
+<summary xml:lang="es">Instalador deñ cliente Dropbox para Lliurex</summary>
+<summary xml:lang="qcv">Instal·lació del client Dropbox per a Lliurex</summary>
+<summary xml:lang="ca_ES">Instal·lació del cliente Dropbox per a Lliurex</summary>
+<description>
+<p>Dropbox client installer for Lliurex</p>
+<p xml:lang="es">Instalador deñ cliente Dropbox para Lliurex</p>
+<p xml:lang="qcv">Instal·lació del client Dropbox per a Lliurex</p>
+<p xml:lang="ca_ES">Instal·lació del cliente Dropbox per a Lliurex</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">dropbox-installer</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>dropbox</keyword>
+<keyword>installer</keyword>
+<keyword>zero-lliurex-dropbox-installer</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>cliente</keyword>
+<keyword>Dropbox</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>client</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

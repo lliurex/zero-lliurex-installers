@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+ACTION="$1"
+PACKAGE_LIST="rsc-educacionespecial"
+
+
+case $ACTION in
+	remove)
+		for ix in $PACKAGE_LIST	
+		do
+
+			apt-get remove -y $ix
+			TEST=$( dpkg-query -s  $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+			if [ "$TEST" == 'installed' ];then
+				exit 1
+			fi
+			if [ $ix=="S4a" ];then
+				zero-center set-non-configured  zero-lliurex-recursos-esp
+			fi
+				
+		done		
+	;;	
+esac
+exit 0
+

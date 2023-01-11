@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-libreoffice-reset_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-libreoffice-reset</name>
+<name xml:lang="es">Limpieza de la configuración LibreOffice</name>
+<name xml:lang="en">Clean LibreOffice</name>
+<name xml:lang="qcv">Neteja la configuració de LibreOffice</name>
+<name xml:lang="ca_ES">Neteja la configuració de LibreOffice</name>
+<summary>Cleaning all files under personal folder</summary>
+<summary xml:lang="es">Limpia toda la configuracion del LibreOffice del usuario</summary>
+<summary xml:lang="qcv">Neteja totes les configuracions de LibreOffice de l'usuari</summary>
+<summary xml:lang="ca_ES">Neteja totes les configuracions de LibreOffice de l'usuari</summary>
+<description>
+<p>Cleaning all files under personal folder</p>
+<p xml:lang="es">Limpia toda la configuracion del LibreOffice del usuario</p>
+<p xml:lang="qcv">Neteja totes les configuracions de LibreOffice de l'usuari</p>
+<p xml:lang="ca_ES">Neteja totes les configuracions de LibreOffice de l'usuari</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">libreoffice-reset</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>libreoffice</keyword>
+<keyword>reset</keyword>
+<keyword>zero-lliurex-libreoffice-reset</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Limpieza</keyword>
+<keyword>configuración</keyword>
+<keyword>LibreOffice</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>Clean</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Neteja</keyword>
+<keyword>configuració</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

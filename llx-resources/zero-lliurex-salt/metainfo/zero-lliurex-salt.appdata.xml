@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-salt_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-salt</name>
+<name xml:lang="es">Instalación del SALT</name>
+<name xml:lang="en">SALT installation</name>
+<name xml:lang="ca_ES">Instal·lació del SALT</name>
+<summary>Installation of SALT wizard</summary>
+<summary xml:lang="es">Asistente de instalación del SALT</summary>
+<summary xml:lang="ca_ES">Auxiliar d'instal·lació del SALT</summary>
+<description>
+<p>Installation of SALT wizard</p>
+<p xml:lang="es">Asistente de instalación del SALT</p>
+<p xml:lang="ca_ES">Auxiliar d'instal·lació del SALT</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">salt</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>salt</keyword>
+<keyword>zero-lliurex-salt</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>SALT</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

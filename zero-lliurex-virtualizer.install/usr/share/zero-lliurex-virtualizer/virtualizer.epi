@@ -1,7 +1,7 @@
  {
  	"type":"apt",
  	"pkg_list":[{"name":"qemu", "custom_name":"QEMU: machine emulator and virtualizer ","custom_icon":"qemu.svg"},{"name":"virtualbox", "custom_name":"Oracle VM VirtualBox: virtualization sofware","custom_icon":"virtualbox.png","required_x":"true"}],
-    "repository": [{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-updates main multiverse restricted universe"}], 
+    "repository": [{"url":"deb http://archive.ubuntu.com/ubuntu/ focal main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ focal-updates main multiverse restricted universe"}], 
  	"script":{"name":"/usr/share/zero-lliurex-virtualizer/virtualizer_script","remove":true},
  	"custom_icon_path":"/usr/share/zero-lliurex-virtualizer/",
     "selection_enabled":{"active":true,"all_selected":false},

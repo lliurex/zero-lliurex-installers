@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"palemoon","key_store":"zero-lliurex-palemoon","custom_name":"Pale Moon: Open Source, Goanna-based web browser", "custom_icon":"palemoon.png"},
+			{"name":"lliurex-adobe-settings","key_store":"lliurex-adobe-settings","custom_name":"Lliurex Adobe settings: Adobe Flash settings for extended support"}
+	], 
+	"custom_icon_path":"/usr/share/zero-lliurex-palemoon/",
+	"zomando":"zero-lliurex-palemoon"
+	}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-kiosko_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-kiosko</name>
+<name xml:lang="es">Instalador de modo kiosko para el equipo</name>
+<name xml:lang="qcv">Instal·lador del mode kiosk per l'equip</name>
+<name xml:lang="ca_ES">Instal·lador del mode kiosk per l'equip</name>
+<summary>Enables and disables kiosk mode on current machine</summary>
+<summary xml:lang="es">Switch para el modo kiosko en el equipo</summary>
+<summary xml:lang="qcv">Activador del mode kiosk per l'equip</summary>
+<summary xml:lang="ca_ES">Activador del mode kiosk per l'equip</summary>
+<description>
+<p>Enables and disables kiosk mode on current machine</p>
+<p xml:lang="es">Switch para el modo kiosko en el equipo</p>
+<p xml:lang="qcv">Activador del mode kiosk per l'equip</p>
+<p xml:lang="ca_ES">Activador del mode kiosk per l'equip</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">kiosko</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>kiosko</keyword>
+<keyword>zero-lliurex-kiosko</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalador</keyword>
+<keyword>modo</keyword>
+<keyword>para</keyword>
+<keyword>equipo</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lador</keyword>
+<keyword>del</keyword>
+<keyword>mode</keyword>
+<keyword>kiosk</keyword>
+<keyword>per</keyword>
+<keyword>l'equip</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

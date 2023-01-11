@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-analytics_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-analytics</name>
+<name xml:lang="es">Activador para el agente de estadísticas LLiurex</name>
+<name xml:lang="qcv">Activador de l'agent d'estadístiques LLiurex</name>
+<name xml:lang="ca_ES">Activador de l'agent d'estadístiques LLiurex </name>
+<summary>Statistics agent enabler/disabler</summary>
+<summary xml:lang="es">Activador para la recolección de estadísticas</summary>
+<summary xml:lang="qcv">Activador per a la recol·lecció d'estadístiques</summary>
+<summary xml:lang="ca_ES">Activador per a la recol·lecció estadístiques</summary>
+<description>
+<p>Statistics agent enabler/disabler</p>
+<p xml:lang="es">Activador para la recolección de estadísticas</p>
+<p xml:lang="qcv">Activador per a la recol·lecció d'estadístiques</p>
+<p xml:lang="ca_ES">Activador per a la recol·lecció estadístiques</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">analytics</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>analytics</keyword>
+<keyword>zero-lliurex-analytics</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Activador</keyword>
+<keyword>para</keyword>
+<keyword>agente</keyword>
+<keyword>estadísticas</keyword>
+<keyword>LLiurex</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>l'agent</keyword>
+<keyword>d'estadístiques</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

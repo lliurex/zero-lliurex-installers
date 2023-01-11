@@ -1,13 +1,47 @@
 #!/bin/bash
 
+function getFlavour
+{
+
+	skipInstall=1
+	lliurexVersion=$(lliurex-version)
+	IFS=","
+	read -a flavours <<< "$lliurexVersion"
+
+	for item in "${flavours[0]}";
+	do
+		if [[ $item == *"server"* ]];then
+			skipInstall=0
+			break
+		fi
+	done
+
+	echo $skipInstall
+
+}
+
 ACTION="$1"
 VM_ADITIONAL_PKGS="virtualbox-ext-pack"
-QEMU_ADITIONAL_PKGS="qemu-kvm virt-manager libvirt-clients libvirt-daemon-system bridge-utils qemu-system-arm"
+QEMU_ADITIONAL_PKGS="qemu-kvm virt-manager libvirt-clients libvirt-daemon-system bridge-utils"
 
 shift
 PACKAGE_LIST=$@
 
 case $ACTION in
+
+	preInstall)
+		
+		skipInstall=$(getFlavour)
+		for ix in $PACKAGE_LIST
+		do
+			if [[ " $ix " == *" qemu "* ]];then
+				if [ "$skipInstall" -eq 0 ];then
+					echo "***Unable to install QEMU in server. Remove it for the selection and try again***"
+					exit 1
+				fi
+			fi
+		done
+	;;
 
 	postInstall)
 		for ix in $PACKAGE_LIST
@@ -37,7 +71,7 @@ case $ACTION in
 		do
 			
 			if [[ " $ix " == *" virtualbox "* ]];then 
-				apt-get remove -y $ix
+				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
 					count+=1
@@ -48,7 +82,7 @@ case $ACTION in
 					done
 				fi
 			elif [[ " $ix " == *" qemu "* ]];then 
-				apt-get remove -y $ix
+				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
 					count+=1

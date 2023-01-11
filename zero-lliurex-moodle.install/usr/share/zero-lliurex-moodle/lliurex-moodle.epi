@@ -1,0 +1,9 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"lliurex-moodle","key_store":"zero-lliurex-moodle","custom_name":"Moodle: installation wizard in LliureX","custom_icon":"moodle.svg"}],
+	"script": {"name":"/usr/share/zero-lliurex-moodle/lliurex-moodle_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-moodle/",
+	"required_x":true,
+	"zomando":"zero-lliurex-moodle"
+
+	}
