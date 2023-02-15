@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.312) focal; urgency=medium
+
+  * Fixed teams epi to install deb instead snap
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 15 Feb 2023 13:30:26 +0100
+
 zero-lliurex-installers (0.311) focal; urgency=medium
 
   * Fixed qemu installer to skip installation in server
