@@ -1,0 +1,38 @@
+#!/bin/bash
+
+PACKAGE="autofirma"
+RC=0
+CERT_ALIAS="SocketAutoFirma"
+
+dpkg -l $PACKAGE 1>2 2>/dev/null || RC=1
+
+if [ "$RC" = "0" ]; then 
+	
+	# Firefox
+	for DIR in $(dirname $(find "$HOME/.mozilla" -name "cert9.db")); do 
+
+		certutil -A -n "$CERT_ALIAS" -t "TCP,TCP,TCP" -i /usr/share/ca-certificates/AutoFirma/AutoFirma_ROOT.crt -d sql:"$DIR"
+
+	done
+
+	# Chrome
+	NSSDBDIR="$HOME/.pki/nssdb/"
+	if [ ! -e  "$NSSDBDIR" ]; then
+
+		mkdir -p "$NSSDBDIR"
+		certutil -d "$NSSDBDIR" -N --empty-password
+	fi
+	certutil -A -n "$CERT_ALIAS" -t "TCP,TCP,TCP" -i /usr/share/ca-certificates/AutoFirma/AutoFirma_ROOT.crt -d sql:"$NSSDBDIR"
+	
+
+	# Execute AutoFirma
+	# Instead of calling this directly, let's use the original diverted executable
+	# java -Djdk.tls.maxHandshakeMessageSize=50000 -jar /usr/lib/AutoFirma/AutoFirma.jar $*
+	
+	/usr/bin/AutoFirma.diverted $*
+
+else 
+
+	exit 0
+	
+fi
