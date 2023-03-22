@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.206) bionic; urgency=medium
+
+  * Adding autofirma wrapper 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 22 Mar 2023 09:18:01 +0100
+
 zero-lliurex-installers (0.205.4) bionic-updates; urgency=medium
 
   * Changed category of some zmd to Multimedia
