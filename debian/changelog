@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.207) focal; urgency=medium
+
+  * Hiding teams until fixed 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 22 Mar 2023 11:25:38 +0100
+
 zero-lliurex-installers (0.206) bionic; urgency=medium
 
   * Adding autofirma wrapper 
