@@ -26,7 +26,10 @@ if [ "$RC" = "0" ]; then
 	
 
 	# Execute AutoFirma
-	java -Djdk.tls.maxHandshakeMessageSize=50000 -jar /usr/lib/AutoFirma/AutoFirma.jar $*
+	# Instead of calling this directly, let's use the original diverted executable
+	# java -Djdk.tls.maxHandshakeMessageSize=50000 -jar /usr/lib/AutoFirma/AutoFirma.jar $*
+	
+	/usr/bin/AutoFirma.diverted $*
 
 else 
 
