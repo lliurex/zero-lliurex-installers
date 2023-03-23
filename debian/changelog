@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.208) bionic; urgency=medium
+
+  * autofirma fails with tlsv1.3. Wrapper now copies a custom java.security
+    file and passes it to java as a parameter to execute autofirma
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 23 Mar 2023 08:34:13 +0100
+
 zero-lliurex-installers (0.207.1) bionic; urgency=medium
 
   * Hiding teams until fixed 
