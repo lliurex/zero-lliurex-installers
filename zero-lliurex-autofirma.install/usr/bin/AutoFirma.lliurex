@@ -28,11 +28,28 @@ if [ "$RC" = "0" ]; then
 	# Execute AutoFirma
 	# Instead of calling this directly, let's use the original diverted executable
 	# java -Djdk.tls.maxHandshakeMessageSize=50000 -jar /usr/lib/AutoFirma/AutoFirma.jar $*
+	# /usr/bin/AutoFirma.diverted $*
 	
-	/usr/bin/AutoFirma.diverted $*
+	# Seems tlsv1.3 is causing problems when using Autofirma via Firefox | Chrome. We have to add 
+	# TLSv1.3 to the ignore list in java.security. Since we don't want to modify system configuration
+	# we opted to make a copy in user's HOME and use it as a parameter
+	
+	JAVA_VERSION=$($(update-alternatives --query java | grep Best | grep 11 1>2 2>/dev/null ) && echo 11 || echo 8)
+	SECURITY_PATH="/etc/java-$JAVA_VERSION-openjdk/security/java.security"
+	
+	mkdir -p "$HOME/.autofirma"
+	cp $SECURITY_PATH "$HOME/.autofirma"
+	sed s/^"jdk.tls.disabledAlgorithms="/"jdk.tls.disabledAlgorithms=TLSv1.3, "/g -i "$HOME/.autofirma/java.security"
+	java -Djdk.tls.maxHandshakeMessageSize=50000 -Djava.security.properties="$HOME/.autofirma/java.security" -jar /usr/lib/AutoFirma/AutoFirma.jar $*
 
 else 
 
-	exit 0
+	MESSAGE="'autofirma' package is not installed. Install it using 'apt' or 'zero-center'."
+
+	if [ ! -z $XDG_SESSION_DESKTOP ]; then
+		kdialog --sorry "$MESSAGE" 
+	else
+		echo $MESSAGE
+	fi
 	
 fi
