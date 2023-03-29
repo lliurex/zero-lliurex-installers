@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.316) focal; urgency=medium
+
+  * Fixed icons for some epi files
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 29 Mar 2023 10:47:18 +0200
+
 zero-lliurex-installers (0.315) focal; urgency=medium
 
   * Seems TLSv1.3 is causing problems with autofirma. Wrapper now executes
