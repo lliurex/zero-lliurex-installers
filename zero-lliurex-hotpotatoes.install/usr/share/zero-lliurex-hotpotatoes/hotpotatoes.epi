@@ -1,8 +1,8 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"hotpotatoes","key_store":"zero-lliurex-hotpotatoes","custom_name":"Hot Potatoes: Tool to create multiple types of exercises","custom_icon":"hotpotatoes.svg"}],
+	"pkg_list": [{"name":"hotpotatoes","key_store":"zero-lliurex-hotpotatoes","custom_name":"Hot Potatoes: Tool to create multiple types of exercises","custom_icon":"hotpotatoes.png"}],
 	"script": {"name":"/usr/share/zero-lliurex-hotpotatoes/hotpotatoes_script","remove":true},
-	"custom_icon_path":"/usr/share/icons/lliurex/apps/48/",
+	"custom_icon_path":"/usr/share/zero-lliurex-hotpotatoes/",
 	"zomando":"zero-lliurex-hotpotatoes"
 
 	}

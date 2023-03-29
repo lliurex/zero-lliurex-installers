@@ -1,7 +1,8 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"stellarium","key_store":"stellarium","custom_name":"Stellarium: a planetarium software","custom_icon":"stellarium_stellarium.png"}], 
+	"pkg_list": [{"name":"stellarium","key_store":"stellarium","custom_name":"Stellarium: a planetarium software","custom_icon":"stellarium.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-stellarium/stellarium_script", "remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-stellarium/",
 	"zomando":"zero-lliurex-stellarium"
 	
 	}
