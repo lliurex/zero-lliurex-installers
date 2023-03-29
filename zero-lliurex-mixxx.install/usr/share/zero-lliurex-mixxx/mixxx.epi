@@ -1,6 +1,7 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"mixxx","key_store":"zero-lliurex-mixxx","custom_name":"Mixxx: DJ mixxing software","custom_icon":"mixxx_mixxx_icon.png"}], 
+	"pkg_list": [{"name":"mixxx","key_store":"zero-lliurex-mixxx","custom_name":"Mixxx: DJ mixxing software","custom_icon":"mixxx.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-mixxx/mixxx_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-mixxx/",
 	"zomando":"zero-lliurex-mixxx"
 	}

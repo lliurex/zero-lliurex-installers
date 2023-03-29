@@ -1,6 +1,7 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"mkchromecast","key_store":"zero-lliurex-chromecast","custom_name":"Mkchromecast: cast content to Google Cast","custom_icon":"mkchromecast_mkchromecast.png"}], 
+	"pkg_list": [{"name":"mkchromecast","key_store":"zero-lliurex-chromecast","custom_name":"Mkchromecast: cast content to Google Cast","custom_icon":"mkchromecast.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-chromecast/chromecast_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-chromecast/",
 	"zomando":"zero-lliurex-chromecast"
 	}
