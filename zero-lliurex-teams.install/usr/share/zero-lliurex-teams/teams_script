@@ -8,11 +8,20 @@ PACKAGE_LIST=$@
 
 case $ACTION in
 
+	preInstall)
+		snap install core
+		snap install chromium
+		TEST=$(snap list | grep chromium| cut -d " " -f 1 )
+		if [ "$TEST" != "chromium" ];then
+			exit 1
+		fi	
+	;;
+
 	remove)
 		for ix in $PACKAGE_LIST	
 		do
 			apt-get -y remove $ix
-			TEST=$( dpkg-query -s  teams 2> /dev/null| grep Status | cut -d " " -f 4 )
+			TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 			if [ "$TEST" == $ix ];then
 				exit 1
 			fi	
