@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.318) focal; urgency=medium
+
+  * Changed zero-lliurex-teams to remove previous teams deb/snap versions
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 20 Apr 2023 13:34:36 +0200
+
 zero-lliurex-installers (0.317) focal; urgency=medium
 
   * Changed zero-lliurex-teams to install lliurex-ms-teams
