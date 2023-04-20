@@ -2,6 +2,7 @@
 
 
 ACTION="$1"
+TEAMS_SOURCES_LIST="/etc/apt/sources.list.d/teams.list"
 
 shift
 PACKAGE_LIST=$@
@@ -9,9 +10,30 @@ PACKAGE_LIST=$@
 case $ACTION in
 
 	preInstall)
+		echo "Checking if teams (in deb version) is already installed..."
+		TEST=$( dpkg-query -s teams 2> /dev/null| grep Status | cut -d " " -f 4 )
+		if [ "$TEST" == "installed" ];then
+			echo "Uninstalling teams (deb version)..."
+			apt-get -y purge teams
+		fi
+
+		echo "Checking if exists teams sources list..."
+		if [ -f $TEAMS_SOURCES_LIST ];then
+			echo "Removing teams sources list..."
+			rm -f $TEAMS_SOURCES_LIST
+		fi
+
+		echo "Checking if teams (in snap version) is already installed..."
+		TEST=$(snap list | grep teams | cut -d " " -f 1 )
+		if [ "$TEST" == "snap" ];then
+			echo "Uninstall teams (snap version)..."
+			snap remove teams
+		fi
+
+		echo "Installing chromium..."
 		snap install core
 		snap install chromium
-		TEST=$(snap list | grep chromium| cut -d " " -f 1 )
+		TEST=$(snap list | grep chromium | cut -d " " -f 1 )
 		if [ "$TEST" != "chromium" ];then
 			exit 1
 		fi	
@@ -22,7 +44,7 @@ case $ACTION in
 		do
 			apt-get -y remove $ix
 			TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
-			if [ "$TEST" == $ix ];then
+			if [ "$TEST" == "installed" ];then
 				exit 1
 			fi	
 		done	
