@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"com.calibre_ebook.calibre","custom_name":"Calibre: ebook manager and organizer","custom_icon":"calibre.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-calibre/calibre_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-calibre/",
+	"zomando":"zero-lliurex-calibre"
+
+} 

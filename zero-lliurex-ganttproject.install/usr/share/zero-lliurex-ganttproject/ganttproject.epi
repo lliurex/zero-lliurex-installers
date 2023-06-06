@@ -1,0 +1,8 @@
+{
+	"type":"deb",
+	"pkg_list":[{"name":"ganttproject","version":{"all":""},"url_download":"https://www.ganttproject.biz/dl/3.2.3240/lin","custom_name":"GanttProject: project management software","custom_icon":"ganttproject.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-ganttproject/ganttproject_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-ganttproject/",
+	"zomando":"zero-lliurex-ganttproject"
+
+} 
