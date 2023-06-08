@@ -1,0 +1,100 @@
+#!/bin/bash
+
+ACTION="$1"
+
+ANACONDA_URL_REPO=https://repo.anaconda.com/archive/
+DESKTOP_ORIG="/usr/share/zero-lliurex-anaconda/anaconda-navigator.desktop"
+DESKTOP_DEST=$HOME"/.local/share/applications/"
+DEST_DOWNLOAD=$HOME/.cache/epi-downloads
+DEST_FILE=anaconda.sh
+ANACONDA_DIR=$HOME/anaconda3
+export TEXTDOMAIN="zero-lliurex-anaconda"
+
+QUESTION_MSG=$(gettext "Anaconda is already installed. To reinstall it's necessary to uninstall it previously.\nDo you want to continue?")
+
+
+case $ACTION in
+
+	getStatus)
+
+		if [ -d ${ANACONDA_DIR} ];then
+			echo 0
+		else
+			echo 1
+		fi
+	;;
+
+	download)
+
+		echo "Checking if already installed..."
+		if [ -d  ${ANACONDA_DIR} ];then
+
+			kdialog --title "EPI" --warningyesno "${QUESTION_MSG}" 0 0
+			ans=$?
+			if [ $ans -eq 0 ];then
+				stop=1
+			else
+				stop=0
+			fi
+		else
+			stop=1
+		fi
+
+		if [ $stop -eq 1 ];then
+
+			if [ -d  ${ANACONDA_DIR} ];then
+				echo "Removing current Anaconda installation..."
+				rm -rf ${ANACONDA_DIR}
+			fi
+
+			if ! [ -d ${DEST_DOWNLOAD} ];then
+				mkdir ${DEST_DOWNLOAD}
+			fi
+			echo "Checking for last version..."
+			ANACONDA_LAST_VERSION=$(wget --quiet -O - $ANACONDA_URL_REPO  | sed -e 's/<[^>]*>//g;/^\s*$/d' | grep Linux-x86_64.sh -m1)
+
+			URL=$(echo ${ANACONDA_URL_REPO}${ANACONDA_LAST_VERSION} | tr -d ' ')
+
+			wget ${URL} -O ${DEST_DOWNLOAD}/${DEST_FILE}
+
+			if ! [ -f ${DEST_DOWNLOAD}"/"${DEST_FILE} ];then
+				exit 1
+			fi	
+		else
+			exit 1
+		fi
+	;;
+
+	installPackage)
+
+		cd ${DEST_DOWNLOAD}
+		chmod +x ${DEST_FILE}
+
+		./${DEST_FILE} -b -p ${ANACONDA_DIR}
+
+		if ! [ -f ${ANACONDA_DIR}"/bin/anaconda-navigator" ]; then
+			exit 1
+		else
+			cp  ${DESKTOP_ORIG} ${DESKTOP_DEST}
+			cd ${ANACONDA_DIR}"/bin"
+			conda config --set auto_activate_base false
+
+		fi
+		
+	;;
+
+	remove)
+
+		echo "Removing Anaconda installation..."
+
+		if [ -d ${ANACONDA_DIR} ];then
+			rm -rf ${ANACONDA_DIR}
+		fi
+
+		if [ -f ${DESKTOP_DEST}"/anaconda-navigator.desktop" ];then
+			rm -f ${DESKTOP_DEST}"/anaconda-navigator.desktop"
+		fi
+	;;
+
+esac
+exit 0	

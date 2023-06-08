@@ -1,0 +1,30 @@
+# Spanish translations for PACKAGE package
+# Traducciones al español para el paquete PACKAGE.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# lliurex <lliurex@gva.es>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-7 10:54+0100\n"
+"PO-Revision-Date: 2023-06-07 13:34+0200\n"
+"Last-Translator: lliurex <lliurex@gva.es>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
+
+#: anaconda_script:13
+msgid ""
+"Anaconda is already installed. To reinstall it's necessary to uninstall it "
+"previously.\n"
+"Do you want to continue?"
+msgstr ""
+"Anaconda ya está instalado. Para reinstalarlo es necesario desinstalarlo "
+"previamente.\n"
+"¿Desea continuar?"
