@@ -5,6 +5,13 @@ Maintainer: Equipo LliureX <lliurex@gva.es>
 Build-Depends: cdbs, debhelper (>= 10), zero-dev, llxsrchelper,inkscape (>= 0.47),python3-poinstaller
 Standards-Version: 4.1.2
 
+Package: zero-lliurex-anaconda
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk,libgl1-mesa-glx,libegl1-mesa,libxrandr2,libxss1,libxcursor1,libxcomposite1,libasound2,libxi6,libxtst6
+Description: Anaconda installer
+  Zero-center helper, It downloads and installs Anaconda-IDE
+
 Package: zero-lliurex-analytics
 Architecture: all
 Section: x11
@@ -29,6 +36,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Autofirma installer
   Zero-center helper, It downloads and installs Autofirma package
+
+Package: zero-lliurex-calibre
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Calibre installer
+  Zero-center helper, It installs Calibre flatpak package
  
 Package: zero-lliurex-chrome
 Architecture: amd64
@@ -93,7 +107,14 @@ Architecture: all
 Section: x11
 Depends: zero-center,epi-gtk
 Description: Fritzing installer
-  Zero-center helper, It downloads and installs Friting package  
+  Zero-center helper, It downloads and installs Friting package
+
+Package: zero-lliurex-ganttproject
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: GanttProject installer
+  Zero-center helper, It downloads and installs GanttProject package
 
 Package: zero-lliurex-hotpotatoes
 Architecture: all
