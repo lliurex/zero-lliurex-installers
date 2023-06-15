@@ -1,3 +1,11 @@
+zero-lliurex-installers (0.319) focal; urgency=medium
+
+  * Added zero-llilurex-anaconda
+  * Added zero-lliurex-calibre
+  * Added zero-lliurex-ganttproject
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 15 Jun 2023 09:40:39 +0200
+
 zero-lliurex-installers (0.318) focal; urgency=medium
 
   * Changed zero-lliurex-teams to remove previous teams deb/snap versions
