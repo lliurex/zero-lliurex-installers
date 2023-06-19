@@ -29,14 +29,7 @@ case $ACTION in
 
 		echo "Checking if already installed..."
 		if [ -d  ${ANACONDA_DIR} ];then
-
-			kdialog --title "EPI" --warningyesno "${QUESTION_MSG}" 0 0
-			ans=$?
-			if [ $ans -eq 0 ];then
-				stop=1
-			else
-				stop=0
-			fi
+			stop=0
 		else
 			stop=1
 		fi
@@ -62,6 +55,7 @@ case $ACTION in
 				exit 1
 			fi	
 		else
+			echo "Anaconda already installed. To reinstall it's necessary to run the uninstall process first"
 			exit 1
 		fi
 	;;
