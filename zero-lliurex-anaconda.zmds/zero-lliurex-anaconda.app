@@ -13,6 +13,7 @@ Groups=admin;admins;sudo;teachers;students
 Category=Software
 Icon=zero-lliurex-anaconda
 ScriptPath=zero-lliurex-anaconda.zmd
-Service=False
+Using=pkexec
+Service=True
 
 

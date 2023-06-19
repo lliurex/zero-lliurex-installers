@@ -4,10 +4,11 @@ ACTION="$1"
 
 ANACONDA_URL_REPO=https://repo.anaconda.com/archive/
 DESKTOP_ORIG="/usr/share/zero-lliurex-anaconda/anaconda-navigator.desktop"
-DESKTOP_DEST=$HOME"/.local/share/applications/"
-DEST_DOWNLOAD=$HOME/.cache/epi-downloads
+DESKTOP_DEST="/usr/share/applications/"
+DEST_DOWNLOAD=/var/cache/epi-downloads
 DEST_FILE=anaconda.sh
-ANACONDA_DIR=$HOME/anaconda3
+ANACONDA_DIR=/opt/anaconda3
+DEPENDS="libgl1-mesa-glx libegl1-mesa libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6"
 export TEXTDOMAIN="zero-lliurex-anaconda"
 
 QUESTION_MSG=$(gettext "Anaconda is already installed. To reinstall it's necessary to uninstall it previously.\nDo you want to continue?")
@@ -63,6 +64,11 @@ case $ACTION in
 		else
 			exit 1
 		fi
+	;;
+
+	preInstall)
+		
+		apt-get install -y $DEPENDS
 	;;
 
 	installPackage)
