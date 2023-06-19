@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.319.3) focal; urgency=medium
+
+  * Fixed anaconda-navigator desktop
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 19 Jun 2023 15:38:20 +0200
+
 zero-lliurex-installers (0.319.2) focal; urgency=medium
 
   * Changed zomando anaconda for system installation instead user installation
