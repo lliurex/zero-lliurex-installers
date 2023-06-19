@@ -28,22 +28,11 @@ case $ACTION in
 	download)
 
 		echo "Checking if already installed..."
+		
 		if [ -d  ${ANACONDA_DIR} ];then
-			stop=0
+			echo "Anaconda already installed. To reinstall it's necessary to run the uninstall process first"
+			exit 1
 		else
-			stop=1
-		fi
-
-		if [ $stop -eq 1 ];then
-
-			if [ -d  ${ANACONDA_DIR} ];then
-				echo "Removing current Anaconda installation..."
-				rm -rf ${ANACONDA_DIR}
-			fi
-
-			if ! [ -d ${DEST_DOWNLOAD} ];then
-				mkdir ${DEST_DOWNLOAD}
-			fi
 			echo "Checking for last version..."
 			ANACONDA_LAST_VERSION=$(wget --quiet -O - $ANACONDA_URL_REPO  | sed -e 's/<[^>]*>//g;/^\s*$/d' | grep Linux-x86_64.sh -m1)
 
@@ -54,9 +43,6 @@ case $ACTION in
 			if ! [ -f ${DEST_DOWNLOAD}"/"${DEST_FILE} ];then
 				exit 1
 			fi	
-		else
-			echo "Anaconda already installed. To reinstall it's necessary to run the uninstall process first"
-			exit 1
 		fi
 	;;
 
