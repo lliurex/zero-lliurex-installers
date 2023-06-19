@@ -8,7 +8,7 @@ Standards-Version: 4.1.2
 Package: zero-lliurex-anaconda
 Architecture: all
 Section: x11
-Depends: zero-center,epi-gtk,libgl1-mesa-glx,libegl1-mesa,libxrandr2,libxss1,libxcursor1,libxcomposite1,libasound2,libxi6,libxtst6
+Depends: zero-center,epi-gtk
 Description: Anaconda installer
   Zero-center helper, It downloads and installs Anaconda-IDE
 
