@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.319.2) focal; urgency=medium
+
+  * Changed zomando anaconda for system installation instead user installation
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 19 Jun 2023 14:35:38 +0200
+
 zero-lliurex-installers (0.319.1) focal; urgency=medium
 
   * Fixed virtualize.epi
