@@ -3,8 +3,6 @@
 	"pkg_list":[{"name":"anaconda","custom_name":"Anaconda: platform to develop Python solutions" ,"custom_icon":"anaconda.png"}],
 	"script":{"name":"/usr/share/zero-lliurex-anaconda/anaconda_script","getStatus":true,"download":true,"remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-anaconda/",
-	"required_x":true,
-	"zomando":"zero-lliurex-anaconda",
-	"check_zomando_state":false
+	"zomando":"zero-lliurex-anaconda"
 
 } 
