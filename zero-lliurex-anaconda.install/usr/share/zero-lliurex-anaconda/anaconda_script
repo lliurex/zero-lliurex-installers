@@ -27,12 +27,8 @@ case $ACTION in
 
 	download)
 
-		echo "Checking if already installed..."
-		
-		if [ -d  ${ANACONDA_DIR} ];then
-			echo "Anaconda already installed. To reinstall it's necessary to run the uninstall process first"
-			exit 1
-		else
+		if ! [ -d  ${ANACONDA_DIR} ];then
+
 			echo "Checking for last version..."
 			ANACONDA_LAST_VERSION=$(wget --quiet -O - $ANACONDA_URL_REPO  | sed -e 's/<[^>]*>//g;/^\s*$/d' | grep Linux-x86_64.sh -m1)
 
@@ -48,23 +44,29 @@ case $ACTION in
 
 	preInstall)
 		
-		apt-get install -y $DEPENDS
+		if ! [ -d ${ANACONDA_DIR} ];then
+			apt-get install -y $DEPENDS
+		fi
 	;;
 
 	installPackage)
 
-		cd ${DEST_DOWNLOAD}
-		chmod +x ${DEST_FILE}
+		if ! [ -d ${ANACONDA_DIR} ];then
+			cd ${DEST_DOWNLOAD}
+			chmod +x ${DEST_FILE}
 
-		./${DEST_FILE} -b -p ${ANACONDA_DIR}
+			./${DEST_FILE} -b -p ${ANACONDA_DIR}
 
-		if ! [ -f ${ANACONDA_DIR}"/bin/anaconda-navigator" ]; then
-			exit 1
+			if ! [ -f ${ANACONDA_DIR}"/bin/anaconda-navigator" ]; then
+				exit 1
+			else
+				cp  ${DESKTOP_ORIG} ${DESKTOP_DEST}
+				cd ${ANACONDA_DIR}"/bin"
+				./conda config --set auto_activate_base false
+
+			fi
 		else
-			cp  ${DESKTOP_ORIG} ${DESKTOP_DEST}
-			cd ${ANACONDA_DIR}"/bin"
-			conda config --set auto_activate_base false
-
+			echo "Anaconda already installed. Nothing to do"
 		fi
 		
 	;;
