@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+case $1 in
+        configure)
+        	LINKFILE="/var/lib/lliurex-www/links/jellyfin.json"
+			
+		TEST=$( dpkg-query -s jellyfin 2> /dev/null| grep Status | cut -d " " -f 4 )
+			
+		if [ "$TEST" = "installed" ];then
+			echo "Nothing to do"				
+		else
+			rm -f ${LINKFILE}
+		fi
+	;;
+	*)
+	        echo "[DEBUG] Unknow action ..."
+	        ;;
+		
+esac
+	
+	
+#DEBHELPER#
+
+exit 0 		
+ 
