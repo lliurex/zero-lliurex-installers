@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.319.5) focal; urgency=medium
+
+  * Fixed zero-lliurex-jellyfin
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 28 Jun 2023 12:26:54 +0200
+
 zero-lliurex-installers (0.319.4) focal; urgency=medium
 
   * Fixed anaconda_script
