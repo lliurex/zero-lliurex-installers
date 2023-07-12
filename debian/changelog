@@ -1,3 +1,11 @@
+zero-lliurex-installers (0.320) focal; urgency=medium
+
+  * Added zero-lliurex-chromium
+  * Updated zero-lliurex-anydesk to enable teachers group to use it
+  * Updated zero-lliurex-teams to add chromium.epi as depend
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 12 Jul 2023 14:54:07 +0200
+
 zero-lliurex-installers (0.319.5) focal; urgency=medium
 
   * Fixed zero-lliurex-jellyfin
