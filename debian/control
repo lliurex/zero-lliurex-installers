@@ -58,6 +58,13 @@ Depends: zero-center,epi-gtk
 Description: Mkchromecast installer
  Zero-center helper, It installs Mkchromecast client on Lliurex
  
+Package: zero-lliurex-chromium
+Architecture: all
+Sections: x11
+Depends: zero-center,epi-gtk
+Description: Chromium installer
+ Zero-center helper, It install chromium browser in snap version
+ 
 Package: zero-lliurex-docker
 Architecture: all
 Section: x11
