@@ -14,4 +14,4 @@ ScriptPath=zero-lliurex-anydesk.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-anydesk
-Groups=sudo;admins
+Groups=sudo;admins;teachers
