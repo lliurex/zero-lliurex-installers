@@ -1,0 +1,43 @@
+#!/bin/bash
+
+ACTION="$1"
+
+shift
+PACKAGE_LIST=$@
+
+case $ACTION in
+
+	preInstall)
+
+		TEST=$(snap list | grep core | cut -d " " -f 1 )
+
+		if [ -z "$TEST" ];then
+			snap install core
+			if ! [[ $(snap list | grep "core") == *"core"* ]];then
+				exit 1
+			fi
+		fi
+	;;
+
+	remove)
+		count=0
+		for ix in $PACKAGE_LIST
+		do
+		if [[ "$ix" == "chromium" ]];then
+				snap remove $ix
+
+				TEST=$(snap list | grep $ix | cut -d " " -f 1)
+
+				if [[ ! -z "$TEST" ]];then
+					count+=1
+				fi
+			fi
+		done
+
+		if [ $count -gt 0 ];then
+			exit 1
+		fi
+	;;
+
+esac
+exit 0	

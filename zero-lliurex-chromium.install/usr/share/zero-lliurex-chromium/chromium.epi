@@ -1,0 +1,8 @@
+{
+	"type":"snap",
+	"pkg_list":[{"name":"chromium","custom_name":"Chromium: open source browser","custom_icon":"chromium.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-chromium/chromium_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-chromium/",
+	"zomando":"zero-lliurex-chromium"
+
+} 

@@ -29,14 +29,7 @@ case $ACTION in
 			echo "Uninstall teams (snap version)..."
 			snap remove teams
 		fi
-
-		echo "Installing chromium..."
-		snap install core
-		snap install chromium
-		TEST=$(snap list | grep chromium | cut -d " " -f 1 )
-		if [ "$TEST" != "chromium" ];then
-			exit 1
-		fi	
+		
 	;;
 
 	remove)
