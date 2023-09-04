@@ -1,7 +1,7 @@
 {
 	"type":"apt",
 	"pkg_list": [{"name":"docker-ce","key_store":"zero-lliurex-docker","custom_name":"Docker: application for managing containerized applications","custom_icon":"docker.svg"},{"name":"docker-ce-cli","key_store":"zero-lliurex-docker","custom_name":"Docker-Cli: cli version of Docker","custom_icon":"docker.svg"},{"name":"containerd.io","key_store":"zero-lliurex-docker","custom_name":"Containerd: Docker daemon","custom_icon":"docker.svg"}],
-	"repository": [{"url":"deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"}], 
+	"repository": [{"url":"deb [arch=amd64] https://download.docker.com/linux/ubuntu jammy stable"}], 
 	"script": {"name":"/usr/share/zero-lliurex-docker/docker_script","addRepoKeys":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-docker/",
 	"required_root":true,
