@@ -22,7 +22,7 @@ function getFlavour
 
 ACTION="$1"
 VM_ADITIONAL_PKGS="virtualbox-ext-pack"
-QEMU_ADITIONAL_PKGS="qemu-kvm virt-manager libvirt-clients libvirt-daemon-system bridge-utils"
+QEMU_ADITIONAL_PKGS="qemu-system-x86 virt-manager libvirt-clients libvirt-daemon-system bridge-utils"
 
 shift
 PACKAGE_LIST=$@

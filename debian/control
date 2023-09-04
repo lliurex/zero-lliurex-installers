@@ -12,17 +12,6 @@ Depends: zero-center,epi-gtk
 Description: Anaconda installer
   Zero-center helper, It downloads and installs Anaconda-IDE
 
-Package: zero-lliurex-analytics
-Architecture: all
-Section: x11
-Depends: zero-center,n4d
-Conflicts: lliurex-zero-installer-analytics
-Replaces: lliurex-zero-installer-analytics (<=0.126.5)
-Breaks: lliurex-zero-installer-analytics (<=0.126.5)
-Provides: lliurex-zero-installer-analytics
-Description: Controller for Lliurex Analytics reporting agent
- Zero-center Controller for stat reporting agent
-
 Package: zero-lliurex-anydesk
 Architecture: all
 Section: x11
@@ -72,13 +61,6 @@ Depends: zero-center,epi-gtk
 Description: Docker installer
  Zero-center helper, It installs Docker on Lliurex
  
-Package: zero-lliurex-dropbox-installer
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Automate dropbox client installation
- Automate dropbox client installation
- 
 Package: zero-lliurex-dvdcss
 Architecture: all
 Section: x11
@@ -108,7 +90,6 @@ Depends: zero-center,epi-gtk
 Description: FreeCad installer
   Zero-center helper, It downloads and installs FreeCad package
 
- 
 Package: zero-lliurex-fritzing
 Architecture: all
 Section: x11
@@ -152,17 +133,6 @@ Depends: zero-center,epi-gtk
 Description: Krita installer
   Zero-center helper, It downloads and installs krita package
 
-Package: zero-lliurex-libreoffice-reset
-Architecture: i386
-Section: x11
-Depends: zero-center
-Conflicts: lliurex-zero-libreoffice-reset
-Replaces: lliurex-zero-libreoffice-reset (<=0.126.5)
-Breaks: lliurex-zero-libreoffice-reset (<=0.126.5)
-Provides: lliurex-zero-libreoffice-reset
-Description: LibreOffice Home Cleaner
- Limpiador del LibreOffice
-
 Package: zero-lliurex-lmms
 Architecture: all
 Section: x11
@@ -177,13 +147,6 @@ Depends: zero-center,epi-gtk
 Description: Lumi installer
   Zero-center helper, It downloads and installs Lumi appimage
 
-Package: zero-lliurex-nextcloud-client
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Nextcloud client installer
- Zero-center helper, It installs Nextcloud client packages
- 
 Package: zero-lliurex-midicss
 Architecture: all
 Section: x11
@@ -202,13 +165,6 @@ Depends: zero-center,epi-gtk
 Description: Mixxx installer
  Zero-center helper, It installs mixxx on Lliurex
  
-Package: zero-lliurex-moodle
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: zero-center installer for Moodle
- Advanced packages for distribution
-
 Package: zero-lliurex-notebook-bar
 Architecture: i386
 Section: x11
@@ -233,17 +189,6 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: OCRFeeder installer
  Is an optical character recognition suite
-
-Package: zero-lliurex-open-sysclone
-Architecture: all
-Section: x11
-Depends: zero-center
-Conflicts: zero-open-sysclone
-Replaces: zero-open-sysclone (<=0.126.5)
-Breaks: zero-open-sysclone (<=0.126.5)
-Provides: zero-open-sysclone
-Description: Lliurex Open-SysClone
- Clone Pc's to rescue.
 
 Package: zero-lliurex-openmeetings
 Architecture: all
@@ -270,24 +215,6 @@ Breaks: lliurex-zero-installer-pyromaths (<=0.126.5)
 Provides: lliurex-zero-installer-pyromaths
 Description: Pyromaths installer
  Zero-center helper, It downloads and installs python-pyromaths package 
-
-Package: zero-lliurex-recursos
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Recursos installer
- Recursos installer, it downloads and installs packages for recursos
- 
-Package: zero-lliurex-salt
-Architecture: i386
-Section: x11
-Depends: zero-center
-Conflicts: lliurex-zero-salt
-Replaces: lliurex-zero-salt (<=0.126.5)
-Breaks: lliurex-zero-salt (<=0.126.5)
-Provides: lliurex-zero-salt
-Description: SALT installer
- SALT installer for zero-center.
 
 Package: zero-lliurex-skype
 Architecture: all
@@ -348,13 +275,6 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Llixhoot installer
  Zero-center helper, It installs llixhoot on Lliurex
-
-Package: zero-lliurex-palemoon
-Architecture: amd64
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Pale Moon installer
-  Zero-center helper, It downloads and installs Pale Moon package
 
 Package: zero-lliurex-teams
 Architecture: amd64
