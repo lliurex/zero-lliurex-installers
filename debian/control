@@ -256,7 +256,7 @@ Description: Lliurex Openmeetings
 Package: zero-lliurex-promethean
 Architecture: all
 Section: x11
-Depends: zero-center, epi-gtk, libelf-dev
+Depends: zero-center, epi-gtk
 Description: Drivers fro promethean installer
  Zero-center helper, It installs the drivers for the promethean boards 
  
