@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.321) focal; urgency=medium
+
+  * Added zero-lliurex-thonny
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 01 Dec 2023 10:18:23 +0100
+
 zero-lliurex-installers (0.320) focal; urgency=medium
 
   * Added zero-lliurex-chromium
