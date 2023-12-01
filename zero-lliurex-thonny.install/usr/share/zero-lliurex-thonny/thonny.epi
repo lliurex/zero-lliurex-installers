@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"org.thonny.Thonny","custom_name":"Thonny: Python IDE for beginners","custom_icon":"Thonny_logo.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-thonny/thonny_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-thonny/",
+	"zomando":"zero-lliurex-thonny"
+
+} 
