@@ -251,6 +251,13 @@ Depends: zero-center,epi-gtk
 Description: Telegram installer
  Zero-center helper, It installs telegram on Lliurex
 
+Package: zero-lliurex-thonny
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Thonny IDE installer
+  Zero-center helper, It downloads and installs Tonny IDE in flatpak version in LliureX
+
 Package: zero-lliurex-webex
 Architecture: all
 Section: x11
