@@ -1,0 +1,11 @@
+--- usbpromethean.c.orig	2023-12-29 11:16:05.600379209 +0100
++++ usbpromethean.c	2023-12-29 11:16:20.644560818 +0100
+@@ -3065,7 +3065,7 @@
+             inpipe_count++;
+ 
+             if (inpipe_count == 1)
+-                maxp = usb_maxpacket(dev, inpipe[0], usb_pipeout(inpipe[0])) * 5;
++                maxp = usb_maxpacket(dev, inpipe[0]) * 5;
+         }
+         else
+             if (((endpoint->bEndpointAddress & USB_ENDPOINT_DIR_MASK)  == USB_DIR_OUT) &&
