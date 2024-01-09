@@ -13,7 +13,7 @@ function compile_for_519
 function compile_for_517
 {
 	cd /usr/src/promethean/kernel
-	patch usbpromethean.c < /usr/share/zero-lliurex-promethean/patches/01_remove_doexit.patch
+	patch -f usbpromethean.c < /usr/share/zero-lliurex-promethean/patches/01_remove_doexit.patch
 	cd $OLDPWD	
 	compile_for_5x
 }
@@ -27,19 +27,22 @@ function compile_for_5x
 	#Control build return
 	sed -i 's/\(Error building driver.*\)/\0\n\t\texit 1/g' b
 	./b
-	if [ $? -eq 1 ] 
+	modprobe promethean
+	if [ $? -ne 0 ] 
 	then
 	#Something went wrong. Last chance: Reinstall headers and sources
 		apt-get remove --purge -y linux-headers-$VERSION
-		[ -d /usr/src/linux-headers-$VERSION/ ] && rm -fr /usr/src/linux-headers-$VERSION 
-		apt-get install -y linux-headers-$VERSION linux-source-${VERSION/-*/}
+		#[ -d /usr/src/linux-headers-$VERSION/ ] && rm -fr /usr/src/linux-headers-$VERSION 
+		HWE_VER=$(echo ${VERSION/-*/} | cut -d "." -f1-2)
+		HDR_VER=$(echo ${VERSION} | cut -d "-" -f1-2)
+		apt-get install -y --reinstall linux-hwe-$HWE_VER-headers-$HDR_VER linux-headers-$VERSION 
 		./b
 	fi
 	cd $OLDPWD	
 	exit 0
 }
 
-function fix_activinspire_pkg
+function fix_activinspire_pkg_llx23
 {
 	rm activinspire*.deb
 	rm -fr wrk
@@ -56,7 +59,7 @@ function fix_activinspire_pkg
 	dpkg -i $PWD/activinspire-lliurex.deb
 }
 
-function fix_activtools_pkg
+function fix_activtools_pkg_llx23
 {
 	#this pkg needs activaid so install it first
 	apt-get install -y activdriver
@@ -86,14 +89,17 @@ case $ACTION in
 		#Install needed packages
 		#apt-get install -y activinspire-32bitdependsfor64bit-lliurex
 		#Get the linux-headers of current kernel
-		apt-get install -y linux-headers-$VERSION linux-source-${VERSION/-*/}
-#		WRKDIR=$(mktemp -d)
-#		chmod 777 $WRKDIR
-#		cd $WRKDIR
-#		fix_activtools_pkg
-#		rm -fr $WRKDIR/*
-		fix_activinspire_pkg
-		apt-get install -y -f
+		apt-get install -y linux-headers-$VERSION #linux-source-${VERSION/-*/}
+		if [ $(lliurex-version -n | cut -d "." -f1) -gt 21 ]
+		then 
+			WRKDIR=$(mktemp -d)
+			chmod 777 $WRKDIR
+			cd $WRKDIR
+			fix_activtools_pkg
+			rm -fr $WRKDIR/*
+			fix_activinspire_pkg
+			apt-get install -y -f
+		fi
 		if [ $? -ne 0 ]
 		then
 			exit 1
