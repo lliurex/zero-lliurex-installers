@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.321.2) jammy; urgency=medium
+
+  * Update zero-lliurex-promethean
+
+ -- Juanma1980 <juanma1980@gmail.com>  Wed, 10 Jan 2024 11:46:56 +0100
+
 zero-lliurex-installers (0.321.1) focal; urgency=medium
 
   * Dummy upgrade
