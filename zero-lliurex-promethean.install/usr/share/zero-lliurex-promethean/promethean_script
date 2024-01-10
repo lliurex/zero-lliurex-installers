@@ -87,6 +87,7 @@ case $ACTION in
 		apt-get update
 		#Install needed packages
 		#apt-get install -y activinspire-32bitdependsfor64bit-lliurex
+		apt-get install -y libelf-dev=0.176-1.1ubuntu0.1
 		#Get the linux-headers of current kernel
 		apt-get install -y linux-headers-$VERSION #linux-source-${VERSION/-*/}
 		if [ $(lliurex-version -n | cut -d "." -f1) -gt 21 ]
