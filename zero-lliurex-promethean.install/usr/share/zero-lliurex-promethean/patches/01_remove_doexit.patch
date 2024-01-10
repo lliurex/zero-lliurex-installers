@@ -1,0 +1,18 @@
+--- usbpromethean.c.orig	2023-12-29 08:35:01.825180578 +0100
++++ usbpromethean.c	2023-12-29 08:59:58.328251686 +0100
+@@ -2636,7 +2636,6 @@
+     }
+     DebugPrint(TRACE_LEVEL_VERBOSE,DRV_DBG_BOARD_DATA,(KERN_INFO "Promethean: No Longer Processing bytes on [%d]\n",ndx));
+ 
+-    do_exit(0);
+     return 0;
+ }
+ 
+@@ -2732,7 +2731,6 @@
+ 
+     usb_activ_xinput_open_mode(board, X11_OPEN);
+ 
+-    do_exit(0);
+     return 0;
+ }
+ 
