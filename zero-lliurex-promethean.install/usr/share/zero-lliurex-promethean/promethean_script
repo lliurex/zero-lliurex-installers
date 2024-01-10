@@ -79,7 +79,6 @@ function fix_activtools_pkg_llx23
 	mv $PWD/wrk /tmp
 }
 ACTION="$1"
-PATCHES=$(ls -1 /usr/share/zero-lliurex-promethean/patches/)
 
 case $ACTION in
 
@@ -95,9 +94,9 @@ case $ACTION in
 			WRKDIR=$(mktemp -d)
 			chmod 777 $WRKDIR
 			cd $WRKDIR
-			fix_activtools_pkg
+			#fix_activtools_pkg_llx23
 			rm -fr $WRKDIR/*
-			fix_activinspire_pkg
+			fix_activinspire_pkg_llx23
 			apt-get install -y -f
 		fi
 		if [ $? -ne 0 ]
