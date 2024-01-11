@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.422) jammy; urgency=medium
+
+  * Updated promethean software
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 11 Jan 2024 11:33:35 +0100
+
 zero-lliurex-installers (0.421) jammy; urgency=medium
 
   * Added zero-lliurex-thonny
