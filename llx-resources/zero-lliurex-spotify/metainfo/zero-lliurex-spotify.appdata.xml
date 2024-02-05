@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+<id>zero-lliurex-spotify_zmd</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-spotify</name>
+<name xml:lang="es">Instalación del cliente de Spotify</name>
+<name xml:lang="en">Spotify Client installation</name>
+<name xml:lang="qcv">Instal·lació del client de Spotify</name>
+<name xml:lang="ca_ES">Instal·lació del client de Spotify</name>
+<summary>Installation of Spotify client wizard</summary>
+<summary xml:lang="es">Asistente de instalación del cliente de Spotify</summary>
+<summary xml:lang="qcv">Auxiliar d'instal·lació del client de Spotify</summary>
+<summary xml:lang="ca_ES">Auxiliar d'instal·lació del client de Spotify</summary>
+<description>
+<p>Installation of Spotify client wizard</p>
+<p xml:lang="es">Asistente de instalación del cliente de Spotify</p>
+<p xml:lang="qcv">Auxiliar d'instal·lació del client de Spotify</p>
+<p xml:lang="ca_ES">Auxiliar d'instal·lació del client de Spotify</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">spotify</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>spotify</keyword>
+<keyword>zero-lliurex-spotify</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Instalación</keyword>
+<keyword>del</keyword>
+<keyword>cliente</keyword>
+<keyword>Spotify</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>Client</keyword>
+<keyword>installation</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="qcv">
+<keyword>Instal·lació</keyword>
+<keyword>client</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES">
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

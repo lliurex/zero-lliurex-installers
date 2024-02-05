@@ -1,0 +1,9 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"spotify-client","key_store":"zero-lliurex-spotify","custom_name":"Spotify Client","custom_icon":"spotify.svg"}], 
+	"repository": [{"url":"deb http://repository.spotify.com stable non-free","key_cmd":"curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key --keyring /tmp/epi_keyring add - "}], 
+	"script": {"name":"/usr/share/zero-lliurex-spotify/spotify-client_script", "remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-spotify/",
+	"zomando":"zero-lliurex-spotify"
+	
+	}

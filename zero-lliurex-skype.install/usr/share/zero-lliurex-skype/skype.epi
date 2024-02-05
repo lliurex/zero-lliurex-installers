@@ -1,0 +1,9 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"skypeforlinux","key_store":"zero-lliurex-skype","custom_name":"Skype Client","custom_icon":"skype.png"}], 
+	"repository": [{"url":"deb https://repo.skype.com/deb stable main","key_cmd":"curl https://repo.skype.com/data/SKYPE-GPG-KEY | apt-key --keyring /tmp/epi_keyring add -"} ], 
+	"script": {"name":"/usr/share/zero-lliurex-skype/skype_script", "remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-skype/",
+	"zomando":"zero-lliurex-skype"
+	
+	}
