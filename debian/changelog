@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.422.3) jammy; urgency=medium
+
+  * Removed zero-lliurex-skype, zero-lliurex-spotify, zero-lliurex-webex
+  * Removed app-inventor from zero-lliurex-technology
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 05 Feb 2024 10:27:48 +0100
+
 zero-lliurex-installers (0.422.2) jammy; urgency=medium
 
   * Updated promethean software
