@@ -1,7 +1,0 @@
- {
- 	"type":"deb",
- 	"pkg_list":[{"name":"webex", "version":{"all":"Webex.deb"},"key-store":"webex","url_download":"https://binaries.webex.com/WebexDesktop-Ubuntu-Official-Package/","custom_name":"Webex: application to call, meet, send messages and work","custom_icon":"webex.svg"}],
- 	"script":{"name":"/usr/share/zero-lliurex-webex/webex_script","remove":true},
- 	"custom_icon_path":"/usr/share/zero-lliurex-webex/",
- 	"zomando":"zero-lliurex-webex"
- }
