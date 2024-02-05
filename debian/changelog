@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.323) focal; urgency=medium
+
+  * Removed zero-lliurex-spotify,zero-lliurex-skype and zero-lliurex-webex
+  * Removed app-inventor from zero-lliurex-technology
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 05 Feb 2024 10:04:47 +0100
+
 zero-lliurex-installers (0.322) focal; urgency=medium
 
   * Update zero-lliurex-promethean
