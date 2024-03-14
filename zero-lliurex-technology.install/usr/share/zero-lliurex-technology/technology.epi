@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"arduino-ide","key_store":"zero-lliurex-technology","custom_name":"Arduino IDE: integrated development environment","custom_icon":"arduino.svg"},{"name":"lliurex-robotics","custom_name":"LliureX-Robotics: library allows connection to Arduino and Lego","key_store":"zero-lliurex-technology","default_pkg":true},{"name":"s4a","key_store":"zero-lliurex-technology","custom_name":"Scratch for Arduino","custom_icon":"s4a.svg"},{"name":"visualino","key-store":"zero-lliurex-technology","custom_name":"Visualino: Visual programming environment for Arduino","custom_icon":"visualino.png"}],
+	"pkg_list": [{"name":"arduino-ide","key_store":"zero-lliurex-technology","custom_name":"Arduino IDE: integrated development environment","custom_icon":"arduino.svg"},{"name":"lliurex-robotics","custom_name":"LliureX-Robotics: library allows connection to Arduino and Lego","key_store":"zero-lliurex-technology","default_pkg":true},{"name":"s4a","key_store":"zero-lliurex-technology","custom_name":"Scratch for Arduino","custom_icon":"s4a.svg"},{"name":"visualino","key-store":"zero-lliurex-technology","custom_name":"Visualino: Visual programming environment for Arduino","custom_icon":"visualino.png"},{"name":"mlink","key-store":"zero-lliurex-technology","custom_name":"mLink: mBlock web driver","custom_icon":"mblock.png"}]],
 	"script": {"name":"/usr/share/zero-lliurex-technology/technology_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-technology/",
 	"force32":true,
