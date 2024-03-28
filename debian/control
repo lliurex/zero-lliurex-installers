@@ -303,3 +303,11 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Virtualizer tools installer
   Zero-center helper, It downloads and installs tools to work with vitual machines
+
+Package: zero-lliurex-ai2offline
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: App Inventor 2 offline installer
+  Zero-center helper, It downloads and installs app inventor 2 offline
+

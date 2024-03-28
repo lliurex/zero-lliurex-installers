@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.423) jammy; urgency=medium
+
+  * Added app-inventor-offline installer  
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 28 Mar 2024 12:19:22 +0100
+
 zero-lliurex-installers (0.422.3) jammy; urgency=medium
 
   * Removed zero-lliurex-skype, zero-lliurex-spotify, zero-lliurex-webex
