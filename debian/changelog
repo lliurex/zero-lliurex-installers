@@ -1,7 +1,8 @@
-zero-lliurex-installers (0.423.2) jammy; urgency=medium
+zero-lliurex-installers (0.423.3) jammy; urgency=medium
 
   * Fixed desktop copy in ai2offline
   * small changes in ai2offline banner 
+  * fixed missing icon in desktop file in ai2offline
 
  -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 28 Mar 2024 12:58:15 +0100
 
