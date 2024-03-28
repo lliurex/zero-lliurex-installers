@@ -1,0 +1,96 @@
+#!/bin/bash
+
+
+ACTION="$1"
+URL="https://deac-ams.dl.sourceforge.net/project/ai2offline/6.2/AI2Offline6.2.7z"
+DEST_DOWNLOAD="/opt/ai2offline/"
+DEST_FILE=$DEST_DOWNLOAD"ai2offline.7z"
+AI2FOLDER=$DEST_DOWNLOAD"AI2Offline6.2/"
+AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
+AIBUILDER_SCRIPT=$AI2FOLDER"startBuildServer.sh"
+DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/*.desktop"
+DESKTOP_DEST="/usr/share/applications/"
+BIN_ORIG="/usr/share/zero-lliurex-ai2offline/bin/*"
+BIN_DEST="/usr/bin/"
+
+case $ACTION in
+
+	getStatus)
+		if [ -s ${DEST_FILE} ]
+		then	
+			echo 0
+		else
+			echo 1	
+		fi				
+	;;
+
+	download)
+
+		if ! [ -d ${DEST_DOWNLOAD} ]
+		then
+			mkdir ${DEST_DOWNLOAD}
+		fi
+
+		cd ${DEST_DOWNLOAD}
+
+		if [ -s ${DEST_FILE} ]
+		then
+			rm -f ${DEST_FILE}
+			rm -rf ${AI2FOLDER}
+		fi
+
+		wget ${URL} -O ${DEST_FILE}
+		
+		if ! [ -s ${DEST_FILE} ]
+		then	
+			exit 1
+		fi	
+	;;	
+	
+	installPackage)
+
+		echo "Unzip $DEST_FILE..."
+		
+		cd ${DEST_DOWNLOAD}
+		7z x ${DEST_FILE}
+		
+		echo "Enable others write access..."
+		chmod 777 -R ${AI2FOLDER}
+		
+		echo "Enable execution flag in scripts..."
+		chmod +x ${AISERVER_SCRIPT}
+		chmod +x ${AIBUILDER_SCRIPT}
+
+
+		echo "Copy desktop files..."
+		cp $DESKTOP_ORIG $DESKTOP_DEST
+		sleep 5
+		
+		echo "Copy bin files..."
+		cp $BIN_ORIG $BIN_DEST
+		
+	
+	;;
+
+	remove)
+		
+		echo "Removing files..."
+
+	
+		
+		if [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
+		then
+			rm -f ${DEST_DOWNLOAD}${DEST_FILE}
+		fi
+
+		if [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
+		then	
+			exit 1
+		fi
+	
+
+
+	;;		
+		
+esac
+exit 0
