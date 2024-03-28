@@ -2,9 +2,14 @@
 
 # we might need to kill old processes
 
-for PROC in $(ps aux | grep -e appengine-tools-api -e BuildServer.jar | grep -v grep | cut -d " " -f6); do 
+for PROC in $(pgrep -f appengine-tools-api.jar); do 
 	kill -9 $PROC;
 done;
+
+for PROC in $(pgrep -f BuildServer.jar); do
+        kill -9 $PROC;
+done;
+
 
 cd /opt/ai2offline/AI2Offline6.2/
 
