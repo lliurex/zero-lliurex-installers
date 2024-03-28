@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.423.4) jammy; urgency=medium
+
+  * Using pgrep instead of ps aux in bin/ai2offline 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 28 Mar 2024 13:26:12 +0100
+
 zero-lliurex-installers (0.423.3) jammy; urgency=medium
 
   * Fixed desktop copy in ai2offline
