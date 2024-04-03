@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.424) jammy; urgency=medium
+
+  * Adding abconnector to zl-technology 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 03 Apr 2024 12:41:57 +0200
+
 zero-lliurex-installers (0.423.4) jammy; urgency=medium
 
   * Using pgrep instead of ps aux in bin/ai2offline 
