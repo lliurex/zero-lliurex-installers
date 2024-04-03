@@ -1,0 +1,9 @@
+{
+	"type":"file",
+	"pkg_list": [{"name":"ai2offline","key_store":"zero-lliurex-ai2offline","custom_name":"App Inventor 2 Offline: Block based visual programming language","custom_icon":"ai2offline.png"}], 
+	"script": {"name":"/usr/share/zero-lliurex-ai2offline/ai2offline_script","remove":true,"getStatus":true,"download":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-ai2offline/",
+	"zomando":"zero-lliurex-ai2offline",
+	"check_zomando_state":false
+	}
+
