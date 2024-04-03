@@ -1,3 +1,11 @@
+zero-lliurex-installers (0.324) focal; urgency=medium
+
+  * Adding zero ai2offline
+  * adding mblocks to zl-technology
+  * adding abconnector to zl-technology
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 03 Apr 2024 12:49:25 +0200
+
 zero-lliurex-installers (0.323) focal; urgency=medium
 
   * Removed zero-lliurex-spotify,zero-lliurex-skype and zero-lliurex-webex
