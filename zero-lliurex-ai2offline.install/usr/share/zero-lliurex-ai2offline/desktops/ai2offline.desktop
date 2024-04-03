@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=App Inventor 2 Offline
+Name[es]=App Inventor 2 Offline
+Name[ca_ES@valencia]=App Inventor 2 Offline
+Name[ca_ES.UT-8@valencia]=App Inventor 2 Offline
+Exec=/usr/bin/ai2offline
+TryExec=/usr/bin/ai2offline
+Icon=/usr/share/zero-lliurex-ai2offline/ai2offline.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Development
+
+
