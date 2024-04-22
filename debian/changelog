@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.425) jammy; urgency=medium
+
+  * Adding zero-lliurex-learningml 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 22 Apr 2024 11:32:37 +0200
+
 zero-lliurex-installers (0.424.2) jammy; urgency=medium
 
   * Adding abconnector to zl-technology 
