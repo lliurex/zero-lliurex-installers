@@ -390,3 +390,11 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: App Inventor 2 offline installer
   Zero-center helper, It downloads and installs app inventor 2 offline
+
+Package: zero-lliurex-learningml
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: LearningML  installe
+  Zero-center helper, It installs learningml-desktop
+
