@@ -1,0 +1,9 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"learningml-desktop","key_store":"zero-lliurex-learningml","custom_name":"LearningML - Artificial Intelligence made easy","custom_icon":"learningml.png"}], 
+	"script": {"name":"/usr/share/zero-lliurex-learningml/learningml_script", "remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-learningml/",
+	"zomando":"zero-lliurex-learningml",
+	"check_zomando_state":false
+}
+
