@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.426.3) jammy; urgency=medium
+
+  * Trying new ai2offline.desktop file as there are instances where it doesnt
+    appear in KDE apps launcher 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 06 May 2024 12:08:41 +0200
+
 zero-lliurex-installers (0.426.2) jammy; urgency=medium
 
   * Adding uninstall option to learningml 
