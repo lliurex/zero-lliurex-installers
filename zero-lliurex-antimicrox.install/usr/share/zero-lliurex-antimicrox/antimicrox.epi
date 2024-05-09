@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"io.github.antimicrox.antimicrox","custom_name":"AntiMicroX: program to map gamepad buttons to keyboard, mouse...","custom_icon":"antimicrox.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-antimicrox/antimicrox_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-antimicrox/",
+	"zomando":"zero-lliurex-antimicrox"
+
+} 
