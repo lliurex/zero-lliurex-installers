@@ -1,0 +1,142 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+GIT_URL="https://github.com/ideasman42/nerd-dictation.git"
+DEST_DOWNLOAD="/opt/nerd-dictation/"
+MODELS_DIR=${DEST_DOWNLOAD}"models/"
+
+DEST_BIN="/opt/nerd-dictation/nerd-dictation"
+
+DESKTOP_ORIG="/usr/share/zero-lliurex-nerd-dictation/desktops/*.desktop"
+DESKTOP_DEST="/usr/share/applications/"
+BIN_ORIG="/usr/share/zero-lliurex-nerd-dictation/bin/nerd-dictation"
+BIN_DEST="/usr/bin/nerd-dictation"
+
+APT_PACKAGES="pulseaudio-utils xdotool python3-pip"
+PIP_PACKAGES="vosk"
+
+ENGLISH_DIR="vosk-model-small-en-us-0.15"
+ENGLISH_MODEL="https://alphacephei.com/vosk/models/"${ENGLISH_DIR}".zip"
+SPANISH_DIR="vosk-model-small-es-0.42"
+SPANISH_MODEL="https://alphacephei.com/vosk/models/"${SPANISH_DIR}".zip"
+VALENCIAN_DIR="vosk-model-small-ca-0.4"
+VALENCIAN_MODEL="https://alphacephei.com/vosk/models/"${VALENCIAN_DIR}".zip"
+
+
+case $ACTION in
+
+	getStatus)
+		if [ -s ${DEST_BIN} ]
+		then	
+			echo 0
+		else
+			echo 1	
+		fi				
+	;;
+
+	download)
+
+		if [ -d ${DEST_DOWNLOAD} ]
+		then
+			rm -rf ${DEST_DOWNLOAD}
+		fi
+		
+		mkdir ${DEST_DOWNLOAD}
+
+		echo "Cloning nerd-dictation..."
+		cd ${DEST_DOWNLOAD}
+		git clone ${GIT_URL} .
+		
+		
+		echo "Downloading language models..."
+		wget ${ENGLISH_MODEL}
+		wget ${SPANISH_MODEL}
+		wget ${VALENCIAN_MODEL}
+
+		
+		if ! [ -s ${DEST_BIN} ]
+		then	
+			echo 1
+			exit 1
+		fi
+
+		if ! [ -s ${DEST_DOWNLOAD}${ENGLISH_DIR}".zip" ]
+		then	
+			echo 2
+			exit 1
+		fi
+		
+		if ! [ -s ${DEST_DOWNLOAD}${SPANISH_DIR}".zip" ]
+		then	
+			echo 3
+			exit 1
+		fi
+		
+		if ! [ -s ${DEST_DOWNLOAD}${VALENCIAN_DIR}".zip" ]
+		then	
+			echo 4
+			exit 1
+		fi
+
+	;;	
+	
+	installPackage)
+
+		echo "Install APT dependencies..."
+		for PACKAGE in ${APT_PACKAGES}; do apt install -y $PACKAGE; done
+		
+		
+		cd ${DEST_DOWNLOAD}
+		
+		echo "Unzip language models..."
+		
+		mkdir ${MODELS_DIR}
+		
+		unzip ${ENGLISH_DIR}".zip"
+		mv ${ENGLISH_DIR} ${MODELS_DIR}"/en"
+		rm ${ENGLISH_DIR}".zip"
+		
+		unzip ${SPANISH_DIR}".zip"
+		mv ${SPANISH_DIR} ${MODELS_DIR}"/es"
+		rm ${SPANISH_DIR}".zip"
+		
+		unzip ${VALENCIAN_DIR}".zip"
+		mv ${VALENCIAN_DIR} ${MODELS_DIR}"/ca_va"
+		rm ${VALENCIAN_DIR}".zip"
+		
+		echo "Install vosk..."
+		pip3 install vosk --upgrade
+
+	
+		#echo "Copy desktop files..."
+		#cp $DESKTOP_ORIG $DESKTOP_DEST
+		#sleep 5
+		
+		echo "Copy bin files..."
+		cp $BIN_ORIG $BIN_DEST
+		
+	
+	;;
+
+	remove)
+		
+		echo "Removing files..."
+		
+		if [ -s ${DEST_DOWNLOAD}]
+		then
+			rm -f ${DEST_DOWNLOAD}
+		fi
+
+		
+                if [ -s ${BIN_DEST}]
+                then
+                        rm -f ${BIN_DEST}
+                fi
+
+
+	;;		
+		
+esac
+exit 0

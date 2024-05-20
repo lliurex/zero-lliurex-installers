@@ -1,0 +1,9 @@
+{
+	"type":"file",
+	"pkg_list": [{"name":"nerd-dictation","key_store":"zero-lliurex-nerd-dictation","custom_name":"Nerd Dictation: Offline speech to text","custom_icon":"nerd-dictation.png"}], 
+	"script": {"name":"/usr/share/zero-lliurex-nerd-dictation/nerd-dictation_script","remove":true,"getStatus":true,"download":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-nerd-dictation/",
+	"zomando":"zero-lliurex-nerd-dictation",
+	"check_zomando_state":false
+}
+
