@@ -1,0 +1,36 @@
+#!/bin/bash
+
+BASE_DIR=/opt/nerd-dictation
+EN_MODEL=$BASE_DIR/models/en
+ES_MODEL=$BASE_DIR/models/es
+CA_VA_MODEL=$BASE_DIR/models/ca_va
+
+BIN=$BASE_DIR/nerd-dictation
+
+if [[ $@ == *"--vosk-model-dir="* ]]; then
+	$BIN $@
+else
+
+	if [[ $@ == *"begin"* ]]; then
+		
+		MODEL=$EN_MODEL
+		RC=0
+		echo $LANG | grep es 1>/dev/null || RC=1
+		if [ $RC == 0 ]; then
+			MODEL=$ES_MODEL
+		fi
+
+		RC=0
+		echo $LANG | grep -e ca_ES -e valencia 1>/dev/null || RC=1
+		if [ $RC == 0 ]; then
+			MODEL=$CA_VA_MODEL
+		fi
+
+		#echo "Intercepting begin and chosing $MODEL ..."
+		$BIN $@ --vosk-model-dir=$MODEL
+		
+	else
+		$BIN $@
+	fi
+fi
+
