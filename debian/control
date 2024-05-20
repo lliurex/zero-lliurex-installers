@@ -315,6 +315,13 @@ Package: zero-lliurex-learningml
 Architecture: amd64
 Section: x11
 Depends: zero-center,epi-gtk
-Description: LearningML  installe
+Description: LearningML  installer
   Zero-center helper, It installs learningml-desktop
+
+Package: zero-lliurex-nerd-dictation
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: nerd-dictation  installer
+  Zero-center helper, It installs nerd-dictation
 
