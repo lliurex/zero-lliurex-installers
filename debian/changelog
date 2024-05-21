@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.427) jammy; urgency=medium
+
+  * Added zero-lliurex-nerd-dictation 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 21 May 2024 08:21:27 +0200
+
 zero-lliurex-installers (0.426.4) jammy; urgency=medium
 
   * Added zero-lliurex-antimicrox
