@@ -14,7 +14,7 @@ DESKTOP_DEST="/usr/share/applications/"
 BIN_ORIG="/usr/share/zero-lliurex-nerd-dictation/bin/nerd-dictation"
 BIN_DEST="/usr/bin/nerd-dictation"
 
-APT_PACKAGES="pulseaudio-utils xdotool python3-pip"
+APT_PACKAGES="pulseaudio-utils xdotool python3-pip plasma-widget-nerd-dictation"
 PIP_PACKAGES="vosk"
 
 ENGLISH_DIR="vosk-model-small-en-us-0.15"
@@ -134,7 +134,9 @@ case $ACTION in
                 then
                         rm -f ${BIN_DEST}
                 fi
-
+		
+		echo "Removing nerd dictation widget..."
+		apt remove plasma-widget-nerd-dictation || true
 
 	;;		
 		
