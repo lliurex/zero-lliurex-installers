@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.427.2) jammy; urgency=medium
+
+  * Updated nerd-dictation epi icon 
+  * added plasma-widget-nerd-dictation to nerd-dictation epi_script
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 21 May 2024 09:02:39 +0200
+
 zero-lliurex-installers (0.427.1) jammy; urgency=medium
 
   * Fixed nerd-dictation zero-center files 
