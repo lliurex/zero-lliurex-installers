@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.427.1) jammy; urgency=medium
+
+  * Fixed nerd-dictation zero-center files 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 21 May 2024 08:51:48 +0200
+
 zero-lliurex-installers (0.427) jammy; urgency=medium
 
   * Added zero-lliurex-nerd-dictation 
