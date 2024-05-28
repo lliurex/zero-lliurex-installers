@@ -332,3 +332,10 @@ Depends: zero-center,epi-gtk
 Description: nerd-dictation  installer
   Zero-center helper, It installs nerd-dictation
 
+Package: zero-lliurex-gtts
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Google Text to Speech installer
+  Zero-center helper, It installs gtts: Google Text to Speech
+
