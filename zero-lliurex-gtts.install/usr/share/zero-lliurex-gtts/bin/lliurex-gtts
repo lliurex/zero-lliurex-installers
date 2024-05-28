@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+
+def get_language():
+	
+	lang="en"
+	
+	if "es." in os.environ["LANG"] or "es_" in  os.environ["LANG"]:
+		lang="es"
+	
+	if "ca_" in os.environ["LANG"] or "valencia" in  os.environ["LANG"]:
+		lang="ca"
+	
+	return lang
+
+
+command="gtts-cli %s"
+
+new_args=""
+
+if "-h" in sys.argv or "--help" in sys.argv or len(sys.argv)==1:
+	print("Usage:\n  lliurex-gtts [OPTIONS] '<text>',-f <file>\n")
+	print("Options:\n\
+  -f, --file\t\tRead from <file> instead of <text>.\n\
+  -s, --slow\t\tRead more slowly.\n\
+  -o, --output <file>\tWrite to <file> instead of stdout. [default: gtts-output.mp3]\n\
+  -p\t\t\tWrite to stdout.\n\
+  -l, --lang <lang>\tIETF language tag. Language to speak in. [default: Based on $LANG]\n\
+  -t, --tld <tld>\tTop-level domain for the Google host, i.e.\n\
+  \t\t\thttps://translate.google.<tld> [default: com]\n\
+  --nocheck\t\tDisable strict IETF language tag checking. Allow undocumented tags.\n\
+  --all\t\t\tPrint all documented available IETF language tags and exit.\n\
+  --debug\t\tShow debug information.\n\
+  --version\t\tShow the version and exit.\n\
+  -h, --help\t\tShow this message and exit.")
+	sys.exit(0)
+	
+if "-l" not in sys.argv:
+	lang=get_language()
+	new_args+=" -l %s"%lang
+	
+if "-o" not in sys.argv and "-p" not in sys.argv :
+	lang=get_language()
+	new_args+=" -o gtts-output.mp3"
+	print("Writting output to gtts-output.mp3")
+	
+
+
+for arg in sys.argv[1:]:
+
+	if " " not in arg:
+		new_args+=" %s"%arg
+	else:
+		new_args+=" '%s'"%arg
+
+os.system(command%new_args)
