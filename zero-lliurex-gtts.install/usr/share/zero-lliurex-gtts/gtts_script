@@ -1,0 +1,66 @@
+#!/bin/bash
+
+
+ACTION="$1"
+
+BIN_ORIG="/usr/share/zero-lliurex-gtts/bin/lliurex-gtts"
+BIN_DEST="/usr/bin/lliurex-gtts"
+
+DESKTOP_ORIG="/usr/share/zero-lliurex-gtts/desktops/*.desktop"
+DESKTOP_DEST="/usr/share/applications/"
+
+APT_PACKAGES="python3-pip"
+PIP_PACKAGES="gTTS"
+
+INSTALLED_DIRS="/usr/local/lib/python*/dist-packages/gtts /usr/local/lib/python*/dist-packages/gTTS* /usr/local/bin/gtts-cli"
+
+
+case $ACTION in
+
+	getStatus)
+		if [ -s ${DEST_BIN} ]
+		then	
+			echo 0
+		else
+			echo 1	
+		fi				
+	;;
+
+	download)
+
+		true
+	;;	
+	
+	installPackage)
+
+		echo "Install APT dependencies..."
+		for PACKAGE in ${APT_PACKAGES}; do apt install -y $PACKAGE; done
+		
+		echo "Install gTTS..."
+		pip3 install gTTS --upgrade
+
+		echo "Install custom bin..."
+		cp ${BIN_ORIG} ${BIN_DEST}
+
+	;;
+
+	remove)
+		
+		echo "Removing files..."
+		
+		for D in ${INSTALLED_DIRS}; do
+
+
+			if [ -s ${D}]
+			then
+				rm -f ${D}
+			fi
+		done
+		
+		rm ${BIN_DEST} || true
+
+
+	;;		
+		
+esac
+exit 0
