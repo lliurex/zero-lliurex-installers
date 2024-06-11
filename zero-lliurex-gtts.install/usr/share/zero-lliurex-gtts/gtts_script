@@ -18,7 +18,7 @@ INSTALLED_DIRS="/usr/local/lib/python*/dist-packages/gtts /usr/local/lib/python*
 case $ACTION in
 
 	getStatus)
-		if [ -s ${DEST_BIN} ]
+		if [ -s ${BIN_DEST} ]
 		then	
 			echo 0
 		else
@@ -51,7 +51,7 @@ case $ACTION in
 		for D in ${INSTALLED_DIRS}; do
 
 
-			if [ -s ${D}]
+			if [ -s ${D} ]
 			then
 				rm -f ${D}
 			fi
