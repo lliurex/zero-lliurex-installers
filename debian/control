@@ -314,7 +314,7 @@ Description: Virtualizer tools installer
 Package: zero-lliurex-ai2offline
 Architecture: amd64
 Section: x11
-Depends: zero-center,epi-gtk
+Depends: zero-center,epi-gtk, lib32stdc++6, lib32z1
 Description: App Inventor 2 offline installer
   Zero-center helper, It downloads and installs app inventor 2 offline
 
