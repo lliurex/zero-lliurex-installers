@@ -5,11 +5,10 @@ ACTION="$1"
 
 case $ACTION in
 	remove)
-		apt-get remove -y krita
-		TEST=$( dpkg-query -s krita 2> /dev/null| grep Status | cut -d " " -f 4 )
-		if [ "$TEST" == 'installed' ];then
+		flatpak uninstall org.kde.krita -y 
+		TEST=$(flatpak list | grep org.kde.krita | cut -d " " -f 1)
+		if [[ ! -z "$TEST" ]];then
 			exit 1
-		fi	
-	;;	
+		fi	;;	
 esac	
 
