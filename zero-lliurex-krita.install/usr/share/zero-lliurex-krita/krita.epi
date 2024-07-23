@@ -1,6 +1,6 @@
 {
-	"type":"apt",
-	"pkg_list": [{"name":"krita","key_store":"krita","custom_name":"Krita: digital painting program","custom_icon":"krita.png"}], 
+	"type":"flatpak",
+	"pkg_list": [{"name":"org.kde.krita","key_store":"krita","custom_name":"Krita: digital painting program (flatpak version)","custom_icon":"krita.png"}], 
 	"script": {"name":"/usr/share/zero-lliurex-krita/krita_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-krita/",
 	"zomando":"zero-lliurex-krita"
