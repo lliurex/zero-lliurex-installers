@@ -122,17 +122,6 @@ Provides: lliurex-zero-installer-hotpotatoes
 Description: Hotpotatoes installer
  Hotpotatoes installer for resources
  
-Package: zero-lliurex-kiosko
-Architecture: all
-Section: x11
-Depends: zero-center, chromium-browser
-Conflicts: lliurex-zero-installer-kiosko
-Replaces: lliurex-zero-installer-kiosko (<=0.126.5)
-Breaks: llliurex-zero-installer-kiosko (<=0.126.5)
-Provides: lliurex-zero-installer-kiosko
-Description: Lliurex Technology lab
- Zero-center installer to run kiosk mode
- 
 Package: zero-lliurex-krita
 Architecture: all
 Section: x11
@@ -197,14 +186,6 @@ Depends: zero-center,epi-gtk
 Description: OCRFeeder installer
  Is an optical character recognition suite
 
-Package: zero-lliurex-openmeetings
-Architecture: all
-Section: x11
-Depends: zero-center
-Provides: zero-lliurex-openmeetings
-Description: Lliurex Openmeetings
- This package allows user to install and configure openmeetings 
- 
 Package: zero-lliurex-promethean
 Architecture: all
 Section: x11
@@ -222,20 +203,6 @@ Breaks: lliurex-zero-installer-pyromaths (<=0.126.5)
 Provides: lliurex-zero-installer-pyromaths
 Description: Pyromaths installer
  Zero-center helper, It downloads and installs python-pyromaths package 
-
-Package: zero-lliurex-skype
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Skype installer
- Zero-center helper, It installs skype on Lliurex
- 
-Package: zero-lliurex-spotify
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Spotify client installer
- Zero-center helper, It installs Spotify client on Lliurex
 
 Package: zero-lliurex-stellarium
 Architecture: all
@@ -265,13 +232,6 @@ Depends: zero-center,epi-gtk
 Description: Thonny IDE installer
   Zero-center helper, It downloads and installs Tonny IDE in flatpak version in LliureX
 
-Package: zero-lliurex-webex
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Webex installer
- Zero-center helper, It installs Webex on Lliurex
- 
 Package: zero-lliurex-wine64
 Architecture: amd64
 Section: x11
@@ -282,13 +242,6 @@ Breaks: lliurex-zero-installer-wine64 (<=0.126.5)
 Provides: lliurex-zero-installer-wine64
 Description: Wine64 installer
  Zero-center helper, It installs wine on amd64
-
-Package: zero-lliurex-llixhoot
-Architecture: all
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Llixhoot installer
- Zero-center helper, It installs llixhoot on Lliurex
 
 Package: zero-lliurex-teams
 Architecture: amd64
