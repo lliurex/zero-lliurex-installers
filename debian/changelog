@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.528.2) noble; urgency=medium
+
+  * Initial release for Noble
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 24 Sep 2024 13:53:45 +0200
+
 zero-lliurex-installers (0.428.2) jammy; urgency=medium
 
   * Changed krita to install flatpak instead app
