@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.528.2.1) noble; urgency=medium
+
+  * Replace arduino-ide with arduino in zero-lliurex-technology
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 03 Oct 2024 10:31:04 +0200
+
 zero-lliurex-installers (0.528.2) noble; urgency=medium
 
   * Initial release for Noble
