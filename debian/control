@@ -346,3 +346,9 @@ Depends: zero-center,epi-gtk
 Description: Greenfoot installer
   Zero-center helper, It installs greenfoot
 
+Package: zero-lliurex-leocad
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: LeoCAD installer
+  Zero-center helper, It installs LeoCAD
