@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.429.1) jammy; urgency=medium
+
+  * Fixed merge from master (now noble). Repository references back to jammy
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 14 Oct 2024 11:16:49 +0200
+
 zero-lliurex-installers (0.429) jammy; urgency=medium
 
   * Added zero-lliurex-greenfoot
