@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.429) jammy; urgency=medium
+
+  * Added zero-lliurex-greenfoot
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 14 Oct 2024 10:50:53 +0200
+
 zero-lliurex-installers (0.428.1) jammy; urgency=medium
 
   * Fixed zero-lliurex-gtts script
