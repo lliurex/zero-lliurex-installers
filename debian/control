@@ -366,3 +366,10 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Zotero installer
   Zero-center helper, It installs Zotero
+  
+Package: zero-lliurex-aws-cli
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: AWS Cli installer
+  Zero-center helper, It installs AWS Cli
