@@ -359,3 +359,10 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: DBeaver Community installer
   Zero-center helper, It installs DBeaver
+  
+Package: zero-lliurex-zotero
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Zotero installer
+  Zero-center helper, It installs Zotero
