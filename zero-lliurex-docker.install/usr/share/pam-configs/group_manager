@@ -1,0 +1,6 @@
+Name: Add group pam module manager 
+Default: yes
+Priority: -667
+Auth-Type: Additional
+Auth:
+	optional pam_group.so
