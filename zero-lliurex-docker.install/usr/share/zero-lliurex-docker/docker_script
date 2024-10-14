@@ -18,6 +18,7 @@ case $ACTION in
 	preInstall)
 	
 		echo "[EPI]:Preparing installation..."
+		/usr/sbin/docker-students-permission
 		if dpkg-query -l $PKG>/dev/null 2>&1;then
 
 			echo "Nothing to do"

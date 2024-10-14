@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export TEXTDOMAIN="zero-lliurex-docker"
+str1=$(gettext "Can docker be used by students?")
+
+kdialog --title "Docker groups" --yesno "${str1}" ; rc=$?
+
+sed -i -e "/\*;\*;%students;Al0000-2400;docker/d" /etc/security/group.conf
+if [ "$rc" = "0" ]; then
+	echo "*;*;%students;Al0000-2400;docker" >> /etc/security/group.conf
+fi

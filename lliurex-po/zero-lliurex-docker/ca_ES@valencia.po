@@ -1,0 +1,22 @@
+# Catalan translations for PACKAGE package.
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#  <raurodse@gmail.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-14 18:16+0200\n"
+"PO-Revision-Date: 2024-10-14 18:31+0200\n"
+"Last-Translator: Raul Rodrigo <raurodse@gmail.com>\n"
+"Language-Team: Valencian\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../zero-lliurex-docker.install/usr/sbin/docker-students-permission:4
+msgid "Can docker be used by students?"
+msgstr "Poden els alumnes utilitzar el Docker?"
