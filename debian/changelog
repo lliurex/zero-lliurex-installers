@@ -4,6 +4,12 @@ zero-lliurex-installers (0.429) jammy; urgency=medium
 
  -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 14 Oct 2024 10:50:53 +0200
 
+zero-lliurex-installers (0.428.2) jammy; urgency=medium
+
+  * Changed krita to install flatpak instead app
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 23 Jul 2024 08:48:13 +0200
+
 zero-lliurex-installers (0.428.1) jammy; urgency=medium
 
   * Fixed zero-lliurex-gtts script
