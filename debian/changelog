@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.433) jammy; urgency=medium
+
+  * Added zero-lliurex-aws-cli 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 14 Oct 2024 14:11:18 +0200
+
 zero-lliurex-installers (0.432) jammy; urgency=medium
 
   * added zero-lliurex-zotero
