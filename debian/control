@@ -339,3 +339,10 @@ Depends: zero-center,epi-gtk
 Description: Google Text to Speech installer
   Zero-center helper, It installs gtts: Google Text to Speech
 
+Package: zero-lliurex-greenfoot
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Greenfoot installer
+  Zero-center helper, It installs greenfoot
+
