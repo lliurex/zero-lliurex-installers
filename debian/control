@@ -352,3 +352,10 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: LeoCAD installer
   Zero-center helper, It installs LeoCAD
+
+Package: zero-lliurex-dbeaver
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: DBeaver Community installer
+  Zero-center helper, It installs DBeaver
