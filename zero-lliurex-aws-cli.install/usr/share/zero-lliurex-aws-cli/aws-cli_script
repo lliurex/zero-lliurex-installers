@@ -7,6 +7,28 @@ PACKAGE_LIST=$@
 
 case $ACTION in
 
+	getStatus)
+		RC=0
+		snap list aws-cli|| RC=1
+		if [ "$RC" = 0 ]
+		then	
+			echo 0
+		else
+			echo 1	
+		fi				
+	;;
+
+	download)
+
+		true
+	;;	
+	
+	installPackage)
+
+		snap install aws-cli --classic
+
+	;;
+
 
 	remove)
 		count=0

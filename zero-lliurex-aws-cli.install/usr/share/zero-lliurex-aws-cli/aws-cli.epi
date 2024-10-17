@@ -1,5 +1,5 @@
 {
-	"type":"snap",
+	"type":"file",
 	"pkg_list":[{"name":"aws-cli","custom_name":"Amazon Web Services CLI","custom_icon":"aws-cli.png"}],
 	"script":{"name":"/usr/share/zero-lliurex-aws-cli/aws-cli_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-aws-cli/",
