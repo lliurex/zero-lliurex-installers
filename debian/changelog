@@ -1,3 +1,10 @@
+zero-lliurex-installers (0.434.3) jammy; urgency=medium
+
+  * Minor fixes on new epi files 
+  * fixed aws-cli epi
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 18 Oct 2024 09:55:39 +0200
+
 zero-lliurex-installers (0.434.2) jammy; urgency=medium
 
   * zero-lliurex-aws-cli is handled via type file  
