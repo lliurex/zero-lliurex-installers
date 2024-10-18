@@ -1,6 +1,6 @@
 {
 	"type":"snap",
-	"pkg_list":[{"name":"zotero-snap","custom_name":"Zotero: Research Assistant","custom_icon":"zotero.png"}],
+	"pkg_list":[{"name":"zotero-snap","key_store":"zero-lliurex-zotero","custom_name":"Zotero: Research Assistant","custom_icon":"zotero.png"}],
 	"script":{"name":"/usr/share/zero-lliurex-zotero/zotero_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-zotero/",
 	"zomando":"zero-lliurex-zotero"

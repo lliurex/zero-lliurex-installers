@@ -1,8 +1,8 @@
 {
 	"type":"file",
-	"pkg_list":[{"name":"aws-cli","custom_name":"Amazon Web Services CLI","custom_icon":"aws-cli.png"}],
-	"script":{"name":"/usr/share/zero-lliurex-aws-cli/aws-cli_script","remove":true},
+	"pkg_list":[{"name":"aws-cli","key_store":"zero-lliurex-aws-cli","custom_name":"Amazon Web Services CLI","custom_icon":"aws-cli.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-aws-cli/aws-cli_script","remove":true,"getStatus":true,"download":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-aws-cli/",
-	"zomando":"zero-lliurex-aws-cli"
-
+	"zomando":"zero-lliurex-aws-cli",
+	"check_zomando_state":false
 } 

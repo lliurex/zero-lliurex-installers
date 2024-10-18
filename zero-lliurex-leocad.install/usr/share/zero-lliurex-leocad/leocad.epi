@@ -1,6 +1,6 @@
 {
 	"type":"snap",
-	"pkg_list":[{"name":"leocad","custom_name":"LeoCAD: Design visual models with LEGO bricks","custom_icon":"leocad.png"}],
+	"pkg_list":[{"name":"leocad","key_store":"zero-lliurex-leocad","custom_name":"LeoCAD: Design visual models with LEGO bricks","custom_icon":"leocad.png"}],
 	"script":{"name":"/usr/share/zero-lliurex-leocad/leocad_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-leocad/",
 	"zomando":"zero-lliurex-leocad"
