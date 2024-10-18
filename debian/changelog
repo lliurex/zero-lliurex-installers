@@ -1,4 +1,4 @@
-zero-lliurex-installers (0.434.1) jammy; urgency=medium
+zero-lliurex-installers (0.434.2) jammy; urgency=medium
 
   * zero-lliurex-aws-cli is handled via type file  
 
