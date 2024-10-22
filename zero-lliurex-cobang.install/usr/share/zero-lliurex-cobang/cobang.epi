@@ -1,6 +1,6 @@
 {
 	"type":"apt",
-	"pkg_list": [{"name":"cobang","custom_name":"CoBang: QR Code and barcode scanner application","custom_icon":"cobang.svg"}],
+	"pkg_list": [{"name":"cobang","custom_name":"CoBang: QR Code and barcode scanner application","custom_icon":"cobang.png"}],
 	"repository": [{"url":"deb https://ppa.launchpadcontent.net/ng-hong-quan/ppa/ubuntu jammy main"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-updates main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-security main multiverse restricted universe"}],  
 	"script": {"name":"/usr/share/zero-lliurex-cobang/cobang_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-cobang/",
