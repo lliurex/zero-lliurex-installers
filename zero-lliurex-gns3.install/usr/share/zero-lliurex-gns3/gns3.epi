@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"gns3-gui","custom_name":"GNS3: tool to emulate, configure, test and troubleshoot virtual and real networks","custom_icon":"gns3.png"}],
+	"repository": [{"url":"deb [trusted=yes] https://ppa.launchpadcontent.net/gns3/ppa/ubuntu jammy main"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-updates main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-security main multiverse restricted universe"}],  
+	"script": {"name":"/usr/share/zero-lliurex-gns3/gns3_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-gns3/",
+	"zomando":"zero-lliurex-gns3"
+	}
