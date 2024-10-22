@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"com.jeffser.Alpaca","custom_name":"Alpaca: An Ollama client for chat with local AI models","custom_icon":"alpaca.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-alpaca/alpaca_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-alpaca/",
+	"zomando":"zero-lliurex-alpaca"
+
+} 
