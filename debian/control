@@ -60,7 +60,14 @@ Sections: x11
 Depends: zero-center,epi-gtk
 Description: Chromium installer
  Zero-center helper, It install chromium browser in snap version
- 
+
+Package: zero-lliurex-cobang
+Architecture: all
+Sections: x11
+Depends: zero-center,epi-gtk
+Description: CoBang installer
+ Zero-center helper, It install coCang on Linux
+
 Package: zero-lliurex-docker
 Architecture: all
 Section: x11
