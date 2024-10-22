@@ -12,6 +12,13 @@ Depends: zero-center,epi-gtk
 Description: Anaconda installer
   Zero-center helper, It downloads and installs Anaconda-IDE
 
+Package: zero-lliurex-alpaca
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Anaconda installer
+  Zero-center helper, It installs Alpaca in flatpak version
+
 Package: zero-lliurex-antimicrox
 Architecture: all
 Section: x11
