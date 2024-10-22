@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"geany","custom_name":"Geany: A powerfull and ligthweight IDE","custom_icon":"geany.png"}],
+	"repository": [{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-updates main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-security main multiverse restricted universe"}],  
+	"script": {"name":"/usr/share/zero-lliurex-geany/geany_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-geany/",
+	"zomando":"zero-lliurex-geany"
+	}
