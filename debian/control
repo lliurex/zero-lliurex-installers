@@ -125,6 +125,13 @@ Depends: zero-center,epi-gtk
 Description: GanttProject installer
   Zero-center helper, It downloads and installs GanttProject package
 
+Package: zero-lliurex-geany
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Geany installer
+  Zero-center helper, It installs Geany IDE
+
 Package: zero-lliurex-geogebra
 Architecture: all
 Section: x11
