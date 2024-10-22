@@ -1,0 +1,7 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"mariadb-client-10.6","custom_name":"MariaDB Client: client to connect with MariaDB database products","custom_icon":"mariadb-client.svg"}], 
+	"script": {"name":"/usr/share/zero-lliurex-mariadb-client/mariadb-client_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-mariadb-client/",
+	"zomando":"zero-lliurex-mariadb-client"
+	}

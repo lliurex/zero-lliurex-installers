@@ -1,0 +1,17 @@
+Name=zero-lliurex-mariadb-client
+Name[es]=Instalador de MariaDB Client
+Name[ca_ES]=Instal·lador de MariaDB Client
+Name[ca@valencia]=Instal·lador de MariaDB Client
+Name[qcv]=Instal·lador de MariaDB Client
+Comment= Client to connect with MariaDB database products
+Comment[es]=Cliente para conectar con base de datos de MariaDB
+Comment[ca_ES]=Client per a connectar amb base de dades de MariaDB
+Comment[ca@valencia]=Client per a connectar amb base de dades de MariaDB
+Comment[qcv]=Client per a connectar amb base de dades de MariaDB
+Icon=zero-lliurex-mariadb-client
+Category=Software
+ScriptPath=zero-lliurex-mariadb-client.zmd
+Using=pkexec
+Service=True
+Locks=zero-lliurex-mariadb-client
+Groups=admin;admins;sudo;teachers;students
