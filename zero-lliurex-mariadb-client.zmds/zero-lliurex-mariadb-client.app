@@ -1,4 +1,5 @@
 Name=zero-lliurex-mariadb-client
+Name[en]=MariaDB Client installer
 Name[es]=Instalador de MariaDB Client
 Name[ca_ES]=Instal·lador de MariaDB Client
 Name[ca@valencia]=Instal·lador de MariaDB Client

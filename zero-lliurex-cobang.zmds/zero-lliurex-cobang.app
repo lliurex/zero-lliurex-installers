@@ -1,5 +1,6 @@
 Name=zero-lliurex-cobang
 Name[es]=Instalador de CoBang
+Name[en]=Cobang installer
 Name[ca_ES]=Instal·lador de CoBang
 Name[ca@valencia]=Instal·lador de CoBang
 Name[qcv]=Instal·lador de Cobang
