@@ -118,6 +118,13 @@ Depends: zero-center,epi-gtk
 Description: GanttProject installer
   Zero-center helper, It downloads and installs GanttProject package
 
+Package: zero-lliurex-geogebra
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: GeoGebra installer
+  Zero-center helper, It installs GeoGebra flatpak version
+
 Package: zero-lliurex-hotpotatoes
 Architecture: all
 Section: x11
