@@ -154,6 +154,13 @@ Depends: zero-center,epi-gtk
 Description: Lumi installer
   Zero-center helper, It downloads and installs Lumi appimage
 
+Package: zero-lliurex-mariadb-client
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: MariaDB Client installer
+  Zero-center helper, It installs MariaDB client package
+
 Package: zero-lliurex-midicss
 Architecture: all
 Section: x11
