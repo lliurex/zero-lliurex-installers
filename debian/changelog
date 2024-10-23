@@ -1,3 +1,17 @@
+zero-lliurex-installers (0.434.4) jammy; urgency=medium
+
+  * Added zero-lliurex-mariadb-client
+  * Added zero-lliurex-cobang
+  * Added zero-lliurex-geogebra
+  * Added zero-lliurex-alpaca
+  * Added zero-lliurex-anything-llm
+  * Added zero-lliurex-spring-boot
+  * Added zero-lliurex-symfony
+  * Added zero-lliurex-gns3
+  * Added zero-lliurex-geany
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 23 Oct 2024 14:52:45 +0200
+
 zero-lliurex-installers (0.434.3) jammy; urgency=medium
 
   * Minor fixes on new epi files 
