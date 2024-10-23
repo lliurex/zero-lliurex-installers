@@ -285,6 +285,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Stellarium installer
  Zero-center helper, It installs Stellarium on Lliurex
+
+Package: zero-lliurex-symfony
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Symfony installer
+ Zero-center helper, It installs Symfony CLI on Lliurex
  
 Package: zero-lliurex-technology
 Architecture: all
