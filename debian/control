@@ -286,6 +286,13 @@ Depends: zero-center,epi-gtk
 Description: Spotify client installer
  Zero-center helper, It installs Spotify client on Lliurex
 
+Package: zero-lliurex-spring-boot
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Spring Boot CLI installer
+ Zero-center helper, It downloads and installs Spring Boot CLI
+
 Package: zero-lliurex-stellarium
 Architecture: all
 Section: x11
