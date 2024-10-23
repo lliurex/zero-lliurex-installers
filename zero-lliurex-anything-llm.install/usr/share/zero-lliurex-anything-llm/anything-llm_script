@@ -1,0 +1,81 @@
+#!/bin/bash
+
+ACTION="$1"
+APPIMAGE_URL="https://s3.us-west-1.amazonaws.com/public.useanything.com/latest/AnythingLLMDesktop.AppImage"
+APPIMAGE_FILE="AnythingLLMDesktop.AppImage"
+EXTRACTED_DIR="anythingllm-desktop"
+OUTDIR="/opt/AnythingLLMDesktop"
+LAUNCHED_FILE="AppRun"
+DESKTOP_ANYTHINGLLM="/usr/share/zero-lliurex-anything-llm/desktop/anything-llm.desktop"
+DESKTOPS_DIR="/usr/share/applications/"
+BIN_PATH="/usr/bin/anything-llm"
+
+case $ACTION in
+
+	getStatus)
+
+		if [ -s ${OUTDIR}/${EXTRACTED_DIR}/${LAUNCHED_FILE} ]
+		then
+			echo 0
+		else
+			echo 1
+		fi
+	;;
+
+	download)
+
+		if [ -d ${OUTDIR} ];then
+			rm -rf ${OUTDIR}
+		fi
+
+		mkdir ${OUTDIR}
+		echo "Downloading latest AnythingLLM Desktop..."
+		ret=$(curl --fail --show-error --location --progress-bar -o $OUTDIR/$APPIMAGE_FILE $APPIMAGE_URL)
+
+		if ! [ -f $OUTDIR/$APPIMAGE_FILE ];then
+			exit 1
+		fi
+
+	;;
+
+	installPackage)
+
+		if [ -f $OUTDIR/$APPIMAGE_FILE ];then
+
+			cd ${OUTDIR}
+			chmod +x $APPIMAGE_FILE;
+			echo "Extracting..."
+			./$APPIMAGE_FILE --appimage-extract >/dev/null;
+			rm -rf $APPIMAGE_FILE
+			mv squashfs-root $EXTRACTED_DIR
+			chmod 777 -R ${EXTRACTED_DIR}
+			cp ${DESKTOP_ANYTHINGLLM} ${DESKTOPS_DIR}
+			ln -sf ${OUTDIR}/${EXTRACTED_DIR}/${LAUNCHED_FILE} ${BIN_PATH}
+
+		else
+			exit 1
+		fi
+
+	;;
+
+	remove)
+
+		echo "Removing application..."
+		
+		if [ -f ${DESKTOPS_DIR}/anything-llm.desktop ];then
+			rm -f ${DESKTOPS_DIR}/anything-llm.desktop
+		fi
+
+		if [ -f ${BIN_PATH} ];then
+			rm -f ${BIN_PATH}
+		fi
+
+		if [ -d ${OUTDIR} ];then
+			rm -rf ${OUTDIR}
+		fi
+
+		
+	;;
+
+esac
+exit 0	
