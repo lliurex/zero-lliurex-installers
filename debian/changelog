@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.327) focal; urgency=medium
+
+  * Removed jammy from sources list of some epi
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 11 Nov 2024 14:27:31 +0100
+
 zero-lliurex-installers (0.326) focal; urgency=medium
 
   * Added AntiMicroX
