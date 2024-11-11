@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.434.5) jammy; urgency=medium
+
+  * Changed google chrome repository to use https instead http
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 11 Nov 2024 12:36:11 +0100
+
 zero-lliurex-installers (0.434.4) jammy; urgency=medium
 
   * Added zero-lliurex-mariadb-client
