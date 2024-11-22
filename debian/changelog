@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.434.6) jammy; urgency=medium
+
+  * Restored arduino-ide pkg for jammy instead arduino
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 22 Nov 2024 08:11:32 +0100
+
 zero-lliurex-installers (0.434.5) jammy; urgency=medium
 
   * Changed google chrome repository to use https instead http
