@@ -20,6 +20,20 @@ function getFlavour
 
 }
 
+function getMsg {
+
+	if [[ $LANG == *"valencia"* ]];then
+		msgBox="Pot descarregar VirtualBox Extension Pack accedint a\nhttps://www.virtualbox.org/wiki/Downloads"
+	elif [[ $LANG == *"es"* ]];then
+		msgBox="Puede descargar VirtualBox Extension Pack accediendo a\nhttps://www.virtualbox.org/wiki/Downloads"
+	elif [[ $LANG == *"en"* ]];then
+		msgBox="You can download VirtualBox Extension Pack from\nhttps://www.virtualbox.org/wiki/Downloads"
+	fi
+
+	echo "$msgBox"		
+
+}
+
 ACTION="$1"
 VM_ADITIONAL_PKGS="virtualbox-ext-pack"
 QEMU_ADITIONAL_PKGS="qemu-kvm virt-manager libvirt-clients libvirt-daemon-system bridge-utils"
@@ -46,11 +60,15 @@ case $ACTION in
 	postInstall)
 		for ix in $PACKAGE_LIST
 		do
-			if [[ " $ix " == *" virtualbox "* ]];then 
+			if [[ " $ix " == "virtualbox" ]];then 
 				for jx in $VM_ADITIONAL_PKGS
 					do
 						lANG=C LANGUAGE=en DEBIAN_FRONTEND=kde apt-get install -y $jx
 					done 
+			elif [[ "$ix" == "virtualbox-7.1" ]];then
+				msgBox=$(getMsg)
+				kdialog --title "EPI" --msgbox "$msgBox" || true
+
 			elif [[ " $ix " == *" qemu " ]];then
 				for jx in $QEMU_ADITIONAL_PKGS
 				do
@@ -70,7 +88,7 @@ case $ACTION in
 		for ix in $PACKAGE_LIST
 		do
 			
-			if [[ " $ix " == *" virtualbox "* ]];then 
+			if [[ " $ix " == "virtualbox" ]];then 
 				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
@@ -81,6 +99,13 @@ case $ACTION in
 						apt-get remove -y $jx
 					done
 				fi
+			elif [[ "$ix" == "virtualbox-7.1" ]];then 
+				apt-get purge -y $ix
+				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+				if [ "$TEST" == 'installed' ];then
+					count+=1
+				fi
+
 			elif [[ " $ix " == *" qemu "* ]];then 
 				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
