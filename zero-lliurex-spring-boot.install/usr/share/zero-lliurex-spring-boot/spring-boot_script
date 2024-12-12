@@ -1,0 +1,101 @@
+#!/bin/bash
+
+ACTION="$1"
+SPRINGBOOT_URL="https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-cli/3.4.0/spring-boot-cli-3.4.0-bin.tar.gz"
+DEST_DOWNLOAD="/var/cache/epi-downloads/"
+DEST_FILE="spring-boot-cli"
+OUTDIR="/opt/spring-boot"
+EXTRACTED_DIR="/opt/spring-boot/spring-3.4.0"
+LAUNCHED_FILE1="bin/spring"
+LAUNCHED_FILE2="bin/spring.bat"
+BIN_PATH1="/usr/bin/spring"
+BIN_PATH2="/usr/bin/spring.bat"
+SPRINGBOOT_BASH_COMPLETION="shell-completion/bash/spring"
+SPRINGBOOT_ZSH_COMPLETION="shell-completion/zsh/_spring"
+BASH_COMPLETION_PATH="/etc/bash_completion.d/spring"
+ZSH_COMPLETION_PATH="/usr/share/zsh/site-functions/_spring"
+
+case $ACTION in
+
+	getStatus)
+
+		if [ -s ${OUTDIR} ]
+		then
+			echo 0
+		else
+			echo 1
+		fi
+	;;
+
+	download)
+
+		if [ -d ${OUTDIR} ];then
+			rm -rf ${OUTDIR}
+		fi
+
+		mkdir ${OUTDIR}
+
+		cd ${DEST_DOWNLOAD}
+
+		wget ${SPRINGBOOT_URL} -O ${DEST_FILE}
+
+		if ! [ -f ${DEST_DOWNLOAD}/${DEST_FILE} ];then
+			exit 1
+		fi
+
+	;;
+
+	installPackage)
+
+		if [ -f ${DEST_DOWNLOAD}/${DEST_FILE} ];then
+
+			if [ -d ${OUTDIR} ];then
+				echo "Extracting springBoot..."
+				tar -xvf ${DEST_DOWNLOAD}/${DEST_FILE} -C ${OUTDIR} 
+				
+				if [ -d ${EXTRACTED_DIR} ];then
+					chmod 777 -R ${EXTRACTED_DIR}
+					ln -sf ${EXTRACTED_DIR}/${LAUNCHED_FILE1} ${BIN_PATH1}
+					ln -sf ${EXTRACTED_DIR}/${LAUNCHED_FILE2} ${BIN_PATH2}
+					ln -sf ${EXTRACTED_DIR}/${SPRINGBOOT_BASH_COMPLETION} ${BASH_COMPLETION_PATH}
+					ln -sf ${EXTRACTED_DIR}/${SPRINGBOOT_ZSH_COMPLETION} ${ZSH_COMPLETION_PATH}
+				else
+					exit 1
+				fi
+			else
+				exit 1
+			fi	
+		else
+			exit 1
+		fi
+
+	;;
+
+	remove)
+
+		echo "Removing application..."
+		
+		if [ -f ${BIN_PATH1} ];then
+			rm -f ${BIN_PATH1}
+		fi
+
+		if [ -f ${BIN_PATH2} ];then
+			rm -f ${BIN_PATH2}
+		fi
+
+		if [ -f ${BASH_COMPLETION_PATH} ];then
+			rm -f ${BASH_COMPLETION_PATH}
+		fi
+
+		if [ -f ${ZSH_COMPLETION_PATH} ];then
+			rm -f ${ZSH_COMPLETION_PATH}
+		fi
+
+		if [ -d ${OUTDIR} ];then
+			rm -rf ${OUTDIR}
+		fi
+	
+	;;
+
+esac
+exit 0	

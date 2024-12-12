@@ -1,0 +1,9 @@
+{
+	"type":"file",
+	"pkg_list":[{"name":"spring-boot","custom_name":"Spring Boot CLI: is a command line tool that can used to quickly prototype with Spring","custom_icon":"spring-boot.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-spring-boot/spring-boot_script","remove":true,"download":true,"getStatus":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-spring-boot/",
+	"zomando":"zero-lliurex-spring-boot",
+	"check_zomando_state":true
+
+} 

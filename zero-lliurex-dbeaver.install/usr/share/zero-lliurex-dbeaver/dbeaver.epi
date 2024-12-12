@@ -1,0 +1,8 @@
+{
+	"type":"snap",
+	"pkg_list":[{"name":"dbeaver","key_store":"zero-lliurex-dbeaver","custom_name":"DBeaver: Universal DB tool","custom_icon":"dbeaver.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-dbeaver/dbeaver_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-dbeaver/",
+	"zomando":"zero-lliurex-dbeaver"
+
+} 

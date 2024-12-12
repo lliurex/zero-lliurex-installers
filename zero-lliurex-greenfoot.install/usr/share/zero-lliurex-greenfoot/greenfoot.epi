@@ -1,0 +1,8 @@
+{
+	"type":"snap",
+	"pkg_list":[{"name":"greenfoot","key_store":"zero-lliurex-greenfoot","custom_name":"Greenfoot: Teach and learn Java programming","custom_icon":"greenfoot.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-greenfoot/greenfoot_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-greenfoot/",
+	"zomando":"zero-lliurex-greenfoot"
+
+} 
