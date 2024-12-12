@@ -5,6 +5,20 @@ Maintainer: Equipo LliureX <lliurex@gva.es>
 Build-Depends: cdbs, debhelper (>= 10), zero-dev, llxsrchelper,inkscape (>= 0.47),python3-poinstaller
 Standards-Version: 4.1.2
 
+Package: zero-lliurex-ai2offline
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk, lib32stdc++6, lib32z1
+Description: App Inventor 2 offline installer
+  Zero-center helper, It downloads and installs app inventor 2 offline
+  
+Package: zero-lliurex-alpaca
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Anaconda installer
+  Zero-center helper, It installs Alpaca in flatpak version
+
 Package: zero-lliurex-anaconda
 Architecture: all
 Section: x11
@@ -26,12 +40,26 @@ Depends: zero-center,epi-gtk
 Description: Anydesk installer
   Zero-center helper, It downloads and installs Anydesk package
 
+Package: zero-lliurex-anything-llm
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: AnythingLLM installer
+  Zero-center helper, It downloads and installs AnythingLLM Desktop
+
 Package: zero-lliurex-autofirma
 Architecture: all
 Section: x11
 Depends: zero-center,epi-gtk
 Description: Autofirma installer
   Zero-center helper, It downloads and installs Autofirma package
+
+Package: zero-lliurex-aws-cli
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: AWS Cli installer
+  Zero-center helper, It installs AWS Cli
 
 Package: zero-lliurex-calibre
 Architecture: all
@@ -60,7 +88,21 @@ Sections: x11
 Depends: zero-center,epi-gtk
 Description: Chromium installer
  Zero-center helper, It install chromium browser in snap version
- 
+
+Package: zero-lliurex-cobang
+Architecture: all
+Sections: x11
+Depends: zero-center,epi-gtk
+Description: CoBang installer
+ Zero-center helper, It install coCang on Linux
+
+Package: zero-lliurex-dbeaver
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: DBeaver Community installer
+  Zero-center helper, It installs DBeaver
+
 Package: zero-lliurex-docker
 Architecture: all
 Section: x11
@@ -111,6 +153,41 @@ Depends: zero-center,epi-gtk
 Description: GanttProject installer
   Zero-center helper, It downloads and installs GanttProject package
 
+Package: zero-lliurex-geany
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Geany installer
+  Zero-center helper, It installs Geany IDE
+
+Package: zero-lliurex-gns3
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: GNS3 installer
+  Zero-center helper, It installs GNS3 gui and server packages
+
+Package: zero-lliurex-geogebra
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: GeoGebra installer
+  Zero-center helper, It installs GeoGebra flatpak version
+
+Package: zero-lliurex-greenfoot
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Greenfoot installer
+  Zero-center helper, It installs greenfoot
+
+Package: zero-lliurex-gtts
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Google Text to Speech installer
+  Zero-center helper, It installs gtts: Google Text to Speech
+
 Package: zero-lliurex-hotpotatoes
 Architecture: all
 Section: x11
@@ -129,6 +206,20 @@ Depends: zero-center,epi-gtk
 Description: Krita installer
   Zero-center helper, It downloads and installs krita package
 
+Package: zero-lliurex-learningml
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: LearningML  installer
+  Zero-center helper, It installs learningml-desktop
+
+Package: zero-lliurex-leocad
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: LeoCAD installer
+  Zero-center helper, It installs LeoCAD
+
 Package: zero-lliurex-lmms
 Architecture: all
 Section: x11
@@ -142,6 +233,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Lumi installer
   Zero-center helper, It downloads and installs Lumi appimage
+
+Package: zero-lliurex-mariadb-client
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: MariaDB Client installer
+  Zero-center helper, It installs MariaDB client package
 
 Package: zero-lliurex-midicss
 Architecture: all
@@ -160,6 +258,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Mixxx installer
  Zero-center helper, It installs mixxx on Lliurex
+
+Package: zero-lliurex-nerd-dictation
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: nerd-dictation  installer
+  Zero-center helper, It installs nerd-dictation
  
 Package: zero-lliurex-notebook-bar
 Architecture: i386
@@ -204,6 +309,13 @@ Provides: lliurex-zero-installer-pyromaths
 Description: Pyromaths installer
  Zero-center helper, It downloads and installs python-pyromaths package 
 
+Package: zero-lliurex-spring-boot
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Spring Boot CLI installer
+ Zero-center helper, It downloads and installs Spring Boot CLI
+
 Package: zero-lliurex-stellarium
 Architecture: all
 Section: x11
@@ -211,6 +323,13 @@ Depends: zero-center,epi-gtk
 Description: Stellarium installer
  Zero-center helper, It installs Stellarium on Lliurex
  
+Package: zero-lliurex-symfony
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Symfony installer
+ Zero-center helper, It installs Symfony CLI on Lliurex
+
 Package: zero-lliurex-technology
 Architecture: all
 Section: x11
@@ -264,31 +383,12 @@ Depends: zero-center,epi-gtk
 Description: Virtualizer tools installer
   Zero-center helper, It downloads and installs tools to work with vitual machines
 
-Package: zero-lliurex-ai2offline
-Architecture: amd64
-Section: x11
-Depends: zero-center,epi-gtk, lib32stdc++6, lib32z1
-Description: App Inventor 2 offline installer
-  Zero-center helper, It downloads and installs app inventor 2 offline
-
-Package: zero-lliurex-learningml
+Package: zero-lliurex-zotero
 Architecture: amd64
 Section: x11
 Depends: zero-center,epi-gtk
-Description: LearningML  installer
-  Zero-center helper, It installs learningml-desktop
+Description: Zotero installer
+  Zero-center helper, It installs Zotero
 
-Package: zero-lliurex-nerd-dictation
-Architecture: amd64
-Section: x11
-Depends: zero-center,epi-gtk
-Description: nerd-dictation  installer
-  Zero-center helper, It installs nerd-dictation
 
-Package: zero-lliurex-gtts
-Architecture: amd64
-Section: x11
-Depends: zero-center,epi-gtk
-Description: Google Text to Speech installer
-  Zero-center helper, It installs gtts: Google Text to Speech
 
