@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.435.1) jammy; urgency=medium
+
+  * Fixed spring-boot script
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 12 Dec 2024 13:54:02 +0100
+
 zero-lliurex-installers (0.435) jammy; urgency=medium
 
   * Added VirtualBox 7 to zero-lliurex-virtualizer
