@@ -6,8 +6,8 @@ DEST_DOWNLOAD="/var/cache/epi-downloads/"
 DEST_FILE="spring-boot-cli"
 OUTDIR="/opt/spring-boot"
 EXTRACTED_DIR="/opt/spring-boot/spring-3.3.4"
-LAUNCHED_FILE1="spring"
-LAUNCHED_FILE2="spring.bat"
+LAUNCHED_FILE1="bin/spring"
+LAUNCHED_FILE2="bin/spring.bat"
 BIN_PATH1="/usr/bin/spring"
 BIN_PATH2="/usr/bin/spring.bat"
 SPRINGBOOT_BASH_COMPLETION="shell-completion/bash/spring"
@@ -55,6 +55,8 @@ case $ACTION in
 				
 				if [ -d ${EXTRACTED_DIR} ];then
 					chmod 777 -R ${EXTRACTED_DIR}
+					ln -sf ${EXTRACTED_DIR}/${LAUNCHED_FILE1} ${BIN_PATH1}
+					ln -sf ${EXTRACTED_DIR}/${LAUNCHED_FILE2} ${BIN_PATH2}
 					ln -sf ${EXTRACTED_DIR}/${SPRINGBOOT_BASH_COMPLETION} ${BASH_COMPLETION_PATH}
 					ln -sf ${EXTRACTED_DIR}/${SPRINGBOOT_ZSH_COMPLETION} ${ZSH_COMPLETION_PATH}
 				else
@@ -73,12 +75,20 @@ case $ACTION in
 
 		echo "Removing application..."
 		
-		if [ -f ${${BASH_COMPLETION_PATH}} ];then
-			rm -f ${${BASH_COMPLETION_PATH}}
+		if [ -f ${BIN_PATH1} ];then
+			rm -f ${BIN_PATH1}
 		fi
 
-		if [ -f ${${ZSH_COMPLETION_PATH}} ];then
-			rm -f ${${ZSH_COMPLETION_PATH}}
+		if [ -f ${BIN_PATH2} ];then
+			rm -f ${BIN_PATH2}
+		fi
+
+		if [ -f ${BASH_COMPLETION_PATH} ];then
+			rm -f ${BASH_COMPLETION_PATH}
+		fi
+
+		if [ -f ${ZSH_COMPLETION_PATH} ];then
+			rm -f ${ZSH_COMPLETION_PATH}
 		fi
 
 		if [ -d ${OUTDIR} ];then
