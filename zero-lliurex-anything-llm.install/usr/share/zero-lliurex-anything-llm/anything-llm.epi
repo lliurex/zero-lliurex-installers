@@ -1,0 +1,9 @@
+{
+	"type":"file",
+	"pkg_list":[{"name":"anything-llm","custom_name":"Anything LLM: An all-in-one AIn applications","custom_icon":"anything-llm.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-anything-llm/anything-llm_script","remove":true,"download":true,"getStatus":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-anything-llm/",
+	"zomando":"zero-lliurex-anything-llm",
+	"check_zomando_state":true
+
+} 

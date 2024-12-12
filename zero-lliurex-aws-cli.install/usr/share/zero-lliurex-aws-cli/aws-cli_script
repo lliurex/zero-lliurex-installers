@@ -1,0 +1,33 @@
+#!/bin/bash
+
+ACTION="$1"
+
+
+
+case $ACTION in
+
+	getStatus)
+		RC=0
+		snap list aws-cli 1>/dev/null || RC=1
+		echo $RC
+				
+	;;
+
+	download)
+
+		true
+	;;	
+	
+	installPackage)
+
+		snap install aws-cli --classic
+		echo 0
+	;;
+
+
+	remove)
+		snap remove aws-cli || true
+	;;
+
+esac
+exit 0	

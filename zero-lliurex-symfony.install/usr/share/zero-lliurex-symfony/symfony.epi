@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"symfony-cli","custom_name":"Symfony CLI: tool to build and run Symfony applications from terminal","custom_icon":"symfony.png"}],
+	"repository": [{"url":"deb [trusted=yes] https://dl.cloudsmith.io/public/symfony/stable/deb/ubuntu noble main"},{"url":"deb-src [trusted=yes] https://dl.cloudsmith.io/public/symfony/stable/deb/ubuntu noble main"}],  
+	"script": {"name":"/usr/share/zero-lliurex-symfony/symfony_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-symfony/",
+	"zomando":"zero-lliurex-symfony"
+	}

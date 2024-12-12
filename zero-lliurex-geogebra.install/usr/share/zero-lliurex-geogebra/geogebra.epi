@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"org.geogebra.GeoGebra","custom_name":"GeoGebra: Dynamic mathematics software (flatpak version)","custom_icon":"geogebra.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-geogebra/geogebra_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-geogebra/",
+	"zomando":"zero-lliurex-geogebra"
+
+} 

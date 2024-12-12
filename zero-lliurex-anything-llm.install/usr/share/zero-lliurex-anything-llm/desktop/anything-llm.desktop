@@ -1,0 +1,27 @@
+[Desktop Entry]
+Categories=Utility;
+Comment[es_ES]=Aplicación AnythingLLM Desktop
+Comment=Aplicación AnythingLLM Desktop
+Comment[ca@valencia]=Aplicació AnythingLLM Desktop
+Comment[ca_ES@valencia]=Aplicació AnythingLLM Desktop
+Encoding=UTF-8
+Exec=/usr/bin/anything-llm
+GenericName[es_ES]=
+GenericName=
+Icon=/usr/share/zero-lliurex-anything-llm/anything-llm.png
+MimeType=
+Name[es_ES]=AnythingLLM
+Name=AnythingLLM
+Name[ca@valencia]=AnythingLLM
+Name[ca_ES@valencia]=AnythingLLM
+Path=
+StartupNotify=true
+StartupWMClass=AnythingLLM
+Terminal=false
+TerminalOptions=
+TryExec=/usr/bin/anything-llm
+Type=Application
+Version=1.0
+X-AppImage-Version=1.6.7
+X-KDE-SubstituteUID=false
+X-KDE-Username=

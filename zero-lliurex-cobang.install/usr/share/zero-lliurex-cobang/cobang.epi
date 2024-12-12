@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"cobang","custom_name":"CoBang: QR Code and barcode scanner application","custom_icon":"cobang.png"}],
+	"repository": [{"url":"deb [trusted=yes] https://ppa.launchpadcontent.net/ng-hong-quan/ppa/ubuntu noble main"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-updates main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-security main multiverse restricted universe"}],  
+	"script": {"name":"/usr/share/zero-lliurex-cobang/cobang_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-cobang/",
+	"zomando":"zero-lliurex-cobang"
+	}

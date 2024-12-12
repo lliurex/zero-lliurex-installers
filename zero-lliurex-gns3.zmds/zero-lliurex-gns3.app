@@ -1,0 +1,17 @@
+Name=zero-lliurex-gns3
+Name[es]=Instalador de GNS3
+Name[en]=GNS3 installer
+Name[ca_ES]=Instal·lador de GNS3
+Name[ca@valencia]=Instal·lador de GNS3
+Name[qcv]=Instal·lador de GNS3
+Comment= Tool to emulate, configure, test and troubleshoot virtual and real networks
+Comment[es]=Herramienta para emular, configurar, probar y solucionar problemas de redes virtuales y reales
+Comment[ca_ES]=Ferramenta per a emular, configurar, provar i solucionar problemes de xarxes virtuals i reals
+Comment[ca@valencia]=Ferramenta per a emular, configurar, provar i solucionar problemes de xarxes virtuals i reals
+Icon=zero-lliurex-gns3
+Category=Software
+ScriptPath=zero-lliurex-gns3.zmd
+Using=pkexec
+Service=True
+Locks=zero-lliurex-gns3
+Groups=admin;admins;sudo;teachers;students
