@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.436.1) jammy; urgency=medium
+
+  * Dummy upgrade
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 16 Dec 2024 12:21:15 +0100
+
 zero-lliurex-installers (0.436) jammy; urgency=medium
 
   * Added zero-lliurex-ollama
