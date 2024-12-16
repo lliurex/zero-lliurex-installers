@@ -1,0 +1,7 @@
+{
+	"type":"file",
+	"pkg_list":[{"name":"ollama","custom_name":"Ollama: a AI tool to get and run LLMs","custom_icon":"ollama.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-ollama/ollama_script","remove":true,"getStatus":true,"download":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-ollama/",
+	"zomando":"zero-lliurex-ollama"
+} 

@@ -1,0 +1,67 @@
+#!/bin/bash
+
+ACTION="$1"
+
+INSTALL_PATH="/usr/local/lib/ollama"
+BINARY_PATH="/usr/local/bin/ollama"
+
+case $ACTION in
+
+	getStatus)
+		
+		if [ -f ${BINARY_PATH} ];then
+			echo 0
+		else
+			echo 1
+		fi
+	
+	;;
+
+	download)
+
+		true
+	;;	
+	
+	installPackage)
+
+		curl -fSSL https://ollama.com/install.sh | sh
+
+		if ![ -d ${INSTALL_PATH} ];then
+			exit 1
+		fi
+	;;
+
+
+	remove)
+		
+		echo "Removing ollama service..."
+		systemctl stop ollama || true
+		systemctl disable ollama || true
+
+		if [ -f /etc/systemd/service/ollama.service ];then
+			rm -f /etc/systemd/service/ollama.service
+		fi
+
+		echo "Removing ollama binary..."
+
+		if [ -f ${BINARY_PATH} ];then
+			rm -f ${BINARY_PATH}
+		fi
+
+		echo "Removing ollama models..."
+		if [ -d /usr/share/ollama ];then
+			rm -rf /usr/share/ollama
+		fi
+
+		echo "Removing ollama group..."
+		userdel ollama || true
+		groupdel ollama || true
+
+		echo "Removing ollama lib folder..."
+		if [ -d ${INSTALL_PATH} ];then
+			rm -rf ${INSTALL_PATH}
+		fi
+	;;
+
+esac
+exit 0	
