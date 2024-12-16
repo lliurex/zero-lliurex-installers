@@ -246,6 +246,14 @@ Depends: zero-center,epi-gtk
 Description: OCRFeeder installer
  Is an optical character recognition suite
 
+Package: zero-lliurex-ollama
+Architecture: all
+Section: x11
+Depends: zero-center
+Provides: zero-lliurex-ollama
+Description: Ollama installers
+ This package allows user to install and configure ollama
+
 Package: zero-lliurex-openmeetings
 Architecture: all
 Section: x11
