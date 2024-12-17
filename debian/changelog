@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.436.2) jammy; urgency=medium
+
+  * Fixed banner of zero-lliurex-ollama
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 17 Dec 2024 17:37:08 +0100
+
 zero-lliurex-installers (0.436.1) jammy; urgency=medium
 
   * Dummy upgrade
