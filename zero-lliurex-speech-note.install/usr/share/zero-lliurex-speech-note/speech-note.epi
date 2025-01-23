@@ -1,0 +1,8 @@
+{
+	"type":"file",
+	"pkg_list":[{"name":"net.mkiol.SpeechNote","custom_name":"Notes with offline Speech to Text, Text to Speech and Machine Translation","custom_icon":"speech-note.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-speech-note/speech-note_script","remove":true,"getStatus":true,"download":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-speech-note/",
+	"zomando":"zero-lliurex-speech-note"
+
+} 

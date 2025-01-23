@@ -1,0 +1,94 @@
+#!/bin/bash
+
+ACTION="$1"
+
+shift
+PACKAGE_LIST=$@
+
+FW_MODEL="https://huggingface.co/mukowaty/faster-whisper-int8/resolve/15d956df6a221df330485e243b2a5ed41f0e2728/faster-whisper-small-int8/model.bin"
+FW_CONFIG="https://huggingface.co/mukowaty/faster-whisper-int8/resolve/15d956df6a221df330485e243b2a5ed41f0e2728/faster-whisper-small-int8/config.json"
+FW_TOKENIZER="https://huggingface.co/mukowaty/faster-whisper-int8/resolve/15d956df6a221df330485e243b2a5ed41f0e2728/faster-whisper-small-int8/tokenizer.json"
+FW_VOCABULARY="https://huggingface.co/mukowaty/faster-whisper-int8/resolve/15d956df6a221df330485e243b2a5ed41f0e2728/faster-whisper-small-int8/vocabulary.json"
+
+DEST_DOWNLOAD="/opt/lliurex-speech-note/models/multilang_fasterwhisper_small"
+ORIG_BIN="/usr/share/zero-lliurex-speech-note/bin/lliurex-speech-note"
+DEST_BIN="/usr/bin/lliurex-speech-note"
+ORIG_DESKTOP="/usr/share/zero-lliurex-speech-note/desktop/net.mkiol.SpeechNote.desktop"
+DEST_DESKTOP="/var/lib/flatpak/exports/share/applications/net.mkiol.SpeechNote.desktop"
+
+
+case $ACTION in
+
+	getStatus)
+		if [ -s ${DEST_DOWNLOAD}"/"${DEST_FILE} ]
+		then	
+			echo 0
+		else
+			echo 1	
+		fi				
+	;;
+	
+	download)
+
+		if ! [ -d ${DEST_DOWNLOAD} ]
+		then
+			mkdir -p ${DEST_DOWNLOAD}
+		fi
+
+		cd ${DEST_DOWNLOAD}
+
+		wget ${FW_MODEL}
+		wget ${FW_CONFIG}
+		wget ${FW_TOKENIZER}
+		wget ${FW_VOCABULARY}
+		
+		if ! [ -s ${DEST_DOWNLOAD}"/"${FW_VOCABULARY} ]
+		then	
+			exit 1
+		fi	
+	;;	
+
+	installPackage)
+
+		flatpak -y install net.mkiol.SpeechNote
+		
+		ln -s ${ORIG_BIN} ${DEST_BIN}
+		cp ${ORIG_DESKTOP} ${DEST_DESKTOP}
+		
+
+	;;
+
+	remove)
+		count=0
+		for ix in $PACKAGE_LIST
+		do
+			if [[ "$ix" == "net.mkiol.SpeechNote" ]];then
+				flatpak uninstall $ix -y
+
+				TEST=$(flatpak list | grep $ix | cut -d " " -f 1)
+
+				if [[ ! -z "$TEST" ]];then
+					count+=1
+				fi
+			fi
+		done
+		
+		if [ -d ${DEST_DOWNLOAD} ]; then
+			rm -rf ${DEST_DOWNLOAD}
+		fi
+		
+		if [ -e ${DEST_BIN} ]; then
+			rm -rf ${DEST_BIN}
+		fi
+		
+		if [ -e ${DEST_DESKTOP} ]; then
+			rm -rf ${DEST_DESKTOP}
+		fi
+
+		if [ $count -gt 0 ];then
+			exit 1
+		fi
+	;;
+
+esac
+exit 0	
