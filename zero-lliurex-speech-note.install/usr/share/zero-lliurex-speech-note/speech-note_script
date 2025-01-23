@@ -10,7 +10,7 @@ FW_CONFIG="https://huggingface.co/mukowaty/faster-whisper-int8/resolve/15d956df6
 FW_TOKENIZER="https://huggingface.co/mukowaty/faster-whisper-int8/resolve/15d956df6a221df330485e243b2a5ed41f0e2728/faster-whisper-small-int8/tokenizer.json"
 FW_VOCABULARY="https://huggingface.co/mukowaty/faster-whisper-int8/resolve/15d956df6a221df330485e243b2a5ed41f0e2728/faster-whisper-small-int8/vocabulary.json"
 
-DEST_DOWNLOAD="/opt/lliurex-speech-note/models/multilang_fasterwhisper_small"
+DEST_DOWNLOAD="/opt/zero-lliurex-speech-note/models/multilang_fasterwhisper_small"
 ORIG_BIN="/usr/share/zero-lliurex-speech-note/bin/lliurex-speech-note"
 DEST_BIN="/usr/bin/lliurex-speech-note"
 ORIG_DESKTOP="/usr/share/zero-lliurex-speech-note/desktop/net.mkiol.SpeechNote.desktop"
@@ -82,7 +82,11 @@ case $ACTION in
 
 		flatpak --system -y install net.mkiol.SpeechNote
 		
-		ln -s ${ORIG_BIN} ${DEST_BIN}
+		if [ ! -L ${DEST_BIN} ]; then\
+			rm -rf ${DEST_BIN}
+			ln -s ${ORIG_BIN} ${DEST_BIN}
+		fi
+		
 		cp ${ORIG_DESKTOP} ${DEST_DESKTOP}
 		
 
