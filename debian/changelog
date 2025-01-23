@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.437) jammy; urgency=medium
+
+  * Adding zero-lliurex-speech-note 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 23 Jan 2025 09:10:17 +0100
+
 zero-lliurex-installers (0.436.2) jammy; urgency=medium
 
   * Fixed banner of zero-lliurex-ollama
