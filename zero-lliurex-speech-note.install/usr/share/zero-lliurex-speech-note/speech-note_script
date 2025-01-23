@@ -20,12 +20,30 @@ DEST_DESKTOP="/var/lib/flatpak/exports/share/applications/net.mkiol.SpeechNote.d
 case $ACTION in
 
 	getStatus)
-		if [ -s ${DEST_DOWNLOAD}"/"${DEST_FILE} ]
-		then	
-			echo 0
-		else
+		
+		if [ ! -s ${DEST_DOWNLOAD}"/model.bin" ]
+		then
 			echo 1	
-		fi				
+		fi		
+
+		if [ ! -s ${DEST_DOWNLOAD}"/config.json" ]
+		then	
+			echo 1	
+		fi
+
+		if [ ! -s ${DEST_DOWNLOAD}"/tokenizer.json" ]
+		then	
+			echo 1	
+		fi
+
+		if [ ! -s ${DEST_DOWNLOAD}"/vocabulary.json" ]
+		then	
+			echo 1	
+		fi
+
+		echo 0
+		
+	
 	;;
 	
 	download)
@@ -36,21 +54,33 @@ case $ACTION in
 		fi
 
 		cd ${DEST_DOWNLOAD}
-
+		
+		if [ -e "model.bin" ]; then
+			rm -rf  "model.bin"
+		fi
+		
+		if [ -e "config.json" ]; then
+			rm -rf  "config.json"
+		fi
+		
+		if [ -e "tokenizer.json" ]; then
+			rm -rf  "tokenizer.json"
+		fi
+		
+		if [ -e "vocabulary.json" ]; then
+			rm -rf  "vocabulary.json"
+		fi
+		
 		wget ${FW_MODEL}
 		wget ${FW_CONFIG}
 		wget ${FW_TOKENIZER}
 		wget ${FW_VOCABULARY}
 		
-		if ! [ -s ${DEST_DOWNLOAD}"/"${FW_VOCABULARY} ]
-		then	
-			exit 1
-		fi	
 	;;	
 
 	installPackage)
 
-		flatpak -y install net.mkiol.SpeechNote
+		flatpak --system -y install net.mkiol.SpeechNote
 		
 		ln -s ${ORIG_BIN} ${DEST_BIN}
 		cp ${ORIG_DESKTOP} ${DEST_DESKTOP}
