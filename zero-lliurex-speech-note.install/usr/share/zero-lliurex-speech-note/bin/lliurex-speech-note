@@ -1,0 +1,22 @@
+#!/bin/bash
+
+FASTER_WHISPER_SYSTEM_DIR="/opt/zero-lliurex-speech-note/models/multilang_fasterwhisper_small"
+CONFIG_SKEL="/usr/share/zero-lliurex-speech-note/config/settings.conf"
+LOCAL_MODELS_DIR="$HOME/.var/app/net.mkiol.SpeechNote/cache/net.mkiol/dsnote/speech-models"
+CONFIG_DIR="$HOME/.var/app/net.mkiol.SpeechNote/config/net.mkiol/dsnote"
+CONFIG_FILE="$CONFIG_DIR/settings.conf"
+TOKEN="$CONFIG_DIR/.lliurex-token"
+
+if [ ! -e "$TOKEN" ]; then
+
+	mkdir -p $CONFIG_DIR
+	mkdir -p $LOCAL_MODELS_DIR
+
+	cp $CONFIG_SKEL $CONFIG_FILE
+	cp -r "$FASTER_WHISPER_SYSTEM_DIR" "$LOCAL_MODELS_DIR/"
+
+	touch $TOKEN
+	
+fi
+
+/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=dsnote --file-forwarding net.mkiol.SpeechNote $1
