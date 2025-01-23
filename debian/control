@@ -444,3 +444,11 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: AWS Cli installer
   Zero-center helper, It installs AWS Cli
+
+Package: zero-lliurex-speech-note
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Speech Note installer
+  Zero-center helper, It installs Speech Note
+
