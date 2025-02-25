@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.438) jammy; urgency=medium
+
+  * Adding zero-lliurex-gimagereader
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 25 Feb 2025 10:42:46 +0100
+
 zero-lliurex-installers (0.437) jammy; urgency=medium
 
   * Adding zero-lliurex-speech-note 

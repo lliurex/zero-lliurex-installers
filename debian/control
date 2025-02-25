@@ -146,6 +146,13 @@ Depends: zero-center,epi-gtk
 Description: GeoGebra installer
   Zero-center helper, It installs GeoGebra flatpak version
 
+Package: zero-lliurex-gimagereader
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: gImageReader installer
+  Zero-center helper, It installs gImageReader flatpak version
+
 Package: zero-lliurex-gns3
 Architecture: all
 Section: x11
