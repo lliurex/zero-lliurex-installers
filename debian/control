@@ -275,7 +275,14 @@ Section: x11
 Depends: zero-center, epi-gtk
 Description: Drivers fro promethean installer
  Zero-center helper, It installs the drivers for the promethean boards 
- 
+
+Package: zero-lliurex-pygpt
+Architecture: all
+Section: x11
+Depends: zero-center, epi-gtk
+Description: PyGPT installer
+ Zero-center helper, It installs pyGPT in snap format
+
 Package: zero-lliurex-pyromaths
 Architecture: all
 Section: x11
