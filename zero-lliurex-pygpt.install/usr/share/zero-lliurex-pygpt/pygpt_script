@@ -7,6 +7,20 @@ PACKAGE_LIST=$@
 
 case $ACTION in
 
+	postInstall)
+
+		echo "Ending the configuration..."
+		TEST=$(snap list | grep pygpt | cut -d " " -f 1)
+
+		if [[ ! -z "$TEST" ]];then
+			snap connect pygpt:camera || true
+			snap connect pygpt:audio-record :audio-record || true
+			snap connect pygpt:alsa || true
+			snap connect pygpt:audio-playback || true
+			snap connect pygpt:alsa || true
+		fi
+	;;
+
 	remove)
 		count=0
 		for ix in $PACKAGE_LIST
