@@ -1,0 +1,8 @@
+{
+	"type":"snap",
+	"pkg_list":[{"name":"pygpt","custom_name":"PyGPT: a personal desktop AI assistant","custom_icon":"pyGPT.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-pygpt/pygpt_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-pygpt/",
+	"zomando":"zero-lliurex-pygpt"
+
+} 
