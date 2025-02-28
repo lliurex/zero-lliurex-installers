@@ -1,0 +1,8 @@
+{
+	"type":"file",
+	"pkg_list":[{"name":"qgis","custom_name":"QGIS: an spatial visualization and decision-making tools","custom_icon":"qgis.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-qgis/qgis_script","getStatus":true,"download":true,"remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-qgis/",
+	"zomando":"zero-lliurex-qgis"
+
+} 
