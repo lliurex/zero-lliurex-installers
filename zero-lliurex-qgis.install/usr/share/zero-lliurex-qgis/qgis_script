@@ -1,0 +1,46 @@
+#!/bin/bash
+
+ACTION="$1"
+
+shift
+PACKAGE_LIST=$@
+
+case $ACTION in
+
+	getStatus)
+		
+		TEST=$(flatpak list | grep org.qgis.qgis | cut -d " " -f 1)
+		if [[ ! -z "$TEST" ]];then
+			echo 0
+		else
+			echo 1
+		fi
+	;;
+
+	download)
+		exit 0
+	;;
+
+	installPackage)
+		flatpak install --app app/org.gis.gis/x86_64/stable --system -y
+
+		TEST=$(flatpak list | grep org.qgis.qgis | cut -d " " -f 1)
+		
+		if [[ -z "$TEST" ]];then
+			exit 1
+		fi
+
+	;;
+
+	remove)
+		
+		flatpak uninstall org.gis.gis -y
+	
+		TEST=$(flatpak list | grep org.qgis.qgis | cut -d " " -f 1)
+		if [[ ! -z "$TEST" ]];then
+			exit 1
+		fi
+	;;
+
+esac
+exit 0	
