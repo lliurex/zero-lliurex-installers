@@ -281,7 +281,7 @@ Architecture: all
 Section: x11
 Depends: zero-center, epi-gtk
 Description: PyGPT installer
- Zero-center helper, It installs pyGPT in snap format
+ Zero-center helper, It installs pyGPT in snap version
 
 Package: zero-lliurex-pyromaths
 Architecture: all
@@ -293,6 +293,13 @@ Breaks: lliurex-zero-installer-pyromaths (<=0.126.5)
 Provides: lliurex-zero-installer-pyromaths
 Description: Pyromaths installer
  Zero-center helper, It downloads and installs python-pyromaths package 
+
+Package: zero-lliurex-qgis
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: QGIS installer
+  Zero-center helper, It installs QGIS in flatpak version
 
 Package: zero-lliurex-skype
 Architecture: all
