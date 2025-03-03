@@ -1,0 +1,83 @@
+#!/bin/bash
+
+ACTION="$1"
+
+shift
+PACKAGE_LIST=$@
+
+PSEINT_URL="http://prdownloads.sourceforge.net/pseint/pseint-l64-20250225.tgz"
+DEST_DOWNLOAD="/var/cache/epi-downloads/"
+DEST_FILE="pseint.tgz"
+DEST_FOLDER="/opt"
+PSEINT_FOLDER="/opt/pseint"
+PSEINT_BIN="/opt/pseint/pseint"
+ORIG_DESKTOP="/usr/share/zero-lliurex-pseint/desktop/pseint.desktop"
+DEST_DESKTOP="/usr/share/applications/pseint.desktop"
+
+
+case $ACTION in
+
+	getStatus)
+		
+		if [ ! -s ${PSEINT_BIN} ]
+		then
+			echo 1	
+		fi
+
+		echo 0
+		
+	
+	;;
+	
+	download)
+
+		cd ${DEST_DOWNLOAD}
+		
+		wget ${PSEINT_URL} -O ${DEST_FILE}
+		
+		if ! [ -f ${DEST_DOWNLOAD}/${DEST_FILE} ];then
+			exit 1
+		fi
+		
+	;;	
+
+	installPackage)
+
+		if [ -d ${PSEINT_FOLDER} ]
+		then
+			echo "Removing previous version..."
+			rm -rf ${PSEINT_FOLDER}
+		fi
+
+		echo "Extracting pseint..."
+		
+		tar -xvf ${DEST_DOWNLOAD}/${DEST_FILE} -C ${DEST_FOLDER} 
+				
+		cd ${DEST_FOLDER}
+
+		if [ -d ${PSEINT_FOLDER} ];then
+			chmod 777 -R ${PSEINT_FOLDER}
+			cp ${ORIG_DESKTOP} ${DEST_DESKTOP}
+		else
+			exit 1
+		fi
+
+	;;
+
+	remove)
+
+		echo "Removing Pseint..."
+		
+		if [ -d ${PSEINT_FOLDER} ];then
+
+			rm -rf ${PSEINT_FOLDER}
+
+		fi
+
+		if [ -e ${DEST_DESKTOP} ]; then
+			rm -f ${DEST_DESKTOP}
+		fi
+	;;
+
+esac
+exit 0	
