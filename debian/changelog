@@ -1,3 +1,11 @@
+zero-lliurex-installers (0.439) jammy; urgency=medium
+
+  * Added zero-lliurex-pygpt
+  * Added zero-lliurex-pseint
+  * Added zero-lliurex-qgis 
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 04 Mar 2025 12:43:03 +0100
+
 zero-lliurex-installers (0.438) jammy; urgency=medium
 
   * Adding zero-lliurex-gimagereader
