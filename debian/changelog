@@ -1,6 +1,12 @@
+zero-lliurex-installers (0.441) jammy; urgency=medium
+
+  * fixed gtts-gui package name 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 04 Mar 2025 17:05:17 +0100
+
 zero-lliurex-installers (0.440) jammy; urgency=medium
 
-  * Changed gtts to apt mode using AI created gtts-cli package 
+  * Changed gtts to apt mode using AI created gtts-gui package 
 
  -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 04 Mar 2025 15:31:45 +0100
 
