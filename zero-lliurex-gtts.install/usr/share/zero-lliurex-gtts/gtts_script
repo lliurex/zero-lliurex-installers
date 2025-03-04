@@ -17,48 +17,13 @@ INSTALLED_DIRS="/usr/local/lib/python*/dist-packages/gtts /usr/local/lib/python*
 
 case $ACTION in
 
-	getStatus)
-		if [ -s ${BIN_DEST} ]
-		then	
-			echo 0
-		else
-			echo 1	
-		fi				
-	;;
-
-	download)
-
-		true
-	;;	
-	
-	installPackage)
-
-		echo "Install APT dependencies..."
-		for PACKAGE in ${APT_PACKAGES}; do apt install -y $PACKAGE; done
-		
-		echo "Install gTTS..."
-		pip3 install gTTS --upgrade
-
-		echo "Install custom bin..."
-		cp ${BIN_ORIG} ${BIN_DEST}
-
-	;;
-
 	remove)
 		
-		echo "Removing files..."
-		
-		for D in ${INSTALLED_DIRS}; do
-
-
-			if [ -s ${D} ]
-			then
-				rm -f ${D}
-			fi
-		done
-		
-		rm ${BIN_DEST} || true
-
+		apt-get remove -y gtts-cli
+                TEST=$( dpkg-query -s gtts-cli 2> /dev/null| grep Status | cut -d " " -f 4 )
+                if [ "$TEST" == 'installed' ];then
+			exit 1
+                fi
 
 	;;		
 		
