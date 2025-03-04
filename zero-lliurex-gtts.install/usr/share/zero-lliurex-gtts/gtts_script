@@ -19,8 +19,8 @@ case $ACTION in
 
 	remove)
 		
-		apt-get remove -y gtts-cli
-                TEST=$( dpkg-query -s gtts-cli 2> /dev/null| grep Status | cut -d " " -f 4 )
+		apt-get remove -y gtts-gui
+                TEST=$( dpkg-query -s gtts-gui 2> /dev/null| grep Status | cut -d " " -f 4 )
                 if [ "$TEST" == 'installed' ];then
 			exit 1
                 fi
