@@ -1,7 +1,7 @@
 {
-	"type":"file",
-	"pkg_list": [{"name":"gtts","key_store":"zero-lliurex-gtts","custom_name":"Google Text to Speech","custom_icon":"gtts.png"}], 
-	"script": {"name":"/usr/share/zero-lliurex-gtts/gtts_script","remove":true,"getStatus":true,"download":true},
+	"type":"apt",
+	"pkg_list": [{"name":"gtts-cli","key_store":"zero-lliurex-gtts","custom_name":"Google Text to Speech","custom_icon":"gtts.png"}], 
+	"script": {"name":"/usr/share/zero-lliurex-gtts/gtts_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-gtts/",
 	"zomando":"zero-lliurex-gtts",
 	"check_zomando_state":false
