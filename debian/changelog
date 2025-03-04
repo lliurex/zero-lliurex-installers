@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.440) jammy; urgency=medium
+
+  * Changed gtts to apt mode using AI created gtts-cli package 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 04 Mar 2025 15:31:45 +0100
+
 zero-lliurex-installers (0.439) jammy; urgency=medium
 
   * Added zero-lliurex-pygpt
