@@ -58,8 +58,8 @@ case $ACTION in
 				echo "[EPI]:Adding permission group..."
 				PERM_FILE="/usr/share/cdc-mapper/groups/docker.json"
 				DIR_FILE="/usr/share/cdc-mapper/groups"
-				if [ ! -f  "$PERM_FILE" ]
-					if [ ! -f  "$DIR_FILE" ] then
+				if [ ! -f  "$PERM_FILE" ]; then
+					if [ ! -f  "$DIR_FILE" ]; then
 						mkdir -p $DIR_FILE
 					fi
 					jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
