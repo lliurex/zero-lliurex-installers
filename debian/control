@@ -85,7 +85,7 @@ Description: CoBang installer
 Package: zero-lliurex-docker
 Architecture: all
 Section: x11
-Depends: zero-center,epi-gtk
+Depends: zero-center,epi-gtk,jq,cdc-mapper (<=32)
 Description: Docker installer
  Zero-center helper, It installs Docker on Lliurex
  
