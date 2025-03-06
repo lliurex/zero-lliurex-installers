@@ -28,7 +28,7 @@ case "$1" in
                 if [ ! -f  "$DIR_FILE" ]; then
                     mkdir -p $DIR_FILE
                 fi
-                jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
+                jq -n '{"name":"docker","editable":true,"alu":true,"doc":true,"adm":true}' > $PERM_FILE
             fi
         fi
 	    pam-auth-update --force --package zero-lliurex-docker || true
@@ -46,7 +46,7 @@ case "$1" in
                 if [ ! -f  "$DIR_FILE" ]; then
                     mkdir -p $DIR_FILE
                 fi
-                jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
+                jq -n '{"name":"docker","editable":true,"alu":true,"doc":true,"adm":true}' > $PERM_FILE
             fi
         fi
         echo "postinst called with unknown argument '$1'" >&2
