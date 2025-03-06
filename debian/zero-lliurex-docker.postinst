@@ -20,6 +20,17 @@ set -e
 
 case "$1" in
     configure)
+        if dpkg -s docker &>/dev/null; then
+            echo "[EPI]:Adding permission group..."
+            PERM_FILE="/usr/share/cdc-mapper/groups/docker.json"
+            DIR_FILE="/usr/share/cdc-mapper/groups"
+            if [ ! -f  "$PERM_FILE" ]; then
+                if [ ! -f  "$DIR_FILE" ]; then
+                    mkdir -p $DIR_FILE
+                fi
+                jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
+            fi
+        fi
 	    pam-auth-update --force --package zero-lliurex-docker || true
     ;;
 
