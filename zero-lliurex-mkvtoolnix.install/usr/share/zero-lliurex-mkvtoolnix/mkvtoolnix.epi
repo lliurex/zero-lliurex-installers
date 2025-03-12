@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"org.bunkus.mkvtoolnix-gui","custom_name":"MKVTOOLNIX: set of tools to create, alter and inspect Matroska files under Linux","custom_icon":"mkvtoolnix.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-mkvtoolnix/mkvtoolnix_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-mkvtoolnix/",
+	"zomando":"zero-lliurex-mkvtoolnix"
+
+} 
