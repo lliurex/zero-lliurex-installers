@@ -80,6 +80,7 @@ i		OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2 | xar
 		# as we need to preserve lliurex-meta
 
 		apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
+		rm -rf /usr/lib/openvino-models
 
 	;;	
 
