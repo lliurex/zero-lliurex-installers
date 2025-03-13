@@ -18,6 +18,7 @@ case $ACTION in
 		cd /tmp
 		# just in case something failed. we need a fresh start
 		rm -rf openvino-models
+		rm -rf /usr/lib/openvino-models
 
 		mkdir openvino-models
 		mkdir openvino-models/musicgen
@@ -62,8 +63,6 @@ case $ACTION in
 
 		rm -rf versatile_audio_super_resolution_openvino
 
-		# just in case it was already there. fresh start
-		rm -rf /usr/lib/openvino-models
 		mv openvino-models /usr/lib
 	;;	
 
