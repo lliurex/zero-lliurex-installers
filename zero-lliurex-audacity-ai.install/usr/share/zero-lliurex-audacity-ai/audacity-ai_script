@@ -70,7 +70,7 @@ case $ACTION in
 	remove)
 	
 
-		OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2)
+i		OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2 | xargs)
 		if [ -z $OLD_AUDACITY ];then
 			echo "Error: Failed to query stable audacity version."
 			exit 1
@@ -80,7 +80,7 @@ case $ACTION in
 		# This operation should bring back stable audacity and remove custom audacity-ai
 		# as we need to preserve lliurex-meta
 
-		apt install audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
+		apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
 
 	;;	
 

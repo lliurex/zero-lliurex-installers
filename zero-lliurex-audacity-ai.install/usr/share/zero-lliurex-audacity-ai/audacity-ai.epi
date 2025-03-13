@@ -3,5 +3,6 @@
 	"pkg_list": [{"name":"audacity-ai","key_store":"zero-lliurex-audacity-ai","custom_name":"Audacity with (AI) OpenVINO support","custom_icon":"audacity-ai.svg"}],
 	"script": {"name":"/usr/share/zero-lliurex-audacity-ai/audacity-ai_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-audacity-ai/",
-	"zomando":"zero-lliurex-audacity-ai"
+	"zomando":"zero-lliurex-audacity-ai",
+	"check_meta": false
 }
