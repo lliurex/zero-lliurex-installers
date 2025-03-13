@@ -40,6 +40,13 @@ Depends: zero-center,epi-gtk
 Description: AnythingLLM installer
   Zero-center helper, It downloads and installs AnythingLLM Desktop
 
+Package: zero-lliurex-audacity-ai
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk, git-lfs
+Description: Audacity with AI Support Installer
+  Zero-center helper, It install audacity with openVINO support
+
 Package: zero-lliurex-autofirma
 Architecture: all
 Section: x11

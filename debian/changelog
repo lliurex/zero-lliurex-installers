@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.443) jammy-testing; urgency=medium
+
+  * Audacity-ai
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 13 Mar 2025 10:37:11 +0100
+
 zero-lliurex-installers (0.442) jammy; urgency=medium
 
   * New dependences in Docker, and generate json permission group file
