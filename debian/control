@@ -43,7 +43,7 @@ Description: AnythingLLM installer
 Package: zero-lliurex-audacity-ai
 Architecture: all
 Section: x11
-Depends: zero-center,epi-gtk, git-lfs
+Depends: zero-center,epi-gtk (>= 0.15.10), git-lfs
 Description: Audacity with AI Support Installer
   Zero-center helper, It install audacity with openVINO support
 
