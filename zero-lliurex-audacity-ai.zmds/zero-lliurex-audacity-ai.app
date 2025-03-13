@@ -1,0 +1,17 @@
+Name=zero-lliurex-audacity-ai
+Name[en]=Audacity with AI support installation
+Name[es]=Instalación del Audacity con soporte de IA
+Name[ca@valencia]=Instal·lació del Audacity amb IA
+Name[qcv]=Instal·lació del Audacity amb IA
+Name[ca_ES]=Instal·lació del Audacity amb IA
+Comment=Audacity with OpenVINO support
+Comment[es]=Audacity con soporte de OpenVINO
+Comment[ca@valencia]=Audacity amb OpenVINO
+Comment[qcv]=Audacity amb OpenVINO
+Comment[ca_ES]=Audacity amb OpenVINO
+Icon=zero-lliurex-audacity-ai
+Groups=admin;admins;teachers;sudo
+Category=Software
+ScriptPath=zero-lliurex-audacity-ai.zmd
+Using=pkexec
+Service=True
