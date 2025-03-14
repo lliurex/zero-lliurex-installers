@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.444) jammy; urgency=medium
+
+  * Check if docker-ce installed to add permissions.
+
+ -- Daniel Duran <daduve@gmail.com>  Fri, 14 Mar 2025 13:17:23 +0100
+
 zero-lliurex-installers (0.443.3) jammy; urgency=medium
 
   * Audacity-ai
