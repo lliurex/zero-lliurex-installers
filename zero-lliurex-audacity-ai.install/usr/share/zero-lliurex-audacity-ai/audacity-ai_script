@@ -76,7 +76,7 @@ case $ACTION in
 	remove)
 	
 
-i		OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2 | xargs)
+		OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2 | xargs)
 		if [ -z $OLD_AUDACITY ];then
 			echo "Error: Failed to query stable audacity version."
 			exit 1
