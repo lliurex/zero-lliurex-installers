@@ -18,7 +18,6 @@ case $ACTION in
 	preInstall)
 	
 		echo "[EPI]:Preparing installation..."
-		/usr/sbin/docker-students-permission
 		if dpkg-query -l $PKG>/dev/null 2>&1;then
 
 			echo "Nothing to do"
@@ -62,7 +61,7 @@ case $ACTION in
 					if [ ! -f  "$DIR_FILE" ]; then
 						mkdir -p $DIR_FILE
 					fi
-					jq -n '{"name":"docker","editable":true,"alu":true,"doc":true,"adm":true}' > $PERM_FILE
+					jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
 				fi
 		    else
 		        echo "[EPI]:fail installing docker-compose!"
