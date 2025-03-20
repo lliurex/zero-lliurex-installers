@@ -7,8 +7,8 @@ ACTION="$1"
 case $ACTION in
 
 	postInstall)
-	
-		cd /tmp
+
+		cd /opt
 		# just in case something failed. we need a fresh start
 		rm -rf openvino-models
 		rm -rf /usr/lib/openvino-models
