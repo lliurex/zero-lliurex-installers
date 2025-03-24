@@ -487,3 +487,10 @@ Depends: zero-center,epi-gtk
 Description: Speech Note installer
   Zero-center helper, It installs Speech Note
 
+Package: zero-lliurex-mkvtoolnix
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: MkvToolnix installer
+  Zero-center helper, It installs MkvToolnix in flatpak version
+
