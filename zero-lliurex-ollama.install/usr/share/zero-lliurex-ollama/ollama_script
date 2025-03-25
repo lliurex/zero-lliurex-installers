@@ -26,7 +26,7 @@ case $ACTION in
 
 		curl -fSSL https://ollama.com/install.sh | sh
 
-		if ![ -d ${INSTALL_PATH} ];then
+		if [ ! -d ${INSTALL_PATH} ];then
 			exit 1
 		fi
 	;;
