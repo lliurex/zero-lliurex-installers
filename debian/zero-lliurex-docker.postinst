@@ -20,16 +20,19 @@ set -e
 
 case "$1" in
     configure)
-        if dpkg -s docker-ce &>/dev/null; then
+        if [ dpkg -s docker-ce &>/dev/null ]; then
             echo "[EPI]:Adding permission group..."
             PERM_FILE="/usr/share/cdc-mapper/groups/docker.json"
             DIR_FILE="/usr/share/cdc-mapper/groups"
             if [ ! -f  "$PERM_FILE" ]; then
-                if [ ! -f  "$DIR_FILE" ]; then
-                    mkdir -p $DIR_FILE
-                fi
+		echo "Generating JSON permission file..."
                 jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
             fi
+	 else
+		if [ -f  "$PERM_FILE" ]; then
+			echo "You don't have Docker installed deleting permission file..."
+			rm $PERM_FILE
+		fi
         fi
 	    pam-auth-update --force --package zero-lliurex-docker || true
     ;;
@@ -38,16 +41,19 @@ case "$1" in
     ;;
 
     *)
-        if dpkg -s docker-ce &>/dev/null; then
+        if [ dpkg -s docker-ce &>/dev/null ]; then
             echo "[EPI]:Docker is intalled, Adding permission group..."
             PERM_FILE="/usr/share/cdc-mapper/groups/docker.json"
             DIR_FILE="/usr/share/cdc-mapper/groups"
             if [ ! -f  "$PERM_FILE" ]; then
-                if [ ! -f  "$DIR_FILE" ]; then
-                    mkdir -p $DIR_FILE
-                fi
+		echo "Generating JSON permission file..."
                 jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
             fi
+	 else
+                if [ -f  "$PERM_FILE" ]; then
+                        echo "You don't have Docker installed deleting permission file..."
+                        rm $PERM_FILE
+                fi
         fi
         echo "postinst called with unknown argument '$1'" >&2
         exit 1
