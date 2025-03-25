@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.447) jammy; urgency=medium
+
+  * Docker Permission.
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 25 Mar 2025 17:08:24 +0100
+
 zero-lliurex-installers (0.446.1) jammy; urgency=medium
 
   * Fixed ollama script 
