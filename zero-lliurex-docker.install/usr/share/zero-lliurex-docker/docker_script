@@ -52,26 +52,27 @@ case $ACTION in
 				mv /tmp/docker-compose /usr/bin/docker-compose
 				chmod +x /usr/bin/docker-compose
 				echo "[EPI]:docker-compose installed!"
-				#/usr/share/cdc-mapper/groups/
-				#{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}
-				echo "[EPI]:Adding permission group..."
-				if dpkg -s docker-ce &>/dev/null; then
-		            echo "[EPI]:Adding permission group..."
-		            PERM_FILE="/usr/share/cdc-mapper/groups/docker.json"
-		            DIR_FILE="/usr/share/cdc-mapper/groups"
-		            if [ ! -f  "$PERM_FILE" ]; then
-					echo "Generating JSON permission file..."
-			                jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
-			        fi
-				else
-					if [ -f  "$PERM_FILE" ]; then
-						echo "You don't have Docker installed deleting permission file..."
-						rm $PERM_FILE
-					fi
+			
 		    else
 		        echo "[EPI]:fail installing docker-compose!"
 		        exit 1
 		    fi
+	    
+		fi
+
+		echo "[EPI]:Checking permission group..."
+		if dpkg -s docker-ce &>/dev/null ; then
+			echo "[EPI]:Adding permission group..."
+			PERM_FILE="/usr/share/cdc-mapper/groups/docker.json"
+			if [ ! -f  "$PERM_FILE" ]; then
+				echo "Generating JSON permission file..."
+				jq -n '{"name":"docker","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
+			fi
+		else
+			if [ -f  "$PERM_FILE" ]; then
+				echo "You don't have Docker installed deleting permission file..."
+				rm $PERM_FILE
+			fi
 		fi
 	;;
 
