@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.449) jammy; urgency=medium
+
+  * Fixed docker_script
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 26 Mar 2025 08:59:09 +0100
+
 zero-lliurex-installers (0.448) jammy; urgency=medium
 
   * Docker Permission new version 
