@@ -494,3 +494,10 @@ Depends: zero-center,epi-gtk
 Description: MkvToolnix installer
   Zero-center helper, It installs MkvToolnix in flatpak version
 
+Package: zero-lliurex-upscayl
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Upscayl installer
+  Zero-center helper, It installs Upscayl in flatpak version
+
