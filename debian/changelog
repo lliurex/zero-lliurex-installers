@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.450) jammy; urgency=medium
+
+  * Added zero-lliurex-upscayl
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 31 Mar 2025 12:07:11 +0200
+
 zero-lliurex-installers (0.449) jammy; urgency=medium
 
   * Fixed docker_script
