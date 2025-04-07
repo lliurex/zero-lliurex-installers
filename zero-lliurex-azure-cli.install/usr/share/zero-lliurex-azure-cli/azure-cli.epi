@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"azure-cli","key_store":"zero-lliurex-azure-cli", custom_name":"Azure CLI","custom_icon":"azure-cli.svg"}], 
+	"repository": [{"url":"deb https://packages.microsoft.com/repos/azure-cli/ jammy main","key_cmd":"curl -sLS https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/keyrings/microsoft.gpg > /dev/null; sudo chmod go+r /etc/apt/keyrings/microsoft.gpg"}], 
+	"script": {"name":"/usr/share/zero-lliurex-azure-cli/azure-cli_script", "remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-azure-cli/",
+	"zomando":"zero-lliurex-azure-cli"
+}
