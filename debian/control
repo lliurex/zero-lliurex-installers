@@ -54,6 +54,14 @@ Depends: zero-center,epi-gtk
 Description: Autofirma installer
   Zero-center helper, It downloads and installs Autofirma package
 
+Package: zero-lliurex-azure-cli
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Azure CLI installer
+  Zero-center helper, It downloads and installs azure cli package
+
+
 Package: zero-lliurex-calibre
 Architecture: all
 Section: x11
