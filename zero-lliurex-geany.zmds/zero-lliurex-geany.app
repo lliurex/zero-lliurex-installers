@@ -14,4 +14,4 @@ ScriptPath=zero-lliurex-geany.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-geany
-Groups=admin;admins;sudo;teachers;students
+Groups=admin;admins;sudo;teachers

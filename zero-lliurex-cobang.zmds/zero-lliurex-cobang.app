@@ -15,4 +15,4 @@ ScriptPath=zero-lliurex-cobang.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-cobang
-Groups=admin;admins;sudo;teachers;students
+Groups=admin;admins;sudo;teachers
