@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.530) noble; urgency=medium
+
+  * Adde new zomandos from LliureX 23
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 14 Apr 2025 14:29:47 +0200
+
 zero-lliurex-installers (0.529) noble; urgency=medium
 
   * Added zero-lliurex-ollama
