@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ACTION="$1"
-APPIMAGE_URL="https://s3.us-west-1.amazonaws.com/public.useanything.com/latest/AnythingLLMDesktop.AppImage"
+APPIMAGE_URL="https://cdn.anythingllm.com/latest/AnythingLLMDesktop.AppImage"
 APPIMAGE_FILE="AnythingLLMDesktop.AppImage"
 EXTRACTED_DIR="anythingllm-desktop"
 OUTDIR="/opt/AnythingLLMDesktop"

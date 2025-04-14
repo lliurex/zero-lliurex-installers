@@ -1,0 +1,44 @@
+#!/bin/bash
+
+ACTION="$1"
+
+shift
+PACKAGE_LIST=$@
+
+case $ACTION in
+
+	postInstall)
+
+		echo "Ending the configuration..."
+		TEST=$(snap list | grep pygpt | cut -d " " -f 1)
+
+		if [[ ! -z "$TEST" ]];then
+			snap connect pygpt:camera || true
+			snap connect pygpt:audio-record :audio-record || true
+			snap connect pygpt:alsa || true
+			snap connect pygpt:audio-playback || true
+			snap connect pygpt:alsa || true
+		fi
+	;;
+
+	remove)
+		count=0
+		for ix in $PACKAGE_LIST
+		do
+			snap remove $ix
+	
+			TEST=$(snap list | grep $ix | cut -d " " -f 1)
+
+			if [[ ! -z "$TEST" ]];then
+					count+=1
+			fi
+
+		done
+
+		if [ $count -gt 0 ];then
+			exit 1
+		fi
+	;;
+
+esac
+exit 0	
