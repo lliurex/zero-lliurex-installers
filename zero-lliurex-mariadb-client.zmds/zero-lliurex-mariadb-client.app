@@ -15,4 +15,4 @@ ScriptPath=zero-lliurex-mariadb-client.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-mariadb-client
-Groups=admin;admins;sudo;teachers;students
+Groups=admin;admins;sudo;teachers

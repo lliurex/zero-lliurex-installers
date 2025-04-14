@@ -14,4 +14,4 @@ ScriptPath=zero-lliurex-gns3.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-gns3
-Groups=admin;admins;sudo;teachers;students
+Groups=admin;admins;sudo;teachers

@@ -14,4 +14,4 @@ ScriptPath=zero-lliurex-krita.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-krita
-Groups=*;
+Groups=sudo;admins;teachers
