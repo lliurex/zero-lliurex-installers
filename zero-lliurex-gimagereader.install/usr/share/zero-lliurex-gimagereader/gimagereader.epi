@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"io.github.manisandro.gImageReader","custom_name":"gImageReader: is a simple optical character recognition (OCR) application","custom_icon":"gimagereader.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-gimagereader/gimagereader_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-gimagereader/",
+	"zomando":"zero-lliurex-gimagereader"
+
+} 

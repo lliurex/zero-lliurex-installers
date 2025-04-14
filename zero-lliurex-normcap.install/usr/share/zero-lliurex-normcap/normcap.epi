@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"com.github.dynobo.normcap","custom_name":"NormCap: OCR powered screen-capture tool to capture information instead of images","custom_icon":"normcap.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-normcap/normcap_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-normcap/",
+	"zomando":"zero-lliurex-normcap"
+
+} 

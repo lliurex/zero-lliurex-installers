@@ -1,0 +1,8 @@
+[Desktop Entry]
+
+Encoding=UTF-8
+Name=pseint
+Type=Application
+Categories=Development
+Icon=pseint
+Exec="/opt/pseint/bin/../wxPSeInt"

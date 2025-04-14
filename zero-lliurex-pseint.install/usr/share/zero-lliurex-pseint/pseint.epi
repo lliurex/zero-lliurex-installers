@@ -1,0 +1,8 @@
+{
+	"type":"file",
+	"pkg_list":[{"name":"pseint","custom_name":"PSeint: Tool to assist a student in their first steps in programming","custom_icon":"pseint.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-pseint/pseint_script","remove":true,"getStatus":true,"download":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-pseint/",
+	"zomando":"zero-lliurex-pseint"
+
+} 

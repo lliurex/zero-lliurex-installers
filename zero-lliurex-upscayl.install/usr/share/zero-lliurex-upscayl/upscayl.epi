@@ -1,0 +1,8 @@
+{
+	"type":"flatpak",
+	"pkg_list":[{"name":"org.upscayl.Upscayl","custom_name":"Upscayl: is a free and open source AI Image Upscaler. ","custom_icon":"upscayl.png"}],
+	"script":{"name":"/usr/share/zero-lliurex-upscayl/upscayl_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-upscayl/",
+	"zomando":"zero-lliurex-upscayl"
+
+} 
