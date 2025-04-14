@@ -47,6 +47,13 @@ Depends: zero-center,epi-gtk
 Description: AnythingLLM installer
   Zero-center helper, It downloads and installs AnythingLLM Desktop
 
+Package: zero-lliurex-audacity-ai
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk (>= 0.15.10), git-lfs
+Description: Audacity with AI Support Installer
+  Zero-center helper, It install audacity with openVINO support
+
 Package: zero-lliurex-autofirma
 Architecture: all
 Section: x11
@@ -60,6 +67,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: AWS Cli installer
   Zero-center helper, It installs AWS Cli
+
+Package: zero-lliurex-azure-cli
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Azure CLI installer
+  Zero-center helper, It downloads and installs azure cli package
 
 Package: zero-lliurex-calibre
 Architecture: all
@@ -160,6 +174,13 @@ Depends: zero-center,epi-gtk
 Description: Geany installer
   Zero-center helper, It installs Geany IDE
 
+Package: zero-lliurex-gimagereader
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: gImageReader installer
+  Zero-center helper, It installs gImageReader flatpak version
+
 Package: zero-lliurex-gns3
 Architecture: all
 Section: x11
@@ -259,6 +280,13 @@ Depends: zero-center,epi-gtk
 Description: Mixxx installer
  Zero-center helper, It installs mixxx on Lliurex
 
+Package: zero-lliurex-mkvtoolnix
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: MkvToolnix installer
+  Zero-center helper, It installs MkvToolnix in flatpak version
+
 Package: zero-lliurex-nerd-dictation
 Architecture: amd64
 Section: x11
@@ -305,6 +333,20 @@ Section: x11
 Depends: zero-center, epi-gtk
 Description: Drivers fro promethean installer
  Zero-center helper, It installs the drivers for the promethean boards 
+
+Package: zero-lliurex-pseint
+Architecture: all
+Section: x11
+Depends: zero-center
+Description: PSeint installer
+ Zero-center helper, It download and install Pseint
+
+Package: zero-lliurex-pygpt
+Architecture: all
+Section: x11
+Depends: zero-center, epi-gtk
+Description: PyGPT installer
+ Zero-center helper, It installs pyGPT in snap version
  
 Package: zero-lliurex-pyromaths
 Architecture: all
@@ -316,6 +358,13 @@ Breaks: lliurex-zero-installer-pyromaths (<=0.126.5)
 Provides: lliurex-zero-installer-pyromaths
 Description: Pyromaths installer
  Zero-center helper, It downloads and installs python-pyromaths package 
+
+Package: zero-lliurex-qgis
+Architecture: all
+Section: x11
+Depends: zero-center,epi-gtk
+Description: QGIS installer
+  Zero-center helper, It installs QGIS in flatpak version
 
 Package: zero-lliurex-spring-boot
 Architecture: all
@@ -330,6 +379,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: Stellarium installer
  Zero-center helper, It installs Stellarium on Lliurex
+
+Package: zero-lliurex-speech-note
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Speech Note installer
+  Zero-center helper, It installs Speech Note
  
 Package: zero-lliurex-symfony
 Architecture: all
@@ -383,6 +439,13 @@ Section: x11
 Depends: zero-center,epi-gtk,gnupg2,curl,ca-certificates(>=20210119~20.04.2)
 Description: jellyfin installer
   Zero-center helper, It downloads and installs jellyfin media server
+
+Package: zero-lliurex-upscayl
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Upscayl installer
+  Zero-center helper, It installs Upscayl in flatpak version
 
 Package: zero-lliurex-virtualizer
 Architecture: amd64
