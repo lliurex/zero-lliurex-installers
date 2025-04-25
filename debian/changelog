@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.54) noble; urgency=medium
+
+  * fixed pip3 install for nerd-dictation 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 25 Apr 2025 14:35:38 +0200
+
 zero-lliurex-installers (0.530) noble; urgency=medium
 
   * Adde new zomandos from LliureX 23
