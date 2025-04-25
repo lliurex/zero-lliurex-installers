@@ -1,4 +1,4 @@
-zero-lliurex-installers (0.54) noble; urgency=medium
+zero-lliurex-installers (0.531) noble; urgency=medium
 
   * fixed pip3 install for nerd-dictation 
 
