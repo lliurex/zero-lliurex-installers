@@ -107,7 +107,7 @@ case $ACTION in
 		rm ${VALENCIAN_DIR}".zip"
 		
 		echo "Install vosk..."
-		pip3 install vosk --upgrade
+		pip3 install vosk --upgrade --break-system-packages
 
 	
 		#echo "Copy desktop files..."
