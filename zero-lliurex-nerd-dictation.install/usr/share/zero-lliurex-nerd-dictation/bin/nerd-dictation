@@ -7,6 +7,10 @@ CA_VA_MODEL=$BASE_DIR/models/ca_va
 
 BIN=$BASE_DIR/nerd-dictation
 
+kill -9 $(pidof ydotoold) || true
+
+ydotoold --socket-own=$UID:$GID &
+
 if [[ $@ == *"--vosk-model-dir="* ]]; then
 	$BIN $@
 else
@@ -27,10 +31,14 @@ else
 		fi
 
 		#echo "Intercepting begin and chosing $MODEL ..."
-		$BIN $@ --vosk-model-dir=$MODEL
+		$BIN $@ --vosk-model-dir=$MODEL ----simulate-input-tool=YDOTOOL
 		
 	else
 		$BIN $@
 	fi
+
+	kill -9 $(pidof ydotoold) || true
+
 fi
+
 
