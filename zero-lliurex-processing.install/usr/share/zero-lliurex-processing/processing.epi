@@ -1,0 +1,7 @@
+{
+	"type":"snap",
+	"pkg_list": [{"name":"processing","custom_name":"Processing: a  software sketchbook for learning how to code","custom_icon":"processing.png"}],
+	"script": {"name":"/usr/share/zero-lliurex-processing/processing_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-processing/",
+	"zomando":"zero-lliurex-processing"
+	}
