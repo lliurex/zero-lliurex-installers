@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.532) noble; urgency=medium
+
+  * nerd-dictation uses ydotool in wayland 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 29 Apr 2025 10:37:22 +0200
+
 zero-lliurex-installers (0.531) noble; urgency=medium
 
   * fixed pip3 install for nerd-dictation 
