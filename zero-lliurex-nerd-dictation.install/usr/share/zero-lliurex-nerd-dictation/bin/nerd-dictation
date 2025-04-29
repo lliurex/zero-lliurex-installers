@@ -7,7 +7,12 @@ CA_VA_MODEL=$BASE_DIR/models/ca_va
 
 BIN=$BASE_DIR/nerd-dictation
 
-kill -9 $(pidof ydotoold) || true
+PID=$(pidof ydotoold)
+
+if [ ! -z $PID ];then
+	kill -9 $PID || true
+fi
+
 
 ydotoold --socket-own=$UID:$GID &
 
@@ -37,7 +42,11 @@ else
 		$BIN $@
 	fi
 
-	kill -9 $(pidof ydotoold) || true
+		PID=$(pidof ydotoold)
+
+		if [ ! -z $PID ];then
+        		kill -9 $PID || true
+		fi
 
 
 fi
