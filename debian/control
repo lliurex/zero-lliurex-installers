@@ -327,12 +327,19 @@ Provides: zero-lliurex-ollama
 Description: Ollama installers
  This package allows user to install and configure ollama
 
+Package: zero-lliurex-processing
+Architecture: all
+Section: x11
+Depends: zero-center
+Description: Processing installers
+ Zero-center helper, It download and install Processing in snap version
+
 Package: zero-lliurex-promethean
 Architecture: all
 Section: x11
 Depends: zero-center, epi-gtk
 Description: Drivers fro promethean installer
- Zero-center helper, It installs the drivers for the promethean boards 
+ Zero-center helper, It installs the drivers for the promethean boards
 
 Package: zero-lliurex-pseint
 Architecture: all

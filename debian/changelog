@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.533) noble; urgency=medium
+
+  * Added zero-lliurex-processing
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 29 Apr 2025 11:46:30 +0200
+
 zero-lliurex-installers (0.532.2) noble; urgency=medium
 
   * nerd-dictation uses ydotool in wayland 
