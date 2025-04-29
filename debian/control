@@ -509,3 +509,10 @@ Depends: zero-center,epi-gtk
 Description: Upscayl installer
   Zero-center helper, It installs Upscayl in flatpak version
 
+Package: zero-lliurex-processing
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Processing installer
+  Zero-center helper, It installs Processing in snap version
+
