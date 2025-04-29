@@ -31,13 +31,14 @@ else
 		fi
 
 		#echo "Intercepting begin and chosing $MODEL ..."
-		$BIN $@ --vosk-model-dir=$MODEL ----simulate-input-tool=YDOTOOL
+		$BIN $@ --vosk-model-dir=$MODEL --simulate-input-tool=YDOTOOL
 		
 	else
 		$BIN $@
 	fi
 
 	kill -9 $(pidof ydotoold) || true
+
 
 fi
 
