@@ -15,5 +15,6 @@ Icon=zero-lliurex-speech-note
 ScriptPath=zero-lliurex-speech-note.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

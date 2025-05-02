@@ -15,3 +15,4 @@ Using=pkexec
 Locks=zero-lliurex-telegram
 Groups=sudo;admin;admins;teachers
 Service=False
+Show=False

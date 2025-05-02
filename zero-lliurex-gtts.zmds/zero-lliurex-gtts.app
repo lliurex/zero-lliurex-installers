@@ -15,5 +15,6 @@ Icon=zero-lliurex-gtts
 ScriptPath=zero-lliurex-gtts.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

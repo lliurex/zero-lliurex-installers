@@ -15,3 +15,4 @@ ScriptPath=zero-lliurex-llixhoot.zmd
 Using=pkexec
 Service=True
 Modal=True
+Show=False

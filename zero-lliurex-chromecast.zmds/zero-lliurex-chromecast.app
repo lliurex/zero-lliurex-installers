@@ -16,3 +16,4 @@ ScriptPath=zero-lliurex-chromecast.zmd
 Using=pkexec
 Service=True
 Modal=True
+Show=False

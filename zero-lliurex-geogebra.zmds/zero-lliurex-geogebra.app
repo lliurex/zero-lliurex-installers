@@ -15,5 +15,6 @@ Icon=zero-lliurex-geogebra
 ScriptPath=zero-lliurex-geogebra.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

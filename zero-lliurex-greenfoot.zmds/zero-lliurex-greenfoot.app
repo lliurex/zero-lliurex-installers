@@ -15,5 +15,6 @@ Icon=zero-lliurex-greenfoot
 ScriptPath=zero-lliurex-greenfoot.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

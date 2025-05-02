@@ -15,5 +15,6 @@ Icon=zero-lliurex-leocad
 ScriptPath=zero-lliurex-leocad.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

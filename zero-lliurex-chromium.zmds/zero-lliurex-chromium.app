@@ -15,5 +15,6 @@ Icon=zero-lliurex-chromium
 ScriptPath=zero-lliurex-chromium.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

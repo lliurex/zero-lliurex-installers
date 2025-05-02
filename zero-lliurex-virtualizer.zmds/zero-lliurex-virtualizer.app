@@ -16,3 +16,4 @@ ScriptPath=zero-lliurex-virtualizer.zmd
 Using=pkexec
 Service=False
 Modal=True
+Show=False

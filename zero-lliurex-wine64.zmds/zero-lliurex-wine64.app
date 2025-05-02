@@ -15,3 +15,4 @@ Category=Software
 ScriptPath=zero-lliurex-wine64.zmd
 Using=pkexec
 Service=False
+Show=False

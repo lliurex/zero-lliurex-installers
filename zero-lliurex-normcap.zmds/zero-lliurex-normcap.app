@@ -14,5 +14,6 @@ Icon=zero-lliurex-normcap
 ScriptPath=zero-lliurex-normcap.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

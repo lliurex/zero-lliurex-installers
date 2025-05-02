@@ -15,3 +15,4 @@ Category=Software
 ScriptPath=zero-lliurex-hotpotatoes.zmd
 Using=pkexec
 Service=True
+Show=False

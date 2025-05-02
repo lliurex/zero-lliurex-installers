@@ -15,3 +15,4 @@ Category=Software
 ScriptPath=zero-lliurex-audacity-ai.zmd
 Using=pkexec
 Service=True
+Show=False

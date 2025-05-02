@@ -15,3 +15,4 @@ Using=pkexec
 Service=True
 Locks=zero-lliurex-krita
 Groups=sudo;admins;teachers
+Show=False

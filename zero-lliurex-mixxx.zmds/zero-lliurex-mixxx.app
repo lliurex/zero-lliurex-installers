@@ -16,3 +16,4 @@ ScriptPath=zero-lliurex-mixxx.zmd
 Using=pkexec
 Service=True
 Modal=True
+Show=False

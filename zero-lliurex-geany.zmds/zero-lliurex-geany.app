@@ -15,3 +15,4 @@ Using=pkexec
 Service=True
 Locks=zero-lliurex-geany
 Groups=admin;admins;sudo;teachers
+Show=False

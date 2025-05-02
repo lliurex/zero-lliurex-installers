@@ -15,5 +15,6 @@ Icon=zero-lliurex-thonny
 ScriptPath=zero-lliurex-thonny.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

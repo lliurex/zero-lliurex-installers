@@ -15,5 +15,6 @@ Icon=zero-lliurex-anaconda
 ScriptPath=zero-lliurex-anaconda.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

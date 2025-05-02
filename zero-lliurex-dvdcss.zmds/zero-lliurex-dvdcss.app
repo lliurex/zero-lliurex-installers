@@ -15,3 +15,4 @@ ScriptPath=zero-lliurex-dvdcss.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-dvdcss
+Show=False
