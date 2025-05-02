@@ -14,3 +14,4 @@ ScriptPath=zero-lliurex-freecad.zmd
 Service=False
 Locks=zero-lliurex-freecad
 Groups=*;
+Show=False

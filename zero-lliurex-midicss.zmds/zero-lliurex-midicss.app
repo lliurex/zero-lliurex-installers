@@ -15,3 +15,4 @@ ScriptPath=zero-lliurex-midicss.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-midicss
+Show=False

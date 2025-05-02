@@ -15,5 +15,6 @@ Icon=zero-lliurex-zotero
 ScriptPath=zero-lliurex-zotero.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

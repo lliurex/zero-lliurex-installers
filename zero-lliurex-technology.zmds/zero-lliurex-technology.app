@@ -16,3 +16,4 @@ ScriptPath=zero-lliurex-technology.zmd
 Using=pkexec
 Service=False
 Modal=True
+Show=False

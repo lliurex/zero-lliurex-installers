@@ -14,5 +14,6 @@ Icon=zero-lliurex-qgis
 ScriptPath=zero-lliurex-qgis.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

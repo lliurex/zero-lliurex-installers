@@ -15,5 +15,6 @@ Icon=zero-lliurex-antimicrox
 ScriptPath=zero-lliurex-antimicrox.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

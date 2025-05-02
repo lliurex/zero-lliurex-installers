@@ -15,3 +15,5 @@ Using=pkexec
 Service=True
 Locks=zero-lliurex-ocrfeeder
 Groups=sudo;admins;teachers
+
+Show=False

@@ -16,3 +16,4 @@ Using=pkexec
 Service=True
 Locks=zero-lliurex-symfony
 Groups=admin;admins;sudo;teachers
+Show=False

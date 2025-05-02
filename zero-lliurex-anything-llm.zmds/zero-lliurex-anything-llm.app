@@ -15,5 +15,5 @@ Icon=zero-lliurex-anything-llm
 ScriptPath=zero-lliurex-anything-llm.zmd
 Using=pkexec
 Service=True
-
+Show=False
 

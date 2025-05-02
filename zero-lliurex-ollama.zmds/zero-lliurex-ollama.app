@@ -15,5 +15,6 @@ Icon=zero-lliurex-ollama
 ScriptPath=zero-lliurex-ollama.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

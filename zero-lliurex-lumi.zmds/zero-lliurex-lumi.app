@@ -15,3 +15,4 @@ Service=True
 Using=pkexec
 Locks=zero-lliurex-lumi
 Groups=sudo;admins;teachers
+Show=False

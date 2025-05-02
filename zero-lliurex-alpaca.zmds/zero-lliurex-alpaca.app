@@ -15,5 +15,6 @@ Icon=zero-lliurex-alpaca
 ScriptPath=zero-lliurex-alpaca.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

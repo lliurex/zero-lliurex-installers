@@ -15,5 +15,6 @@ Icon=zero-lliurex-calibre
 ScriptPath=zero-lliurex-calibre.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

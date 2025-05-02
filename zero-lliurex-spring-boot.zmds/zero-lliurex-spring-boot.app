@@ -15,5 +15,5 @@ Icon=zero-lliurex-spring-boot
 ScriptPath=zero-lliurex-spring-boot.zmd
 Using=pkexec
 Service=True
-
+Show=False
 

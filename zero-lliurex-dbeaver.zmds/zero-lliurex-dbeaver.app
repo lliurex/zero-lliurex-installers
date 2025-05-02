@@ -15,5 +15,6 @@ Icon=zero-lliurex-dbeaver
 ScriptPath=zero-lliurex-dbeaver.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

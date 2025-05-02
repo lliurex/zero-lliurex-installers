@@ -15,5 +15,6 @@ Icon=zero-lliurex-aws-cli
 ScriptPath=zero-lliurex-aws-cli.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

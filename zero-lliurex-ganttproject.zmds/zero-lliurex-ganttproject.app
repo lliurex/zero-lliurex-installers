@@ -15,5 +15,6 @@ Icon=zero-lliurex-ganttproject
 ScriptPath=zero-lliurex-ganttproject.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

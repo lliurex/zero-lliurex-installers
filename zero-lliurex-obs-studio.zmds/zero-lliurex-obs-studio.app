@@ -15,3 +15,4 @@ Using=pkexec
 Service=True
 Locks=zero-lliurex-obs-studio
 Groups=sudo;admins;teachers
+Show=False

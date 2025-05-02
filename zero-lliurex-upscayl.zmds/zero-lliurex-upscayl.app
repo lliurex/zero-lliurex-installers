@@ -14,5 +14,6 @@ Icon=zero-lliurex-upscayl
 ScriptPath=zero-lliurex-upscayl.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

@@ -14,5 +14,6 @@ Icon=zero-lliurex-mkvtoolnix
 ScriptPath=zero-lliurex-mkvtoolnix.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

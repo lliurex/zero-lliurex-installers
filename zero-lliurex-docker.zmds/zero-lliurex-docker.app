@@ -15,3 +15,4 @@ Using=pkexec
 Locks=zero-lliurex-docker
 Groups=sudo;admin;admins;
 Service=True
+Show=False

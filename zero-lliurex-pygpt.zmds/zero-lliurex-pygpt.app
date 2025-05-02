@@ -15,5 +15,6 @@ Icon=zero-lliurex-pygpt
 ScriptPath=zero-lliurex-pygpt.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

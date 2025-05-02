@@ -15,5 +15,6 @@ Icon=zero-lliurex-nerd-dictation
 ScriptPath=zero-lliurex-nerd-dictation.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

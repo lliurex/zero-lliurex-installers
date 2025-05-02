@@ -15,5 +15,6 @@ Icon=zero-lliurex-gimagereader
 ScriptPath=zero-lliurex-gimagereader.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

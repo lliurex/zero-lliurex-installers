@@ -15,5 +15,6 @@ Icon=zero-lliurex-ai2offline
 ScriptPath=zero-lliurex-ai2offline.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

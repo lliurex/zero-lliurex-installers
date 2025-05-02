@@ -3,6 +3,5 @@
 	"pkg_list": [{"name":"lliurex-ms-teams","custom_name":"LliureX-MS-Teams: tool to run MS Teams with chromium in app mode","custom_icon":"teams.png"}],
 	"script": {"name":"/usr/share/zero-lliurex-teams/teams_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-teams/",
-	"depends":"/usr/share/zero-lliurex-chromium/chromium.epi",
 	"zomando":"zero-lliurex-teams"
 	}

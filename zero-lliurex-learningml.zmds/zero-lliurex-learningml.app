@@ -15,5 +15,6 @@ Icon=zero-lliurex-learningml
 ScriptPath=zero-lliurex-learningml.zmd
 Using=pkexec
 Service=True
+Show=False
 
 

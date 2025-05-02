@@ -14,4 +14,5 @@ ScriptPath=zero-lliurex-pyromaths.zmd
 Using=pkexec
 Service=True
 Locks=zero-lliurex-pyromaths
-Groups=*;
+Groups=sudo;admins;teachers
+Show=False

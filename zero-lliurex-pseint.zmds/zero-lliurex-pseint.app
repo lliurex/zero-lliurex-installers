@@ -14,5 +14,6 @@ Icon=zero-lliurex-pseint
 ScriptPath=zero-lliurex-pseint.zmd
 Using=pkexec
 Service=True
+Show=False
 
 
