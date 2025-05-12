@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.1) noble; urgency=medium
+
+  * Fixed freecad script
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 12 May 2025 08:59:01 +0200
+
 zero-lliurex-installers (0.535) noble; urgency=medium
 
   * Added key to hide zomando
