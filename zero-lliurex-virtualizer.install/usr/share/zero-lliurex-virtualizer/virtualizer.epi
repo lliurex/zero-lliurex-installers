@@ -1,7 +1,7 @@
  {
- 	"type":"apt",
- 	"pkg_list":[{"name":"qemu", "custom_name":"QEMU: machine emulator and virtualizer ","custom_icon":"qemu.svg","skip_flavours":["server"]},{"name":"virtualbox", "custom_name":"Oracle VM VirtualBox: virtualization sofware","custom_icon":"virtualbox.png","required_x":"true"}],
-    "repository": [{"url":"deb http://archive.ubuntu.com/ubuntu/ noble main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-updates main multiverse restricted universe"}],
+ 	"type":"mix",
+ 	"pkg_list":[{"name":"qemu", "custom_name":"QEMU: machine emulator and virtualizer ","custom_icon":"qemu.svg","skip_flavours":["server"],"type":"deb"},{"name":"virtualbox-7.1", "custom_name":"Oracle VM VirtualBox 7: virtualization sofware","version":{"all":"virtualbox-7.1_7.1.8-168469~Ubuntu~noble_amd64.deb"},"url_download":"https://download.virtualbox.org/virtualbox/7.1.8/","custom_icon":"virtualbox7.png","required_x":"true","type":"deb"}],
+   "repository": [{"url":"deb http://archive.ubuntu.com/ubuntu/ noble main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-updates main multiverse restricted universe"}],
  	"script":{"name":"/usr/share/zero-lliurex-virtualizer/virtualizer_script","remove":true},
  	"custom_icon_path":"/usr/share/zero-lliurex-virtualizer/",
     "selection_enabled":{"active":true,"all_selected":false},

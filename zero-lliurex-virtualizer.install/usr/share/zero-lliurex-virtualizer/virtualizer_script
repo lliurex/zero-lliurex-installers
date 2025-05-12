@@ -20,9 +20,23 @@ function getFlavour
 
 }
 
+function getMsg {
+
+	if [[ $LANG == *"valencia"* ]];then
+		msgBox="Pot descarregar VirtualBox Extension Pack accedint a\nhttps://www.virtualbox.org/wiki/Downloads"
+	elif [[ $LANG == *"es"* ]];then
+		msgBox="Puede descargar VirtualBox Extension Pack accediendo a\nhttps://www.virtualbox.org/wiki/Downloads"
+	elif [[ $LANG == *"en"* ]];then
+		msgBox="You can download VirtualBox Extension Pack from\nhttps://www.virtualbox.org/wiki/Downloads"
+	fi
+
+	echo "$msgBox"		
+
+}
+
 ACTION="$1"
-VM_ADITIONAL_PKGS="virtualbox-ext-pack"
 QEMU_ADITIONAL_PKGS="qemu-system-x86 virt-manager libvirt-clients libvirt-daemon-system bridge-utils"
+VIRTUAL_ADITIONAL_PKGS="libqt6dbus6t64 libqt6help6 libqt6printsupport6t64 libqt6statemachine6 libqt6widgets6t64 libqt6xml6t64 qt6-scxml liblzf1 libtpms0 libsdl-ttf2.0-0"
 
 shift
 PACKAGE_LIST=$@
@@ -39,6 +53,15 @@ case $ACTION in
 					echo "***Unable to install QEMU in server. Remove it for the selection and try again***"
 					exit 1
 				fi
+			elif [[ "$ix" == "virtualbox-7.1" ]];then
+				for jx in $VIRTUAL_ADITIONAL_PKGS
+				do
+					apt-get install -y $jx
+					TEST=$( dpkg-query -s $jx 2> /dev/null| grep Status | cut -d " " -f 4 )
+					if [ "$TEST" != 'installed' ];then
+						exit 1
+					fi
+				done
 			fi
 		done
 	;;
@@ -46,11 +69,9 @@ case $ACTION in
 	postInstall)
 		for ix in $PACKAGE_LIST
 		do
-			if [[ " $ix " == *" virtualbox "* ]];then 
-				for jx in $VM_ADITIONAL_PKGS
-					do
-						lANG=C LANGUAGE=en DEBIAN_FRONTEND=kde apt-get install -y $jx
-					done 
+			if [[ "$ix" == "virtualbox-7.1" ]];then
+				msgBox=$(getMsg)
+				kdialog --title "EPI" --msgbox "$msgBox" || true
 			elif [[ " $ix " == *" qemu " ]];then
 				for jx in $QEMU_ADITIONAL_PKGS
 				do
@@ -70,16 +91,11 @@ case $ACTION in
 		for ix in $PACKAGE_LIST
 		do
 			
-			if [[ " $ix " == *" virtualbox "* ]];then 
+			if [[ "$ix" == "virtualbox-7.1" ]];then 
 				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
 					count+=1
-				else
-					for jx in $VM_ADITIONAL_PKGS
-					do
-						apt-get remove -y $jx
-					done
 				fi
 			elif [[ " $ix " == *" qemu "* ]];then 
 				apt-get purge -y $ix
