@@ -91,8 +91,8 @@ case $ACTION in
 		update-desktop-database $DESKTOP_DEST >/dev/null 2>/dev/null || true
 		
 		
-		sed -i "s#%%HOME%%#$HOME#" ${DESKTOP_DEST}"/freecad-appimage.desktop"  
-		chmod +x ${DESKTOP_DEST}"/freecad-appimage.desktop"
+		sed -i "s#%%HOME%%#$HOME#" ${DESKTOP_DEST}"freecad-appimage.desktop"  
+		chmod +x ${DESKTOP_DEST}"freecad-appimage.desktop"
 		
 		echo ${DEST_FILE}" is now available at appimage-manager"
 	;;
@@ -111,6 +111,11 @@ case $ACTION in
 		if [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
 		then	
 			exit 1
+		else
+			if [ -f ${DESKTOP_DEST}"freecad-appimage.desktop" ]
+			then
+				rm -f ${DESKTOP_DEST}"freecad-appimage.desktop"
+			fi
 		fi
 	
 
