@@ -67,6 +67,11 @@ case $ACTION in
 					done 
 			elif [[ "$ix" == "virtualbox-7.1" ]];then
 				msgBox=$(getMsg)
+				echo ""
+				echo "---------------------------------------------------"
+				echo "You can download VirtualBox Extension Pack from https://www.virtualbox.org/wiki/Downloads"
+				echo "---------------------------------------------------"
+				echo ""
 				kdialog --title "EPI" --msgbox "$msgBox" || true
 
 			elif [[ " $ix " == *" qemu " ]];then
