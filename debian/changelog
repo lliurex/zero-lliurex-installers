@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.6) jammy; urgency=medium
+
+  * Enabled installation of virtualbox 7 with EPIC
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 12 May 2025 14:45:19 +0200
+
 zero-lliurex-installers (0.451.5) jammy; urgency=medium
 
   * Fixed freecad script
