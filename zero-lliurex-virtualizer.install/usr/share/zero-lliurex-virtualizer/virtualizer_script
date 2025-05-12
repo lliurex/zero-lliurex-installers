@@ -71,7 +71,13 @@ case $ACTION in
 		do
 			if [[ "$ix" == "virtualbox-7.1" ]];then
 				msgBox=$(getMsg)
+				echo ""
+				echo "---------------------------------------------------"
+				echo "You can download VirtualBox Extension Pack from https://www.virtualbox.org/wiki/Downloads"
+				echo "---------------------------------------------------"
+				echo ""
 				kdialog --title "EPI" --msgbox "$msgBox" || true
+
 			elif [[ " $ix " == *" qemu " ]];then
 				for jx in $QEMU_ADITIONAL_PKGS
 				do
