@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.3) noble; urgency=medium
+
+  * Enabled installation of virtualbox with EPIC
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 13 May 2025 12:51:35 +0200
+
 zero-lliurex-installers (0.535.2) noble; urgency=medium
 
   * Fixed zero-lliurex-virtualizer
