@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.7) jammy; urgency=medium
+
+  * Added support to launch zmd with pkg name as param
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 14 May 2025 15:48:33 +0200
+
 zero-lliurex-installers (0.451.6) jammy; urgency=medium
 
   * Enabled installation of virtualbox 7 with EPIC
