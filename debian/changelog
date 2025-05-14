@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.4) noble; urgency=medium
+
+  * Added support to launch zmd with pkg list with pkg name as argument
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 14 May 2025 10:40:41 +0200
+
 zero-lliurex-installers (0.535.3) noble; urgency=medium
 
   * Enabled installation of virtualbox with EPIC
