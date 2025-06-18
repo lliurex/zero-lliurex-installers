@@ -516,3 +516,10 @@ Depends: zero-center,epi-gtk
 Description: Processing installer
   Zero-center helper, It installs Processing in snap version
 
+Package: zero-lliurex-normcap
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Normcap installer
+  Zero-center helper, It installs Normcap in flatpak version
+
