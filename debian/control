@@ -293,7 +293,13 @@ Section: x11
 Depends: zero-center,epi-gtk
 Description: nerd-dictation  installer
   Zero-center helper, It installs nerd-dictation
- 
+
+Package: zero-lliurex-normcap
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Normcap  installer
+  Zero-center helper, It installs Normcap in flatpak version
+
 Package: zero-lliurex-notebook-bar
 Architecture: i386
 Section: x11
