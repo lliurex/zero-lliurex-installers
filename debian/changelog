@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.5) noble; urgency=medium
+
+  * Added zero-lliurex-normcap
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 18 Jun 2025 12:46:41 +0200
+
 zero-lliurex-installers (0.535.4) noble; urgency=medium
 
   * Added support to launch zmd with pkg list with pkg name as argument
