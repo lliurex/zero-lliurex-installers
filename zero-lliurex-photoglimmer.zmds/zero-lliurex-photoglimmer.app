@@ -1,0 +1,16 @@
+Name=zero-lliurex-photoglimmer
+Name[es]=Instalador de PhotoGlimmer (AppImage)
+Name[ca@valencia]=Instal·lador de PhotoGlimmer (AppImage)
+Name[qcv]=Instal·lador de PhotoGlimmer (AppImage)
+Name[ca_ES]=Instal·lador de PhotoGlimmer (AppImage)
+Comment= PhotoGlimmer is an image editing application that leverages Artificial Intelligence tools to separate people in the image from the background, and allows you to tweak the two separately.
+Comment[es]=PhotoGlimmer es una aplicación de edición de imágenes que aprovecha herramientas de Inteligencia Artificial para separar a las personas en la imagen del fondo y permite modificar ambos por separado.
+Comment[ca@valencia]=PhotoGlimmer és una aplicació d'edició d'imatges que aprofita ferramentes d'Intel·ligència Artificial per a separar a les persones en la imatge del fons i permet modificar els dos per separat.
+Comment[qcv]=PhotoGlimmer és una aplicació d'edició d'imatges que aprofita ferramentes d'Intel·ligència Artificial per a separar a les persones en la imatge del fons i permet modificar els dos per separat.
+Comment[ca_ES]=PhotoGlimmer és una aplicació d'edició d'imatges que aprofita ferramentes d'Intel·ligència Artificial per a separar a les persones en la imatge del fons i permet modificar els dos per separat.
+Icon=zero-lliurex-photoglimmer
+Category=Software
+ScriptPath=zero-lliurex-photoglimmer.zmd
+Service=True
+Groups=admin;admins;sudo;teachers
+Using=pkexec
