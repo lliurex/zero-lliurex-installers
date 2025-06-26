@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Graphics;2DGraphics;RasterGraphics
+Comment[ca_ES]=Editor d'imatges
+Comment=Image editor
+Comment[ca_ES.UTF-8@valencia]=Editor d'imatges
+Comment[ca_ES@valencia]=Editor d'imatges
+Comment[ca@valencia]=Editor d'imatges
+Comment[es]=Editor de imágenes
+Exec=/opt/photoglimmer/photoglimmer-appimage
+Icon=/usr/share/zero-lliurex-photoglimmer/photoglimmer-appimage.png
+MimeType=
+Name[ca_ES]=PhotoGlimmer AppImage
+Name=PhotoGlimmer AppImage
+Name[ca_ES.UTF-8@valencia]=PhotoGlimmer AppImage
+Name[ca_ES@valencia]=PhotoGlimmer AppImage
+Name[ca@valencia]=PhotoGlimmer AppImage
+Name[es]=PhotoGlimmer AppImage
+StartupNotify=true
+Terminal=false
+Type=Application
