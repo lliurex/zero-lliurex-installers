@@ -523,3 +523,10 @@ Depends: zero-center,epi-gtk
 Description: Normcap installer
   Zero-center helper, It installs Normcap in flatpak version
 
+Package: zero-lliurex-photoglimmer
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: PhotoGlimmer installer
+  Zero-center helper, It installs PhotoGlimmer in appimage version
+
