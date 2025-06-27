@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.9) jammy; urgency=medium
+
+  * Added zero-lliurex-photoglimmer
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 27 Jun 2025 08:09:12 +0200
+
 zero-lliurex-installers (0.451.8) jammy; urgency=medium
 
   * Added zero-lliurex-normcap
