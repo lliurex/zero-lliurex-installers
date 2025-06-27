@@ -52,8 +52,6 @@ case $ACTION in
 		
 		cp $DESKTOP_ORIG $DESKTOP_DEST
 		
-		sleep 15
-
 		update-desktop-database $DESKTOP_DEST >/dev/null 2>/dev/null || true
 		
 	;;
