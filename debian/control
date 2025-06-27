@@ -333,6 +333,13 @@ Provides: zero-lliurex-ollama
 Description: Ollama installers
  This package allows user to install and configure ollama
 
+Package: zero-lliurex-photoglimmer
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: PhotoGlimmer installer
+  Zero-center helper, It installs PhotoGlimmer in appimage version
+
 Package: zero-lliurex-processing
 Architecture: all
 Section: x11
