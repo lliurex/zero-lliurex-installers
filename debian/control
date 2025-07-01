@@ -295,6 +295,7 @@ Description: nerd-dictation  installer
   Zero-center helper, It installs nerd-dictation
 
 Package: zero-lliurex-normcap
+Architecture: all
 Section: x11
 Depends: zero-center,epi-gtk
 Description: Normcap  installer
