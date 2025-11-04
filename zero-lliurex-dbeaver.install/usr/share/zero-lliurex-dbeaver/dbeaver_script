@@ -12,7 +12,7 @@ case $ACTION in
 		count=0
 		for ix in $PACKAGE_LIST
 		do
-		if [[ "$ix" == "dbeaver" ]];then
+		if [[ "$ix" == "dbeaver-ce" ]];then
 				snap remove $ix
 
 				TEST=$(snap list | grep $ix | cut -d " " -f 1)
