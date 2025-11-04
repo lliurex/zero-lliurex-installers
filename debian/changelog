@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.7) noble; urgency=medium
+
+  * Fixed zero-lliurex-dbheaver
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 04 Nov 2025 16:22:23 +0100
+
 zero-lliurex-installers (0.535.6) noble; urgency=medium
 
   * Added zero-lliurex-photoglimmer
