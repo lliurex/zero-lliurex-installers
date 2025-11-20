@@ -20,6 +20,31 @@ function getFlavour
 
 }
 
+function installVBoxUsers {
+
+	TEST=$( dpkg-query -s $1 2> /dev/null| grep Status | cut -d " " -f 4 )
+
+	if [ "$TEST" == 'installed' ];then
+		apt-get install -y cdc-mapper-vboxusers || true
+	fi
+
+}
+
+function removeVBoxUsers {
+
+	apt-get remove -y cdc-mapper-vboxusers || true
+	
+	TEST=$( dpkg-query -s cdc-mapper-vboxusers 2> /dev/null| grep Status | cut -d " " -f 4 )
+
+	if [ "$TEST" != 'installed' ];then
+		
+		if [ -f /usr/share/cdc-mapper/groups/vboxuser.json ];then
+			rm -f /usr/share/cdc-mapper/groups/vboxuser.json | true
+		fi
+	fi
+
+}
+
 function getMsg {
 
 	if [[ $LANG == *"valencia"* ]];then
@@ -60,12 +85,17 @@ case $ACTION in
 	postInstall)
 		for ix in $PACKAGE_LIST
 		do
-			if [[ " $ix " == "virtualbox" ]];then 
+			if [[ "$ix" == "virtualbox" ]];then
 				for jx in $VM_ADITIONAL_PKGS
 					do
 						lANG=C LANGUAGE=en DEBIAN_FRONTEND=kde apt-get install -y $jx
-					done 
+					done
+
+				installVBoxUsers "virtualbox"
+
 			elif [[ "$ix" == "virtualbox-7.1" ]];then
+				installVBoxUsers "virtualbox-7.1"
+
 				msgBox=$(getMsg)
 				echo ""
 				echo "---------------------------------------------------"
@@ -93,7 +123,7 @@ case $ACTION in
 		for ix in $PACKAGE_LIST
 		do
 			
-			if [[ " $ix " == "virtualbox" ]];then 
+			if [[ "$ix" == "virtualbox" ]];then 
 				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
@@ -103,12 +133,16 @@ case $ACTION in
 					do
 						apt-get remove -y $jx
 					done
+
+					removeVBoxUsers
 				fi
 			elif [[ "$ix" == "virtualbox-7.1" ]];then 
 				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
 					count+=1
+				else
+					removeVBoxUsers
 				fi
 
 			elif [[ " $ix " == *" qemu "* ]];then 
