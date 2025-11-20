@@ -32,14 +32,21 @@ function installVBoxUsers {
 
 function removeVBoxUsers {
 
-	apt-get remove -y cdc-mapper-vboxusers || true
-	
-	TEST=$( dpkg-query -s cdc-mapper-vboxusers 2> /dev/null| grep Status | cut -d " " -f 4 )
+	match=0
+	if dpkg -s cdc-mapper-vboxusers &>/dev/null ; then
+		apt-get remove -y cdc-mapper-vboxusers || true
+		TEST=$( dpkg-query -s cdc-mapper-vboxusers 2> /dev/null| grep Status | cut -d " " -f 4 )
 
-	if [ "$TEST" != 'installed' ];then
-		
-		if [ -f /usr/share/cdc-mapper/groups/vboxuser.json ];then
-			rm -f /usr/share/cdc-mapper/groups/vboxuser.json | true
+		if [ "$TEST" != 'installed' ];then
+			match+=1
+		fi
+	else
+		match+=1
+	fi
+
+	if [ "$match" -gt 0 ];then
+		if [ -f /usr/share/cdc-mapper/groups/vboxusers.json ];then
+			rm -f /usr/share/cdc-mapper/groups/vboxusers.json | true
 		fi
 	fi
 
