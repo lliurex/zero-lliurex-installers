@@ -47,6 +47,7 @@ function removeVBoxUsers {
 	if [ "$match" -gt 0 ];then
 		if [ -f /usr/share/cdc-mapper/groups/vboxusers.json ];then
 			rm -f /usr/share/cdc-mapper/groups/vboxusers.json | true
+			systemctl restart cdc-mapper.service || true
 		fi
 	fi
 
