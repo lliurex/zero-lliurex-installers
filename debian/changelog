@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.8.1) noble; urgency=medium
+
+  * Fixed zero-lliurex-virtualizer
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 21 Nov 2025 13:44:32 +0100
+
 zero-lliurex-installers (0.535.8) noble; urgency=medium
 
   * Changed zero-lliurex-virtualizer for install cdc-mapper-vboxusers

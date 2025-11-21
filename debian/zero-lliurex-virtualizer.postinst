@@ -28,7 +28,7 @@ case "$1" in
 
            if [ ! -f "$PERM_FILE" ];then
                 jq -n '{"name":"vboxusers","editable":false,"alu":true,"doc":true,"adm":true}' > $PERM_FILE || true
-
+                systemctl restart cdc-mapper.service || true
             fi
         fi 
     ;;
