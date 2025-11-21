@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.11.1) jammy; urgency=medium
+
+  * Fixed zero-lliurex-virtualizer
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 21 Nov 2025 13:46:46 +0100
+
 zero-lliurex-installers (0.451.11) jammy; urgency=medium
 
   * Changed zero-lliurex-virtualizer for add vboxusers
