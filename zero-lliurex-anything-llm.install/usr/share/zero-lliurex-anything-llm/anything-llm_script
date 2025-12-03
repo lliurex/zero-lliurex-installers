@@ -51,6 +51,8 @@ case $ACTION in
 			chmod 777 -R ${EXTRACTED_DIR}
 			cp ${DESKTOP_ANYTHINGLLM} ${DESKTOPS_DIR}
 			ln -sf ${OUTDIR}/${EXTRACTED_DIR}/${LAUNCHED_FILE} ${BIN_PATH}
+			#Fix permissions for sandbox
+			chmod 4755 /opt/AnythingLLMDesktop/anythingllm-desktop/chrome-sandbox || false
 
 		else
 			exit 1
