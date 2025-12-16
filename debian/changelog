@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.8.3) noble; urgency=medium
+
+  * Upgrade virtualbox to 7.2
+
+ -- Juanma1980 <juanma1980@gmail.com>  Tue, 16 Dec 2025 09:13:49 +0100
+
 zero-lliurex-installers (0.535.8.2) noble; urgency=medium
 
   * Fix permissions for anything-llm sandbox
