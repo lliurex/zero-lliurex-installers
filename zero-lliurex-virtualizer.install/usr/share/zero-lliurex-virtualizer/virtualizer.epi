@@ -1,6 +1,6 @@
  {
  	"type":"mix",
-  	"pkg_list":[{"name":"qemu", "custom_name":"QEMU: machine emulator and virtualizer ","custom_icon":"qemu.svg","skip_flavours":["server"],"type":"apt"},{"name":"virtualbox", "custom_name":"Oracle VM VirtualBox 6: virtualization sofware","custom_icon":"virtualbox.png","required_x":"true","type":"apt"},{"name":"virtualbox-7.1", "custom_name":"Oracle VM VirtualBox 7: virtualization sofware","version":{"all":"virtualbox-7.1_7.1.4-165100~Ubuntu~jammy_amd64.deb"},"url_download":"https://download.virtualbox.org/virtualbox/7.1.4/","custom_icon":"virtualbox7.png","type":"deb"}],
+  	"pkg_list":[{"name":"qemu", "custom_name":"QEMU: machine emulator and virtualizer ","custom_icon":"qemu.svg","skip_flavours":["server"],"type":"apt"},{"name":"virtualbox", "custom_name":"Oracle VM VirtualBox 6: virtualization sofware","custom_icon":"virtualbox.png","required_x":"true","type":"apt"},{"name":"virtualbox-7.2", "custom_name":"Oracle VM VirtualBox 7: virtualization sofware","version":{"all":"virtualbox-7.2_7.2.4-170995~Ubuntu~jammy_amd64.deb"},"url_download":"https://download.virtualbox.org/virtualbox/7.2.4/","custom_icon":"virtualbox7.png","type":"deb"}],
     "repository": [{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-updates main multiverse restricted universe"}], 
  	"script":{"name":"/usr/share/zero-lliurex-virtualizer/virtualizer_script","remove":true},
  	"custom_icon_path":"/usr/share/zero-lliurex-virtualizer/",

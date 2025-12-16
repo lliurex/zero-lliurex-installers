@@ -101,8 +101,8 @@ case $ACTION in
 
 				installVBoxUsers "virtualbox"
 
-			elif [[ "$ix" == "virtualbox-7.1" ]];then
-				installVBoxUsers "virtualbox-7.1"
+			elif [[ "$ix" == "virtualbox-7.2" ]];then
+				installVBoxUsers "virtualbox-7.2"
 
 				msgBox=$(getMsg)
 				echo ""
@@ -144,7 +144,7 @@ case $ACTION in
 
 					removeVBoxUsers
 				fi
-			elif [[ "$ix" == "virtualbox-7.1" ]];then 
+			elif [[ "$ix" == "virtualbox-7.2" ]];then 
 				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
