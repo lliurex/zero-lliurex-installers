@@ -86,13 +86,14 @@ case $ACTION in
 					echo "***Unable to install QEMU in server. Remove it for the selection and try again***"
 					exit 1
 				fi
-			elif [[ "$ix" == "virtualbox-7.1" ]];then
+			elif [[ "$ix" == "virtualbox-7.2" ]];then
 				for jx in $VIRTUAL_ADITIONAL_PKGS
 				do
 					apt-get install -y $jx
 					TEST=$( dpkg-query -s $jx 2> /dev/null| grep Status | cut -d " " -f 4 )
 					if [ "$TEST" != 'installed' ];then
 						exit 1
+					fi
 					
 				done
 			fi
@@ -102,8 +103,8 @@ case $ACTION in
 	postInstall)
 		for ix in $PACKAGE_LIST
 		do
-			if [[ "$ix" == "virtualbox-7.1" ]];then
-				installVBoxUsers "virtualbox-7.1"
+			if [[ "$ix" == "virtualbox-7.2" ]];then
+				installVBoxUsers "virtualbox-7.2"
 				msgBox=$(getMsg)
 				echo ""
 				echo "---------------------------------------------------"
@@ -131,7 +132,7 @@ case $ACTION in
 		for ix in $PACKAGE_LIST
 		do
 			
-			if [[ "$ix" == "virtualbox-7.1" ]];then 
+			if [[ "$ix" == "virtualbox-7.2" ]];then 
 				apt-get purge -y $ix
 				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 				if [ "$TEST" == 'installed' ];then
