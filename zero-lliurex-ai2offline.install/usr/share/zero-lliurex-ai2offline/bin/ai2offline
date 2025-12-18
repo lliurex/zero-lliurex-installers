@@ -22,6 +22,11 @@ sleep 5
 xdg-open http://localhost:8888 &
 
 # ai2 build server
-/opt/ai2offline/AI2Offline6.2/startBuildServer.sh
+/opt/ai2offline/AI2Offline6.2/startBuildServer.sh &
+
+# ai2 starter
+/opt/ai2offline/AI2Offline6.2/startAIStarter.sh 
+
+
 
 
