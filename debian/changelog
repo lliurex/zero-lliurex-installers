@@ -1,6 +1,12 @@
+zero-lliurex-installers (0.451.13) jammy; urgency=medium
+
+  * zero-lliurex-ai2offline: install appinventor 7.6. Include extra data
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 19 Dec 2025 11:43:07 +0100
+
 zero-lliurex-installers (0.451.12) jammy; urgency=medium
 
-  *Zero-lliurex-virtualizer: install vbox 7.2
+  * zero-lliurex-virtualizer: install vbox 7.2
 
  -- Juanma1980 <juanma1980@gmail.com>  Tue, 16 Dec 2025 10:03:24 +0100
 
