@@ -11,10 +11,10 @@ for PROC in $(pgrep -f BuildServer.jar); do
 done;
 
 
-cd /opt/ai2offline/AI2Offline6.2/
+cd /opt/ai2offline/AI2Offline7.6/
 
 # ai2 server
-/opt/ai2offline/AI2Offline6.2/startAIServer.sh &
+/opt/ai2offline/AI2Offline7.6/startAIServer.sh &
 
 #Takes some time for server to be online. hopefully this is enough
 sleep 5
@@ -22,10 +22,10 @@ sleep 5
 xdg-open http://localhost:8888 &
 
 # ai2 build server
-/opt/ai2offline/AI2Offline6.2/startBuildServer.sh &
+/opt/ai2offline/AI2Offline7.6/startBuildServer.sh &
 
 # ai2 starter
-/opt/ai2offline/AI2Offline6.2/startAIStarter.sh 
+/opt/ai2offline/AI2Offline7.6/startAIStarter.sh 
 
 
 
