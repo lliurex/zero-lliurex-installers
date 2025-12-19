@@ -2,16 +2,21 @@
 
 
 ACTION="$1"
-URL="https://deac-ams.dl.sourceforge.net/project/ai2offline/6.2/AI2Offline6.2.7z"
+URL="https://deac-ams.dl.sourceforge.net/project/ai2offline/7.6/AI2Offline7.6.7z"
+#This is a magic link, so it could change
+URL_DATA="https://files.appinventor.mit.edu/api/public/dl/vlwV6uq3"
 DEST_DOWNLOAD="/opt/ai2offline/"
+TEMP_DOWNLOAD="/tmp/.ai2data/"
+DEST_DATA_FILE=${TEMP_DOWNLOAD}"ai2offline-data.tar.gz"
 DEST_FILE=$DEST_DOWNLOAD"ai2offline.7z"
-AI2FOLDER=$DEST_DOWNLOAD"AI2Offline6.2/"
+AI2FOLDER=$DEST_DOWNLOAD"AI2Offline7.6/"
 AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
 AIBUILDER_SCRIPT=$AI2FOLDER"startBuildServer.sh"
 DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/desktops/*.desktop"
 DESKTOP_DEST="/usr/share/applications/"
 BIN_ORIG="/usr/share/zero-lliurex-ai2offline/bin/*"
 BIN_DEST="/usr/bin/"
+DEPENDS_AI2="lib32stdc++6 lib32z1"
 
 case $ACTION in
 
@@ -45,7 +50,28 @@ case $ACTION in
 		then	
 			exit 1
 		fi	
+
+		if [ -d ${TEMP_DOWNLOAD} ]
+		then
+			rm -fr ${TEMP_DOWNLOAD}
+		fi
+
+		mkdir ${TEMP_DOWNLOAD}
+		wget ${URL_DATA} -O ${DEST_DATA_FILE}
+
+		if ! [ -s ${DEST_DATA_FILE} ]
+		then	
+			exit 1
+		fi	
 	;;	
+
+	preInstall)
+		echo "Installing needed packages"
+		for PKG in $DEPENDS_AI2
+		do
+			apt-get install --yes  $PKG
+		done
+	;;
 	
 	installPackage)
 
@@ -68,6 +94,23 @@ case $ACTION in
 		
 		echo "Copy bin files..."
 		cp $BIN_ORIG $BIN_DEST
+		
+		echo "Extracting data..."
+		cd $TEMP_DOWNLOAD
+		tar -zxf $DEST_DATA_FILE
+		rm $DEST_DATA_FILE
+		RELEASE_DIR=$(ls | head -n1)
+		cd $OLDPWD
+
+		echo "Setting up paths..."
+		#Put tools on aistarter
+		AILINUX_FOLDER=${AI2FOLDER}"aiStarter-linux/"
+		ln -s ${AILINUX_FOLDER}from-Android-SDK/platform-tools/* ${AILINUX_FOLDER}
+		cd ${DEST_DOWNLOAD}
+		#Copy tools from data
+		cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/from-Android-SDK/ ${AI2FOLDER}
+		cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/extras ${AI2FOLDER}
+		rm -fr $TEMP_DOWNLOAD
 		
 	
 	;;
