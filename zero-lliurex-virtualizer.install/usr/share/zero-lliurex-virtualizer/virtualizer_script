@@ -105,6 +105,7 @@ case $ACTION in
 		do
 			if [[ "$ix" == "virtualbox-7.2" ]];then
 				installVBoxUsers "virtualbox-7.2"
+				apt-get install -y llx-vbox-config || true
 				msgBox=$(getMsg)
 				echo ""
 				echo "---------------------------------------------------"
@@ -139,6 +140,7 @@ case $ACTION in
 					count+=1
 				else
 					removeVBoxUsers
+					apt-get purge -y llx-vbox-config || true
 				fi
 			elif [[ " $ix " == *" qemu "* ]];then 
 				apt-get purge -y $ix
