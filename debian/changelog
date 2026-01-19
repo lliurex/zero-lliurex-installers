@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.10) noble; urgency=medium
+
+  * Updated virtualizer_script to install/remove llx-vbox-config
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 19 Jan 2026 11:02:03 +0100
+
 zero-lliurex-installers (0.535.9) noble; urgency=medium
 
   * zero-lliurex-ai2offline: Uppdate appinventor to 7.6. Include data package
