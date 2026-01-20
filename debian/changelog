@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.14) jammy; urgency=medium
+
+  * Add docker-change-net to docker install chain
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Tue, 20 Jan 2026 13:47:49 +0100
+
 zero-lliurex-installers (0.451.13) jammy; urgency=medium
 
   * zero-lliurex-ai2offline: install appinventor 7.6. Include extra data
