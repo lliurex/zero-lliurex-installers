@@ -4,7 +4,7 @@ PACKAGE="autofirma"
 RC=0
 CERT_ALIAS="SocketAutoFirma"
 
-dpkg -l $PACKAGE 1>2 2>/dev/null || RC=1
+dpkg -l $PACKAGE &1>2 2>/dev/null || RC=1
 
 if [ "$RC" = "0" ]; then 
 	
