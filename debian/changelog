@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.15) jammy; urgency=medium
+
+  * Fix typo in zero-lliurex-autofirma
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 23 Jan 2026 09:44:34 +0100
+
 zero-lliurex-installers (0.451.14) jammy; urgency=medium
 
   * Add docker-change-net to docker install chain
