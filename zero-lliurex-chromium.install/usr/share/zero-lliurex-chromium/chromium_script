@@ -7,26 +7,13 @@ PACKAGE_LIST=$@
 
 case $ACTION in
 
-	preInstall)
-
-		TEST=$(snap list | grep core | cut -d " " -f 1 )
-
-		if [ -z "$TEST" ];then
-			snap install core
-			if ! [[ $(snap list | grep "core") == *"core"* ]];then
-				exit 1
-			fi
-		fi
-	;;
-
 	remove)
 		count=0
 		for ix in $PACKAGE_LIST
 		do
-		if [[ "$ix" == "chromium" ]];then
-				snap remove $ix
-
-				TEST=$(snap list | grep $ix | cut -d " " -f 1)
+		if [[ "$ix" == "chromium-snapfree" ]];then
+				apt-get -y remove $ix
+				TEST=$( dpkg-query -s $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
 
 				if [[ ! -z "$TEST" ]];then
 					count+=1
