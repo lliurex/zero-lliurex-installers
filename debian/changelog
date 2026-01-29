@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.16) jammy; urgency=medium
+
+  * Updated zero-lliurex-chromium to install deb instead snap version
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 29 Jan 2026 10:07:25 +0100
+
 zero-lliurex-installers (0.451.15) jammy; urgency=medium
 
   * Fix typo in zero-lliurex-autofirma
