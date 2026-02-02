@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.17) jammy; urgency=medium
+
+  * Fixed new audacity openvino huggingface paths 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 02 Feb 2026 09:03:31 +0100
+
 zero-lliurex-installers (0.451.16) jammy; urgency=medium
 
   * Updated zero-lliurex-chromium to install deb instead snap version
