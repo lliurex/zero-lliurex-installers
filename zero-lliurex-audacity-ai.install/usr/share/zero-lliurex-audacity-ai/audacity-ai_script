@@ -56,7 +56,7 @@ case $ACTION in
                          apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
 		fi
 
-		snap remove $ix
+		snap remove audacity
 		TEST=$(snap list | grep audacity | cut -d " " -f 1)
 		if [[ ! -z "$TEST" ]];then
                 	exit 1
@@ -72,9 +72,6 @@ case $ACTION in
 			rm -rf /var/snap/audacity/common/models/openvino-models
 		fi
 
-                if [ $count -gt 0 ];then
-                        exit 1
-                fi
 
 
 	;;	
