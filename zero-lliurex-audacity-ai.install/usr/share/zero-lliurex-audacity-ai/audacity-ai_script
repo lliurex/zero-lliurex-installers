@@ -34,6 +34,9 @@ case $ACTION in
 		# connect snap to alsa
 		snap connect audacity:alsa
 
+		# looks like we need to restart namespace mounts or else we need a system restart for models to be seen inside snap mounts
+		/usr/lib/snapd/snap-discard-ns audacity || true
+
 		# hide audacity-deb
 		mv /usr/share/applications/audacity.desktop /usr/share/applications/audacity.desktop.snap_diverted
 
