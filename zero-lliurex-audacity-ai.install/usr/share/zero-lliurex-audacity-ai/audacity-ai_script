@@ -56,6 +56,14 @@ case $ACTION in
                          apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
 		fi
 
+		snap remove $ix
+		TEST=$(snap list | grep audacity | cut -d " " -f 1)
+		if [[ ! -z "$TEST" ]];then
+                	exit 1
+
+		fi
+
+
 		if [ -e /usr/share/applications/audacity.desktop.snap_diverted ];then
 			mv /usr/share/applications/audacity.desktop.snap_diverted /usr/share/applications/audacity.desktop
 		fi
@@ -63,6 +71,10 @@ case $ACTION in
 		if [ -e /var/snap/audacity/common/models/openvino-models ];then
 			rm -rf /var/snap/audacity/common/models/openvino-models
 		fi
+
+                if [ $count -gt 0 ];then
+                        exit 1
+                fi
 
 
 	;;	
