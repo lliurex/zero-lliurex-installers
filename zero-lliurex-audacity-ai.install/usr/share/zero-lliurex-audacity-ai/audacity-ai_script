@@ -8,82 +8,58 @@ case $ACTION in
 
 	postInstall)
 
-		cd /opt
 		# just in case something failed. we need a fresh start
-		rm -rf openvino-models
+		rm -rf /opt/openvino-models
 		rm -rf /usr/lib/openvino-models
-
-		mkdir openvino-models
 		
+		RC=1
+		dpkg -l audacity-ai 2>/dev/null|| RC=0
 
-		# MUSIC GEN
-		mkdir openvino-models/musicgen
-		
-		git clone https://huggingface.co/Intel/musicgen-static-openvino
+		# Restore current audacity
+		if [ $RC = 1 ]; then
+                	OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2 | xargs)
+                	if [ -z $OLD_AUDACITY ];then
+                	        echo "Error: Failed to query stable audacity version."
+                	        exit 1
 
-		mv musicgen-static-openvino/* openvino-models/musicgen
-		rm -rf musicgen-static-openvino
-		
-		# WHISPER
-		git clone https://huggingface.co/Intel/whisper.cpp-openvino-models
+               		 fi
+			 apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
+		fi
 
-		unzip whisper.cpp-openvino-models/ggml-base-models.zip -d openvino-models
-		rm -rf whisper.cpp-openvino-models/ggml-base-models.zip
-		unzip whisper.cpp-openvino-models/ggml-small-models.zip -d openvino-models
-		rm -rf whisper.cpp-openvino-models/ggml-small-models.zip
-		unzip whisper.cpp-openvino-models/ggml-small.en-tdrz-models.zip -d openvino-models
+		# fetch all models
+		audacity.fetch-models -v -b 
 
-		rm -rf whisper.cpp-openvino-models
-		
-		# DEMUCS
-		git clone https://huggingface.co/Intel/demucs-openvino
+		# hide audacity-deb
 
-		mv demucs-openvino/htdemucs_v4.bin openvino-models
-		mv demucs-openvino/htdemucs_v4.xml openvino-models
+		mv /usr/share/applications/audacity.desktop /usr/share/applications/audacity.desktop.snap_diverted
 
-		rm -rf demucs-openvino
 
-		# DEEPFILTERNET
-		git clone https://huggingface.co/Intel/deepfilternet-openvino
-
-		unzip deepfilternet-openvino/deepfilternet2.zip -d openvino-models
-		rm -rf deepfilternet-openvino/deepfilternet2.zip
-		unzip deepfilternet-openvino/deepfilternet3.zip -d openvino-models
-		
-		rm -rf  deepfilternet-openvino
-
-		# NOISE SUPPRESION
-		cd openvino-models
-		wget https://storage.openvinotoolkit.org/repositories/open_model_zoo/2023.0/models_bin/1/noise-suppression-denseunet-ll-0001/FP16/noise-suppression-denseunet-ll-0001.xml
-		wget https://storage.openvinotoolkit.org/repositories/open_model_zoo/2023.0/models_bin/1/noise-suppression-denseunet-ll-0001/FP16/noise-suppression-denseunet-ll-0001.bin
-		cd ..
-
-		# AUDIO SUPER RESOLUTION
-		git clone https://huggingface.co/Intel/versatile_audio_super_resolution_openvino
-
-		mkdir openvino-models/audiosr
-		mv versatile_audio_super_resolution_openvino/* openvino-models/audiosr
-		rm -rf versatile_audio_super_resolution_openvino
-
-		# MOVE FILES TO SYSTEM DIR
-		mv openvino-models /usr/lib
 	;;	
 
 	remove)
 	
+                RC=1
+                dpkg -l audacity-ai 2>/dev/null|| RC=0
 
-		OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2 | xargs)
-		if [ -z $OLD_AUDACITY ];then
-			echo "Error: Failed to query stable audacity version."
-			exit 1
-
+                # Restore current audacity
+                if [ $RC = 1 ]; then
+                        OLD_AUDACITY=$(LANG=C apt policy audacity | grep Cand | cut -d ":" -f 2 | xargs)
+                        if [ -z $OLD_AUDACITY ];then
+                                echo "Error: Failed to query stable audacity version."
+                                exit 1
+                      
+                         fi
+                         apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
 		fi
 
-		# This operation should bring back stable audacity and remove custom audacity-ai
-		# as we need to preserve lliurex-meta
+		if [ -e /usr/share/applications/audacity.desktop.snap_diverted ];then
+			mv /usr/share/applications/audacity.desktop.snap_diverted /usr/share/applications/audacity.desktop
+		fi
 
-		apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
-		rm -rf /usr/lib/openvino-models
+		if [ -e /var/snap/audacity/common ];then
+			rm -rf /var/snap/audacity/common 
+		fi
+
 
 	;;	
 
