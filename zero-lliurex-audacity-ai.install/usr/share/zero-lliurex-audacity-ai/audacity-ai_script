@@ -11,9 +11,11 @@ case $ACTION in
 		# just in case something failed. we need a fresh start
 		rm -rf /opt/openvino-models
 		rm -rf /usr/lib/openvino-models
+		rm -rf /var/snap/audacity/common/tmp
+		rm -rf /var/snap/audacity/common/models/openvino-models
 		
 		RC=1
-		dpkg -l audacity-ai 2>/dev/null|| RC=0
+		dpkg -s audacity-ai 1>/dev/null 2>/dev/null|| RC=0
 
 		# Restore current audacity
 		if [ $RC = 1 ]; then
@@ -29,8 +31,10 @@ case $ACTION in
 		# fetch all models
 		audacity.fetch-models -v -b 
 
-		# hide audacity-deb
+		# connect snap to alsa
+		snap connect audacity:alsa
 
+		# hide audacity-deb
 		mv /usr/share/applications/audacity.desktop /usr/share/applications/audacity.desktop.snap_diverted
 
 
@@ -39,7 +43,7 @@ case $ACTION in
 	remove)
 	
                 RC=1
-                dpkg -l audacity-ai 2>/dev/null|| RC=0
+                dpkg -s audacity-ai 1>/dev/null 2>/dev/null|| RC=0
 
                 # Restore current audacity
                 if [ $RC = 1 ]; then
@@ -56,8 +60,8 @@ case $ACTION in
 			mv /usr/share/applications/audacity.desktop.snap_diverted /usr/share/applications/audacity.desktop
 		fi
 
-		if [ -e /var/snap/audacity/common ];then
-			rm -rf /var/snap/audacity/common 
+		if [ -e /var/snap/audacity/common/models/openvino-models ];then
+			rm -rf /var/snap/audacity/common/models/openvino-models
 		fi
 
 
