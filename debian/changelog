@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.18) jammy; urgency=medium
+
+  * zero-lliurex-audacity-ai to snap 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 04 Feb 2026 09:45:58 +0100
+
 zero-lliurex-installers (0.451.17) jammy; urgency=medium
 
   * Fixed new audacity openvino huggingface paths 
