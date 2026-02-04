@@ -56,7 +56,7 @@ case $ACTION in
                          apt install -y audacity-data=$OLD_AUDACITY audacity=$OLD_AUDACITY
 		fi
 
-		snap remove audacity
+		snap remove audacity --purge
 		TEST=$(snap list | grep audacity | cut -d " " -f 1)
 		if [[ ! -z "$TEST" ]];then
                 	exit 1
