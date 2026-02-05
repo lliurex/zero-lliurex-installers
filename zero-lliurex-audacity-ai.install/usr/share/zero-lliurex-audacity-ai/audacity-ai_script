@@ -14,14 +14,14 @@ case $ACTION in
 		rm -rf /usr/lib/openvino-models
 
 		mkdir openvino-models
-		mkdir openvino-models/musicgen
+		
 
 		# MUSIC GEN
+		mkdir openvino-models/musicgen
+		
 		git clone https://huggingface.co/Intel/musicgen-static-openvino
 
-		unzip musicgen-static-openvino/musicgen_small_enc_dec_tok_openvino_models.zip -d openvino-models/musicgen
-		unzip musicgen-static-openvino/musicgen_small_mono_openvino_models.zip -d openvino-models/musicgen
-		unzip musicgen-static-openvino/musicgen_small_stereo_openvino_models.zip -d openvino-models/musicgen
+		mv musicgen-static-openvino/* openvino-models/musicgen
 		rm -rf musicgen-static-openvino
 		
 		# WHISPER
@@ -61,12 +61,8 @@ case $ACTION in
 		# AUDIO SUPER RESOLUTION
 		git clone https://huggingface.co/Intel/versatile_audio_super_resolution_openvino
 
-		unzip versatile_audio_super_resolution_openvino/versatile_audio_sr_base_openvino_models.zip -d openvino-models/audiosr
-		rm -rf versatile_audio_super_resolution_openvino/versatile_audio_sr_base_openvino_models.zip
-		unzip versatile_audio_super_resolution_openvino/versatile_audio_sr_ddpm_basic_openvino_models.zip -d openvino-models/audiosr
-		rm -rf versatile_audio_super_resolution_openvino/versatile_audio_sr_ddpm_basic_openvino_models.zip
-		unzip versatile_audio_super_resolution_openvino/versatile_audio_sr_ddpm_speech_openvino_models.zip -d openvino-models/audiosr
-
+		mkdir openvino-models/audiosr
+		mv versatile_audio_super_resolution_openvino/* openvino-models/audiosr
 		rm -rf versatile_audio_super_resolution_openvino
 
 		# MOVE FILES TO SYSTEM DIR
