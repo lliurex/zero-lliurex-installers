@@ -1,0 +1,17 @@
+Name=zero-lliurex-wireshark
+Name[es]=Instalador de WireShark
+Name[en]=WireShark installer
+Name[ca_ES]=Instal·lador de WireShark
+Name[ca@valencia]=Instal·lador de WireShark
+Name[qcv]=Instal·lador de WireShark
+Comment= A powerful, open-source network protocol analyzer
+Comment[es]= Un potente analizador de redes de código abierto
+Comment[ca_ES]= Un potent analitzador de xarxes de codi obert
+Comment[ca@valencia]= Un potent analitzador de xarxes de codi obert
+Icon=zero-lliurex-wireshark
+Category=Software
+ScriptPath=zero-lliurex-wireshark.zmd
+Using=pkexec
+Service=True
+Locks=zero-lliurex-wireshark
+Groups=admin;admins;sudo;teachers;students

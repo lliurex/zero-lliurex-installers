@@ -1,0 +1,8 @@
+{
+	"type":"apt",
+	"pkg_list": [{"name":"wireshark","custom_name":"Wireshark: A powerfull and open-source network analyzer","custom_icon":"wireshark.png"}],
+	"repository": [{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-updates main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ jammy-security main multiverse restricted universe"}],  
+	"script": {"name":"/usr/share/zero-lliurex-wireshark/wireshark_script","remove":true},
+	"custom_icon_path":"/usr/share/zero-lliurex-wireshark/",
+	"zomando":"zero-lliurex-wireshark"
+	}
