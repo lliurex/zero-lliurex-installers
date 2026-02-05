@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.13) noble; urgency=medium
+
+  * Add wireshark installer
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 05 Feb 2026 08:39:01 +0100
+
 zero-lliurex-installers (0.535.12) noble; urgency=medium
 
   * Fix typo in zero-lliurex-autofirma installer
