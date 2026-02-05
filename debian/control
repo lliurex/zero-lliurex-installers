@@ -482,5 +482,10 @@ Depends: zero-center,epi-gtk
 Description: Zotero installer
   Zero-center helper, It installs Zotero
 
-
+Package: zero-lliurex-wireshark
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: WireShark installer
+  Zero-center helper, It installs and configures WireShark network analyzer
 
