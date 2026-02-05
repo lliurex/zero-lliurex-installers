@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.23) jammy; urgency=medium
+
+  * Add wireshark zomando
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 05 Feb 2026 08:17:35 +0100
+
 zero-lliurex-installers (0.451.22) jammy; urgency=medium
 
   * zero-lliurex-audacity-ai to snap 
