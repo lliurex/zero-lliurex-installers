@@ -1,0 +1,45 @@
+#!/bin/bash
+
+
+ACTION="$1"
+shift
+
+PACKAGE_LIST=$@
+
+case $ACTION in
+	remove)
+		PERM_FILE="/usr/share/cdc-mapper/groups/wireshark.json"
+		if [ -f  "$PERM_FILE" ]; then
+			rm $PERM_FILE
+		fi
+
+		for ix in $PACKAGE_LIST	
+		do
+			apt-get remove -y $ix
+			TEST=$( dpkg-query -s  $ix 2> /dev/null| grep Status | cut -d " " -f 4 )
+			if [ "$TEST" == 'installed' ];then
+				exit 1
+
+			else
+				apt-get remove -y wireshark
+			fi
+		done
+	;;	
+	postInstall)
+		echo "[EPI]:Checking permission group..."
+		if dpkg -s wireshark &>/dev/null ; then
+			echo "[EPI]:Adding permission group..."
+			PERM_FILE="/usr/share/cdc-mapper/groups/wireshark.json"
+			if [ ! -f  "$PERM_FILE" ]; then
+				echo "Generating JSON permission file..."
+				jq -n '{"name":"wireshark","editable":true,"alu":false,"doc":true,"adm":true}' > $PERM_FILE
+			fi
+		else
+			if [ -f  "$PERM_FILE" ]; then
+				echo "You don't have wireshark installed deleting permission file..."
+				rm $PERM_FILE
+			fi
+		fi
+	;;	
+esac	
+
