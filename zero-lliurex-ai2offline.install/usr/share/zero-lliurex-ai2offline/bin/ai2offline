@@ -1,5 +1,5 @@
 #!/bin/bash
-
+RELEASE=7.4
 # we might need to kill old processes
 
 for PROC in $(pgrep -f appengine-tools-api.jar); do 
@@ -14,7 +14,7 @@ done;
 cd /opt/ai2offline/AI2Offline7.6/
 
 # ai2 server
-/opt/ai2offline/AI2Offline7.6/startAIServer.sh &
+/opt/ai2offline/AI2Offline${RELEASE}/startAIServer.sh &
 
 #Takes some time for server to be online. hopefully this is enough
 sleep 5
@@ -22,10 +22,10 @@ sleep 5
 xdg-open http://localhost:8888 &
 
 # ai2 build server
-/opt/ai2offline/AI2Offline7.6/startBuildServer.sh &
+/opt/ai2offline/AI2Offline${RELEASE}/startBuildServer.sh &
 
 # ai2 starter
-/opt/ai2offline/AI2Offline7.6/startAIStarter.sh 
+/opt/ai2offline/AI2Offline${RELEASE}/startAIStarter.sh 
 
 
 

@@ -2,14 +2,14 @@
 
 
 ACTION="$1"
-URL="https://deac-ams.dl.sourceforge.net/project/ai2offline/7.7/AI2Offline7.7.7z"
+URL="https://deac-ams.dl.sourceforge.net/project/ai2offline/7.4/AI2Offline7.4.7z"
 #This is a magic link, so it could change
 URL_DATA="https://files.appinventor.mit.edu/api/public/dl/vlwV6uq3"
 DEST_DOWNLOAD="/opt/ai2offline/"
 TEMP_DOWNLOAD="/tmp/.ai2data/"
 DEST_DATA_FILE=${TEMP_DOWNLOAD}"ai2offline-data.tar.gz"
 DEST_FILE=$DEST_DOWNLOAD"ai2offline.7z"
-AI2FOLDER=$DEST_DOWNLOAD"AI2Offline7.7/"
+AI2FOLDER=$DEST_DOWNLOAD"AI2Offline7.4/"
 AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
 AIBUILDER_SCRIPT=$AI2FOLDER"startBuildServer.sh"
 DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/desktops/*.desktop"
