@@ -1,5 +1,5 @@
 #!/bin/bash
-RELEASE=7.4
+RELEASE=7.7
 # we might need to kill old processes
 
 for PROC in $(pgrep -f appengine-tools-api.jar); do 
@@ -11,7 +11,7 @@ for PROC in $(pgrep -f BuildServer.jar); do
 done;
 
 
-cd /opt/ai2offline/AI2Offline7.6/
+cd /opt/ai2offline/AI2Offline${RELEASE}/
 
 # ai2 server
 /opt/ai2offline/AI2Offline${RELEASE}/startAIServer.sh &
