@@ -1,22 +1,25 @@
 #!/bin/bash
 
-
-ACTION="$1"
-URL="https://deac-ams.dl.sourceforge.net/project/ai2offline/7.4/AI2Offline7.4.7z"
-#This is a magic link, so it could change
-URL_DATA="https://files.appinventor.mit.edu/api/public/dl/vlwV6uq3"
-DEST_DOWNLOAD="/opt/ai2offline/"
+RELEASE=7.7
+INSTALL_FOLDER="/opt/ai2offline/"
 TEMP_DOWNLOAD="/tmp/.ai2data/"
-DEST_DATA_FILE=${TEMP_DOWNLOAD}"ai2offline-data.tar.gz"
-DEST_FILE=$DEST_DOWNLOAD"ai2offline.7z"
-AI2FOLDER=$DEST_DOWNLOAD"AI2Offline7.4/"
-AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
+ACTION="$1"
+AI2FOLDER=$INSTALL_FOLDER"AI2Offline${RELEASE}/"
 AIBUILDER_SCRIPT=$AI2FOLDER"startBuildServer.sh"
-DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/desktops/*.desktop"
-DESKTOP_DEST="/usr/share/applications/"
+AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
 BIN_ORIG="/usr/share/zero-lliurex-ai2offline/bin/*"
 BIN_DEST="/usr/bin/"
 DEPENDS_AI2="lib32stdc++6 lib32z1"
+DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/desktops/*.desktop"
+DESKTOP_DEST="/usr/share/applications/"
+DEST_DATA_FILE=${TEMP_DOWNLOAD}"ai2offline-data.tar.gz"
+DEST_DATA_IMAGE=${TEMP_DOWNLOAD}"android.zip"
+DEST_FILE=$INSTALL_FOLDER"ai2offline.7z"
+URL="https://deac-ams.dl.sourceforge.net/project/ai2offline/${RELEASE}/AI2Offline${RELEASE}.7z"
+#This is a magic link, so it could change
+URL_DATA="https://files.appinventor.mit.edu/api/public/dl/vlwV6uq3"
+#From google. The release could change but as simply as arch-version_release.zip (x86_64-31_r05)
+URL_IMAGE="https://dl.google.com/android/repository/sys-img/android/x86_64-31_r05.zip"
 
 case $ACTION in
 
@@ -31,12 +34,12 @@ case $ACTION in
 
 	download)
 
-		if ! [ -d ${DEST_DOWNLOAD} ]
+		if ! [ -d ${INSTALL_FOLDER} ]
 		then
-			mkdir ${DEST_DOWNLOAD}
+			mkdir ${INSTALL_FOLDER}
 		fi
 
-		cd ${DEST_DOWNLOAD}
+		cd ${INSTALL_FOLDER}
 
 		if [ -s ${DEST_FILE} ]
 		then
@@ -77,7 +80,7 @@ case $ACTION in
 
 		echo "Unzip $DEST_FILE..."
 		
-		cd ${DEST_DOWNLOAD}
+		cd ${INSTALL_FOLDER}
 		7z x ${DEST_FILE}
 		
 		echo "Enable others write access..."
@@ -95,24 +98,42 @@ case $ACTION in
 		echo "Copy bin files..."
 		cp $BIN_ORIG $BIN_DEST
 		
+		#Put tools on aistarter
+		echo "Setting up paths..."
+		cd $OLDPWD
+		AILINUX_FOLDER=${AI2FOLDER}"aiStarter-linux/"
+		#ln -s ${AILINUX_FOLDER}from-Android-SDK/platform-tools/* ${AILINUX_FOLDER}
+		mkdir -p ${AILINUX_FOLDER}from-Android-SDK 
+
+		#Copy files from data
 		echo "Extracting data..."
 		cd $TEMP_DOWNLOAD
 		tar -zxf $DEST_DATA_FILE
-		rm $DEST_DATA_FILE
+		#rm $DEST_DATA_FILE
 		RELEASE_DIR=$(ls | head -n1)
-		cd $OLDPWD
-
-		echo "Setting up paths..."
-		#Put tools on aistarter
-		AILINUX_FOLDER=${AI2FOLDER}"aiStarter-linux/"
-		ln -s ${AILINUX_FOLDER}from-Android-SDK/platform-tools/* ${AILINUX_FOLDER}
-		cd ${DEST_DOWNLOAD}
-		#Copy tools from data
-		cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/from-Android-SDK/ ${AI2FOLDER}
+		cd ${INSTALL_FOLDER}
+		#cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/from-Android-SDK/ ${AI2FOLDER}
 		cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/extras ${AI2FOLDER}
+
+		echo "Downloading image for emulator"
+		wget ${URL_IMAGE} -O ${DEST_DATA_IMAGE}
+		#Get components from image name
+		NAME=$(basename $URL_IMAGE)
+		ARCH=${NAME/_*/}
+		RELEASE=${NAME/*-/}
+		RELEASE=${RELEASE/_*/}
+		IMG_FOLDER="${AI2FOLDER}from-Android-SDK/system-images/android-${RELEASE}/default/"
+		mkdir -p $IMG_FOLDER
+		cd $IMG_FOLDER
+		unzip ${DEST_DATA_IMAGE}
+		chmod -R 777 *
+
+		#Clean all
 		rm -fr $TEMP_DOWNLOAD
-		
-	
+
+		echo "Installing emulator"
+		#Install emulator
+		apt-get install ai2offline-emulator
 	;;
 
 	remove)
@@ -121,12 +142,12 @@ case $ACTION in
 
 	
 		
-		if [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
+		if [ -s ${INSTALL_FOLDER}${DEST_FILE} ]
 		then
-			rm -f ${DEST_DOWNLOAD}${DEST_FILE}
+			rm -f ${INSTALL_FOLDER}${DEST_FILE}
 		fi
 
-		if [ -s ${DEST_DOWNLOAD}${DEST_FILE} ]
+		if [ -s ${INSTALL_FOLDER}${DEST_FILE} ]
 		then	
 			exit 1
 		fi
