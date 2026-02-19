@@ -54,18 +54,12 @@ case $ACTION in
 			exit 1
 		fi	
 
-		if [ -d ${TEMP_DOWNLOAD} ]
-		then
-			rm -fr ${TEMP_DOWNLOAD}
-		fi
+	#	wget ${URL_DATA} -O ${DEST_DATA_FILE}
 
-		mkdir ${TEMP_DOWNLOAD}
-		wget ${URL_DATA} -O ${DEST_DATA_FILE}
-
-		if ! [ -s ${DEST_DATA_FILE} ]
-		then	
-			exit 1
-		fi	
+	#	if ! [ -s ${DEST_DATA_FILE} ]
+	#	then	
+	#		exit 1
+	#	fi	
 	;;	
 
 	preInstall)
@@ -106,16 +100,22 @@ case $ACTION in
 		mkdir -p ${AILINUX_FOLDER}from-Android-SDK 
 
 		#Copy files from data
-		echo "Extracting data..."
-		cd $TEMP_DOWNLOAD
-		tar -zxf $DEST_DATA_FILE
+		#echo "Extracting data..."
+		#cd $TEMP_DOWNLOAD
+		#tar -zxf $DEST_DATA_FILE
 		#rm $DEST_DATA_FILE
-		RELEASE_DIR=$(ls | head -n1)
-		cd ${INSTALL_FOLDER}
+		#RELEASE_DIR=$(ls | head -n1)
+		#cd ${INSTALL_FOLDER}
 		#cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/from-Android-SDK/ ${AI2FOLDER}
-		cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/extras ${AI2FOLDER}
+		#cp -r ${TEMP_DOWNLOAD}${RELEASE_DIR}/appinventor/extras ${AI2FOLDER}
 
 		echo "Downloading image for emulator"
+		if [ -d ${TEMP_DOWNLOAD} ]
+		then
+			rm -fr ${TEMP_DOWNLOAD}
+		fi
+
+		mkdir ${TEMP_DOWNLOAD}
 		wget ${URL_IMAGE} -O ${DEST_DATA_IMAGE}
 		#Get components from image name
 		NAME=$(basename $URL_IMAGE)
