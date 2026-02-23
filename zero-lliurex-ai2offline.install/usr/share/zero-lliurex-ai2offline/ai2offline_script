@@ -133,7 +133,7 @@ case $ACTION in
 
 		echo "Installing emulator"
 		#Install emulator
-		apt-get install ai2offline-emulator
+		apt-get install -y ai2offline-emulator
 	;;
 
 	remove)
