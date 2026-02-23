@@ -1,4 +1,4 @@
-zero-lliurex-installers (0.451.23.2) jammy; urgency=medium
+zero-lliurex-installers (0.451.23.3) jammy; urgency=medium
 
   * Update appinventor zomando:
   *  Use android 12 for emulator
