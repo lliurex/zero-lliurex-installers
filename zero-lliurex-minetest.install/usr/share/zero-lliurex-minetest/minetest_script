@@ -13,6 +13,7 @@ case $ACTION in
 		cd /usr/share/luanti/builtin
 		awk '{print $0;if ($0 ~ /local serverlist_url/) print "\tserverlist_url=\"\""}' mainmenu/serverlistmgr.lua > $TMPFILE
 		mv $TMPFILE mainmenu/serverlistmgr.lua
+		chmod 644 mainmenu/serverlistmgr.lua
 		echo "**** Luanti/Minetest configured ****"
 	;;
 	remove)
