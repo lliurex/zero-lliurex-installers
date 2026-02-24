@@ -9,9 +9,10 @@ PACKAGE_LIST=$@
 case $ACTION in
 	postInstall)
 		#Patch seeking for relevant line. Don't using patch here 
+		TMPFILE=$(mktemp)
 		cd /usr/share/luanti/builtin
-		awk '{print $0;if ($0 ~ /local serverlist_url/) print "\tserverlist_url=\"\""}' mainmenu/serverlistmgr.lua > /tmp/a
-		mv /tmp/a mainmenu/serverlistmgr.lua
+		awk '{print $0;if ($0 ~ /local serverlist_url/) print "\tserverlist_url=\"\""}' mainmenu/serverlistmgr.lua > $TMPFILE
+		mv $TMPFILE mainmenu/serverlistmgr.lua
 		echo "**** Luanti/Minetest configured ****"
 	;;
 	remove)
