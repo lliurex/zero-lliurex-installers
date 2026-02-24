@@ -1,0 +1,17 @@
+Name=zero-lliurex-minetest
+Name[es]=Instalador de minetest
+Name[en]=minetest installer
+Name[ca_ES]=Instal·lador de minetest
+Name[ca@valencia]=Instal·lador de minetest
+Name[qcv]=Instal·lador de minetest
+Comment=An open source voxel game creation platform
+Comment[es]=Una plataforma de creación de juegos de vóxeles
+Comment[ca_Es]=Una plataforma de creació de jocs de vòxels
+Comment[ca@valencia]=Una plataforma de creació de jocs de vòxels
+Icon=zero-lliurex-minetest
+Category=Software
+ScriptPath=zero-lliurex-minetest.zmd
+Using=pkexec
+Service=True
+Locks=zero-lliurex-minetest
+Groups=admin;admins;sudo;teachers;students
