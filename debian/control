@@ -537,3 +537,9 @@ Depends: zero-center,epi-gtk
 Description: WireShark installer
   Zero-center helper, It installs and configures WireShark network analyzer
 
+Package: zero-lliurex-minetest
+Architecture: amd64
+Section: x11
+Depends: zero-center,epi-gtk
+Description: Minetest installer
+  Zero-center helper, It installs and configures minetest platform
