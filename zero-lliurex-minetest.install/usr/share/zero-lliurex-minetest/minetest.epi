@@ -1,7 +1,7 @@
 {
 	"type":"apt",
 	"pkg_list": [{"name":"minetest","custom_name":"Luanti (Minetest): An open source voxel game platform","custom_icon":"minetest.png"}],
-	"repository": [{"url":"deb [trusted=yes] https://ppa.launchpadcontent.net/minetestdevs/ppa/ubuntu noble main"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-updates main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-security main multiverse restricted universe"}],  
+	"repository": [{"url":"deb [trusted=yes] https://ppa.launchpadcontent.net/minetestdevs/stable/ubuntu noble main"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-updates main multiverse restricted universe"},{"url":"deb http://archive.ubuntu.com/ubuntu/ noble-security main multiverse restricted universe"}],
 	"script": {"name":"/usr/share/zero-lliurex-minetest/minetest_script","remove":true},
 	"custom_icon_path":"/usr/share/zero-lliurex-minetest/",
 	"zomando":"zero-lliurex-minetest"
