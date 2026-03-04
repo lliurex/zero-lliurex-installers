@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.14) noble; urgency=medium
+
+  * Add luanti/minetest 
+
+ -- Juanma1980 <juanma1980@gmail.com>  Wed, 04 Mar 2026 09:18:22 +0100
+
 zero-lliurex-installers (0.535.13.1) noble; urgency=medium
 
   * Add wireshark installer
