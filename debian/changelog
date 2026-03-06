@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.15) noble; urgency=medium
+
+  * Ai2Offline updated to 7.7. Parametrize releases
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 06 Mar 2026 10:22:56 +0100
+
 zero-lliurex-installers (0.535.14) noble; urgency=medium
 
   * Add luanti/minetest 
