@@ -10,6 +10,7 @@ AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
 BIN_ORIG="/usr/share/zero-lliurex-ai2offline/bin/*"
 BIN_DEST="/usr/bin/"
 DEPENDS_AI2="lib32stdc++6 lib32z1"
+DEPENDS_AI2="ai2offline-emulator"
 DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/desktops/*.desktop"
 DESKTOP_DEST="/usr/share/applications/"
 DEST_DATA_FILE=${TEMP_DOWNLOAD}"ai2offline-data.tar.gz"
@@ -64,15 +65,6 @@ case $ACTION in
 
 	preInstall)
 		echo "Installing needed packages"
-		ENABLE_UBUNTU=0
-		repoman-cli -u 1>/dev/null
-		[ $? -gt 0 ] && ENABLE_UBUNTU=1
-		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -e 2 -y
-		for PKG in $DEPENDS_AI2
-		do
-			apt-get install --yes  $PKG
-		done
-		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -d 2 -y
 	;;
 	
 	installPackage)
@@ -135,10 +127,15 @@ case $ACTION in
 
 		#Clean all
 		rm -fr $TEMP_DOWNLOAD
-
-		echo "Installing emulator"
-		#Install emulator
-		apt-get install -y ai2offline-emulator
+		ENABLE_UBUNTU=0
+		repoman-cli -u 1>/dev/null
+		[ $? -gt 0 ] && ENABLE_UBUNTU=1
+		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -e 2 -y
+		for PKG in $DEPENDS_AI2
+		do
+			apt-get install --yes  $PKG
+		done
+		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -d 2 -y
 	;;
 
 	remove)
