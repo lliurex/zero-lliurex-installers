@@ -64,10 +64,13 @@ case $ACTION in
 
 	preInstall)
 		echo "Installing needed packages"
+		[ $? -gt 0 ] && ENABLE_UBUNTU=1
+		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -e 2 -y
 		for PKG in $DEPENDS_AI2
 		do
 			apt-get install --yes  $PKG
 		done
+		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -d 2 -y
 	;;
 	
 	installPackage)
@@ -134,10 +137,7 @@ case $ACTION in
 		echo "Installing emulator"
 		#Install emulator
 		repoman-cli -u 1>/dev/null
-		[ $? -gt 0 ] && ENABLE_UBUNTU=1
-		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -e 2 -y
 		apt-get install -y ai2offline-emulator
-		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -d 2 -y
 	;;
 
 	remove)
