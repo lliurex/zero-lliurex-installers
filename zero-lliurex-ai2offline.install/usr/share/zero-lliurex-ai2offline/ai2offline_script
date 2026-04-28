@@ -9,8 +9,8 @@ AIBUILDER_SCRIPT=$AI2FOLDER"startBuildServer.sh"
 AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
 BIN_ORIG="/usr/share/zero-lliurex-ai2offline/bin/*"
 BIN_DEST="/usr/bin/"
-DEPENDS_AI2="lib32stdc++6 lib32z1"
-DEPENDS_AI2="ai2offline-emulator"
+#DEPENDS_AI2="lib32stdc++6 lib32z1"
+DEPENDS_AI2="f2fs-tools"
 DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/desktops/*.desktop"
 DESKTOP_DEST="/usr/share/applications/"
 DEST_DATA_FILE=${TEMP_DOWNLOAD}"ai2offline-data.tar.gz"
@@ -154,8 +154,6 @@ case $ACTION in
 			exit 1
 		fi
 	
-
-
 	;;		
 		
 esac
