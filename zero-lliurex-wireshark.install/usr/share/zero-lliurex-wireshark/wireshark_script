@@ -17,6 +17,7 @@ case $ACTION in
 
 			else
 				apt-get remove -y wireshark
+				apt-get remove -y pcaputils
 				apt-get remove -y cdc-mapper-wireshark
 			fi
 		done
@@ -24,6 +25,7 @@ case $ACTION in
 	postInstall)
 		echo "[EPI]:Checking permission group..."
 		if dpkg -s wireshark &>/dev/null ; then
+			apt-get install -y pcaputils
 			apt-get install -y cdc-mapper-wireshark
 		fi
 	;;	
