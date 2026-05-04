@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.26) jammy; urgency=medium
+
+  * Add pcaputils to wireshark installation
+
+ -- Juanma1980 <juanma1980@gmail.com>  Mon, 04 May 2026 17:15:20 +0200
+
 zero-lliurex-installers (0.451.25) jammy; urgency=medium
 
   * Fixes for ai2offline
