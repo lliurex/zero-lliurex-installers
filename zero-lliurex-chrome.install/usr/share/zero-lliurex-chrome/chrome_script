@@ -6,8 +6,14 @@ ACTION="$1"
 
 case $ACTION in
 
+	postInstall)
+		dpkg-divert --divert /usr/share/applications/google-chrome.desktop.llx --rename /usr/share/applications/google-chrome.desktop
+		sed 's/Exec=\([\/a-z\-]*\)/\0 --enable-features=WebBluetooth/'g /usr/share/applications/google-chrome.desktop.llx > /usr/share/applications/google-chrome.desktop
+	;;	
+
 	remove)
 		apt-get remove -y google-chrome-stable
+		rm /usr/share/applications/google-chrome.desktop || true
 		TEST=$( dpkg-query -s google-chrome-stable 2> /dev/null| grep Status | cut -d " " -f 4 )
 		if [ "$TEST" == 'installed' ];then
 			exit 1
