@@ -1,7 +1,28 @@
 {
-	"type":"flatpak",
-	"pkg_list": [{"name":"org.kde.krita","key_store":"krita","custom_name":"Krita: digital painting program (flatpak version)","custom_icon":"krita.png"}], 
-	"script": {"name":"/usr/share/zero-lliurex-krita/krita_script","remove":true},
-	"custom_icon_path":"/usr/share/zero-lliurex-krita/",
-	"zomando":"zero-lliurex-krita"
-	}
+  "type": "mix",
+  "pkg_list": [
+    {
+      "type": "flatpak",
+      "name": "org.kde.krita",
+      "key_store": "krita",
+      "custom_name": "Krita: digital painting program (flatpak version)",
+      "custom_icon": "krita.png"
+    },
+    {
+      "name": "krita-diffusion-ai-plugin",
+      "key_store": "krita-diffusion-ai-plugin",
+      "custom_name": "Krita AI plugin for diffusion image generation",
+      "custom_icon": "krita.png",
+      "type": "file"
+    }
+  ],
+  "script": {
+    "name": "/usr/share/zero-lliurex-krita/krita_script",
+    "remove": true
+    "install": true,
+    "getStatus": true,
+    "download": false
+  },
+  "custom_icon_path": "/usr/share/zero-lliurex-krita/",
+  "zomando": "zero-lliurex-krita"
+}
