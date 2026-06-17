@@ -161,19 +161,16 @@ patch_plugin() {
           "$plug_root"/styles/flux.json \
           "$plug_root"/styles/flux-*.json 
     
-    if grep -qF "_KRITA_AI_PATCH_V6" "$init_py" 2>/dev/null; then
-        echo ">>> Patches already up to date (V6)."
-        return
+    if ! grep -qF "_KRITA_AI_PATCH_V6" "$init_py" 2>/dev/null; then
+        # ── Strip any old patch blocks from previous installer versions ──
+        python3 "$SCRIPTS_DIR/patch_cleanup.py" "$init_py" 2>/dev/null || true
+
+        # ── Inject new init patch code (settings + docker) ──
+        sed "s|REPLACE_ME_BASE_DIR|$BASE_DIR|g" "$SCRIPTS_DIR/patch_init.py" > /tmp/patch_init_final.py
+        cat /tmp/patch_init_final.py "$init_py" > /tmp/final_temp.py
+        mv /tmp/final_temp.py "$init_py"
+        rm -f /tmp/patch_init_final.py
     fi
-
-    # ── Strip any old patch blocks from previous installer versions ──
-    python3 "$SCRIPTS_DIR/patch_cleanup.py" "$init_py" 2>/dev/null || true
-
-    # ── Inject new init patch code (settings + docker) ──
-    sed "s|REPLACE_ME_BASE_DIR|$BASE_DIR|g" "$SCRIPTS_DIR/patch_init.py" > /tmp/patch_init_final.py
-    cat /tmp/patch_init_final.py "$init_py" > /tmp/final_temp.py
-    mv /tmp/final_temp.py "$init_py"
-    rm -f /tmp/patch_init_final.py
 
     # ── Inject NSFW prompt filter via helper module + minimal model.py edits ──
     if [ ! -f "$model_py" ]; then
@@ -286,7 +283,7 @@ setup_flatpak_overrides() {
 VENV_HASH_FILE="$VENV_DIR/.venv_deps_hash"
 
 compute_venv_hash() {
-    echo "v3 $VENV_DEPS $PIP_EXTRA transformers optimum onnxruntime aiohttp tqdm" | sha256sum | cut -d' ' -f1
+    echo "v3 $VENV_DEPS $PIP_EXTRA transformers optimum onnxruntime numpy aiohttp tqdm" | sha256sum | cut -d' ' -f1
 }
 
 install_custom_nodes_deps() {
@@ -332,7 +329,7 @@ setup_venv() {
             python3 -m pip install --no-cache-dir --upgrade pip uv && \
             uv pip install --no-cache $VENV_DEPS --extra-index-url $PIP_EXTRA && \
             uv pip install --no-cache -r $COMFY_DIR/requirements.txt && \
-            uv pip install --no-cache aiohttp tqdm transformers optimum[onnxruntime]
+            uv pip install --no-cache aiohttp tqdm numpy transformers optimum[onnxruntime]
         "
         install_custom_nodes_deps
         echo "$expected_hash" > "$VENV_HASH_FILE"
@@ -356,6 +353,10 @@ setup_venv() {
         if ! python3 -c 'import aiohttp, tqdm' 2>/dev/null; then
             echo '[INSTALL] aiohttp tqdm'
             uv pip install --no-cache aiohttp tqdm
+        fi
+        if ! python3 -c 'import numpy' 2>/dev/null; then
+            echo '[INSTALL] numpy'
+            uv pip install --no-cache numpy
         fi
     "
 
