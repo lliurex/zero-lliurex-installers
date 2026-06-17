@@ -35,16 +35,16 @@ _model_session = None
 _model_label_names = None
 
 _THRESHOLD_MAP = {
-    "sexual_explicit": 0.25,
-    "severe_toxic":     0.30,
-    "severe_toxicity":  0.30,
-    "toxic":            0.40,
-    "toxicity":         0.40,
-    "threat":           0.40,
-    "obscene":          0.40,
-    "insult":           0.50,
-    "identity_attack":  0.50,
-    "identity_hate":    0.50,
+    "sexual_explicit": 0.20,
+    "severe_toxic":     0.25,
+    "severe_toxicity":  0.25,
+    "toxic":            0.30,
+    "toxicity":         0.30,
+    "threat":           0.25,
+    "obscene":          0.30,
+    "insult":           0.40,
+    "identity_attack":  0.40,
+    "identity_hate":    0.40,
 }
 
 def _load_model():
@@ -106,6 +106,12 @@ def _check_nsfw_prompts(cond_orig):
             label for label, thr in _THRESHOLD_MAP.items()
             if scores.get(label, 0) > thr
         ]
+        _violence_sum = sum(
+            scores.get(l, 0) for l in ("toxic", "toxicity", "severe_toxic",
+                                       "severe_toxicity", "threat", "obscene")
+        )
+        if _violence_sum > 0.5:
+            blocked_labels.append(f"combined:{_violence_sum:.2f}")
         if blocked_labels:
             msg = f"blocked prompt ({source}): {', '.join(blocked_labels)}"
             print(f"[krita-ai-nsfw] BLOQUEADO: {msg}", file=sys.stderr)
