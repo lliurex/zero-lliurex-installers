@@ -1553,7 +1553,7 @@ lliurex-zero-installers (0.125-3+lliurex5) xenial; urgency=medium
 
   * Dummy upgrade
 
- -- Juan Ramon Pelegrina<juapesai@hotmail.com>  Tue, 06 Sep 2016 08:41:27 +0200
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 06 Sep 2016 08:41:27 +0200
 
 lliurex-zero-installers (0.125-3+lliurex4) xenial; urgency=medium
 
