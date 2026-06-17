@@ -2,6 +2,15 @@
 import os, json, traceback, sys
 from datetime import datetime
 
+_venv_dir = os.path.join("REPLACE_ME_BASE_DIR", "venv")
+_site_pkgs = os.path.join(
+    _venv_dir, "lib",
+    f"python{sys.version_info.major}.{sys.version_info.minor}",
+    "site-packages",
+)
+if os.path.isdir(_site_pkgs) and _site_pkgs not in sys.path:
+    sys.path.insert(0, _site_pkgs)
+
 _log_dir = os.path.join("REPLACE_ME_BASE_DIR", "logs")
 _log_file = None
 
@@ -25,14 +34,17 @@ _model_tokenizer = None
 _model_session = None
 _model_label_names = None
 
-_CATEGORY_THRESHOLDS = {
+_THRESHOLD_MAP = {
     "sexual_explicit": 0.25,
-    "severe_toxicity": 0.30,
-    "toxicity": 0.40,
-    "threat": 0.40,
-    "obscene": 0.40,
-    "insult": 0.50,
-    "identity_attack": 0.50,
+    "severe_toxic":     0.30,
+    "severe_toxicity":  0.30,
+    "toxic":            0.40,
+    "toxicity":         0.40,
+    "threat":           0.40,
+    "obscene":          0.40,
+    "insult":           0.50,
+    "identity_attack":  0.50,
+    "identity_hate":    0.50,
 }
 
 def _load_model():
@@ -40,6 +52,8 @@ def _load_model():
     if _model_session is None:
         model_dir = os.path.join(_log_dir, "..", "models", "nsfw_onnx")
         _patch_log("nsfw", "loading ONNX model from " + model_dir)
+        import warnings
+        warnings.filterwarnings("ignore", message=".*incorrect regex.*")
         from transformers import AutoTokenizer
         import onnxruntime as _ort
         _model_tokenizer = AutoTokenizer.from_pretrained(model_dir)
@@ -85,13 +99,12 @@ def _check_nsfw_prompts(cond_orig):
         scores = _predict(prompt)
         print(f"[krita-ai-nsfw] Prompt ({source}): {prompt[:120]}...", file=sys.stderr)
         for label, score in sorted(scores.items(), key=lambda x: -x[1]):
-            threshold = _CATEGORY_THRESHOLDS.get(label, 0.5)
+            threshold = _THRESHOLD_MAP.get(label, 0.5)
             marker = ">>>" if score > threshold else "   "
             print(f"[krita-ai-nsfw]   {marker} {label}: {score:.4f} (thr={threshold})", file=sys.stderr)
         blocked_labels = [
-            label for label in ("toxicity", "severe_toxicity", "obscene",
-                "threat", "insult", "identity_attack", "sexual_explicit")
-            if scores.get(label, 0) > _CATEGORY_THRESHOLDS.get(label, 0.5)
+            label for label, thr in _THRESHOLD_MAP.items()
+            if scores.get(label, 0) > thr
         ]
         if blocked_labels:
             msg = f"blocked prompt ({source}): {', '.join(blocked_labels)}"
