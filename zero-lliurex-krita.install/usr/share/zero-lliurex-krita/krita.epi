@@ -18,10 +18,14 @@
   ],
   "script": {
     "name": "/usr/share/zero-lliurex-krita/krita_script",
-    "remove": true
+    "remove": true,
     "install": true,
     "getStatus": true,
-    "download": false
+    "download": true
+  },
+  "selection_enabled": {
+    "active": true,
+    "all_selected": false
   },
   "custom_icon_path": "/usr/share/zero-lliurex-krita/",
   "zomando": "zero-lliurex-krita"
