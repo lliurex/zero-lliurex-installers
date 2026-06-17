@@ -9,15 +9,18 @@ case $ACTION in
         getStatus)
             if [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
                 if [ -d "$DIFFUSION_MODEL_DIR" ];then
-                echo 0
-            else
-                echo 1
+                    echo 0
+                else
+                    echo 1
+                fi
             fi
         ;;
-        install)
+        install | installPackage)
             if [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
-                bash $THIS_PATH/installer-krita.sh install
+                bash $THIS_PATH/installer_krita.sh install
             fi
+        ;;
+        download)
         ;;
         remove)
             if [[ " ${PACKAGE_LIST[*]} " == *" krita "* ]];then
