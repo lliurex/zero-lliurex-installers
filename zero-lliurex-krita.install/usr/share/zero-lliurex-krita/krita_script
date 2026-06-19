@@ -45,7 +45,7 @@ case $ACTION in
                 fi
             elif [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
                 flatpak kill org.kde.krita || true
-                [ -n "$DIFFUSION_MODEL_DIR" -d "$DIFFUSION_MODEL_DIR" ] && rm -rf "$DIFFUSION_MODEL_DIR"
+                [ -n "$DIFFUSION_MODEL_DIR" -a -d "$DIFFUSION_MODEL_DIR" ] && bash $THIS_PATH/installer_krita.sh purge
             fi
         ;;
 esac
