@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.32) jammy; urgency=medium
+
+  * Fix krita uninstallation
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 19 Jun 2026 12:13:40 +0200
+
 zero-lliurex-installers (0.451.31) jammy; urgency=medium
 
   * Fix remove krita installer
