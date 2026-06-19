@@ -13,7 +13,7 @@
 	dh $@ --with llxsrc,zero,i18n
 
 override_dh_clean:
-	find debian/ -name '*.pkexec' -o -name '*.pkla' -o -name '*.policy' -delete
+	find debian/ \( -name '*.pkexec' -o -name '*.pkla' -o -name '*.policy' \) -delete
 	find . -type d -name '.mo_*' -print0 | xargs -0 rm -rf 
 	rm -rf debian/zero-lliurex-notebook-bar
 	dh_clean
