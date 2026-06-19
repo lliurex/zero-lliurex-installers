@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.18) noble; urgency=medium
+
+  * Setup krita as non-service zero 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 19 Jun 2026 12:16:28 +0200
+
 zero-lliurex-installers (0.535.17) noble; urgency=medium
 
   * Fix krita uninstallation
