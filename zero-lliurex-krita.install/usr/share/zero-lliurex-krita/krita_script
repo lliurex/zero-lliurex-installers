@@ -1,14 +1,37 @@
 #!/bin/bash
 
-
+THIS_PATH="$( cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+DIFFUSION_MODEL_DIR="/opt/ai/krita"
+PACKAGE_LIST=$@
 ACTION="$1"
 
 case $ACTION in
-	remove)
-		flatpak uninstall org.kde.krita -y 
-		TEST=$(flatpak list | grep org.kde.krita | cut -d " " -f 1)
-		if [[ ! -z "$TEST" ]];then
-			exit 1
-		fi	;;	
-esac	
-
+        getStatus)
+            if [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
+                if [ -d "$DIFFUSION_MODEL_DIR" ];then
+                    echo 0
+                else
+                    echo 1
+                fi
+            fi
+        ;;
+        install | installPackage)
+            if [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
+                bash $THIS_PATH/installer_krita.sh install
+            fi
+        ;;
+        download)
+        ;;
+        remove)
+            if [[ " ${PACKAGE_LIST[*]} " == *" krita "* ]];then
+                flatpak uninstall org.kde.krita -y 
+                TEST=$(flatpak list | grep org.kde.krita | cut -d " " -f 1)
+                if [[ ! -z "$TEST" ]];then
+                    exit 1
+                fi
+            elif [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
+                flatpak kill org.kde.krita || true
+                [ -n "$DIFFUSION_MODEL_DIR" -d "$DIFFUSION_MODEL_DIR" ] && rm -rf "$DIFFUSION_MODEL_DIR"
+            fi
+        ;;
+esac
