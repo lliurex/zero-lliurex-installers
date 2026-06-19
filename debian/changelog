@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.31) jammy; urgency=medium
+
+  * Fix remove krita installer
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 19 Jun 2026 11:44:09 +0200
+
 zero-lliurex-installers (0.451.30) jammy; urgency=medium
 
   * Changed virtualizer_script to install gcc-12 when virtualbox-7 is selected
