@@ -2,8 +2,9 @@
 
 THIS_PATH="$( cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
 DIFFUSION_MODEL_DIR="/opt/ai/krita"
-PACKAGE_LIST=$@
 ACTION="$1"
+shift
+PACKAGE_LIST=$@
 
 case $ACTION in
         getStatus)
@@ -36,7 +37,7 @@ case $ACTION in
         download)
         ;;
         remove)
-            if [[ " ${PACKAGE_LIST[*]} " == *" krita "* ]];then
+            if [[ " ${PACKAGE_LIST[*]} " == *" org.kde.krita "* ]];then
                 flatpak uninstall org.kde.krita -y 
                 TEST=$(flatpak list | grep org.kde.krita | cut -d " " -f 1)
                 if [[ ! -z "$TEST" ]];then
