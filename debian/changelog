@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.17) noble; urgency=medium
+
+  * Fix krita uninstallation
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 19 Jun 2026 12:12:43 +0200
+
 zero-lliurex-installers (0.535.16) noble; urgency=medium
 
   * Add krita installer installing flatpak & plugin ai 
