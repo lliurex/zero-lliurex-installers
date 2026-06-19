@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.30) jammy; urgency=medium
+
+  * Changed virtualizer_script to install gcc-12 when virtualbox-7 is selected
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 19 Jun 2026 11:37:12 +0200
+
 zero-lliurex-installers (0.451.29) jammy; urgency=medium
 
   * Fix cleaner script debian/rules
