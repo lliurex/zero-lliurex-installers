@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.16) noble; urgency=medium
+
+  * Add krita installer installing flatpak & plugin ai 
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 19 Jun 2026 11:02:37 +0200
+
 zero-lliurex-installers (0.535.15) noble; urgency=medium
 
   * Ai2Offline updated to 7.7. Parametrize releases
