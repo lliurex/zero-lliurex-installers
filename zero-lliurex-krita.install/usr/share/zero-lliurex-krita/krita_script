@@ -17,6 +17,19 @@ case $ACTION in
         ;;
         install | installPackage)
             if [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
+                PKGS=("krita" "krita-ai-plugin")
+                for pkg in "${PKGS[@]}"; do
+                    if dpkg-query -W -f='${Status}' "$pkg" 2>/dev/null | grep -q "install ok installed"; then
+                        echo "$pkg está instalado. Desinstalando..."
+                        sudo apt remove -y "$pkg"
+                    fi
+                done
+                if flatpak info org.kde.krita &>/dev/null; then
+                    echo "Krita (Flatpak) está instalado"
+                else
+                    echo "Krita (Flatpak) no está instalado"
+                    epic -u install /usr/share/zero-lliurex-krita/krita.epi org.kde.krita
+                fi
                 bash $THIS_PATH/installer_krita.sh install
             fi
         ;;
