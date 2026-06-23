@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.19) noble; urgency=medium
+
+  * Fixed virtualizer.epi to change qemu type from deb to apt
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 23 Jun 2026 13:57:48 +0200
+
 zero-lliurex-installers (0.535.18) noble; urgency=medium
 
   * Setup krita as non-service zero 
