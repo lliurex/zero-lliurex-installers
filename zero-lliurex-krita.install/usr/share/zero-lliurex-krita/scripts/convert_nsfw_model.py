@@ -23,7 +23,7 @@ for f in os.listdir(OUT):
     if f.endswith(".onnx"):
         path = os.path.join(OUT, f)
         orig_size = os.path.getsize(path) / (1024 * 1024)
-        quantize_dynamic(path, path, weight_type=QuantType.QInt8)
+        quantize_dynamic(path, path, weight_type=QuantType.QInt8, use_external_data_format=True)
         new_size = os.path.getsize(path) / (1024 * 1024)
         print(f"[ONNX] {f}: {orig_size:.1f} MB -> {new_size:.1f} MB")
 
