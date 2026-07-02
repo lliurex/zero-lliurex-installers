@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.20) noble; urgency=medium
+
+  * Fix nsfw model installation & server issues
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 02 Jul 2026 15:37:44 +0200
+
 zero-lliurex-installers (0.535.19) noble; urgency=medium
 
   * Fixed virtualizer.epi to change qemu type from deb to apt
