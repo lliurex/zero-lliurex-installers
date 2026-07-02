@@ -36,15 +36,12 @@ _model_label_names = None
 
 _THRESHOLD_MAP = {
     "sexual_explicit": 0.20,
-    "severe_toxic":     0.25,
     "severe_toxicity":  0.25,
-    "toxic":            0.30,
     "toxicity":         0.30,
     "threat":           0.25,
     "obscene":          0.30,
     "insult":           0.40,
     "identity_attack":  0.40,
-    "identity_hate":    0.40,
 }
 
 def _load_model():
@@ -107,8 +104,7 @@ def _check_nsfw_prompts(cond_orig):
             if scores.get(label, 0) > thr
         ]
         _violence_sum = sum(
-            scores.get(l, 0) for l in ("toxic", "toxicity", "severe_toxic",
-                                       "severe_toxicity", "threat", "obscene")
+            scores.get(l, 0) for l in ("toxicity", "severe_toxicity", "threat", "obscene")
         )
         if _violence_sum > 0.5:
             blocked_labels.append(f"combined:{_violence_sum:.2f}")
