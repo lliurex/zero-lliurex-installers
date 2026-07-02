@@ -41,6 +41,7 @@ KRITA_CONF_REL=".var/app/org.kde.krita/config"
 KRITARC_NAME="kritarc"
 
 PLUGIN_REPO="Acly/krita-ai-diffusion"
+PLUGIN_VERSION="v1.52.1"
 COMFYUI_REPO="comfyanonymous/ComfyUI"
 UV_VERSION="0.9.26"
 
@@ -49,7 +50,12 @@ DECOMPRESS_DIR=""
 download_plugin() {
     echo ">>> Downloading plugin from GitHub..."
     
-    local api_url="https://api.github.com/repos/$PLUGIN_REPO/releases/latest"
+    local api_url
+    if [ -n "$PLUGIN_VERSION" ]; then
+        api_url="https://api.github.com/repos/$PLUGIN_REPO/releases/tags/$PLUGIN_VERSION"
+    else
+        api_url="https://api.github.com/repos/$PLUGIN_REPO/releases/latest"
+    fi
     local tmpdir
     tmpdir=$(mktemp -d /tmp/krita_plugin_XXXXXX)
     
@@ -383,14 +389,14 @@ set_permissions() {
 
 convert_nsfw_model() {
     local onnx_dir="$BASE_DIR/models/nsfw_onnx"
-    local model_id="unitary/multilingual-toxic-xlm-roberta"
+    local model_id="mijuanlo/multilingual-toxic-xlm-roberta-dynamic-quantized"
 
     if [ -f "$onnx_dir/model.onnx" ]; then
         echo ">>> ONNX NSFW model already exists. Skipping conversion."
         return
     fi
 
-    echo ">>> Converting NSFW model to ONNX INT8 (~250 MB, one-time)..."
+    echo ">>> Downloading pre-quantized ONNX NSFW model (~280 MB, one-time)..."
     mkdir -p "$onnx_dir"
 
     cp "$SCRIPTS_DIR/convert_nsfw_model.py" "$MODELS_DIR/convert_nsfw_model.py"
@@ -448,7 +454,12 @@ do_install() {
     install_uv
     
     echo ">>> Creating server version file..."
-    echo "1.51.0 cpu" > "$BASE_DIR/.version"
+    local plugin_version="0.0.0"
+    local resources_py="$PLUG_DIR/$PATH_FLAT/ai_diffusion/backend/resources.py"
+    if [ -f "$resources_py" ]; then
+        plugin_version=$(grep '^version = ' "$resources_py" | head -1 | cut -d'"' -f2)
+    fi
+    echo "$plugin_version cpu" > "$BASE_DIR/.version"
     
     set_permissions
     download_models
