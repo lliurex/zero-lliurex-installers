@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.21) noble; urgency=medium
+
+  * Fixed remove action in script of nerd-dictation
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 06 Jul 2026 14:12:41 +0200
+
 zero-lliurex-installers (0.535.20) noble; urgency=medium
 
   * Fix nsfw model installation & server issues
