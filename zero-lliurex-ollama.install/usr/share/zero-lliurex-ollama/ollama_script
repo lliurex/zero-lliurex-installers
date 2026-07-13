@@ -1,39 +1,56 @@
 #!/bin/bash
 
+THIS_PATH="$( cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
 ACTION="$1"
+shift
+PACKAGE_LIST=$@
 
 INSTALL_PATH="/usr/local/lib/ollama"
 BINARY_PATH="/usr/local/bin/ollama"
-
+MODEL_PATH="/opt/ai/ollama/models"
 case $ACTION in
 
 	getStatus)
-		
-		if [ -f ${BINARY_PATH} ];then
+		if [[ " ${PACKAGE_LIST[*]} " == *" ollama "* ]];then
+		    if [ -f ${BINARY_PATH} ];then
 			echo 0
-		else
+		    else
 			echo 1
-		fi
-	
+		    fi
+                elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
+                    if [ -e "$MODEL_PATH/qwen" ]; then
+                        echo 0
+                    else
+                        echo 1
+                    fi
+                else
+                    echo "Not found!"
+	        fi
 	;;
 
 	download)
-
 		true
 	;;	
 	
 	installPackage)
-
+            if [[ " ${PACKAGE_LIST[*]} " == *" ollama "* ]];then
+                mkdir -p /etc/systemd/system/ollama.service.d/
+                mkdir -p /opt/ai/ollama/models
+                echo -e "[Service]\nEnvironment=\"OLLAMA_MODELS=/opt/ai/ollama/models\"" | tee /etc/systemd/system/ollama.service.d/override.conf
 		curl -fSSL https://ollama.com/install.sh | sh
 
 		if [ ! -d ${INSTALL_PATH} ];then
 			exit 1
 		fi
+                chown root:root /opt/ai/ollama/models
+            elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
+                ollama pull qwen2.5:3b
+            fi
 	;;
 
 
 	remove)
-		
+	    if [[ " ${PACKAGE_LIST[*]} " == *" ollama "* ]];then
 		echo "Removing ollama service..."
 		systemctl stop ollama || true
 		systemctl disable ollama || true
@@ -41,18 +58,14 @@ case $ACTION in
 		if [ -f /etc/systemd/service/ollama.service ];then
 			rm -f /etc/systemd/service/ollama.service
 		fi
-
+                if [ -f /etc/systemd/system/ollama.service.d/override.conf ];then
+			rm -f /etc/systemd/system/ollama.service.d/override.conf
+		fi
 		echo "Removing ollama binary..."
 
 		if [ -f ${BINARY_PATH} ];then
 			rm -f ${BINARY_PATH}
 		fi
-
-		echo "Removing ollama models..."
-		if [ -d /usr/share/ollama ];then
-			rm -rf /usr/share/ollama
-		fi
-
 		echo "Removing ollama group..."
 		userdel ollama || true
 		groupdel ollama || true
@@ -61,6 +74,15 @@ case $ACTION in
 		if [ -d ${INSTALL_PATH} ];then
 			rm -rf ${INSTALL_PATH}
 		fi
+
+            elif if [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
+		echo "Removing ollama model qwen 2.5 3b..."
+                ollama rm qwen2.5:3b
+
+		#if [ -d /usr/share/ollama ];then
+		#	rm -rf /usr/share/ollama
+		#fi
+            fi
 	;;
 
 esac
