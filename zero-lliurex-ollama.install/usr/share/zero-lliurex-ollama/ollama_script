@@ -35,14 +35,14 @@ case $ACTION in
 	installPackage)
             if [[ " ${PACKAGE_LIST[*]} " == *" ollama "* ]];then
                 mkdir -p /etc/systemd/system/ollama.service.d/
-                mkdir -p /opt/ai/ollama/models
+                mkdir -p /opt/ai/ollama/models/blobs
                 echo -e "[Service]\nEnvironment=\"OLLAMA_MODELS=/opt/ai/ollama/models\"" | tee /etc/systemd/system/ollama.service.d/override.conf
 		curl -fSSL https://ollama.com/install.sh | sh
 
 		if [ ! -d ${INSTALL_PATH} ];then
 			exit 1
 		fi
-                chown root:root /opt/ai/ollama/models
+                chown root:root -R /opt/ai/ollama/models
             elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
                 ollama pull qwen2.5:3b
             fi
@@ -75,7 +75,7 @@ case $ACTION in
 			rm -rf ${INSTALL_PATH}
 		fi
 
-            elif if [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
+            elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
 		echo "Removing ollama model qwen 2.5 3b..."
                 ollama rm qwen2.5:3b
 
