@@ -7,6 +7,7 @@ EXTRACTED_DIR="anythingllm-desktop"
 OUTDIR="/opt/AnythingLLMDesktop"
 LAUNCHED_FILE="AppRun"
 DESKTOP_ANYTHINGLLM="/usr/share/zero-lliurex-anything-llm/desktop/anything-llm.desktop"
+TEMPLATE_DB="/usr/share/zero-lliurex-anything-llm/anythingllm.db"
 DESKTOPS_DIR="/usr/share/applications/"
 BIN_PATH="/usr/bin/anything-llm"
 
@@ -51,6 +52,12 @@ case $ACTION in
 			chmod 777 -R ${EXTRACTED_DIR}
 			cp ${DESKTOP_ANYTHINGLLM} ${DESKTOPS_DIR}
 			ln -sf ${OUTDIR}/${EXTRACTED_DIR}/${LAUNCHED_FILE} ${BIN_PATH}
+
+                        # Default config
+                        mv ${BIN_PATH} /usr/bin/anything-llm-core
+                        mkdir -p ${OUTDIR}/template
+                        cp ${TEMPLATE_DB} ${OUTDIR}/template/
+                        chmod a+r ${OUTDIR}/template/anythingllm.db
 
 		else
 			exit 1
