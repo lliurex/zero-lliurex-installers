@@ -80,9 +80,7 @@ case $ACTION in
 
             elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen2.5vl:3b "* ]];then
 		echo "Removing ollama model qwen 2.5vl 3b..."
-                chown ollama:ollama -R /opt/ai/ollama/models
-                ollama rm qwen2.5vl:3b
-                chown root:root -R /opt/ai/ollama/models
+                rm -rf /opt/ai/ollama/models
 
 		#if [ -d /usr/share/ollama ];then
 		#	rm -rf /usr/share/ollama
