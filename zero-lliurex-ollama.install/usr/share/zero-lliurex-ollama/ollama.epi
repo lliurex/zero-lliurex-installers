@@ -9,8 +9,8 @@
     },
     {
       "type": "file",
-      "name": "ollama-model-qwen-2.5-3b",
-      "custom_name": "Qwen light model for Ollama with cpu (Qwen-2.5-3b)",
+      "name": "ollama-model-qwen2.5vl:3b",
+      "custom_name": "Qwen light model for Ollama with cpu (Qwen2.5vl:3b)",
       "custom_icon": "ollama.png"
     }    
   ],
