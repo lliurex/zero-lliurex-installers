@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Rutas de configuración locales del usuario
+CONFIG_DIR="$HOME/.config/anythingllm-desktop/storage"
+ENV_FILE="$CONFIG_DIR/.env"
+USER_DB="$CONFIG_DIR/anythingllm.db"
+
+# Definimos la ruta de la aplicación y la exportamos para evitar el BUG de AppRun
+export APPDIR="/opt/AnythingLLMDesktop/anythingllm-desktop"
+APP_RUN_EXECUTABLE="$APPDIR/AppRun"
+TEMPLATE_DB="/opt/AnythingLLMDesktop/template/anythingllm.db"
+
+# 1. Crear el directorio de almacenamiento si es la primera vez
+mkdir -p "$CONFIG_DIR"
+
+# 2. Inyectar la configuración si es un usuario nuevo
+if [ ! -f "$ENV_FILE" ]; then
+    echo "Iniciando AnythingLLM por primera vez..."
+    
+    # Escribir el archivo .env apuntando a Ollama y Qwen2.5:3b
+    cat <<EOF > "$ENV_FILE"
+LLM_PROVIDER=ollama
+OLLAMA_BASE_PATH=http://127.0.0.1:11434
+OLLAMA_MODEL_PREF=qwen2.5vl:3b
+EOF
+
+    # 3. Copiar la base de datos para saltarse el Asistente Inicial
+    if [ -f "$TEMPLATE_DB" ]; then
+        echo "Aplicando plantilla de configuración predeterminada..."
+        cp "$TEMPLATE_DB" "$USER_DB"
+        chown $(whoami):$(whoami) "$USER_DB"
+    fi
+fi
+
+# 4. Lanzar la aplicación nativa pasando nuestros argumentos de forma segura
+exec "$APP_RUN_EXECUTABLE" --no-sandbox "$@"
+
