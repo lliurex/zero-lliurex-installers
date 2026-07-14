@@ -18,7 +18,10 @@ case $ACTION in
 			echo 1
 		    fi
                 elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen2.5vl:3b "* ]];then
-                    if [ -e "$MODEL_PATH/qwen" ]; then
+                    systemctl start ollama || true
+                    systemctl restart ollama || true
+                    has_qwen=$(ollama list |tail +2|grep qwen2.5vl)
+                    if [ -n "$has_qwen" ]; then
                         echo 0
                     else
                         echo 1
