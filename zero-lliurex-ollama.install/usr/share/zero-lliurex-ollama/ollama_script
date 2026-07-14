@@ -17,7 +17,7 @@ case $ACTION in
 		    else
 			echo 1
 		    fi
-                elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
+                elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen2.5vl:3b "* ]];then
                     if [ -e "$MODEL_PATH/qwen" ]; then
                         echo 0
                     else
@@ -43,10 +43,11 @@ case $ACTION in
 			exit 1
 		fi
                 chown root:root -R /opt/ai/ollama/models
-            elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
+            elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen2.5vl:3b "* ]];then
                 chown ollama:ollama -R /opt/ai/ollama/models
-                ollama pull qwen2.5:3b
+                ollama pull qwen2.5vl:3b
                 chown root:root -R /opt/ai/ollama/models
+                systemctl restart ollama || true
             fi
 	;;
 
@@ -77,10 +78,10 @@ case $ACTION in
 			rm -rf ${INSTALL_PATH}
 		fi
 
-            elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen-2.5-3b "* ]];then
-		echo "Removing ollama model qwen 2.5 3b..."
+            elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen2.5vl:3b "* ]];then
+		echo "Removing ollama model qwen 2.5vl 3b..."
                 chown ollama:ollama -R /opt/ai/ollama/models
-                ollama rm qwen2.5:3b
+                ollama rm qwen2.5vl:3b
                 chown root:root -R /opt/ai/ollama/models
 
 		#if [ -d /usr/share/ollama ];then
