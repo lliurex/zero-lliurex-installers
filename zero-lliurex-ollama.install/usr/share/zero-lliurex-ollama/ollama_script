@@ -18,10 +18,7 @@ case $ACTION in
 			echo 1
 		    fi
                 elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen2.5vl:3b "* ]];then
-                    systemctl start ollama || true
-                    systemctl restart ollama || true
-                    has_qwen=$(ollama list |tail +2|grep qwen2.5vl)
-                    if [ -n "$has_qwen" ]; then
+                    if [ -e "$MODEL_PATH/manifests/registry.ollama.ai/library/qwen2.5vl" ]; then
                         echo 0
                     else
                         echo 1
@@ -48,7 +45,7 @@ case $ACTION in
                 chown root:root -R /opt/ai/ollama/models
             elif [[ " ${PACKAGE_LIST[*]} " == *" ollama-model-qwen2.5vl:3b "* ]];then
                 chown ollama:ollama -R /opt/ai/ollama/models
-                ollama pull qwen2.5vl:3b
+                ${BINARY_PATH} pull qwen2.5vl:3b
                 chown root:root -R /opt/ai/ollama/models
                 systemctl restart ollama || true
             fi
