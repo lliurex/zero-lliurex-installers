@@ -7,6 +7,8 @@ EXTRACTED_DIR="anythingllm-desktop"
 OUTDIR="/opt/AnythingLLMDesktop"
 LAUNCHED_FILE="AppRun"
 DESKTOP_ANYTHINGLLM="/usr/share/zero-lliurex-anything-llm/desktop/anything-llm.desktop"
+TEMPLATE_DB="/usr/share/zero-lliurex-anything-llm/anythingllm.db"
+TEMPLATE_START="/usr/share/zero-lliurex-anything-llm/anything-llm"
 DESKTOPS_DIR="/usr/share/applications/"
 BIN_PATH="/usr/bin/anything-llm"
 
@@ -53,6 +55,13 @@ case $ACTION in
 			ln -sf ${OUTDIR}/${EXTRACTED_DIR}/${LAUNCHED_FILE} ${BIN_PATH}
 			#Fix permissions for sandbox
 			chmod 4755 /opt/AnythingLLMDesktop/anythingllm-desktop/chrome-sandbox || false
+
+                        # Default config
+                        mv ${BIN_PATH} /usr/bin/anything-llm-core
+                        cp ${TEMPLATE_START} ${BIN_PATH}
+                        mkdir -p ${OUTDIR}/template
+                        cp ${TEMPLATE_DB} ${OUTDIR}/template/
+                        chmod a+r ${OUTDIR}/template/anythingllm.db
 
 		else
 			exit 1
