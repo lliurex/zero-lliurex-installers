@@ -10,8 +10,7 @@ case $ACTION in
 	
 	installPackage)
 		f=$(mktemp --suffix .deb)
-		./teams-downloader.py $f
-		#/usr/share/zero-lliurex-teams/teams-downloader.py $f
+		/usr/share/zero-lliurex-teams/teams-downloader.py $f
 		dpkg -i $f
 		rm $f
 		;;
