@@ -1,5 +1,11 @@
 zero-lliurex-installers (0.451.36) jammy; urgency=medium
 
+  * Use teams-for-linux from https://github.com/IsmaelMartinez/teams-for-linux
+
+ -- Juanma1980 <juanma1980@gmail.com>  Mon, 21 Sep 2026 13:38:21 +0200
+
+zero-lliurex-installers (0.451.36) jammy; urgency=medium
+
   * Fixed model dir for Ollama
   * Multi installer Ollama/Models
 
