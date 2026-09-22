@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.22) noble; urgency=medium
+
+  * Teams for linux from https://github.com/IsmaelMartinez/teams-for-linux
+
+ -- Juanma1980 <juanma1980@gmail.com>  Tue, 22 Sep 2026 07:31:57 +0200
+
 zero-lliurex-installers (0.535.21) noble; urgency=medium
 
   * Fixed remove action in script of nerd-dictation
