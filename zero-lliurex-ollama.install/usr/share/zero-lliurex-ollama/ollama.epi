@@ -9,10 +9,16 @@
     },
     {
       "type": "file",
-      "name": "ollama-model-qwen2.5vl:3b",
-      "custom_name": "Qwen light model for Ollama with cpu (Qwen2.5vl:3b)",
+      "name": "ollama-model-phi4-mini",
+      "custom_name": "Phi4-mini model for Ollama (phi4-mini)",
       "custom_icon": "ollama.png"
-    }    
+    },
+    {
+      "type": "file",
+      "name": "ollama-model-qwen2.5vl:3b",
+      "custom_name": "Qwen light model for Ollama with cpu (qwen2.5vl:3b)",
+      "custom_icon": "ollama.png"
+    }
   ],
   "script": {
     "name": "/usr/share/zero-lliurex-ollama/ollama_script",
