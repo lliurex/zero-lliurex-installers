@@ -1,3 +1,12 @@
+zero-lliurex-installers (0.451.37) jammy; urgency=medium
+
+  * add phi4-mini as new model for install
+  * fix ollama_script bug installing
+  * purge models using manifests
+  * allow all users write/delete models on system dir
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 24 Sep 2026 09:14:36 +0200
+
 zero-lliurex-installers (0.451.36) jammy; urgency=medium
 
   * Use teams-for-linux from https://github.com/IsmaelMartinez/teams-for-linux
