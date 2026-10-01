@@ -8,7 +8,6 @@ PACKAGE_LIST=$@
 
 case $ACTION in
 	remove)
-
 		for ix in $PACKAGE_LIST	
 		do
 			apt-get remove -y $ix
@@ -18,13 +17,17 @@ case $ACTION in
 
 			else
 				apt-get remove -y wireshark
-				apt-get remove -y cdc-mapper-wireshark || true
+				apt-get remove -y pcaputils
+				apt-get remove -y cdc-mapper-wireshark
 			fi
 		done
 	;;	
-
 	postInstall)
-		apt-get install -y cdc-mapper-wireshark || true
-	;;
+		echo "[EPI]:Checking permission group..."
+		if dpkg -s wireshark &>/dev/null ; then
+			apt-get install -y pcaputils
+			apt-get install -y cdc-mapper-wireshark
+		fi
+	;;	
 esac	
 
