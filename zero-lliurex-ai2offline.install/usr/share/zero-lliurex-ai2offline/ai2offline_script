@@ -1,16 +1,22 @@
 #!/bin/bash
 
-RELEASE=7.7
+#The emulator packages from jammy use appinventor7.7 as base folder.
+#build those packages are a nightmare from hell so better use the same folder.
+#If at anytime the packages are rebuild change this.
+MASTER_RELEASE=7.7 
+#
+RELEASE=8 # This is the target release, used for downloading and extracting
 INSTALL_FOLDER="/opt/ai2offline/"
 TEMP_DOWNLOAD="/tmp/.ai2data/"
 ACTION="$1"
-AI2FOLDER=$INSTALL_FOLDER"AI2Offline${RELEASE}/"
+AI2FOLDER_ORIG=$INSTALL_FOLDER"AI2Offline${RELEASE}/"
+AI2FOLDER=$INSTALL_FOLDER"AI2Offline${MASTER_RELEASE}/"
 AIBUILDER_SCRIPT=$AI2FOLDER"startBuildServer.sh"
 AISERVER_SCRIPT=$AI2FOLDER"startAIServer.sh"
 BIN_ORIG="/usr/share/zero-lliurex-ai2offline/bin/*"
 BIN_DEST="/usr/bin/"
-#DEPENDS_AI2="lib32stdc++6 lib32z1"
-DEPENDS_AI2="f2fs-tools"
+DEPENDS_AI2="lib32stdc++6 lib32z1"
+DEPENDS_AI2="ai2offline-emulator"
 DESKTOP_ORIG="/usr/share/zero-lliurex-ai2offline/desktops/*.desktop"
 DESKTOP_DEST="/usr/share/applications/"
 DEST_DATA_FILE=${TEMP_DOWNLOAD}"ai2offline-data.tar.gz"
@@ -73,9 +79,14 @@ case $ACTION in
 		
 		cd ${INSTALL_FOLDER}
 		7z x ${DEST_FILE}
+		mv ${AI2FOLDER_ORIG} ${AI2FOLDER}
 		
 		echo "Enable others write access..."
 		chmod 777 -R ${AI2FOLDER}
+
+		echo "Patching"
+		NEW_TXT="\<h1\>POLSE\ ACI\ PER\ A\ ACCEDIR\ COM\ A\ CONVIDAT\<\/h1\>"
+		sed -i  "s/Click\ Here\ to\ use\ your\ Google\ Account\ to\ login/${NEW_TXT}/g" ${AI2FOLDER}/war/login.jsp 
 		
 		echo "Enable execution flag in scripts..."
 		chmod +x ${AISERVER_SCRIPT}
@@ -125,6 +136,8 @@ case $ACTION in
 		unzip ${DEST_DATA_IMAGE}
 		chmod -R 777 *
 
+		#Download required libs from jammy repo directly
+
 		#Clean all
 		rm -fr $TEMP_DOWNLOAD
 		ENABLE_UBUNTU=0
@@ -135,6 +148,7 @@ case $ACTION in
 		do
 			apt-get install --yes  $PKG
 		done
+		apt-get install --yes -f
 		[ $ENABLE_UBUNTU -gt 0 ] && repoman-cli -d 2 -y
 	;;
 
@@ -153,7 +167,12 @@ case $ACTION in
 		then	
 			exit 1
 		fi
+		for PKG in $DEPENDS_AI2
+		do
+			apt-get remove -y $PKG
+		done
 	
+
 	;;		
 		
 esac
