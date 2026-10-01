@@ -1,7 +1,11 @@
 #!/bin/bash
 
-RELEASE=8
-MASTER_RELEASE=7.7 #NEVER CHANGE THIS!
+#The emulator packages from jammy use appinventor7.7 as base folder.
+#build those packages are a nightmare from hell so better use the same folder.
+#If at anytime the packages are rebuild change this.
+MASTER_RELEASE=7.7 
+#
+RELEASE=8 # This is the target release, used for downloading and extracting
 INSTALL_FOLDER="/opt/ai2offline/"
 TEMP_DOWNLOAD="/tmp/.ai2data/"
 ACTION="$1"
