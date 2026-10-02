@@ -1,7 +1,7 @@
 zero-lliurex-installers (0.535.24) noble; urgency=medium
 
   * Zero-lliurex-wireshark
-  *  Add info message to install process
+  *  Add info message in install process
   *  Force install pcaputils
   * Zero-lliurex-ai2offline
   *  Update to upstream release 8.7
