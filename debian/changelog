@@ -1,3 +1,13 @@
+zero-lliurex-installers (0.535.24) noble; urgency=medium
+
+  * Zero-lliurex-wireshark
+  *  Add info message to install process
+  *  Force install pcaputils
+  * Zero-lliurex-ai2offline
+  *  Update to upstream release 8.7
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 02 Oct 2026 08:00:08 +0200
+
 zero-lliurex-installers (0.535.23) noble; urgency=medium
 
   * add phi4-mini as new model for install
