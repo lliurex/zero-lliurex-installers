@@ -1,3 +1,11 @@
+zero-lliurex-installers (0.451.38) jammy; urgency=medium
+
+  * ai2offlline: 
+  *  update to release 8.0
+  *  Patch initial page: show friendly message
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 09 Oct 2026 10:09:38 +0200
+
 zero-lliurex-installers (0.451.37) jammy; urgency=medium
 
   * add phi4-mini as new model for install
