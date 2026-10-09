@@ -86,7 +86,11 @@ case $ACTION in
 					echo "***Unable to install QEMU in server. Remove it for the selection and try again***"
 					exit 1
 				fi
+				
+			elif [[ "$ix" == "virtualbox-7.2" ]];then
+				apt-get -y install gcc-12 || true
 			fi
+
 		done
 	;;
 

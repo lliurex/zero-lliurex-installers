@@ -136,7 +136,7 @@ case $ACTION in
                 fi
 		
 		echo "Removing nerd dictation widget..."
-		apt remove plasma-widget-nerd-dictation || true
+		apt remove -y plasma-widget-nerd-dictation || true
 
 	;;		
 		

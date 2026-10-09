@@ -12,6 +12,6 @@ Icon=zero-lliurex-krita
 Category=Multimedia
 ScriptPath=zero-lliurex-krita.zmd
 Using=pkexec
-Service=True
+Service=False
 Locks=zero-lliurex-krita
 Groups=*;

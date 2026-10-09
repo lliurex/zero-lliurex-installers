@@ -74,6 +74,12 @@ case $ACTION in
 				rm $PERM_FILE
 			fi
 		fi
+		echo "[EPI]:Setting-up docker networks..."
+		if ! dpkg-query -W -f='${Status}' "docker-change-net" 2>/dev/null | grep -q "install ok installed"; then
+		    echo "[EPI]:Installing docker-change-net..."
+		    apt-get -y install docker-change-net
+		fi
+		docker-change-net --auto -y
 	;;
 
 esac

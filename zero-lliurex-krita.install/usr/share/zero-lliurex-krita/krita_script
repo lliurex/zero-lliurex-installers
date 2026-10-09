@@ -1,14 +1,51 @@
 #!/bin/bash
 
-
+THIS_PATH="$( cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+DIFFUSION_MODEL_DIR="/opt/ai/krita"
 ACTION="$1"
+shift
+PACKAGE_LIST=$@
 
 case $ACTION in
-	remove)
-		flatpak uninstall org.kde.krita -y 
-		TEST=$(flatpak list | grep org.kde.krita | cut -d " " -f 1)
-		if [[ ! -z "$TEST" ]];then
-			exit 1
-		fi	;;	
-esac	
-
+        getStatus)
+            if [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
+                if [ -d "$DIFFUSION_MODEL_DIR" ];then
+                    echo 0
+                else
+                    echo 1
+                fi
+            fi
+        ;;
+        install | installPackage)
+            if [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
+                PKGS=("krita" "krita-ai-plugin")
+                for pkg in "${PKGS[@]}"; do
+                    if dpkg-query -W -f='${Status}' "$pkg" 2>/dev/null | grep -q "install ok installed"; then
+                        echo "$pkg está instalado. Desinstalando..."
+                        sudo apt remove -y "$pkg"
+                    fi
+                done
+                if flatpak info org.kde.krita &>/dev/null; then
+                    echo "Krita (Flatpak) está instalado"
+                else
+                    echo "Krita (Flatpak) no está instalado"
+                    epic -u install /usr/share/zero-lliurex-krita/krita.epi org.kde.krita
+                fi
+                bash $THIS_PATH/installer_krita.sh install
+            fi
+        ;;
+        download)
+        ;;
+        remove)
+            if [[ " ${PACKAGE_LIST[*]} " == *" org.kde.krita "* ]];then
+                flatpak uninstall org.kde.krita -y 
+                TEST=$(flatpak list | grep org.kde.krita | cut -d " " -f 1)
+                if [[ ! -z "$TEST" ]];then
+                    exit 1
+                fi
+            elif [[ " ${PACKAGE_LIST[*]} " == *" krita-diffusion-ai-plugin "* ]];then
+                flatpak kill org.kde.krita || true
+                [ -n "$DIFFUSION_MODEL_DIR" -a -d "$DIFFUSION_MODEL_DIR" ] && bash $THIS_PATH/installer_krita.sh purge
+            fi
+        ;;
+esac
