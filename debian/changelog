@@ -1,8 +1,10 @@
 zero-lliurex-installers (0.451.38) jammy; urgency=medium
 
-  * Zero-lliurex-ai2offline: update to 8.7
+  * ai2offlline: 
+  *  update to release 8.0
+  *  Patch initial page: show friendly message
 
- -- Juanma1980 <juanma1980@gmail.com>  Thu, 08 Oct 2026 10:51:08 +0200
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 09 Oct 2026 10:09:38 +0200
 
 zero-lliurex-installers (0.451.37) jammy; urgency=medium
 
