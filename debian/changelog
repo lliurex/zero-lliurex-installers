@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.451.39) jammy; urgency=medium
+
+  * zero-lliurex-anything-llm is now dummy package
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 30 Oct 2026 11:56:14 +0100
+
 zero-lliurex-installers (0.451.38) jammy; urgency=medium
 
   * ai2offlline: 

@@ -1,1 +1,7 @@
-zero-lliurex-anything-llm.zmds/
+# Paquete dummy: desactivado temporalmente.
+# Para reactivarlo:
+#   - descomentar la línea de abajo
+#   - renombrar llx-resources/zero-lliurex-anything-llm/banners.disabled a banners
+#   - descomentar la línea de debian/zero-lliurex-anything-llm.install
+#
+# zero-lliurex-anything-llm.zmds/
