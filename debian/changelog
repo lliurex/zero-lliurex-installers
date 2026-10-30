@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.535.25) noble; urgency=medium
+
+  * zero-lliurex-anything-llm is now dummy package
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Fri, 30 Oct 2026 12:33:45 +0100
+
 zero-lliurex-installers (0.535.24) noble; urgency=medium
 
   * Zero-lliurex-wireshark
