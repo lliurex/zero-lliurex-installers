@@ -15,3 +15,4 @@ Using=pkexec
 Service=True
 Locks=zero-lliurex-wireshark
 Groups=admin;admins;sudo;teachers;students
+Show=False
