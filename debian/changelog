@@ -1,3 +1,9 @@
+zero-lliurex-installers (0.536) noble; urgency=medium
+
+  * audacity to snap installation
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 24 Nov 2026 11:31:11 +0100
+
 zero-lliurex-installers (0.535.25) noble; urgency=medium
 
   * zero-lliurex-anything-llm is now dummy package
